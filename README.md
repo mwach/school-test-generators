@@ -21,7 +21,7 @@ i `output/test_szkolny_wariant_G.pdf`, a do nich `output/klucz_odpowiedzi_warian
 
 | Wariant | Pliki w `output/` | Uwagi |
 | --- | --- | --- |
-| A | `test_szkolny_wariant_A.pdf` + `_poprawiona_mapa` | pierwotna mapa okazała się nieczytelna; wersja poprawiona jest wzorcem jakości map |
+| A | `test_szkolny_wariant_A.pdf` | mapa poprawiona po tym, jak pierwsza wersja okazała się nieczytelna — jest wzorcem jakości map |
 | B | `test_szkolny_wariant_B.pdf` | |
 | C–F | `test_szkolny_wariant_{C,D,E,F}.pdf` | E jako pierwszy świadomie wykorzystał limit powtórzeń |
 | G | `test_szkolny_wariant_G.pdf` | mapa portów hanzeatyckich, „Batory pod Pskowem” Matejki |

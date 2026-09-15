@@ -393,9 +393,11 @@ Wszystko, co powstaje z generowania, trafia do `output/` — zarówno robocze HT
 a także `baza_pytan.json` i tabele dat. W katalogu głównym nie zapisujemy niczego; zostają tam
 wyłącznie `README.md`, specyfikacja i katalogi `assets/`, `tools/`, `referencje/`, `output/`.
 
-PDF powtarza nazwę źródłowego HTML-a, więc `output/test_szkolny_wariant_G.html` daje
-`output/test_szkolny_wariant_G.pdf`. Dzięki temu nie powstają dwie kopie tego samego arkusza
-pod różnymi nazwami; wcześniej takie duplikaty trzeba było sprzątać ręcznie.
+PDF arkusza i klucza powtarza nazwę źródłowego HTML-a, więc `output/test_szkolny_wariant_G.html`
+daje `output/test_szkolny_wariant_G.pdf`. Dzięki temu nie powstają dwie kopie tego samego arkusza
+pod różnymi nazwami; wcześniej takie duplikaty trzeba było sprzątać ręcznie. Wyjątkiem są
+materiały do nauki, które noszą nazwy opisowe, bo trafiają wprost do ucznia: `baza_pytan.html`
+daje `Baza_potencjalnych_pytan.pdf`, a `tabela_dat_i_wydarzen.html` — `Daty_i_wydarzenia_zestawienie.pdf`.
 
 Arkusze leżą o poziom niżej niż grafiki, więc odwołania do nich mają postać `../assets/…`.
 Nowy arkusz musi trzymać tę konwencję, inaczej mapy i reprodukcje nie wyrenderują się w PDF.
@@ -566,12 +568,12 @@ Przed zakończeniem automatycznie sprawdź:
 
 ## 12. Dotychczas wygenerowane przykłady
 
-- `output/test_szkolny_wariant_A.pdf`
-- `output/klucz_odpowiedzi_wariant_A.pdf`
+- `output/test_szkolny_wariant_A.pdf` — wzorzec jakości mapy; pierwsza wersja miała mapę
+  nieczytelną i została zastąpiona poprawioną, którą odtwarza dzisiejszy arkusz HTML
+  (wersję sprzed poprawki można odzyskać z historii git);
+- `output/klucz_odpowiedzi_wariant_A.pdf`;
 - `output/test_szkolny_wariant_B.pdf`
 - `output/klucz_odpowiedzi_wariant_B.pdf`
-- `output/test_szkolny_wariant_A_poprawiona_mapa.pdf` — wzorzec jakości mapy;
-- `output/klucz_odpowiedzi_wariant_A_poprawiona_mapa.pdf`;
 - `output/test_szkolny_wariant_C.pdf` — 19 zadań, 100 p., ziarno `2026-09-09-C`;
 - `output/klucz_odpowiedzi_wariant_C.pdf`.
 
