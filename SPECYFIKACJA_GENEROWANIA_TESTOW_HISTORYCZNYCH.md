@@ -69,7 +69,7 @@ Użycie:
 ```bash
 python3 tools/baza_pytan.py           # podsumowanie i lista pozycji do wzięcia
 python3 tools/baza_pytan.py --json    # baza_pytan.json do dalszego przetwarzania
-python3 tools/baza_pytan.py --html    # widok do PDF (Baza_potencjalnych_pytan.pdf)
+python3 tools/baza_pytan.py --html    # widok do PDF (output/Baza_potencjalnych_pytan.pdf)
 ```
 
 Po dodaniu nowego wariantu nie trzeba nic aktualizować ręcznie — skrypt czyta arkusze
@@ -387,6 +387,15 @@ Nie należy przyznawać połówek punktów, chyba że regulamin konkretnej edycj
 
 ## 9. Wymagania dotyczące PDF
 
+### Gdzie zapisywać pliki
+
+Wszystkie wygenerowane PDF-y trafiają do `output/`, nigdy do katalogu głównego — tam zostają
+wyłącznie robocze HTML-e. Nazwa PDF-a powtarza nazwę źródłowego HTML-a, więc
+`test_szkolny_wariant_G.html` daje `output/test_szkolny_wariant_G.pdf`. Dzięki temu nie
+powstają dwie kopie tego samego arkusza pod różnymi nazwami; wcześniej takie duplikaty
+trzeba było sprzątać ręcznie. Podglądy PNG idą do `output/previews/<wariant>/`
+i są wyłączone z repozytorium.
+
 Test:
 
 - format A4;
@@ -556,10 +565,10 @@ Przed zakończeniem automatycznie sprawdź:
 - `output/klucz_odpowiedzi_wariant_A.pdf`
 - `output/test_szkolny_wariant_B.pdf`
 - `output/klucz_odpowiedzi_wariant_B.pdf`
-- `Test_szkolny_historia_wariant_A_POPRAWIONA_MAPA.pdf` — wzorzec jakości mapy;
-- `Klucz_odpowiedzi_wariant_A_POPRAWIONA_MAPA.pdf`;
-- `Test_szkolny_historia_wariant_C.pdf` — 19 zadań, 100 p., ziarno `2026-09-09-C`;
-- `Klucz_odpowiedzi_wariant_C.pdf`.
+- `output/test_szkolny_wariant_A_poprawiona_mapa.pdf` — wzorzec jakości mapy;
+- `output/klucz_odpowiedzi_wariant_A_poprawiona_mapa.pdf`;
+- `output/test_szkolny_wariant_C.pdf` — 19 zadań, 100 p., ziarno `2026-09-09-C`;
+- `output/klucz_odpowiedzi_wariant_C.pdf`.
 
 Tematy wykorzystane w wariancie C (użyte ponownie liczą się do limitu 30% powtórzeń): tabela cywilizacji
 starożytnych, Grecja w wyborze jednokrotnym, urzędy republiki rzymskiej, edykt mediolański,
@@ -570,8 +579,8 @@ obraz Matejki „Astronom Kopernik”, artykuły henrykowskie jako tekst źród�
 traktaty i rozejmy XVII w., powstanie Stanów Zjednoczonych, rewolucja francuska,
 Sejm Wielki i Konstytucja 3 maja, daty rozbiorów i insurekcji.
 
-- `Test_szkolny_historia_wariant_D.pdf` — 19 zadań, 100 p., ziarno `2026-09-10-D`;
-- `Klucz_odpowiedzi_wariant_D.pdf`.
+- `output/test_szkolny_wariant_D.pdf` — 19 zadań, 100 p., ziarno `2026-09-10-D`;
+- `output/klucz_odpowiedzi_wariant_D.pdf`.
 
 Tematy wykorzystane w wariancie D (użyte ponownie liczą się do limitu 30% powtórzeń): osiągnięcia cywilizacji
 starożytnych, wojny grecko-perskie i Aleksander Wielki, Rzym od republiki do cesarstwa, twórcy kultury
@@ -581,8 +590,8 @@ wielowyznaniowość Rzeczypospolitej, krzyżówka z hasłem SEJMIK, wojna trzydz
 Sobieskiego spod Wiednia, absolutyzm i monarchia parlamentarna, czasy saskie, rewolucja naukowa
 i oświecenie, konfederacja barska i I rozbiór, przyczyny i skutki upadku Rzeczypospolitej.
 
-- `Test_szkolny_historia_wariant_E.pdf` — 19 zadań, 100 p., ziarno `2026-09-11-E`;
-- `Klucz_odpowiedzi_wariant_E.pdf`.
+- `output/test_szkolny_wariant_E.pdf` — 19 zadań, 100 p., ziarno `2026-09-11-E`;
+- `output/klucz_odpowiedzi_wariant_E.pdf`.
 
 Tematy wykorzystane w wariancie E (użyte ponownie liczą się do limitu 30% powtórzeń): starożytny Egipt,
 Ateny i Sparta, życie codzienne w Rzymie, upadek cesarstwa zachodniorzymskiego i wędrówka ludów,
@@ -605,8 +614,8 @@ przeplatano, żeby rozbić serie typu P, P, P, F, F. Ten sam defekt ma **wariant
 (zadania I, IV, X, XV, XVII oraz mapa VIII z kluczem 1, 2, 3, 4, 5) i **wariant C**
 (mapa V) — jeżeli będą używane, wymagają analogicznej poprawki.
 
-- `Test_szkolny_historia_wariant_F.pdf` — 19 zadań, 100 p., ziarno `2026-09-12-F`, 11 stron;
-- `Klucz_odpowiedzi_wariant_F.pdf` — 5 stron.
+- `output/test_szkolny_wariant_F.pdf` — 19 zadań, 100 p., ziarno `2026-09-12-F`, 11 stron;
+- `output/klucz_odpowiedzi_wariant_F.pdf` — 5 stron.
 
 Tematy wykorzystane w wariancie F (użyte ponownie liczą się do limitu 30% powtórzeń): Mezopotamia,
 Fenicjanie i Kreta, starożytne Chiny i Indie, wojny punickie, Mieszko I i początki państwa polskiego,
@@ -631,8 +640,8 @@ Przy tej okazji poprawiono też **klucz wariantu E**: krzyżówka w zadaniu XII 
 (6 haseł + hasło + wyjaśnienie) przy zapowiedzianych w arkuszu 7 p. Obowiązujący schemat to
 **6 p. za hasła krzyżówki + 1 p. za odczytane hasło razem z wyjaśnieniem**.
 
-- `Test_szkolny_historia_wariant_G.pdf` — 19 zadań, 100 p., ziarno `2026-09-14-G`, 11 stron;
-- `Klucz_odpowiedzi_wariant_G.pdf` — 6 stron.
+- `output/test_szkolny_wariant_G.pdf` — 19 zadań, 100 p., ziarno `2026-09-14-G`, 11 stron;
+- `output/klucz_odpowiedzi_wariant_G.pdf` — 6 stron.
 
 Tematy wykorzystane w wariancie G (użyte ponownie liczą się do limitu 30% powtórzeń): kultura
 starożytnej Grecji, armia i podboje rzymskie, reguła świętego Benedykta jako tekst źródłowy,
@@ -669,7 +678,7 @@ for p in CommandLine.arguments.dropFirst() {
     if let d = PDFDocument(url: URL(fileURLWithPath: p)) { print("\(p): \(d.pageCount) stron") }
 }
 SWIFT
-swift /tmp/licz_strony.swift Test_szkolny_historia_wariant_F.pdf
+swift /tmp/licz_strony.swift output/test_szkolny_wariant_F.pdf
 ```
 
 ### Zagęszczenie składu a liczba stron
@@ -741,7 +750,7 @@ zmieniać treść, styl oraz tworzyć kolejne warianty.
 - `tools/pdf_to_png.swift` — renderuje strony PDF do plików PNG, do przeglądu składu:
 
   ```bash
-  swift tools/pdf_to_png.swift Test_szkolny_historia_wariant_E.pdf output/previews/E 0.72
+  swift tools/pdf_to_png.swift output/test_szkolny_wariant_E.pdf output/previews/E 0.72
   ```
 
 - `tools/sprawdz_losowosc_klucza.py` — wykrywa przewidywalne klucze: ciągi rosnące

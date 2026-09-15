@@ -15,29 +15,31 @@ To jest dokument nadrzędny; README tylko wprowadza w strukturę repozytorium.
 ## Gotowe warianty
 
 Każdy wariant to para plików: arkusz dla ucznia (z kartą odpowiedzi) i osobny klucz.
-HTML jest formatem roboczym, PDF — docelowym.
+HTML w katalogu głównym jest formatem roboczym, PDF w `output/` — docelowym. Nazwa PDF-a
+odpowiada nazwie źródłowego HTML-a, więc `test_szkolny_wariant_G.html` daje
+`output/test_szkolny_wariant_G.pdf`, a do niego należy `output/klucz_odpowiedzi_wariant_G.pdf`.
 
-| Wariant | Arkusz i klucz w PDF | Uwagi |
+| Wariant | Pliki w `output/` | Uwagi |
 | --- | --- | --- |
-| A | `output/test_szkolny_wariant_A.pdf`, `Test_szkolny_historia_wariant_A_POPRAWIONA_MAPA.pdf` | wersja z poprawioną mapą jest wzorcem jakości map |
-| B | `output/test_szkolny_wariant_B.pdf` | |
-| C–F | `Test_szkolny_historia_wariant_{C,D,E,F}.pdf` | E jako pierwszy świadomie wykorzystał limit powtórzeń |
-| G | `Test_szkolny_historia_wariant_G.pdf` | mapa portów hanzeatyckich, „Batory pod Pskowem” Matejki |
+| A | `test_szkolny_wariant_A.pdf` + `_poprawiona_mapa` | pierwotna mapa okazała się nieczytelna; wersja poprawiona jest wzorcem jakości map |
+| B | `test_szkolny_wariant_B.pdf` | |
+| C–F | `test_szkolny_wariant_{C,D,E,F}.pdf` | E jako pierwszy świadomie wykorzystał limit powtórzeń |
+| G | `test_szkolny_wariant_G.pdf` | mapa portów hanzeatyckich, „Batory pod Pskowem” Matejki |
 
-Materiały dodatkowe do nauki: `Daty_i_wydarzenia_do_nauki.pdf` (chronologia dla ucznia),
-`Daty_i_wydarzenia_zestawienie.pdf` (pełne zestawienie) oraz `Baza_potencjalnych_pytan.pdf`.
+Materiały dodatkowe do nauki: `output/Daty_i_wydarzenia_do_nauki.pdf` (chronologia dla ucznia),
+`output/Daty_i_wydarzenia_zestawienie.pdf` (pełne zestawienie)
+oraz `output/Baza_potencjalnych_pytan.pdf`.
 
 ## Struktura repozytorium
 
 ```
 test_szkolny_wariant_*.html      arkusze robocze (źródło PDF-ów)
 klucz_odpowiedzi_wariant_*.html  klucze robocze
-*.pdf                            wersje docelowe arkuszy, kluczy i materiałów do nauki
+output/                          wszystkie wygenerowane PDF-y; podglądy PNG są poza repozytorium
 assets/                          mapy SVG, bazowe mapy CC0, reprodukcje obrazów Matejki
 tools/                           skrypty pomocnicze (python3 + Swift)
 referencje/arkusze/              archiwalne arkusze i klucze kuratorium (2017/2018–2025/2026)
 referencje/tekst/                ich warstwa tekstowa do przeszukiwania
-output/                          PDF-y starszych wariantów; podglądy PNG są poza repozytorium
 baza_pytan.json                  baza zagadnień z oceną ryzyka powtórzenia
 ```
 
@@ -79,14 +81,14 @@ baza_pytan.json                  baza zagadnień z oceną ryzyka powtórzenia
    ```bash
    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' \
      --headless --disable-gpu --no-pdf-header-footer \
-     --print-to-pdf='Test_szkolny_historia_wariant_G.pdf' \
+     --print-to-pdf='output/test_szkolny_wariant_G.pdf' \
      "file://$PWD/test_szkolny_wariant_G.html"
    ```
 
 6. **Przegląd składu** — render stron do PNG i obejrzenie ich, zwłaszcza map:
 
    ```bash
-   swift tools/pdf_to_png.swift Test_szkolny_historia_wariant_G.pdf output/previews/G 0.72
+   swift tools/pdf_to_png.swift output/test_szkolny_wariant_G.pdf output/previews/G 0.72
    ```
 
    Podglądy PNG są celowo wyłączone z repozytorium (`.gitignore`) — odtwarza się je z HTML-a.
