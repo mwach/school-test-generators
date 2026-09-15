@@ -25,6 +25,7 @@ i `output/test_szkolny_wariant_G.pdf`, a do nich `output/klucz_odpowiedzi_warian
 | B | `test_szkolny_wariant_B.pdf` | |
 | C–F | `test_szkolny_wariant_{C,D,E,F}.pdf` | E jako pierwszy świadomie wykorzystał limit powtórzeń |
 | G | `test_szkolny_wariant_G.pdf` | mapa portów hanzeatyckich, „Batory pod Pskowem” Matejki |
+| H | `test_szkolny_wariant_H.pdf` | mapa wojny trzynastoletniej, „Kazanie Skargi” Matejki — pierwszy obraz spoza puli sześciu dotąd używanych reprodukcji |
 
 Materiały dodatkowe do nauki: `output/Daty_i_wydarzenia_do_nauki.pdf` (chronologia dla ucznia),
 `output/Daty_i_wydarzenia_zestawienie.pdf` (pełne zestawienie)

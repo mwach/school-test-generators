@@ -672,6 +672,58 @@ i B nigdy nie zostały tu rozpisane. Wystarczy pętla `rg -qi "<hasło>" test_sz
 po kandydatach — tak wyszło na jaw, że krucjaty, Komisja Edukacji Narodowej i chwalebna
 rewolucja były już zajęte, a husaria, rokosze, Hanza i sarmatyzm wolne.
 
+- `output/test_szkolny_wariant_H.pdf` — 19 zadań, 100 p., ziarno `2026-09-15-H`, 12 stron;
+  `output/klucz_odpowiedzi_wariant_H.pdf` — 7 stron.
+
+Tematy wykorzystane w wariancie H (użyte ponownie liczą się do limitu 30% powtórzeń): cywilizacje
+egejskie (Kreta, Mykeny), imperium perskie Achemenidów, filozofowie starożytnej Grecji, Oktawian
+August i bitwa pod Akcjum, Wielka Karta Swobód, chwalebna rewolucja w Anglii, filozofowie
+oświecenia i Wielka Encyklopedia, kodeks Hammurabiego, wielka schizma wschodnia, mapa wojny
+trzynastoletniej, Przemysł II i koniec rozbicia dzielnicowego, ostatni Jagiellonowie (Zygmunt
+Stary i Zygmunt August), konfederacja warszawska i tolerancja religijna, „Kazanie Skargi”
+Matejki, sejm niemy i rządy saskie, krzyżówka z hasłem WALEZY, prawa miast w Konstytucji 3 maja,
+rozbiory Rzeczypospolitej, powstanie kościuszkowskie. Powtórzeń jest 5 na 19 zadań (26%): mapa
+wojny trzynastoletniej (wcześniej wzmianka w F), sejm niemy (wcześniej pełne zadanie w D),
+krzyżówka o elekcji (wcześniej dopasowanie w B), prawa miast/Konstytucja 3 maja (wcześniej
+w A, C, E) i rozbiory (temat zamykający każdy dotychczasowy wariant).
+
+Trzy obserwacje z wariantu H:
+
+1. **Sprawdzenie samych dat/nazw w bazie pytań nie wystarcza — trzeba przeczytać kontekst
+   użycia.** `tools/baza_pytan.py` oznaczył np. „Wielką Kartę Swobód” i „Przemysła II” jako
+   pozycje o ryzyku `wysokie`/`niskie`, bo daty te już padły w arkuszach A–G, ale w obu
+   przypadkach były to pojedyncze elementy w szerszych zadaniach (odpowiednio: option w
+   dopasowaniu o absolutyzmie w D, jedna z pięciu postaci w koronacjach Piastów w B) — zgodnie
+   z regułą o „pojedynczych nazwach własnych jako elementach listy” dało się z nich zbudować
+   w pełni nowe, samodzielne zadania. Odwrotnie: samo `ryzyko: brak` nie gwarantuje świeżości
+   całego zagadnienia, jeśli temat obudowano innymi faktami już wcześniej użytymi — trzeba
+   każdorazowo przeszukać treść arkuszy `rg`, nie tylko spojrzeć na kolumnę ryzyka.
+
+2. **Kontrolę „odpowiedzi zbędnej nigdy na końcu banku” łatwo złamać przez przeoczenie.**
+   Pierwsza wersja czterech zadań na dopasowanie w tym wariancie miała zbędną odpowiedź
+   konsekwentnie jako ostatnią literę banku (F lub G) — `tools/sprawdz_losowosc_klucza.py`
+   sprawdza rozkład liter w kluczu, ale nie weryfikuje pozycji zbędnej opcji w banku wypisanym
+   w arkuszu, więc błąd trzeba wyłapać ręcznie, czytając treść zadania, a nie tylko klucz.
+   Naprawiono przenosząc zbędne opcje na pozycje 2., 3., 4. i 5. spośród 6–7-elementowych
+   banków.
+
+3. **Mapa bardzo blisko położonych miast wymaga dużo większego zbliżenia niż mapy regionalne
+   z wcześniejszych wariantów.** Malbork, Elbląg i Gdańsk dzieli po kilkadziesiąt kilometrów;
+   przy kadrze podobnym do mapy Hanzy z wariantu G (szerokość 280 jednostek) numery i etykiety
+   zlewały się w nieczytelną plamę. Rozwiązaniem było zarówno zawężenie kadru do 150 jednostek
+   szerokości (kadr `viewBox="877.75 1212.2 150 115"`), jak i rezygnacja z szóstego, najbliżej
+   położonego miasta (Elbląg) na rzecz czytelności pięciu pozostałych punktów. Warto też
+   pamiętać, że etykiety liczb skalują się razem z całą mapą (`font-size` i przesunięcie zależą
+   od `skala = szerokość_kadru / 800`), więc mniejszy kadr **nie** pogarsza czytelności druku —
+   obraz i tak trafia na stałą szerokość `max-width: 152mm`.
+
+4. **Pula sześciu lokalnych reprodukcji Matejki (Batory, Grunwald, Hołd pruski, Konstytucja
+   3 maja, Kopernik, Rejtan) wyczerpała się w wariancie H.** Do zadania o obrazie jako źródle
+   historycznym pobrano nową reprodukcję („Kazanie Skargi”, 1864, domena publiczna) z Wikimedia
+   Commons i zapisano ją jako `assets/kazanie_skargi_matejko.jpg`. Przy kolejnych wariantach
+   warto z góry sprawdzić `ls assets/*.jpg`, żeby wiedzieć, czy trzeba dograć nowy obraz, zanim
+   zaplanuje się treść zadania.
+
 ### Liczenie stron PDF — tylko przez PDFKit
 
 Zliczanie wystąpień `/Type /Page` w surowych bajtach PDF **jest zawodne** i zaniża wynik, gdy Chrome

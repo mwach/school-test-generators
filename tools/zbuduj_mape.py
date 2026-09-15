@@ -126,17 +126,16 @@ def buduj(kadr, punkty, wyjscie, podpis, legenda='miejsce oznaczone numerem',
 
 
 if __name__ == '__main__':
-    # Wariant G, zadanie V — Hanza: porty i kantory nad Bałtykiem i Morzem Północnym.
-    # Numery celowo nie idą w kolejności opisów A–F (§4 specyfikacji).
+    # Wariant H, zadanie — wojna trzynastoletnia (1454-1466): miasta Prus Krolewskich
+    # i panstwa zakonnego. Numery celowo nie ida w kolejnosci opisow A-F (§4 specyfikacji).
     PUNKTY = [
-        (10.6866, 53.8655, '3', (0, -16)),    # Lubeka  -> opis A
-        (18.6466, 54.3520, '6', (0, -16)),    # Gdańsk  -> opis B
-        (31.2750, 58.5215, '1', (0, -16)),    # Nowogród Wielki -> opis C
-        (5.3221, 60.3913, '5', (0, -16)),     # Bergen  -> opis D
-        (3.2247, 51.2093, '2', (0, -16)),     # Brugia  -> opis E
-        (24.1052, 56.9496, '4', (0, -16)),    # Ryga    -> opis F
+        (18.6042, 53.0138, '1', (0, -18)),    # Torun      -> opis C
+        (20.5030, 54.7104, '2', (0, -18)),    # Krolewiec  -> opis E
+        (19.0272, 54.0396, '3', (0, 28)),     # Malbork    -> opis A
+        (17.5578, 53.6971, '4', (0, -18)),    # Chojnice   -> opis D
+        (18.6466, 54.3520, '5', (-22, -4)),   # Gdansk     -> opis B
     ]
-    buduj(kadr=(440, 880, 890, 555), punkty=PUNKTY,
-          wyjscie=str(BAZA.parent / 'hanza_wariant_G.svg'),
-          podpis='Mapa konturowa Europy Polnocnej - porty i kantory hanzeatyckie',
+    buduj(kadr=(877.75, 1212.2, 150, 115), punkty=PUNKTY,
+          wyjscie=str(BAZA.parent / 'wojna_trzynastoletnia_wariant_H.svg'),
+          podpis='Mapa konturowa Prus Krolewskich i panstwa zakonnego w czasie wojny trzynastoletniej',
           legenda='miejsce oznaczone numerem')

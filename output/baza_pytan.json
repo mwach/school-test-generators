@@ -47,12 +47,14 @@
         "minojs"
       ],
       "rok_w_arkuszu": [],
-      "nazwa_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "H"
+      ],
       "tylko_w_kluczu": [
         "F"
       ],
-      "ryzyko": "niskie",
-      "status": "wolne"
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
     },
     {
       "sort": -1792,
@@ -74,7 +76,8 @@
       "nazwa_w_arkuszu": [
         "A",
         "D",
-        "F"
+        "F",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -101,7 +104,8 @@
         "A",
         "C",
         "D",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -131,7 +135,8 @@
         "D",
         "E",
         "F",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -154,7 +159,9 @@
         "C"
       ],
       "nazwa_w_arkuszu": [],
-      "tylko_w_kluczu": [],
+      "tylko_w_kluczu": [
+        "H"
+      ],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
@@ -170,13 +177,15 @@
         "salami",
         "termop"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "H"
+      ],
       "nazwa_w_arkuszu": [
         "C",
         "D"
       ],
       "tylko_w_kluczu": [],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -199,7 +208,8 @@
         "A",
         "D",
         "E",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -221,7 +231,8 @@
       "nazwa_w_arkuszu": [
         "A",
         "D",
-        "F"
+        "F",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -243,7 +254,8 @@
       "rok_w_arkuszu": [],
       "nazwa_w_arkuszu": [
         "D",
-        "F"
+        "F",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -266,7 +278,8 @@
       "rok_w_arkuszu": [],
       "nazwa_w_arkuszu": [
         "D",
-        "F"
+        "F",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -290,7 +303,8 @@
       "nazwa_w_arkuszu": [
         "D",
         "E",
-        "F"
+        "F",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -317,7 +331,8 @@
       "nazwa_w_arkuszu": [
         "A",
         "D",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -343,7 +358,8 @@
         "F"
       ],
       "nazwa_w_arkuszu": [
-        "D"
+        "D",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -365,7 +381,8 @@
       "rok_w_arkuszu": [],
       "nazwa_w_arkuszu": [
         "D",
-        "F"
+        "F",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -388,7 +405,8 @@
       "rok_w_arkuszu": [],
       "nazwa_w_arkuszu": [
         "D",
-        "F"
+        "F",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -411,7 +429,8 @@
         "B"
       ],
       "nazwa_w_arkuszu": [
-        "D"
+        "D",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -428,11 +447,13 @@
       "hasla": [
         "akcjum"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "H"
+      ],
       "nazwa_w_arkuszu": [],
       "tylko_w_kluczu": [],
-      "ryzyko": "brak",
-      "status": "wolne"
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
     },
     {
       "sort": 313,
@@ -478,7 +499,8 @@
         "A",
         "C",
         "D",
-        "F"
+        "F",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -590,7 +612,8 @@
       "nazwa_w_arkuszu": [
         "A",
         "D",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -619,7 +642,8 @@
         "E"
       ],
       "nazwa_w_arkuszu": [
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -644,7 +668,8 @@
         "E"
       ],
       "nazwa_w_arkuszu": [
-        "C"
+        "C",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -857,7 +882,8 @@
       ],
       "hasla": [],
       "rok_w_arkuszu": [
-        "A"
+        "A",
+        "H"
       ],
       "nazwa_w_arkuszu": [],
       "tylko_w_kluczu": [
@@ -935,7 +961,8 @@
       "nazwa_w_arkuszu": [
         "A",
         "B",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1049,7 +1076,8 @@
         "C"
       ],
       "nazwa_w_arkuszu": [
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1070,7 +1098,8 @@
         "swobód"
       ],
       "rok_w_arkuszu": [
-        "D"
+        "D",
+        "H"
       ],
       "nazwa_w_arkuszu": [
         "A",
@@ -1170,7 +1199,9 @@
       "rok_w_arkuszu": [
         "B"
       ],
-      "nazwa_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "H"
+      ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
@@ -1193,7 +1224,8 @@
         "A",
         "C",
         "D",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -1244,7 +1276,9 @@
         "C",
         "F"
       ],
-      "tylko_w_kluczu": [],
+      "tylko_w_kluczu": [
+        "H"
+      ],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
@@ -1393,7 +1427,8 @@
         "D",
         "E",
         "F",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1614,7 +1649,8 @@
         "D",
         "E",
         "F",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -1669,7 +1705,8 @@
         "B",
         "C",
         "E",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1688,12 +1725,14 @@
       "hasla": [
         "chojni"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "H"
+      ],
       "nazwa_w_arkuszu": [
         "F"
       ],
       "tylko_w_kluczu": [],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -1733,7 +1772,9 @@
         "toruńs",
         "gdańsk"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "H"
+      ],
       "nazwa_w_arkuszu": [
         "A",
         "C",
@@ -1742,7 +1783,7 @@
         "G"
       ],
       "tylko_w_kluczu": [],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -1899,7 +1940,8 @@
         "A",
         "C",
         "D",
-        "F"
+        "F",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -1986,7 +2028,8 @@
         "C",
         "D",
         "E",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2005,13 +2048,15 @@
       "hasla": [
         "hołd"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "H"
+      ],
       "nazwa_w_arkuszu": [
         "A",
         "D"
       ],
       "tylko_w_kluczu": [],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -2085,7 +2130,8 @@
         "A",
         "B",
         "C",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [
         "D"
@@ -2107,7 +2153,9 @@
         "kopern",
         "mikoła"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "H"
+      ],
       "nazwa_w_arkuszu": [
         "B",
         "C",
@@ -2115,7 +2163,7 @@
         "F"
       ],
       "tylko_w_kluczu": [],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -2190,7 +2238,8 @@
         "C",
         "D",
         "E",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2216,7 +2265,8 @@
       "rok_w_arkuszu": [
         "A",
         "C",
-        "D"
+        "D",
+        "H"
       ],
       "nazwa_w_arkuszu": [
         "B",
@@ -2413,7 +2463,8 @@
         "A",
         "B",
         "C",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2614,7 +2665,8 @@
       ],
       "nazwa_w_arkuszu": [
         "B",
-        "E"
+        "E",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2629,11 +2681,13 @@
       "typ": "ustrój i prawo",
       "warianty": [],
       "hasla": [],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "H"
+      ],
       "nazwa_w_arkuszu": [],
       "tylko_w_kluczu": [],
-      "ryzyko": "brak",
-      "status": "wolne"
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
     },
     {
       "sort": 1699,
@@ -2753,7 +2807,8 @@
       ],
       "hasla": [],
       "rok_w_arkuszu": [
-        "D"
+        "D",
+        "H"
       ],
       "nazwa_w_arkuszu": [],
       "tylko_w_kluczu": [],
@@ -2797,14 +2852,16 @@
       "hasla": [
         "montes"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "H"
+      ],
       "nazwa_w_arkuszu": [
         "A",
         "D",
         "F"
       ],
       "tylko_w_kluczu": [],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -2820,13 +2877,15 @@
       "hasla": [
         "encykl"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "H"
+      ],
       "nazwa_w_arkuszu": [
         "D",
         "F"
       ],
       "tylko_w_kluczu": [],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -2844,7 +2903,9 @@
         "rousse",
         "umowa"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "H"
+      ],
       "nazwa_w_arkuszu": [
         "A",
         "D",
@@ -2853,7 +2914,7 @@
         "G"
       ],
       "tylko_w_kluczu": [],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -2875,7 +2936,8 @@
         "B",
         "C",
         "D",
-        "G"
+        "G",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -2905,7 +2967,8 @@
         "C",
         "D",
         "E",
-        "F"
+        "F",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2954,7 +3017,8 @@
       "nazwa_w_arkuszu": [],
       "tylko_w_kluczu": [
         "B",
-        "E"
+        "E",
+        "H"
       ],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
@@ -3006,7 +3070,8 @@
         "zjednoczonych"
       ],
       "rok_w_arkuszu": [
-        "A"
+        "A",
+        "H"
       ],
       "nazwa_w_arkuszu": [
         "B",
@@ -3086,7 +3151,8 @@
       ],
       "rok_w_arkuszu": [
         "A",
-        "C"
+        "C",
+        "H"
       ],
       "nazwa_w_arkuszu": [],
       "tylko_w_kluczu": [],
@@ -3110,7 +3176,8 @@
       "rok_w_arkuszu": [
         "E",
         "F",
-        "G"
+        "G",
+        "H"
       ],
       "nazwa_w_arkuszu": [],
       "tylko_w_kluczu": [
@@ -3145,7 +3212,8 @@
         "G"
       ],
       "nazwa_w_arkuszu": [
-        "B"
+        "B",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -3206,7 +3274,8 @@
       ],
       "nazwa_w_arkuszu": [
         "A",
-        "B"
+        "B",
+        "H"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -3238,7 +3307,8 @@
       "tylko_w_kluczu": [
         "B",
         "D",
-        "E"
+        "E",
+        "H"
       ],
       "ryzyko": "wysokie",
       "status": "wykorzystane"

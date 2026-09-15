@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Historia – etap szkolny – wariant H</title>
+  <style>
+    @page { size: A4; margin: 14mm 14mm 16mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+      font-size: 10.4pt; line-height: 1.28;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.08; margin-bottom: 5mm; color: #163a63; }
+    h2 { font-size: 15pt; color: #163a63; margin: 0 0 4mm; }
+    h3 { font-size: 11.4pt; margin: 0; color: #163a63; }
+    .cover {
+      min-height: 255mm; border: 2.2px solid #1f5a91; padding: 15mm 14mm;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { color: #9a5a00; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; }
+    .subtitle { font-size: 15pt; font-weight: 700; margin-bottom: 9mm; }
+    .meta {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm;
+      padding: 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 7mm;
+    }
+    .meta strong { color: #163a63; }
+    .code { border-bottom: 1px solid #172033; min-width: 55mm; display: inline-block; }
+    .notice { margin-top: auto; font-size: 9.2pt; color: #4c596b; }
+    .page-break { break-before: page; }
+    .instructions { padding: 5mm 6mm; background: #f6f3ed; border: 1px solid #d8cdb9; margin-bottom: 6mm; }
+    .instructions ol { margin: 2mm 0 0 6mm; padding-left: 4mm; }
+    .task {
+      border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+      border-radius: 2px; padding: 3mm 4mm; margin: 0 0 4mm;
+      break-inside: avoid;
+    }
+    .task-head {
+      display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 2mm;
+    }
+    .points { white-space: nowrap; font-weight: 700; color: #9a5a00; }
+    .lead { font-weight: 700; }
+    .source { font-size: 8.4pt; color: #5c6878; margin: 2mm 0; }
+    table { width: 100%; border-collapse: collapse; margin: 2mm 0; }
+    th, td { border: 1px solid #8090a2; padding: 2.2mm; vertical-align: top; }
+    th { background: #eaf1f7; color: #163a63; text-align: left; }
+    .compact th, .compact td { padding: 1.1mm 1.7mm; }
+    .choices { columns: 3; column-gap: 6mm; margin: 1.5mm 0; }
+    .choices div { break-inside: avoid; margin-bottom: 1mm; }
+    .shortline { display: inline-block; border-bottom: 1px dotted #566273; min-width: 30mm; height: 5mm; }
+    .answer-space { border-bottom: 1px dotted #566273; min-height: 7mm; margin-top: 1.2mm; }
+    .answer-space.two { min-height: 16mm; }
+    .quote {
+      background: #f7f8fa; border-left: 4px solid #9a5a00; padding: 3mm 4mm;
+      font-family: Georgia, serif; font-size: 10.2pt; margin: 3mm 0;
+    }
+    .quote p { margin: 0 0 2mm; }
+    .quote p:last-child { margin-bottom: 0; }
+    .svg-wrap { border: 1px solid #c5ced8; background: #fbfcfd; padding: 1.5mm; margin: 2mm 0; text-align: center; }
+    .map-image { display: block; margin: 0 auto; width: 100%; max-width: 152mm; height: auto; }
+    .art-image { display: block; margin: 0 auto; width: 100%; max-width: 150mm; height: auto; }
+    .ramka {
+      border: 1px dashed #9a5a00; background: #fdfaf4; padding: 2mm 3mm; margin: 2mm 0;
+      font-weight: 700; text-align: center; letter-spacing: .4px;
+    }
+    .small { font-size: 9pt; }
+    .muted { color: #5c6878; }
+    .pick { font-weight: 700; color: #163a63; }
+    .krzyzowka { width: auto; margin: 3mm 0; border-collapse: collapse; }
+    .krzyzowka td {
+      width: 6.5mm; height: 6.5mm; border: 1px solid #66748a; padding: 0;
+      text-align: center; font-weight: 700;
+    }
+    .krzyzowka td.numer {
+      width: 7mm; border: none; text-align: right; padding-right: 1.5mm; font-weight: 400;
+    }
+    .krzyzowka td.pusta { border: none; background: none; }
+    .krzyzowka td.haslo { background: #f5e3c8; }
+    .card td { height: 8mm; }
+    .card .wide { height: 14mm; }
+    .footer-note { font-size: 8.5pt; color: #606b79; border-top: 1px solid #c7cfd8; padding-top: 2mm; }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="eyebrow">Arkusz treningowy • wariant H</div>
+    <h1>Wojewódzki Konkurs Przedmiotowy z Historii</h1>
+    <div class="subtitle">Etap I – szkolny</div>
+    <div class="meta">
+      <div><strong>Zakres:</strong> działy I–XVII podstawy programowej</div>
+      <div><strong>Czas pracy:</strong> 60 minut</div>
+      <div><strong>Liczba zadań:</strong> 19</div>
+      <div><strong>Maksymalna liczba punktów:</strong> 100</div>
+      <div><strong>Wariant:</strong> H</div>
+      <div><strong>Ziarno wariantu:</strong> 2026-09-15-H</div>
+    </div>
+    <p><strong>KOD UCZNIA:</strong> <span class="code">&nbsp;</span></p>
+    <div class="instructions">
+      <h2>Instrukcja dla ucznia</h2>
+      <ol>
+        <li>Sprawdź, czy arkusz zawiera 19 zadań i kartę odpowiedzi.</li>
+        <li>Czytaj uważnie polecenia. Odpowiadaj wyłącznie w miejscach do tego przeznaczonych.</li>
+        <li>Jeśli polecenie nie stanowi inaczej, za każdy poprawnie uzupełniony element otrzymujesz 1 punkt.</li>
+        <li>W zadaniach P/F wpisz <strong>P</strong> (prawda) albo <strong>F</strong> (fałsz).</li>
+        <li>Nie używaj korektora ani urządzeń elektronicznych.</li>
+        <li>Pracuj samodzielnie. Na rozwiązanie testu masz 60 minut.</li>
+      </ol>
+    </div>
+    <p class="notice">
+      Materiał autorski do ćwiczeń, opracowany na podstawie regulaminu szczegółowego oraz
+      archiwalnych arkuszy etapu szkolnego Kujawsko-Pomorskiego Kuratora Oświaty
+      z lat 2018/2019–2025/2026. Nie jest oficjalnym arkuszem konkursowym.
+    </p>
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie I. Cywilizacje egejskie – Kreta i Mykeny</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj nazwę do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Knossos</div>
+        <div><strong>B</strong> – agora</div>
+        <div><strong>C</strong> – Linearne B</div>
+        <div><strong>D</strong> – Mykeny</div>
+        <div><strong>E</strong> – fresk</div>
+        <div><strong>F</strong> – Minotaur</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Mykeński gród na Peloponezie otoczony potężnymi „cyklopimi murami”, zbadany przez Heinricha Schliemanna.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Mityczny potwór o ciele człowieka i głowie byka, zamknięty na Krecie w labiryncie.</td><td></td></tr>
+        <tr><td>3. Największy pałac na Krecie, odkopany przez Arthura Evansa na przełomie XIX i XX w.</td><td></td></tr>
+        <tr><td>4. Malowidło zdobiące ściany pałaców, np. przedstawiające akrobatyczne skoki przez byka.</td><td></td></tr>
+        <tr><td>5. Sylabiczne pismo Greków mykeńskich, odczytane w 1952 r. przez Michaela Ventrisa.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie II. Imperium perskie Achemenidów</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Największe państwo starożytnego Bliskiego Wschodu stworzyła dynastia
+        <span class="shortline"></span> <strong>(1)</strong>, którą zapoczątkował Cyrus Wielki.
+        Państwo podzielone było na prowincje zwane <span class="shortline"></span> <strong>(2)</strong>,
+        zarządzane przez namiestników. Stolicą ceremonialną było miasto
+        <span class="shortline"></span> <strong>(3)</strong>, spalone w 330 r. p.n.e. przez wojska
+        Aleksandra Wielkiego. Sprawną łączność w rozległym państwie zapewniała licząca ok. 2500 km
+        <span class="shortline"></span> <strong>(4)</strong>, łącząca Suzę z Sardes. Największy zasięg
+        terytorialny osiągnęło państwo za panowania króla <span class="shortline"></span>
+        <strong>(5)</strong>, którego następca w 480 r. p.n.e. poprowadził przeciw Grecji jeszcze
+        większą, lecz nieudaną wyprawę. Głównym bóstwem czczonym przez Persów według nauki
+        proroka Zaratustry był
+        <span class="shortline"></span> <strong>(6)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie III. Filozofowie starożytnej Grecji</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj postać do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Sokrates</div>
+        <div><strong>B</strong> – Platon</div>
+        <div><strong>C</strong> – Arystoteles</div>
+        <div><strong>D</strong> – Herodot</div>
+        <div><strong>E</strong> – Pitagoras</div>
+        <div><strong>F</strong> – Demokryt</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Filozof, który głosił istnienie niewidzialnego świata idei i założył w Atenach szkołę zwaną Akademią.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Filozof i matematyk, którego imieniem nazwano twierdzenie o bokach trójkąta prostokątnego, założyciel bractwa w Krotonie.</td><td></td></tr>
+        <tr><td>3. Filozof skazany na śmierć przez wypicie cykuty za „psucie” ateńskiej młodzieży, znany z metody zadawania pytań.</td><td></td></tr>
+        <tr><td>4. Filozof z Abdery, twórca teorii, według której świat zbudowany jest z niepodzielnych cząstek.</td><td></td></tr>
+        <tr><td>5. Nauczyciel Aleksandra Wielkiego, autor traktatów z logiki, przyrody i polityki, założyciel Liceum w Atenach.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IV. Oktawian August i początek cesarstwa</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">W zadaniach 1–6 zaznacz albo wpisz literę jednej poprawnej odpowiedzi.</p>
+      <table class="compact">
+        <tr><td>1. Bitwa pod Akcjum (31 r. p.n.e.) była starciem floty Oktawiana z flotą:<br>
+          <span class="pick">A.</span> Marka Antoniusza i Kleopatry &nbsp; <span class="pick">B.</span> Hannibala &nbsp;
+          <span class="pick">C.</span> Spartakusa &nbsp; <span class="pick">D.</span> Wercyngetoryksa</td>
+          <td style="width:16mm"></td></tr>
+        <tr><td>2. Po zwycięstwie pod Akcjum senat rzymski nadał Oktawianowi tytuł:<br>
+          <span class="pick">A.</span> cesarz &nbsp; <span class="pick">B.</span> dyktator &nbsp;
+          <span class="pick">C.</span> August &nbsp; <span class="pick">D.</span> konsul</td><td></td></tr>
+        <tr><td>3. Ustrój wprowadzony przez Oktawiana, pozornie zachowujący instytucje republikańskie, nazywamy:<br>
+          <span class="pick">A.</span> dominat &nbsp; <span class="pick">B.</span> pryncypat &nbsp;
+          <span class="pick">C.</span> tetrarchia &nbsp; <span class="pick">D.</span> senioralizm</td><td></td></tr>
+        <tr><td>4. Rywal Oktawiana pokonany pod Akcjum, rzymski wódz związany z Kleopatrą, to:<br>
+          <span class="pick">A.</span> Pompejusz &nbsp; <span class="pick">B.</span> Krassus &nbsp;
+          <span class="pick">C.</span> Lepidus &nbsp; <span class="pick">D.</span> Marek Antoniusz</td><td></td></tr>
+        <tr><td>5. Bitwa pod Akcjum została stoczona u wybrzeży:<br>
+          <span class="pick">A.</span> Grecji &nbsp; <span class="pick">B.</span> Egiptu &nbsp;
+          <span class="pick">C.</span> Hiszpanii &nbsp; <span class="pick">D.</span> Sycylii</td><td></td></tr>
+        <tr><td>6. Rok 31 p.n.e. uznaje się umownie za koniec:<br>
+          <span class="pick">A.</span> wojen punickich &nbsp; <span class="pick">B.</span> panowania Juliusza Cezara &nbsp;
+          <span class="pick">C.</span> republiki rzymskiej &nbsp; <span class="pick">D.</span> cesarstwa zachodniorzymskiego</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie V. Wielka Karta Swobód</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Przeczytaj tekst i oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <div class="quote">
+        <p>„Żaden wolny człowiek nie będzie pojmany ani uwięziony, wywłaszczony, wyjęty spod prawa
+          lub wygnany [...] inaczej niż na mocy legalnego wyroku równych mu (par) albo na podstawie
+          prawa kraju.”</p>
+      </div>
+      <p class="source">Wielka Karta Swobód, 1215 r. (fragment artykułu 39, tłumaczenie przybliżone).</p>
+      <table class="compact">
+        <tr><td>1. Wielką Kartę Swobód wymusili na królu Janie bez Ziemi możni i rycerstwo angielskie w 1215 r.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Karta chroniła przede wszystkim prawa chłopów pańszczyźnianych.</td><td></td></tr>
+        <tr><td>3. Zgodnie z zacytowanym fragmentem, wolnego człowieka można było uwięzić wyłącznie na mocy wyroku równych mu albo na podstawie prawa kraju.</td><td></td></tr>
+        <tr><td>4. Karta wprowadzała zasadę, że król mógł swobodnie nakładać nowe podatki bez zgody rady możnych.</td><td></td></tr>
+        <tr><td>5. Zasady Wielkiej Karty Swobód uznaje się za jeden z pierwszych kroków w rozwoju monarchii ograniczonej prawem w Europie.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VI. Chwalebna rewolucja w Anglii</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">W zadaniach 1–5 zaznacz albo wpisz literę jednej poprawnej odpowiedzi.</p>
+      <table class="compact">
+        <tr><td>1. Chwalebna rewolucja z 1688 r. doprowadziła do obalenia króla:<br>
+          <span class="pick">A.</span> Karola I &nbsp; <span class="pick">B.</span> Jakuba II &nbsp;
+          <span class="pick">C.</span> Karola II &nbsp; <span class="pick">D.</span> Wilhelma Orańskiego</td>
+          <td style="width:16mm"></td></tr>
+        <tr><td>2. Nowym władcą Anglii został wspólnie z żoną:<br>
+          <span class="pick">A.</span> Wilhelm Orański i Maria &nbsp; <span class="pick">B.</span> Jakub II &nbsp;
+          <span class="pick">C.</span> Karol II &nbsp; <span class="pick">D.</span> Oliver Cromwell</td><td></td></tr>
+        <tr><td>3. Rewolucję nazwano „chwalebną”, ponieważ:<br>
+          <span class="pick">A.</span> zakończyła się wojną domową &nbsp; <span class="pick">B.</span> przywróciła absolutną władzę króla &nbsp;
+          <span class="pick">C.</span> odbyła się niemal bez rozlewu krwi &nbsp; <span class="pick">D.</span> obaliła parlament</td><td></td></tr>
+        <tr><td>4. W 1689 r. parlament angielski uchwalił dokument ograniczający władzę króla, zwany:<br>
+          <span class="pick">A.</span> Wielką Kartą Swobód &nbsp; <span class="pick">B.</span> Aktem Nawigacyjnym &nbsp;
+          <span class="pick">C.</span> Aktem Supremacji &nbsp; <span class="pick">D.</span> Kartą Praw (Bill of Rights)</td><td></td></tr>
+        <tr><td>5. Wydarzenia 1688–1689 r. w Anglii uznaje się za ważny krok w rozwoju ustroju:<br>
+          <span class="pick">A.</span> monarchii absolutnej &nbsp; <span class="pick">B.</span> republiki &nbsp;
+          <span class="pick">C.</span> demokracji bezpośredniej &nbsp; <span class="pick">D.</span> monarchii parlamentarnej</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VII. Filozofowie oświecenia</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Dopasuj postać do opisu. Wpisz litery A–G. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Monteskiusz</div>
+        <div><strong>B</strong> – Jan Jakub Rousseau</div>
+        <div><strong>C</strong> – Kartezjusz</div>
+        <div><strong>D</strong> – Wolter</div>
+        <div><strong>E</strong> – Denis Diderot</div>
+        <div><strong>F</strong> – Adam Smith</div>
+        <div><strong>G</strong> – Immanuel Kant</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Pisarz i filozof, krytyk Kościoła i nietolerancji religijnej, autor powiastki filozoficznej „Kandyd”.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Szkocki ekonomista, autor dzieła „Bogactwo narodów” (1776), uznawany za twórcę klasycznej ekonomii.</td><td></td></tr>
+        <tr><td>3. Autor dzieła „O duchu praw” (1748), propagator zasady trójpodziału władzy na ustawodawczą, wykonawczą i sądowniczą.</td><td></td></tr>
+        <tr><td>4. Niemiecki filozof, autor definicji oświecenia jako „wyjścia człowieka z niepełnoletności, w którą popadł z własnej winy”.</td><td></td></tr>
+        <tr><td>5. Autor traktatu „Umowa społeczna” (1762), głosił ideę suwerenności ludu i wspólnej woli powszechnej.</td><td></td></tr>
+        <tr><td>6. Redaktor naczelny wielkiej Encyklopedii francuskiej, wydawanej od 1751 r., zbierającej wiedzę epoki.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VIII. Kodeks Hammurabiego</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Jeden z najstarszych spisanych zbiorów praw stworzył w XVIII w. p.n.e. władca Babilonu
+        <span class="shortline"></span> <strong>(1)</strong>. Tekst kodeksu wyryto na kamiennej płycie
+        zwanej <span class="shortline"></span> <strong>(2)</strong>. Kodeks opierał się na zasadzie
+        odwetu, wyrażanej formułą <span class="shortline"></span> <strong>(3)</strong> („oko za oko”).
+        Surowość kar zależała od pozycji społecznej sprawcy i ofiary — najsurowiej karano czyny
+        wobec przedstawicieli <span class="shortline"></span> <strong>(4)</strong>. Kodeks regulował
+        też sprawy gospodarcze, np. wysokość odsetek od pożyczek udzielanych w
+        <span class="shortline"></span> <strong>(5)</strong> — kruszcu używanym w Mezopotamii jako
+        miernik wartości.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IX. Wielka schizma wschodnia</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Wielka schizma z 1054 r. doprowadziła do trwałego podziału chrześcijaństwa na Kościół katolicki i prawosławny.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Bezpośrednią przyczyną schizmy był spór między papieżem a patriarchą Konstantynopola, zakończony wzajemną ekskomuniką.</td><td></td></tr>
+        <tr><td>3. Językiem liturgicznym Kościoła wschodniego pozostawała wyłącznie łacina.</td><td></td></tr>
+        <tr><td>4. Po schizmie zwierzchnikiem Kościoła prawosławnego pozostał nadal papież rzymski.</td><td></td></tr>
+        <tr><td>5. Schizma z 1054 r. miała wpływ na późniejsze stosunki między łacińskim Zachodem a bizantyjskim Wschodem, w tym na wyprawy krzyżowe.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie X. Wojna trzynastoletnia</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Na mapie oznaczono pięć miast. Do każdego opisu dopisz właściwy numer 1–5.</p>
+      <div class="svg-wrap">
+        <img class="map-image" src="../assets/wojna_trzynastoletnia_wariant_H.svg"
+             alt="Mapa konturowa Pomorza Gdańskiego i Prus Krzyżackich z pięcioma miastami oznaczonymi numerami od 1 do 5">
+      </div>
+      <p class="source">Mapa bazowa: SimpleMapLab na podstawie danych Natural Earth 1:50 mln, domena publiczna (CC0);
+        oznaczenia i opracowanie zadania: własne. Cienka jasna linia to współczesna granica państwowa,
+        naniesiona wyłącznie dla ułatwienia orientacji.</p>
+      <table class="compact">
+        <tr><td>A. Siedziba wielkiego mistrza zakonu krzyżackiego, zdobyta przez wojska polskie i zaciężnych w 1457 r.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Największy port Prus Królewskich, którego mieszczanie w znacznej mierze finansowali wojnę przeciw zakonowi.</td><td></td></tr>
+        <tr><td>C. Miasto, w którym w lutym 1454 r. mieszczanie i szlachta wypowiedzieli posłuszeństwo zakonowi, a w 1466 r. podpisano pokój kończący wojnę.</td><td></td></tr>
+        <tr><td>D. Miejsce klęski polskiego pospolitego ruszenia we wrześniu 1454 r.</td><td></td></tr>
+        <tr><td>E. Miasto, do którego po wojnie przeniesiono stolicę okrojonego państwa zakonnego, odtąd lenna Polski.</td><td></td></tr>
+      </table>
+      <p>F. Podaj rok zawarcia pokoju, który zakończył wojnę trzynastoletnią i przyłączył do Polski
+        Pomorze Gdańskie. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XI. Przemysł II i koniec rozbicia dzielnicowego</h3><span class="points">0–3 p.</span></div>
+      <p class="lead">Wykonaj polecenia 1–3.</p>
+      <p>1. Podaj rok koronacji Przemysła II na króla Polski, która przywróciła jedność tytułu
+        królewskiego po latach rozbicia dzielnicowego. <span class="shortline"></span></p>
+      <p>2. Podaj miasto, w którym odbyła się ta koronacja. <span class="shortline"></span></p>
+      <p>3. Podaj nazwę krainy, którą Przemysł II przyłączył do swojego władztwa jeszcze przed
+        koronacją królewską. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XII. Ostatni Jagiellonowie</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj pojęcie lub postać do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Zygmunt I Stary</div>
+        <div><strong>B</strong> – Zygmunt II August</div>
+        <div><strong>C</strong> – Bona Sforza</div>
+        <div><strong>D</strong> – hołd pruski</div>
+        <div><strong>E</strong> – Stefan Batory</div>
+        <div><strong>F</strong> – egzekucja dóbr</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Uroczysty akt złożony w 1525 r. na krakowskim rynku przez Albrechta Hohenzollerna, ostatniego wielkiego mistrza zakonu krzyżackiego, jako lennika króla polskiego.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Król, za którego panowania w 1543 r. wydano drukiem dzieło Mikołaja Kopernika „O obrotach sfer niebieskich”.</td><td></td></tr>
+        <tr><td>3. Ruch szlachecki z czasów Zygmunta Augusta, domagający się odzyskania bezprawnie rozdanych królewszczyzn i wzmocnienia skarbu państwa.</td><td></td></tr>
+        <tr><td>4. Żona Zygmunta I Starego, księżniczka włoska, której przypisuje się wprowadzenie do polskiej kuchni nowych warzyw.</td><td></td></tr>
+        <tr><td>5. Ostatni z Jagiellonów na tronie polskim, za którego panowania zawarto unię lubelską; zmarł bezpotomnie w 1572 r.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIII. Wolność religijna w Rzeczypospolitej</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Konfederacja warszawska z 1573 r. zagwarantowała szlachcie różnych wyznań wzajemny pokój religijny.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Konfederację warszawską zwołano podczas pierwszego bezkrólewia, przed elekcją Henryka Walezego.</td><td></td></tr>
+        <tr><td>3. Na mocy konfederacji warszawskiej katolicyzm ogłoszono jedyną religią dozwoloną w Rzeczypospolitej.</td><td></td></tr>
+        <tr><td>4. Postanowienia konfederacji warszawskiej musiał zaprzysiąc każdy nowo obierany król Rzeczypospolitej.</td><td></td></tr>
+        <tr><td>5. Rzeczpospolita w XVI w. była jedynym krajem Europy, w którym nie tolerowano żadnej mniejszości religijnej.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIV. Obraz jako źródło historyczne</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Obejrzyj reprodukcję obrazu i wykonaj polecenia.</p>
+      <div class="svg-wrap">
+        <img class="art-image" src="../assets/kazanie_skargi_matejko.jpg"
+             alt="Obraz przedstawiający kaznodzieję w czarnej szacie przemawiającego do króla i dostojników zgromadzonych w komnacie sejmowej">
+      </div>
+      <p class="source">Jan Matejko, „Kazanie Skargi”, 1864, Zamek Królewski w Warszawie;
+        reprodukcja w domenie publicznej (Wikimedia Commons).</p>
+      <p>1. Podaj imię i nazwisko autora obrazu. <span class="shortline"></span></p>
+      <p>2. Podaj imię i nazwisko duchownego wygłaszającego kazanie przedstawione na obrazie.
+        <span class="shortline"></span></p>
+      <p>3. Podaj imię króla słuchającego tego kazania. <span class="shortline"></span></p>
+      <p>4. Do jakiego zakonu należał kaznodzieja? <span class="shortline"></span></p>
+      <p>5. Wymień jedną wadę ustroju Rzeczypospolitej, przed którą kaznodzieja przestrzegał w swoich kazaniach.</p>
+      <div class="answer-space"></div>
+      <p>6. Wyjaśnij, dlaczego obraz namalowany w XIX w. nie jest fotograficznym zapisem wydarzenia
+        sprzed niemal trzystu lat.</p>
+      <div class="answer-space two"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XV. Sejm niemy i rządy saskie</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń, czy podane zjawisko było przyczyną (P), czy skutkiem (S) osłabienia Rzeczypospolitej w czasach saskich.</p>
+      <table class="compact">
+        <tr><td>1. Śmierć bezpotomna Jana III Sobieskiego i osłabienie autorytetu władzy królewskiej podczas kolejnego bezkrólewia.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Sejm w 1717 r., zwany „niemym”, na którym pod naciskiem obecności wojsk rosyjskich posłom nie pozwolono zabrać głosu.</td><td></td></tr>
+        <tr><td>3. Elekcja Augusta II Mocnego, elektora saskiego, i zawiązanie unii personalnej Rzeczypospolitej z Saksonią.</td><td></td></tr>
+        <tr><td>4. Ograniczenie liczebności wojska Rzeczypospolitej do skromnego etatu, ustalonego na sejmie niemym.</td><td></td></tr>
+        <tr><td>5. Wzrost wpływu Rosji na sprawy wewnętrzne Rzeczypospolitej, utrzymujący się przez cały XVIII w.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVI. Krzyżówka – elekcje królów Rzeczypospolitej</h3><span class="points">0–7 p.</span></div>
+      <p class="lead">Rozwiąż krzyżówkę, a następnie wyjaśnij znaczenie hasła z zaznaczonej kolumny.</p>
+      <table class="compact" style="margin-bottom:2mm">
+        <tr><td>1. Wezwanie rozsyłane po kraju, wzywające szlachtę do stawienia się konno i zbrojnie na wyprawę wojenną.</td></tr>
+        <tr><td>2. Zbiór podstawowych zasad ustrojowych, które od 1573 r. musiał zaprzysiąc każdy elekt.</td></tr>
+        <tr><td>3. Symbol władzy marszałka sejmu, niesiony przed nim podczas obrad.</td></tr>
+        <tr><td>4. Tytuł władcy niemieckiego okręgu uprawnionego do udziału w wyborze cesarza Rzeszy; nosił go też władca Saksonii, późniejszy król Polski.</td></tr>
+        <tr><td>5. Zgromadzenie szlachty wybierającej króla, odbywające się tradycyjnie pod Warszawą.</td></tr>
+        <tr><td>6. Ród panujący z pokolenia na pokolenie, np. Jagiellonowie, Wazowie czy Walezjusze.</td></tr>
+      </table>
+      <table class="krzyzowka">
+        <tr><td class="numer">1.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="haslo"></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">2.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">3.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="haslo"></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">4.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">5.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="haslo"></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">6.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      </table>
+      <p>Hasło: <span class="shortline"></span></p>
+      <p>Wyjaśnij, kogo lub co określa to hasło. (1 p.)</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVII. Prawa miast w Konstytucji 3 maja</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Przeczytaj tekst i wykonaj polecenia.</p>
+      <div class="quote">
+        <p>„Prawo na teraźniejszym sejmie zapadłe pod tytułem: Miasta nasze królewskie wolne
+          w państwach Rzeczypospolitej, w zupełności utrzymane mieć chcemy i za część niniejszej
+          Konstytucyi deklarujemy.”</p>
+      </div>
+      <p class="source">Ustawa Rządowa (Konstytucja 3 maja), artykuł III, 1791 r. (pisownia oryginalna).</p>
+      <p>1. Podaj rok uchwalenia Ustawy Rządowej, do której włączono ten artykuł.
+        <span class="shortline"></span></p>
+      <p>2. Podaj tytuł, pod jakim uchwalono prawo o miastach kilka tygodni wcześniej, zanim stało
+        się częścią konstytucji. <span class="shortline"></span></p>
+      <p>3. Wymień jedno uprawnienie, jakie zyskali dzięki temu prawu mieszczanie miast królewskich.</p>
+      <div class="answer-space"></div>
+      <p>4. Podaj imię i nazwisko prezydenta Warszawy, który przewodził delegacji miast zabiegającej
+        o te prawa (tzw. czarna procesja, 1789 r.). <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVIII. Rozbiory Rzeczypospolitej</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uporządkuj wydarzenia chronologicznie. Wpisz cyfry od 1 (najwcześniejsze)
+        do 6 (najpóźniejsze).</p>
+      <table class="compact">
+        <tr><td>A. Uchwalenie Konstytucji 3 maja.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Trzeci rozbiór Polski – zniknięcie Rzeczypospolitej z mapy Europy.</td><td></td></tr>
+        <tr><td>C. Elekcja Stanisława Augusta Poniatowskiego na króla Polski.</td><td></td></tr>
+        <tr><td>D. Zawiązanie konfederacji targowickiej i drugi rozbiór Polski.</td><td></td></tr>
+        <tr><td>E. Pierwszy rozbiór Polski.</td><td></td></tr>
+        <tr><td>F. Wybuch powstania kościuszkowskiego.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIX. Powstanie kościuszkowskie</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">W zadaniach 1–5 zaznacz albo wpisz literę jednej poprawnej odpowiedzi.</p>
+      <table class="compact">
+        <tr><td>1. Powstanie kościuszkowskie rozpoczęło się przysięgą złożoną przez Tadeusza Kościuszkę na rynku w:<br>
+          <span class="pick">A.</span> Warszawie &nbsp; <span class="pick">B.</span> Krakowie &nbsp;
+          <span class="pick">C.</span> Wilnie &nbsp; <span class="pick">D.</span> Lublinie</td>
+          <td style="width:16mm"></td></tr>
+        <tr><td>2. Zwycięska dla Polaków bitwa z początku powstania, w której chłopscy kosynierzy odegrali ważną rolę, stoczona została pod:<br>
+          <span class="pick">A.</span> Maciejowicami &nbsp; <span class="pick">B.</span> Szczekocinami &nbsp;
+          <span class="pick">C.</span> Racławicami &nbsp; <span class="pick">D.</span> Warszawą</td><td></td></tr>
+        <tr><td>3. Dowódcą oddziałów kosynierów pod Racławicami, awansowanym potem przez Kościuszkę, był:<br>
+          <span class="pick">A.</span> Bartosz Głowacki &nbsp; <span class="pick">B.</span> Jan Kiliński &nbsp;
+          <span class="pick">C.</span> Jakub Jasiński &nbsp; <span class="pick">D.</span> Antoni Madaliński</td><td></td></tr>
+        <tr><td>4. Tadeusz Kościuszko dostał się do rosyjskiej niewoli po przegranej bitwie pod:<br>
+          <span class="pick">A.</span> Racławicami &nbsp; <span class="pick">B.</span> Warszawą &nbsp;
+          <span class="pick">C.</span> Maciejowicami &nbsp; <span class="pick">D.</span> Wilnem</td><td></td></tr>
+        <tr><td>5. Powstanie kościuszkowskie zakończyło się klęską i:<br>
+          <span class="pick">A.</span> odzyskaniem niepodległości &nbsp; <span class="pick">B.</span> drugim rozbiorem Polski &nbsp;
+          <span class="pick">C.</span> uchwaleniem nowej konstytucji &nbsp; <span class="pick">D.</span> trzecim rozbiorem Polski i likwidacją państwa polskiego</td><td></td></tr>
+      </table>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+    <h2>Karta odpowiedzi — wariant H</h2>
+    <p class="small muted">Kod ucznia: <span class="code">&nbsp;</span></p>
+    <table class="card compact">
+      <tr><th style="width:42mm">Zadanie</th><th>Odpowiedzi</th><th style="width:20mm">Punkty</th></tr>
+      <tr><td>I. Cywilizacje egejskie</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>II. Imperium perskie</td><td class="wide"></td><td></td></tr>
+      <tr><td>III. Filozofowie greccy</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>IV. Oktawian August</td><td>1 …… 2 …… 3 …… 4 …… 5 …… 6 ……</td><td></td></tr>
+      <tr><td>V. Wielka Karta Swobód</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>VI. Chwalebna rewolucja</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>VII. Filozofowie oświecenia</td><td>1 …… 2 …… 3 …… 4 …… 5 …… 6 ……</td><td></td></tr>
+      <tr><td>VIII. Kodeks Hammurabiego</td><td class="wide"></td><td></td></tr>
+      <tr><td>IX. Wielka schizma</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>X. Wojna trzynastoletnia (mapa)</td><td>A …… B …… C …… D …… E …… F ……</td><td></td></tr>
+      <tr><td>XI. Przemysł II</td><td class="wide"></td><td></td></tr>
+      <tr><td>XII. Ostatni Jagiellonowie</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>XIII. Wolność religijna</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>XIV. Obraz jako źródło</td><td class="wide"></td><td></td></tr>
+      <tr><td>XV. Sejm niemy</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>XVI. Krzyżówka</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVII. Prawa miast</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVIII. Rozbiory</td><td>A …… B …… C …… D …… E …… F ……</td><td></td></tr>
+      <tr><td>XIX. Insurekcja kościuszkowska</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td><strong>Razem</strong></td><td></td><td><strong>/ 100</strong></td></tr>
+    </table>
+    <p class="footer-note">Arkusz treningowy, wariant H, ziarno 2026-09-15-H. Materiał autorski,
+      nie jest oficjalnym arkuszem Kujawsko-Pomorskiego Kuratora Oświaty.</p>
+  </section>
+</body>
+</html>

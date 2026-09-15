@@ -5,8 +5,9 @@
 komponowaniu arkusza: obszar (historia Polski / powszechna) oraz typ zagadnienia. Wydarzenia
 po 1795 r. są poza zakresem Wojewódzkiego Konkursu Przedmiotowego i do bazy nie wchodzą.
 
-Status „wolne” oznacza, że zagadnienie nie wystąpiło jeszcze w żadnym arkuszu A–G, czyli można
-je wykorzystać bez naruszania limitu 30% powtórzeń. Arkusze i klucze czytane są z `output/`.
+Status „wolne” oznacza, że zagadnienie nie wystąpiło jeszcze w żadnym dotychczasowym arkuszu,
+czyli można je wykorzystać bez naruszania limitu 30% powtórzeń. Arkusze i klucze czytane są
+z `output/`; lista wariantów wykrywana jest automatycznie z plików `test_szkolny_wariant_*.html`.
 
 Użycie:
     python3 tools/baza_pytan.py                 # podsumowanie w terminalu
@@ -24,6 +25,17 @@ GRANICA_ZAKRESU = 1795  # III rozbiór Polski — koniec zakresu konkursu
 
 # Arkusze, klucze i wyniki tego skryptu leżą w output/ — patrz sekcja 9 specyfikacji.
 KATALOG_WYJSCIA = pathlib.Path(__file__).parent.parent / 'output'
+
+
+def _warianty_dostepne(katalog):
+    """Litery wariantów, dla których istnieje arkusz w output/ — wykrywane automatycznie,
+    żeby dodanie nowego wariantu nie wymagało ręcznej edycji tego skryptu."""
+    litery = sorted(p.stem.rsplit('_', 1)[-1] for p in katalog.glob('test_szkolny_wariant_*.html'))
+    return ''.join(litery)
+
+
+def _zakres_etykieta(warianty):
+    return f'{warianty[0]}–{warianty[-1]}' if len(warianty) > 1 else warianty
 
 TYPY = ["cywilizacje i państwa", "władcy i dynastie", "ustrój i prawo", "wojny i bitwy",
         "dyplomacja i traktaty", "religia i Kościół", "kultura i nauka",
@@ -254,7 +266,7 @@ def _hasla(wydarzenie):
 def _uzycie_w_arkuszach(rekordy, katalog):
     """Szacuje ryzyko powtórzenia z trzech sygnałów: rok w treści arkusza (najmocniejszy),
     nazwa własna w treści arkusza, wzmianka wyłącznie w komentarzu klucza."""
-    warianty = 'ABCDEFG'
+    warianty = _warianty_dostepne(katalog)
     teksty = {}
     for w in warianty:
         for rodzaj, wzor in (('arkusz', 'test_szkolny_wariant_%s.html'),
@@ -311,7 +323,8 @@ def podsumowanie(rek):
     wolne = [r for r in rek if r['status'] == 'wolne']
     print(f'Baza potencjalnych pytań — zakres do {GRANICA_ZAKRESU} r.')
     print(f'  pozycji razem: {len(rek)}')
-    print('\nRyzyko powtórzenia (na podstawie arkuszy A–G):')
+    zakres_wariantow = _zakres_etykieta(_warianty_dostepne(KATALOG_WYJSCIA))
+    print(f'\nRyzyko powtórzenia (na podstawie arkuszy {zakres_wariantow}):')
     for poz in ('brak', 'niskie', 'średnie', 'wysokie'):
         n = sum(1 for r in rek if r['ryzyko'] == poz)
         print(f'  {poz:9s} {n:3d}')
@@ -370,6 +383,7 @@ CSS = """
 
 def widok_html(rek):
     wolne = [r for r in rek if r['status'] == 'wolne']
+    zakres_wariantow = _zakres_etykieta(_warianty_dostepne(KATALOG_WYJSCIA))
     out = ['<!doctype html>', '<html lang="pl">', '<head>', '<meta charset="utf-8">',
            '<title>Baza potencjalnych pytań</title>', f'<style>{CSS}</style>', '</head>',
            '<body>', '<div class="eyebrow">Materiał roboczy • planowanie wariantów</div>',
@@ -378,7 +392,7 @@ def widok_html(rek):
            f'Przedmiotowego, czyli do III rozbioru Polski ({GRANICA_ZAKRESU} r.) — razem '
            f'<strong>{len(rek)}</strong> pozycji. Wydarzenia późniejsze są poza zakresem '
            f'i do bazy nie wchodzą.<br>Kolumna <em>Ryzyko</em> mówi, na ile dane zagadnienie '
-           f'jest już zużyte przez warianty A–G. Zupełnie nietkniętych pozycji zostało tylko '
+           f'jest już zużyte przez warianty {zakres_wariantow}. Zupełnie nietkniętych pozycji zostało tylko '
            f'<strong>{len(wolne)}</strong>, więc pula samych dat jest praktycznie wyczerpana: '
            f'świeżość kolejnego arkusza trzeba budować nie na nowych datach, ale na nowym '
            f'ujęciu znanych wydarzeń — innym źródle, innej formie zadania, innym aspekcie. '
@@ -433,7 +447,7 @@ def widok_html(rek):
 
     out += ['<p class="stopka">Baza generowana z <code>tools/baza_pytan.py</code> na podstawie '
             'dat z <code>tools/generuj_tabele_daty.py</code> oraz treści arkuszy i kluczy '
-            'A–G. Ryzyko wyliczane automatycznie: skrypt szuka w arkuszach roku wydarzenia '
+            f'{zakres_wariantow}. Ryzyko wyliczane automatycznie: skrypt szuka w arkuszach roku wydarzenia '
             'oraz jego nazw własnych, dlatego przy zagadnieniach opisanych w arkuszu bardzo '
             'omownie ocena może być zaniżona — przed użyciem pozycji warto zajrzeć do '
             'wskazanego wariantu. Po dodaniu nowego arkusza wystarczy uruchomić skrypt '
