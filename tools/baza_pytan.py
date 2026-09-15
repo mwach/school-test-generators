@@ -5,12 +5,12 @@
 komponowaniu arkusza: obszar (historia Polski / powszechna) oraz typ zagadnienia. Wydarzenia
 po 1795 r. są poza zakresem Wojewódzkiego Konkursu Przedmiotowego i do bazy nie wchodzą.
 
-Status „wolne” oznacza, że zagadnienie nie wystąpiło jeszcze w żadnym arkuszu A–F, czyli można
-je wykorzystać bez naruszania limitu 30% powtórzeń.
+Status „wolne” oznacza, że zagadnienie nie wystąpiło jeszcze w żadnym arkuszu A–G, czyli można
+je wykorzystać bez naruszania limitu 30% powtórzeń. Arkusze i klucze czytane są z `output/`.
 
 Użycie:
     python3 tools/baza_pytan.py                 # podsumowanie w terminalu
-    python3 tools/baza_pytan.py --json          # zapis baza_pytan.json
+    python3 tools/baza_pytan.py --json          # zapis output/baza_pytan.json
     python3 tools/baza_pytan.py --html          # widok HTML na stdout
 """
 import html
@@ -21,6 +21,9 @@ import sys
 from collections import Counter, defaultdict
 
 GRANICA_ZAKRESU = 1795  # III rozbiór Polski — koniec zakresu konkursu
+
+# Arkusze, klucze i wyniki tego skryptu leżą w output/ — patrz sekcja 9 specyfikacji.
+KATALOG_WYJSCIA = pathlib.Path(__file__).parent.parent / 'output'
 
 TYPY = ["cywilizacje i państwa", "władcy i dynastie", "ustrój i prawo", "wojny i bitwy",
         "dyplomacja i traktaty", "religia i Kościół", "kultura i nauka",
@@ -301,7 +304,7 @@ def zbuduj():
             'typ': typ,
             'warianty': warianty.split() if warianty else [],
         })
-    return _uzycie_w_arkuszach(rekordy, pathlib.Path(__file__).parent.parent)
+    return _uzycie_w_arkuszach(rekordy, KATALOG_WYJSCIA)
 
 
 def podsumowanie(rek):
@@ -441,11 +444,12 @@ def widok_html(rek):
 if __name__ == '__main__':
     rekordy = zbuduj()
     if '--json' in sys.argv:
-        pathlib.Path('baza_pytan.json').write_text(
+        cel = KATALOG_WYJSCIA / 'baza_pytan.json'
+        cel.write_text(
             json.dumps({'granica_zakresu': GRANICA_ZAKRESU, 'typy': TYPY,
                         'pozycje': rekordy}, ensure_ascii=False, indent=2),
             encoding='utf-8')
-        print(f'Zapisano baza_pytan.json — {len(rekordy)} pozycji')
+        print(f'Zapisano {cel} — {len(rekordy)} pozycji')
     elif '--html' in sys.argv:
         sys.stdout.write(widok_html(rekordy))
     else:

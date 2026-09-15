@@ -15,9 +15,9 @@ To jest dokument nadrzędny; README tylko wprowadza w strukturę repozytorium.
 ## Gotowe warianty
 
 Każdy wariant to para plików: arkusz dla ucznia (z kartą odpowiedzi) i osobny klucz.
-HTML w katalogu głównym jest formatem roboczym, PDF w `output/` — docelowym. Nazwa PDF-a
-odpowiada nazwie źródłowego HTML-a, więc `test_szkolny_wariant_G.html` daje
-`output/test_szkolny_wariant_G.pdf`, a do niego należy `output/klucz_odpowiedzi_wariant_G.pdf`.
+Wszystko, co wygenerowane, leży w `output/` — HTML jako format roboczy, PDF jako docelowy,
+pod tą samą nazwą. Wariant G to więc `output/test_szkolny_wariant_G.html`
+i `output/test_szkolny_wariant_G.pdf`, a do nich `output/klucz_odpowiedzi_wariant_G.*`.
 
 | Wariant | Pliki w `output/` | Uwagi |
 | --- | --- | --- |
@@ -32,16 +32,24 @@ oraz `output/Baza_potencjalnych_pytan.pdf`.
 
 ## Struktura repozytorium
 
+W katalogu głównym są tylko dwa dokumenty i cztery katalogi — wszystko, co powstaje
+z generowania, trafia do `output/`.
+
 ```
-test_szkolny_wariant_*.html      arkusze robocze (źródło PDF-ów)
-klucz_odpowiedzi_wariant_*.html  klucze robocze
-output/                          wszystkie wygenerowane PDF-y; podglądy PNG są poza repozytorium
-assets/                          mapy SVG, bazowe mapy CC0, reprodukcje obrazów Matejki
-tools/                           skrypty pomocnicze (python3 + Swift)
-referencje/arkusze/              archiwalne arkusze i klucze kuratorium (2017/2018–2025/2026)
-referencje/tekst/                ich warstwa tekstowa do przeszukiwania
-baza_pytan.json                  baza zagadnień z oceną ryzyka powtórzenia
+output/
+  test_szkolny_wariant_*.html      arkusze robocze (źródło PDF-ów)
+  klucz_odpowiedzi_wariant_*.html  klucze robocze
+  *.pdf                            wersje docelowe arkuszy, kluczy i materiałów do nauki
+  baza_pytan.json                  baza zagadnień z oceną ryzyka powtórzenia
+  previews/                        podglądy PNG stron — poza repozytorium (.gitignore)
+assets/                            mapy SVG, bazowe mapy CC0, reprodukcje obrazów Matejki
+tools/                             skrypty pomocnicze (python3 + Swift)
+referencje/arkusze/                archiwalne arkusze i klucze kuratorium (2017/2018–2025/2026)
+referencje/tekst/                  ich warstwa tekstowa do przeszukiwania
 ```
+
+Arkusze odwołują się do grafik ścieżką `../assets/…`, więc HTML-a nie należy przenosić
+poza `output/` — inaczej mapy i reprodukcje przestaną się wyświetlać.
 
 ## Jak powstaje nowy wariant
 
@@ -53,7 +61,7 @@ baza_pytan.json                  baza zagadnień z oceną ryzyka powtórzenia
    python3 tools/baza_pytan.py
    ```
 
-   Skrypt czyta arkusze i klucze z katalogu głównego, więc po dodaniu wariantu wystarczy
+   Skrypt czyta arkusze i klucze z `output/`, więc po dodaniu wariantu wystarczy
    uruchomić go ponownie — nic nie trzeba aktualizować ręcznie. Powtórzenia tematów są
    dopuszczalne do 30% zadań (przy 19 zadaniach: najwyżej 5), zawsze w innej formie zadania.
 
@@ -62,15 +70,15 @@ baza_pytan.json                  baza zagadnień z oceną ryzyka powtórzenia
    wyliczone rachunkowo ze współrzędnych geograficznych. Kadr i punkty ustawia się w sekcji
    `__main__`; skrypt przerywa pracę, jeśli punkt wypada poza kadrem.
 
-3. **Arkusz i klucz w HTML** — zgodnie ze specyfikacją, z rozliczeniem limitu powtórzeń
-   w sekcji „Kontrola limitu powtórzeń (30%)” klucza.
+3. **Arkusz i klucz w HTML** — zapisane w `output/`, zgodnie ze specyfikacją, z rozliczeniem
+   limitu powtórzeń w sekcji „Kontrola limitu powtórzeń (30%)” klucza.
 
 4. **Kontrola losowości klucza** przed generowaniem PDF-ów. Narzędzie wykrywa przewidywalne
    klucze (ciągi A, B, C, D oraz 1, 2, 3, 4, pozycje stojące na swoim miejscu, długie serie
    w prawda/fałsz) i kończy się kodem błędu, gdy znajdzie problem:
 
    ```bash
-   python3 tools/sprawdz_losowosc_klucza.py klucz_odpowiedzi_wariant_G.html
+   python3 tools/sprawdz_losowosc_klucza.py output/klucz_odpowiedzi_wariant_G.html
    ```
 
    Sprawdzany jest wyłącznie rozkład odpowiedzi, nie ich poprawność — po przetasowaniu banku
@@ -82,7 +90,7 @@ baza_pytan.json                  baza zagadnień z oceną ryzyka powtórzenia
    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' \
      --headless --disable-gpu --no-pdf-header-footer \
      --print-to-pdf='output/test_szkolny_wariant_G.pdf' \
-     "file://$PWD/test_szkolny_wariant_G.html"
+     "file://$PWD/output/test_szkolny_wariant_G.html"
    ```
 
 6. **Przegląd składu** — render stron do PNG i obejrzenie ich, zwłaszcza map:

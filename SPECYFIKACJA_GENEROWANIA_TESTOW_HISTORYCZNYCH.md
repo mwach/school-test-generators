@@ -68,12 +68,12 @@ Użycie:
 
 ```bash
 python3 tools/baza_pytan.py           # podsumowanie i lista pozycji do wzięcia
-python3 tools/baza_pytan.py --json    # baza_pytan.json do dalszego przetwarzania
+python3 tools/baza_pytan.py --json    # output/baza_pytan.json do dalszego przetwarzania
 python3 tools/baza_pytan.py --html    # widok do PDF (output/Baza_potencjalnych_pytan.pdf)
 ```
 
 Po dodaniu nowego wariantu nie trzeba nic aktualizować ręcznie — skrypt czyta arkusze
-i klucze z katalogu głównego, więc wystarczy uruchomić go ponownie.
+i klucze z `output/`, więc wystarczy uruchomić go ponownie.
 
 ## 2. Zakres materiału według etapu
 
@@ -389,12 +389,17 @@ Nie należy przyznawać połówek punktów, chyba że regulamin konkretnej edycj
 
 ### Gdzie zapisywać pliki
 
-Wszystkie wygenerowane PDF-y trafiają do `output/`, nigdy do katalogu głównego — tam zostają
-wyłącznie robocze HTML-e. Nazwa PDF-a powtarza nazwę źródłowego HTML-a, więc
-`test_szkolny_wariant_G.html` daje `output/test_szkolny_wariant_G.pdf`. Dzięki temu nie
-powstają dwie kopie tego samego arkusza pod różnymi nazwami; wcześniej takie duplikaty
-trzeba było sprzątać ręcznie. Podglądy PNG idą do `output/previews/<wariant>/`
-i są wyłączone z repozytorium.
+Wszystko, co powstaje z generowania, trafia do `output/` — zarówno robocze HTML-e, jak i PDF-y,
+a także `baza_pytan.json` i tabele dat. W katalogu głównym nie zapisujemy niczego; zostają tam
+wyłącznie `README.md`, specyfikacja i katalogi `assets/`, `tools/`, `referencje/`, `output/`.
+
+PDF powtarza nazwę źródłowego HTML-a, więc `output/test_szkolny_wariant_G.html` daje
+`output/test_szkolny_wariant_G.pdf`. Dzięki temu nie powstają dwie kopie tego samego arkusza
+pod różnymi nazwami; wcześniej takie duplikaty trzeba było sprzątać ręcznie.
+
+Arkusze leżą o poziom niżej niż grafiki, więc odwołania do nich mają postać `../assets/…`.
+Nowy arkusz musi trzymać tę konwencję, inaczej mapy i reprodukcje nie wyrenderują się w PDF.
+Podglądy PNG idą do `output/previews/<wariant>/` i są wyłączone z repozytorium.
 
 Test:
 
@@ -759,7 +764,7 @@ zmieniać treść, styl oraz tworzyć kolejne warianty.
   do uruchamiania przed generowaniem PDF-ów:
 
   ```bash
-  python3 tools/sprawdz_losowosc_klucza.py klucz_odpowiedzi_wariant_*.html
+  python3 tools/sprawdz_losowosc_klucza.py output/klucz_odpowiedzi_wariant_*.html
   ```
 
   Narzędzie sprawdza wyłącznie rozkład odpowiedzi, nie ich poprawność. Po przetasowaniu banku
@@ -769,8 +774,8 @@ zmieniać treść, styl oraz tworzyć kolejne warianty.
   uczniowskie, bez kolumn roboczych):
 
   ```bash
-  python3 tools/generuj_tabele_daty.py > tabela_dat_i_wydarzen.html
-  python3 tools/generuj_tabele_daty.py --do-nauki > tabela_dat_do_nauki.html
+  python3 tools/generuj_tabele_daty.py > output/tabela_dat_i_wydarzen.html
+  python3 tools/generuj_tabele_daty.py --do-nauki > output/tabela_dat_do_nauki.html
   ```
 
 - `tools/zbuduj_mape.py` — składa mapę zadania z bazowej mapy Europy: wypełnia morze i ląd,

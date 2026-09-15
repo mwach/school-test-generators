@@ -5,8 +5,8 @@ Kolumna „Arkusze” podaje warianty, w których data wystąpiła (w zadaniu lu
 Kreska oznacza datę wyłącznie z listy dodatkowej, jeszcze nieużytą w żadnym arkuszu.
 
 Użycie:
-    python3 tools/generuj_tabele_daty.py > tabela_dat_i_wydarzen.html
-    python3 tools/generuj_tabele_daty.py --do-nauki > tabela_dat_do_nauki.html
+    python3 tools/generuj_tabele_daty.py > output/tabela_dat_i_wydarzen.html
+    python3 tools/generuj_tabele_daty.py --do-nauki > output/tabela_dat_do_nauki.html
 
 Przełącznik --do-nauki pomija kolumnę „Arkusze” i notkę o wariantach: zostaje sama chronologia
 do powtarzania przez ucznia.

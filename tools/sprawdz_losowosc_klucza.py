@@ -6,7 +6,7 @@ albo 1, 2, 3, 4…) lub w długie serie tej samej wartości (P, P, P, P). Taki k
 pozwala zdobyć punkty bez znajomości materiału.
 
 Użycie:
-    python3 tools/sprawdz_losowosc_klucza.py klucz_odpowiedzi_wariant_E.html [...]
+    python3 tools/sprawdz_losowosc_klucza.py output/klucz_odpowiedzi_wariant_E.html [...]
 """
 
 import re
