@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Historia – etap szkolny – wariant A</title>
+  <style>
+    @page { size: A4; margin: 14mm 14mm 16mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+      font-size: 10.7pt; line-height: 1.34;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.08; margin-bottom: 5mm; color: #163a63; }
+    h2 { font-size: 15pt; color: #163a63; margin: 0 0 4mm; }
+    h3 { font-size: 11.4pt; margin: 0; color: #163a63; }
+    .cover {
+      min-height: 255mm; border: 2.2px solid #1f5a91; padding: 15mm 14mm;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { color: #9a5a00; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; }
+    .subtitle { font-size: 15pt; font-weight: 700; margin-bottom: 9mm; }
+    .meta {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm;
+      padding: 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 7mm;
+    }
+    .meta strong { color: #163a63; }
+    .code { border-bottom: 1px solid #172033; min-width: 55mm; display: inline-block; }
+    .notice { margin-top: auto; font-size: 9.2pt; color: #4c596b; }
+    .page-break { break-before: page; }
+    .instructions { padding: 5mm 6mm; background: #f6f3ed; border: 1px solid #d8cdb9; margin-bottom: 6mm; }
+    .instructions ol { margin: 2mm 0 0 6mm; padding-left: 4mm; }
+    .task {
+      border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+      border-radius: 2px; padding: 4mm 4.5mm; margin: 0 0 5mm;
+      break-inside: avoid;
+    }
+    .task-head {
+      display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 2.5mm;
+    }
+    .points { white-space: nowrap; font-weight: 700; color: #9a5a00; }
+    .lead { font-weight: 700; }
+    .source { font-size: 8.4pt; color: #5c6878; margin: 2mm 0; }
+    table { width: 100%; border-collapse: collapse; margin: 2.5mm 0; }
+    th, td { border: 1px solid #8090a2; padding: 2.2mm; vertical-align: top; }
+    th { background: #eaf1f7; color: #163a63; text-align: left; }
+    .compact th, .compact td { padding: 1.5mm 2mm; }
+    .choices { columns: 2; column-gap: 8mm; margin: 2mm 0; }
+    .choices div { break-inside: avoid; margin-bottom: 1mm; }
+    .line { border-bottom: 1px dotted #566273; height: 6.5mm; }
+    .shortline { display: inline-block; border-bottom: 1px dotted #566273; min-width: 30mm; height: 5mm; }
+    .answer-space { border-bottom: 1px dotted #566273; min-height: 8mm; margin-top: 1.5mm; }
+    .answer-space.two { min-height: 16mm; }
+    .quote {
+      background: #f7f8fa; border-left: 4px solid #9a5a00; padding: 3mm 4mm;
+      font-family: Georgia, serif; font-size: 10.2pt; margin: 3mm 0;
+    }
+    .svg-wrap { border: 1px solid #c5ced8; background: #fbfcfd; padding: 2mm; margin: 3mm 0; text-align: center; }
+    .map-image { display: block; width: 100%; height: auto; }
+    .small { font-size: 9pt; }
+    .tree { text-align: center; font-size: 9.3pt; }
+    .tree .row { display: flex; justify-content: center; gap: 4mm; margin: 2mm 0; }
+    .person { border: 1px solid #8795a5; background: #f8fafc; padding: 1.5mm 2mm; min-width: 32mm; }
+    .join { color: #7b8796; font-weight: 700; }
+    .card td { height: 8mm; }
+    .card .wide { height: 14mm; }
+    .muted { color: #5c6878; }
+    .footer-note { font-size: 8.5pt; color: #606b79; border-top: 1px solid #c7cfd8; padding-top: 2mm; }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="eyebrow">Arkusz treningowy • wariant A</div>
+    <h1>Wojewódzki Konkurs Przedmiotowy z Historii</h1>
+    <div class="subtitle">Etap I – szkolny</div>
+    <div class="meta">
+      <div><strong>Zakres:</strong> działy I–XVII podstawy programowej</div>
+      <div><strong>Czas pracy:</strong> 60 minut</div>
+      <div><strong>Liczba zadań:</strong> 18</div>
+      <div><strong>Maksymalna liczba punktów:</strong> 100</div>
+      <div><strong>Wariant:</strong> A</div>
+      <div><strong>Ziarno wariantu:</strong> 2026-09-08-A</div>
+    </div>
+    <p><strong>KOD UCZNIA:</strong> <span class="code">&nbsp;</span></p>
+    <div class="instructions">
+      <h2>Instrukcja dla ucznia</h2>
+      <ol>
+        <li>Sprawdź, czy arkusz zawiera 18 zadań i kartę odpowiedzi.</li>
+        <li>Czytaj uważnie polecenia. Odpowiadaj wyłącznie w miejscach do tego przeznaczonych.</li>
+        <li>Jeśli polecenie nie stanowi inaczej, za każdy poprawnie uzupełniony element otrzymujesz 1 punkt.</li>
+        <li>W zadaniach P/F wpisz <strong>P</strong> (prawda) albo <strong>F</strong> (fałsz).</li>
+        <li>Nie używaj korektora ani urządzeń elektronicznych.</li>
+        <li>Pracuj samodzielnie. Na rozwiązanie testu masz 60 minut.</li>
+      </ol>
+    </div>
+    <p class="notice">
+      Materiał autorski do ćwiczeń, opracowany na podstawie regulaminu i archiwalnych arkuszy
+      Kujawsko-Pomorskiego Kuratora Oświaty. Nie jest oficjalnym arkuszem konkursowym.
+    </p>
+  </section>
+
+  <section class="page-break">
+    <div class="task">
+      <div class="task-head"><h3>Zadanie I. Cywilizacje starożytne</h3><span class="points">0–10 p.</span></div>
+      <p class="lead">Dopasuj każdą informację do właściwej cywilizacji. Wpisz literę A–E. Każdej litery użyj dwa razy.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Mezopotamia</div><div><strong>B</strong> – Egipt</div>
+        <div><strong>C</strong> – Izrael</div><div><strong>D</strong> – Grecja</div>
+        <div><strong>E</strong> – Rzym</div>
+      </div>
+      <table class="compact">
+        <tr><th style="width:9mm">Nr</th><th>Informacja</th><th style="width:18mm">Litera</th></tr>
+        <tr><td>1</td><td>Powstał tu Kodeks Hammurabiego.</td><td></td></tr>
+        <tr><td>2</td><td>Rozwój państwa zależał od regularnych wylewów Nilu.</td><td></td></tr>
+        <tr><td>3</td><td>Religia tej społeczności miała charakter monoteistyczny, a jej ważnym tekstem była Tora.</td><td></td></tr>
+        <tr><td>4</td><td>W Atenach ukształtowała się demokracja bezpośrednia.</td><td></td></tr>
+        <tr><td>5</td><td>Prawo spisano m.in. na Dwunastu Tablicach.</td><td></td></tr>
+        <tr><td>6</td><td>Stosowano pismo klinowe utrwalane na glinianych tabliczkach.</td><td></td></tr>
+        <tr><td>7</td><td>Władca nosił tytuł faraona, a do pisania używano papirusu.</td><td></td></tr>
+        <tr><td>8</td><td>Według tradycji Mojżesz otrzymał Dekalog.</td><td></td></tr>
+        <tr><td>9</td><td>Polis organizowały igrzyska ku czci Zeusa.</td><td></td></tr>
+        <tr><td>10</td><td>Językiem administracji i prawa była łacina.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie II. Mapa świata śródziemnomorskiego</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Rozpoznaj miasta oznaczone numerami 1–4. Wpisz ich nazwy.</p>
+      <div class="svg-wrap">
+        <img class="map-image" src="assets/mediterranean_blank_cc0.svg"
+             alt="Dokładna mapa basenu Morza Śródziemnego z czterema miastami oznaczonymi numerami 1–4">
+      </div>
+      <p class="source">Mapa bazowa: TheDastanMR, Wikimedia Commons, CC0 1.0; oznaczenia i opracowanie zadania: własne.</p>
+      <table class="compact">
+        <tr><td><strong>1.</strong> Stolica imperium nad Tybrem:</td><td></td></tr>
+        <tr><td><strong>2.</strong> Polis kojarzona z demokracją:</td><td></td></tr>
+        <tr><td><strong>3.</strong> Stolica cesarstwa wschodniorzymskiego od IV w.:</td><td></td></tr>
+        <tr><td><strong>4.</strong> Miasto święte judaizmu, chrześcijaństwa i islamu:</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie III. Bogowie Greków i Rzymian</h3><span class="points">0–3 p.</span></div>
+      <p class="lead">Uzupełnij brakujące imiona.</p>
+      <table class="compact">
+        <tr><th>Dziedzina</th><th>Grecja</th><th>Rzym</th></tr>
+        <tr><td>najwyższy bóg, władca nieba</td><td>Zeus</td><td></td></tr>
+        <tr><td>morze</td><td></td><td>Neptun</td></tr>
+        <tr><td>mądrość i roztropna wojna</td><td>Atena</td><td></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IV. Republika rzymska</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Dopasuj instytucję lub urząd do opisu. Wpisz litery A–E. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – konsulowie</div><div><strong>B</strong> – senat</div>
+        <div><strong>C</strong> – trybun ludowy</div><div><strong>D</strong> – zgromadzenie ludowe</div>
+        <div><strong>E</strong> – dyktator</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Dwaj najwyżsi urzędnicy wybierani na rok, dowodzący armią.</td><td style="width:18mm"></td></tr>
+        <tr><td>2. Rada złożona głównie z byłych urzędników, mająca wielki wpływ na politykę.</td><td></td></tr>
+        <tr><td>3. Urzędnik broniący interesów plebejuszy, dysponujący prawem sprzeciwu.</td><td></td></tr>
+        <tr><td>4. Zebranie obywateli uchwalające prawa i wybierające urzędników.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie V. Chronologia przełomu epok</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj datę do wydarzenia. Użyj każdej daty raz.</p>
+      <p><strong>Daty:</strong> 622 • 1054 • 476 • 966 • 800</p>
+      <table class="compact">
+        <tr><td>1. Upadek cesarstwa zachodniorzymskiego</td><td style="width:28mm"></td></tr>
+        <tr><td>2. Hidżra Mahometa z Mekki do Medyny</td><td></td></tr>
+        <tr><td>3. Koronacja cesarska Karola Wielkiego</td><td></td></tr>
+        <tr><td>4. Chrzest Mieszka I</td><td></td></tr>
+        <tr><td>5. Wielka schizma wschodnia</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VI. Społeczeństwo średniowieczne</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Dopisz właściwe pojęcia do opisów.</p>
+      <table class="compact">
+        <tr><td>1. Ziemia lub inne dobro nadane za służbę i wierność.</td><td style="width:42mm"></td></tr>
+        <tr><td>2. Osoba otrzymująca dobro w zamian za zobowiązanie do służby.</td><td></td></tr>
+        <tr><td>3. Feudał nadający dobro i przyjmujący hołd.</td><td></td></tr>
+        <tr><td>4. Przymusowa praca chłopa na ziemi pana.</td><td></td></tr>
+        <tr><td>5. Organizacja zrzeszająca rzemieślników jednej specjalności.</td><td></td></tr>
+        <tr><td>6. System uprawy polegający na podziale pola na trzy części.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VII. Architektura średniowieczna</h3><span class="points">0–3 p.</span></div>
+      <p class="lead">Rozpoznaj style przedstawione na schematycznych rysunkach, a następnie podaj jedną cechę stylu B widoczną na ilustracji.</p>
+      <div class="svg-wrap">
+        <svg viewBox="0 0 720 245" width="100%" height="200" role="img" aria-label="Schemat kościoła romańskiego i gotyckiego">
+          <rect x="35" y="58" width="260" height="160" fill="#eee7dc" stroke="#4e5966" stroke-width="5"/>
+          <rect x="68" y="25" width="58" height="193" fill="#eee7dc" stroke="#4e5966" stroke-width="5"/>
+          <rect x="205" y="25" width="58" height="193" fill="#eee7dc" stroke="#4e5966" stroke-width="5"/>
+          <path d="M130 218 V158 A35 35 0 0 1 200 158 V218" fill="#7c8996" stroke="#4e5966" stroke-width="4"/>
+          <g fill="#87a9bd" stroke="#4e5966" stroke-width="3">
+            <path d="M82 90 V70 A15 15 0 0 1 112 70 V90Z"/><path d="M219 90 V70 A15 15 0 0 1 249 70 V90Z"/>
+          </g>
+          <text x="158" y="239" font-size="20" font-weight="700">A</text>
+          <path d="M425 218 V76 L555 24 685 76 V218Z" fill="#e6e8ed" stroke="#4e5966" stroke-width="4"/>
+          <path d="M474 218 V142 Q555 36 636 142 V218" fill="#8292a3" stroke="#4e5966" stroke-width="4"/>
+          <circle cx="555" cy="92" r="37" fill="#b7d1df" stroke="#4e5966" stroke-width="4"/>
+          <g stroke="#4e5966" stroke-width="2"><line x1="518" y1="92" x2="592" y2="92"/><line x1="555" y1="55" x2="555" y2="129"/><line x1="529" y1="66" x2="581" y2="118"/><line x1="581" y1="66" x2="529" y2="118"/></g>
+          <path d="M443 218 L405 218 425 137" fill="none" stroke="#4e5966" stroke-width="5"/>
+          <path d="M667 218 L705 218 685 137" fill="none" stroke="#4e5966" stroke-width="5"/>
+          <text x="548" y="239" font-size="20" font-weight="700">B</text>
+        </svg>
+      </div>
+      <p>1. Styl A: <span class="shortline"></span> 2. Styl B: <span class="shortline"></span></p>
+      <p>3. Cecha stylu B: <span class="shortline" style="min-width:95mm"></span></p>
+      <p class="source">Rysunki: opracowanie własne na podstawie cech architektury romańskiej i gotyckiej.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VIII. Wielkie odkrycia geograficzne</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj podróżnika do osiągnięcia. Wpisz litery A–F. Jedna postać jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Bartolomeu Dias</div><div><strong>B</strong> – Krzysztof Kolumb</div>
+        <div><strong>C</strong> – Vasco da Gama</div><div><strong>D</strong> – Ferdynand Magellan</div>
+        <div><strong>E</strong> – Amerigo Vespucci</div><div><strong>F</strong> – Marco Polo</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. W 1488 r. dotarł do południowego krańca Afryki.</td><td style="width:18mm"></td></tr>
+        <tr><td>2. W 1492 r. dopłynął do wysp Ameryki, sądząc, że osiągnął Azję.</td><td></td></tr>
+        <tr><td>3. W 1498 r. dotarł drogą morską do Indii.</td><td></td></tr>
+        <tr><td>4. Jego wyprawa jako pierwsza opłynęła Ziemię.</td><td></td></tr>
+        <tr><td>5. Upowszechnił pogląd, że odkryte lądy są odrębnym kontynentem.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IX. Renesans i reformacja</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P albo F.</p>
+      <table class="compact">
+        <tr><td>1. Humanizm kierował uwagę ku człowiekowi i dziedzictwu antyku.</td><td style="width:18mm"></td></tr>
+        <tr><td>2. Jan Gutenberg skonstruował prasę drukarską pod koniec XVI w.</td><td></td></tr>
+        <tr><td>3. Wystąpienie Marcina Lutra w 1517 r. uznaje się za początek reformacji.</td><td></td></tr>
+        <tr><td>4. Sobór trydencki zapoczątkował reformację luterańską.</td><td></td></tr>
+        <tr><td>5. Ignacy Loyola był założycielem zakonu jezuitów.</td><td></td></tr>
+        <tr><td>6. Konfederacja warszawska z 1573 r. służyła utrzymaniu pokoju religijnego.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie X. Polska pierwszych Piastów</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Dopasuj władcę do wydarzenia. Wpisz litery A–G. Jedna postać jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Mieszko I</div><div><strong>B</strong> – Bolesław Chrobry</div>
+        <div><strong>C</strong> – Mieszko II</div><div><strong>D</strong> – Kazimierz Odnowiciel</div>
+        <div><strong>E</strong> – Bolesław II Śmiały</div><div><strong>F</strong> – Bolesław Krzywousty</div>
+        <div><strong>G</strong> – Władysław Łokietek</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Przyjęcie chrztu w 966 r.</td><td style="width:18mm"></td></tr>
+        <tr><td>2. Pierwsza koronacja królewska w 1025 r.</td><td></td></tr>
+        <tr><td>3. Odbudowa państwa i przeniesienie głównego ośrodka władzy do Krakowa.</td><td></td></tr>
+        <tr><td>4. Konflikt z biskupem Stanisławem zakończony wygnaniem władcy.</td><td></td></tr>
+        <tr><td>5. Ustawa sukcesyjna, której skutkiem było rozbicie dzielnicowe.</td><td></td></tr>
+        <tr><td>6. Koronacja w Krakowie w 1320 r.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XI. Ustawa sukcesyjna</h3><span class="points">0–5 p.</span></div>
+      <div class="quote">
+        Po śmierci władcy jego synowie mieli otrzymać osobne dzielnice. Najstarszy członek dynastii
+        miał sprawować władzę zwierzchnią i władać dzielnicą obejmującą m.in. Kraków.
+      </div>
+      <p class="source">Opis źródła: opracowanie własne na podstawie wiadomości o ustawie sukcesyjnej.</p>
+      <p>1. Podaj imię i przydomek autora ustawy. <span class="shortline" style="min-width:70mm"></span></p>
+      <p>2. Podaj rok wejścia ustawy w życie. <span class="shortline"></span></p>
+      <p>3. Jak nazywano zasadę, według której najstarszy Piast zostawał seniorem? <span class="shortline" style="min-width:48mm"></span></p>
+      <p>4. Jak nazywano zasadę zwierzchniej władzy seniora nad pozostałymi książętami? <span class="shortline" style="min-width:45mm"></span></p>
+      <p>5. Podaj najważniejszy długofalowy skutek ustawy. <span class="shortline" style="min-width:70mm"></span></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XII. Polska w XIV–XVI wieku</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Dopasuj władcę do wydarzenia. Wpisz litery A–F.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Kazimierz Wielki</div><div><strong>B</strong> – Władysław Jagiełło</div>
+        <div><strong>C</strong> – Kazimierz Jagiellończyk</div><div><strong>D</strong> – Zygmunt I Stary</div>
+        <div><strong>E</strong> – Zygmunt II August</div><div><strong>F</strong> – Stefan Batory</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Założenie Akademii Krakowskiej</td><td style="width:18mm"></td></tr>
+        <tr><td>2. Zwycięstwo pod Grunwaldem</td><td></td></tr>
+        <tr><td>3. Zakończenie wojny trzynastoletniej II pokojem toruńskim</td><td></td></tr>
+        <tr><td>4. Przyjęcie hołdu pruskiego</td><td></td></tr>
+        <tr><td>5. Zawarcie unii lubelskiej</td><td></td></tr>
+        <tr><td>6. Utworzenie piechoty wybranieckiej</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIII. Genealogia Jagiellonów</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Przeanalizuj uproszczony fragment drzewa genealogicznego i odpowiedz na pytania.</p>
+      <div class="tree">
+        <div class="row"><span class="person">Kazimierz IV Jagiellończyk</span><span class="join">×</span><span class="person">Elżbieta Rakuszanka</span></div>
+        <div>│</div>
+        <div class="row"><span class="person">Jan Olbracht</span><span class="person">Aleksander Jagiellończyk</span><span class="person">Zygmunt I Stary</span></div>
+        <div style="margin-left:210px">│ &nbsp; małż. Bona Sforza</div>
+        <div class="row" style="margin-left:210px"><span class="person">Zygmunt II August</span><span class="person">Anna Jagiellonka<br>× Stefan Batory</span></div>
+      </div>
+      <p class="source">Opracowanie własne; drzewo celowo pomija część potomstwa.</p>
+      <p>1. Kim Kazimierz IV był dla Zygmunta II Augusta? <span class="shortline"></span></p>
+      <p>2. Kim Anna Jagiellonka była dla Zygmunta II Augusta? <span class="shortline"></span></p>
+      <p>3. Wymień trzech synów Kazimierza IV pokazanych na schemacie, którzy zostali królami Polski.</p>
+      <div class="answer-space"></div>
+      <p>4. Kto był mężem Anny Jagiellonki? <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIV. Ustrój Rzeczypospolitej Obojga Narodów</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P albo F.</p>
+      <table class="compact">
+        <tr><td>1. Unia lubelska z 1569 r. była unią realną.</td><td style="width:18mm"></td></tr>
+        <tr><td>2. Korona i Litwa zachowały m.in. odrębne urzędy, skarb i wojsko.</td><td></td></tr>
+        <tr><td>3. Artykuły henrykowskie ustalano od nowa osobno dla każdego elekta.</td><td></td></tr>
+        <tr><td>4. Pacta conventa zawierały osobiste zobowiązania danego kandydata do tronu.</td><td></td></tr>
+        <tr><td>5. Liberum veto pozwalało jednemu posłowi zerwać sejm i unieważnić jego uchwały.</td><td></td></tr>
+        <tr><td>6. W wolnej elekcji prawo głosu mieli wyłącznie magnaci.</td><td></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XV. Wojny Rzeczypospolitej w XVII wieku</h3><span class="points">0–8 p.</span></div>
+      <p class="lead">Do każdej wojny dopasuj jedną bitwę (A–E) i jeden skutek lub układ (1–5). Jedna bitwa i jeden skutek są zbędne.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Kircholm (1605)</div><div><strong>B</strong> – Kłuszyn (1610)</div>
+        <div><strong>C</strong> – Wiedeń (1683)</div><div><strong>D</strong> – Żółte Wody (1648)</div>
+        <div><strong>E</strong> – Cedynia (972)</div>
+      </div>
+      <ol class="small">
+        <li>Pokój w Oliwie: Szwecja zachowała większość Inflant, a Jan II Kazimierz zrzekł się roszczeń do jej tronu.</li>
+        <li>Rozejm w Dywilinie: Rzeczpospolita uzyskała m.in. ziemię smoleńską, czernihowską i siewierską.</li>
+        <li>Ugoda w Perejasławiu: Kozacy uznali zwierzchnictwo cara.</li>
+        <li>Pokój w Karłowicach: Rzeczpospolita odzyskała Podole z Kamieńcem Podolskim.</li>
+        <li>II pokój toruński: Polska odzyskała Pomorze Gdańskie.</li>
+      </ol>
+      <table class="compact">
+        <tr><th>Konflikt</th><th style="width:30mm">Bitwa – litera</th><th style="width:32mm">Skutek – numer</th></tr>
+        <tr><td>wojny ze Szwecją</td><td></td><td></td></tr>
+        <tr><td>wojny z państwem moskiewskim</td><td></td><td></td></tr>
+        <tr><td>powstanie Chmielnickiego</td><td></td><td></td></tr>
+        <tr><td>wojny z Imperium Osmańskim</td><td></td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVI. Oświecenie i rewolucje XVIII wieku</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Dopasuj pojęcie, postać lub dokument do opisu. Wpisz litery A–F.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Monteskiusz</div><div><strong>B</strong> – Jean-Jacques Rousseau</div>
+        <div><strong>C</strong> – George Washington</div><div><strong>D</strong> – Deklaracja niepodległości</div>
+        <div><strong>E</strong> – Bastylia</div><div><strong>F</strong> – republika</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Autor koncepcji trójpodziału władzy.</td><td style="width:18mm"></td></tr>
+        <tr><td>2. Myśliciel kojarzony z ideą umowy społecznej i suwerenności ludu.</td><td></td></tr>
+        <tr><td>3. Dowódca armii kolonistów, następnie pierwszy prezydent USA.</td><td></td></tr>
+        <tr><td>4. Dokument ogłoszony 4 lipca 1776 r.</td><td></td></tr>
+        <tr><td>5. Twierdza-więzienie zdobyta 14 lipca 1789 r.</td><td></td></tr>
+        <tr><td>6. Ustrój ogłoszony we Francji po obaleniu monarchii w 1792 r.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVII. Ustawa Rządowa</h3><span class="points">0–8 p.</span></div>
+      <div class="quote">
+        „Wszelka władza społeczności ludzkiej początek swój bierze z woli narodu. [...]
+        Rząd Narodu Polskiego składać powinny [...] trzy władze: prawodawcza w stanach
+        zgromadzonych, najwyższa wykonawcza w królu i Straży i władza sądownicza
+        w jurysdykcjach”.
+      </div>
+      <p class="source">Ustawa Rządowa, rozdział V (pisownia uwspółcześniona; skróty zaznaczono).</p>
+      <p>1. Podaj zwyczajową nazwę dokumentu (1 p.) i pełną datę jego uchwalenia (1 p.).</p>
+      <div class="answer-space"></div>
+      <p>2. Jaką oświeceniową zasadę dotyczącą źródła władzy wyraża pierwsze zdanie? (1 p.)</p>
+      <div class="answer-space"></div>
+      <p>3. Przyporządkuj instytucje do rodzaju władzy: <strong>sejm</strong>, <strong>król i Straż Praw</strong>, <strong>sądy</strong>. (3 p.)</p>
+      <div class="answer-space two"></div>
+      <p>4. Wymień dwa mechanizmy ustrojowe zniesione przez ten dokument. (2 p.)</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVIII. Walka o niepodległość u schyłku XVIII wieku</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj pojęcie do opisu. Wpisz litery A–E.</p>
+      <div class="choices">
+        <div><strong>A</strong> – konfederacja targowicka</div><div><strong>B</strong> – Virtuti Militari</div>
+        <div><strong>C</strong> – Uniwersał połaniecki</div><div><strong>D</strong> – kosynierzy</div>
+        <div><strong>E</strong> – III rozbiór Polski</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Związek przeciwników Konstytucji 3 maja wsparty przez Katarzynę II.</td><td style="width:18mm"></td></tr>
+        <tr><td>2. Order wojskowy ustanowiony przez Stanisława Augusta po bitwie pod Zieleńcami.</td><td></td></tr>
+        <tr><td>3. Akt Tadeusza Kościuszki ograniczający powinności chłopów i zapewniający im opiekę państwa.</td><td></td></tr>
+        <tr><td>4. Chłopscy żołnierze uzbrojeni w przekute kosy.</td><td></td></tr>
+        <tr><td>5. Podział ziem Rzeczypospolitej w 1795 r., po którym państwo przestało istnieć.</td><td></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="page-break">
+    <h2>Karta odpowiedzi</h2>
+    <p class="muted">Jeżeli test jest przeprowadzany w warunkach konkursowych, odpowiedzi można przenieść na tę kartę.</p>
+    <table class="card compact">
+      <tr><th style="width:26mm">Zadanie</th><th>Odpowiedzi</th></tr>
+      <tr><td>I</td><td>1.__ 2.__ 3.__ 4.__ 5.__ 6.__ 7.__ 8.__ 9.__ 10.__</td></tr>
+      <tr><td>II</td><td>1.________ 2.________ 3.________ 4.________</td></tr>
+      <tr><td>III</td><td>1.________ 2.________ 3.________</td></tr>
+      <tr><td>IV</td><td>1.__ 2.__ 3.__ 4.__</td></tr>
+      <tr><td>V</td><td>1._____ 2._____ 3._____ 4._____ 5._____</td></tr>
+      <tr><td>VI</td><td>1.________ 2.________ 3.________ 4.________ 5.________ 6.________</td></tr>
+      <tr><td>VII</td><td>1.________ 2.________ 3.________________________________</td></tr>
+      <tr><td>VIII</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>IX</td><td>1.__ 2.__ 3.__ 4.__ 5.__ 6.__</td></tr>
+      <tr><td>X</td><td>1.__ 2.__ 3.__ 4.__ 5.__ 6.__</td></tr>
+      <tr><td>XI</td><td class="wide">1.____________ 2._____ 3.____________ 4.____________ 5.____________________</td></tr>
+      <tr><td>XII</td><td>1.__ 2.__ 3.__ 4.__ 5.__ 6.__</td></tr>
+      <tr><td>XIII</td><td class="wide">1.____________ 2.____________ 3.________________________________ 4.____________</td></tr>
+      <tr><td>XIV</td><td>1.__ 2.__ 3.__ 4.__ 5.__ 6.__</td></tr>
+      <tr><td>XV</td><td>Szwecja: __/__ &nbsp; Moskwa: __/__ &nbsp; Chmielnicki: __/__ &nbsp; Turcja: __/__</td></tr>
+      <tr><td>XVI</td><td>1.__ 2.__ 3.__ 4.__ 5.__ 6.__</td></tr>
+      <tr><td>XVII</td><td class="wide"></td></tr>
+      <tr><td>XVIII</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+    </table>
+    <p><strong>Wynik:</strong> <span class="shortline"></span> / 100 p.</p>
+    <p class="footer-note">Koniec arkusza. Sprawdź, czy odpowiedziałeś(-aś) na wszystkie pytania.</p>
+  </section>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Historia – etap szkolny – wariant C</title>
+  <style>
+    @page { size: A4; margin: 14mm 14mm 16mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+      font-size: 10.7pt; line-height: 1.34;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.08; margin-bottom: 5mm; color: #163a63; }
+    h2 { font-size: 15pt; color: #163a63; margin: 0 0 4mm; }
+    h3 { font-size: 11.4pt; margin: 0; color: #163a63; }
+    .cover {
+      min-height: 255mm; border: 2.2px solid #1f5a91; padding: 15mm 14mm;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { color: #9a5a00; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; }
+    .subtitle { font-size: 15pt; font-weight: 700; margin-bottom: 9mm; }
+    .meta {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm;
+      padding: 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 7mm;
+    }
+    .meta strong { color: #163a63; }
+    .code { border-bottom: 1px solid #172033; min-width: 55mm; display: inline-block; }
+    .notice { margin-top: auto; font-size: 9.2pt; color: #4c596b; }
+    .page-break { break-before: page; }
+    .instructions { padding: 5mm 6mm; background: #f6f3ed; border: 1px solid #d8cdb9; margin-bottom: 6mm; }
+    .instructions ol { margin: 2mm 0 0 6mm; padding-left: 4mm; }
+    .task {
+      border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+      border-radius: 2px; padding: 4mm 4.5mm; margin: 0 0 5mm;
+      break-inside: avoid;
+    }
+    .task-head {
+      display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 2.5mm;
+    }
+    .points { white-space: nowrap; font-weight: 700; color: #9a5a00; }
+    .lead { font-weight: 700; }
+    .source { font-size: 8.4pt; color: #5c6878; margin: 2mm 0; }
+    table { width: 100%; border-collapse: collapse; margin: 2.5mm 0; }
+    th, td { border: 1px solid #8090a2; padding: 2.2mm; vertical-align: top; }
+    th { background: #eaf1f7; color: #163a63; text-align: left; }
+    .compact th, .compact td { padding: 1.5mm 2mm; }
+    .choices { columns: 2; column-gap: 8mm; margin: 2mm 0; }
+    .choices div { break-inside: avoid; margin-bottom: 1mm; }
+    .shortline { display: inline-block; border-bottom: 1px dotted #566273; min-width: 30mm; height: 5mm; }
+    .answer-space { border-bottom: 1px dotted #566273; min-height: 8mm; margin-top: 1.5mm; }
+    .answer-space.two { min-height: 16mm; }
+    .quote {
+      background: #f7f8fa; border-left: 4px solid #9a5a00; padding: 3mm 4mm;
+      font-family: Georgia, serif; font-size: 10.2pt; margin: 3mm 0;
+    }
+    .quote p { margin: 0 0 2mm; }
+    .quote p:last-child { margin-bottom: 0; }
+    .svg-wrap { border: 1px solid #c5ced8; background: #fbfcfd; padding: 2mm; margin: 3mm 0; text-align: center; }
+    .map-image { display: block; width: 100%; height: auto; }
+    .art-image { display: block; margin: 0 auto; max-height: 92mm; max-width: 100%; }
+    .small { font-size: 9pt; }
+    .muted { color: #5c6878; }
+    .pick { font-weight: 700; color: #163a63; }
+    .krzyzowka { width: auto; margin: 3mm 0; border-collapse: collapse; }
+    .krzyzowka td {
+      width: 6.5mm; height: 6.5mm; border: 1px solid #66748a; padding: 0;
+      text-align: center; font-weight: 700;
+    }
+    .krzyzowka td.numer {
+      width: 7mm; border: none; text-align: right; padding-right: 1.5mm; font-weight: 400;
+    }
+    .krzyzowka td.haslo { background: #f5e3c8; }
+    .card td { height: 8mm; }
+    .card .wide { height: 14mm; }
+    .footer-note { font-size: 8.5pt; color: #606b79; border-top: 1px solid #c7cfd8; padding-top: 2mm; }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="eyebrow">Arkusz treningowy • wariant C</div>
+    <h1>Wojewódzki Konkurs Przedmiotowy z Historii</h1>
+    <div class="subtitle">Etap I – szkolny</div>
+    <div class="meta">
+      <div><strong>Zakres:</strong> działy I–XVII podstawy programowej</div>
+      <div><strong>Czas pracy:</strong> 60 minut</div>
+      <div><strong>Liczba zadań:</strong> 19</div>
+      <div><strong>Maksymalna liczba punktów:</strong> 100</div>
+      <div><strong>Wariant:</strong> C</div>
+      <div><strong>Ziarno wariantu:</strong> 2026-09-09-C</div>
+    </div>
+    <p><strong>KOD UCZNIA:</strong> <span class="code">&nbsp;</span></p>
+    <div class="instructions">
+      <h2>Instrukcja dla ucznia</h2>
+      <ol>
+        <li>Sprawdź, czy arkusz zawiera 19 zadań i kartę odpowiedzi.</li>
+        <li>Czytaj uważnie polecenia. Odpowiadaj wyłącznie w miejscach do tego przeznaczonych.</li>
+        <li>Jeśli polecenie nie stanowi inaczej, za każdy poprawnie uzupełniony element otrzymujesz 1 punkt.</li>
+        <li>W zadaniach P/F wpisz <strong>P</strong> (prawda) albo <strong>F</strong> (fałsz).</li>
+        <li>Nie używaj korektora ani urządzeń elektronicznych.</li>
+        <li>Pracuj samodzielnie. Na rozwiązanie testu masz 60 minut.</li>
+      </ol>
+    </div>
+    <p class="notice">
+      Materiał autorski do ćwiczeń, opracowany na podstawie regulaminu szczegółowego oraz
+      archiwalnych arkuszy etapu szkolnego Kujawsko-Pomorskiego Kuratora Oświaty
+      z lat 2018/2019–2025/2026. Nie jest oficjalnym arkuszem konkursowym.
+    </p>
+  </section>
+
+  <section class="page-break">
+    <div class="task">
+      <div class="task-head"><h3>Zadanie I. Cywilizacje starożytne</h3><span class="points">0–7 p.</span></div>
+      <p class="lead">Uzupełnij tabelę. W puste pola wpisz brakujące informacje.</p>
+      <table class="compact">
+        <tr><th style="width:38mm">Cywilizacja</th><th>Rzeka lub rzeki, nad którymi się rozwinęła</th><th>Pismo lub święta księga</th></tr>
+        <tr><td>Mezopotamia</td><td>1.</td><td>2.</td></tr>
+        <tr><td>Egipt</td><td>3.</td><td>4.</td></tr>
+        <tr><td>Indie</td><td>5.</td><td class="muted">pismo indyjskie</td></tr>
+        <tr><td>Chiny</td><td>6.</td><td class="muted">pismo obrazkowe</td></tr>
+        <tr><td>Izrael</td><td class="muted">Jordan</td><td>7.</td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie II. Starożytna Grecja</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">W każdym pytaniu poprawna jest tylko jedna odpowiedź. Zaznacz właściwą literę.</p>
+      <table class="compact">
+        <tr><td>1. Ustrój, w którym o sprawach polis decydowało zgromadzenie wszystkich obywateli, to:<br>
+          <strong>A.</strong> oligarchia &nbsp; <strong>B.</strong> demokracja bezpośrednia &nbsp;
+          <strong>C.</strong> monarchia &nbsp; <strong>D.</strong> tyrania</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Polis słynąca z surowego wychowania wojskowego to:<br>
+          <strong>A.</strong> Ateny &nbsp; <strong>B.</strong> Korynt &nbsp;
+          <strong>C.</strong> Sparta &nbsp; <strong>D.</strong> Teby</td><td></td></tr>
+        <tr><td>3. Igrzyska w Olimpii organizowano ku czci boga:<br>
+          <strong>A.</strong> Apollina &nbsp; <strong>B.</strong> Posejdona &nbsp;
+          <strong>C.</strong> Hadesa &nbsp; <strong>D.</strong> Zeusa</td><td></td></tr>
+        <tr><td>4. Bitwa z 490 r. p.n.e., w której Ateńczycy pokonali Persów, to bitwa pod:<br>
+          <strong>A.</strong> Termopilami &nbsp; <strong>B.</strong> Maratonem &nbsp;
+          <strong>C.</strong> Salaminą &nbsp; <strong>D.</strong> Cheroneą</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie III. Starożytny Rzym</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Dopisz pojęcie pasujące do opisu.</p>
+      <table class="compact">
+        <tr><td>1. Najwyższy urząd w republice rzymskiej, sprawowany przez dwie osoby wybierane na rok.</td><td style="width:38mm"></td></tr>
+        <tr><td>2. Urzędnik broniący interesów plebejuszy, który mógł zgłosić sprzeciw wobec decyzji innych urzędników.</td><td></td></tr>
+        <tr><td>3. Urzędnik powoływany na pół roku w chwili zagrożenia państwa, dysponujący władzą nieograniczoną.</td><td></td></tr>
+        <tr><td>4. Uboższa grupa obywateli rzymskich, która przez wieki walczyła o równouprawnienie z patrycjuszami.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IV. Religie starożytności</h3><span class="points">0–3 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P albo F.</p>
+      <table class="compact">
+        <tr><td>1. Judaizm był religią monoteistyczną, czyli opartą na wierze w jednego Boga.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Edykt mediolański, wydany przez Konstantyna Wielkiego, zapewnił chrześcijanom swobodę wyznania.</td><td></td></tr>
+        <tr><td>3. Chrześcijaństwo stało się religią panującą w cesarstwie rzymskim już w I wieku n.e.</td><td></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="task">
+      <div class="task-head"><h3>Zadanie V. Bizancjum, świat islamu i wyprawy krzyżowe</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Na mapie oznaczono pięć miejsc. Do każdego opisu dopisz właściwy numer 1–5.</p>
+      <div class="svg-wrap">
+        <img class="map-image" src="assets/mediterranean_blank_variant_C.svg"
+             alt="Mapa basenu Morza Śródziemnego z pięcioma miejscami oznaczonymi numerami od 1 do 5">
+      </div>
+      <p class="source">Mapa bazowa: TheDastanMR, Wikimedia Commons, CC0 1.0; oznaczenia i opracowanie zadania: własne.</p>
+      <table class="compact">
+        <tr><td>A. Stolica kalifatu w muzułmańskiej Hiszpanii, znany ośrodek nauki i kultury.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Miejsce bitwy z 732 r., w której Frankowie pod wodzą Karola Młota zatrzymali ekspansję arabską.</td><td></td></tr>
+        <tr><td>C. Republika kupiecka, której flota przewiozła uczestników IV wyprawy krzyżowej.</td><td></td></tr>
+        <tr><td>D. Stolica cesarstwa bizantyjskiego, zdobyta i splądrowana przez krzyżowców w 1204 r.</td><td></td></tr>
+        <tr><td>E. Cel I wyprawy krzyżowej, zdobyty przez krzyżowców w 1099 r.</td><td></td></tr>
+      </table>
+      <p>F. Podaj wiek, w którym wyruszyła I wyprawa krzyżowa. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VI. Cesarstwo i papiestwo</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj postać do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Karol Wielki</div><div><strong>B</strong> – Grzegorz VII</div>
+        <div><strong>C</strong> – Urban II</div><div><strong>D</strong> – Henryk IV</div>
+        <div><strong>E</strong> – Justynian Wielki</div><div><strong>F</strong> – Mahomet</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Cesarz, który w 1077 r. w Canossie ukorzył się przed papieżem.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Król Franków koronowany na cesarza w 800 r.</td><td></td></tr>
+        <tr><td>3. Papież, który na synodzie w Clermont wezwał do wyprawy do Ziemi Świętej.</td><td></td></tr>
+        <tr><td>4. Papież, który zakazał świeckim nadawania godności kościelnych, co wywołało spór o inwestyturę.</td><td></td></tr>
+        <tr><td>5. Cesarz bizantyjski, na którego polecenie zebrano i uporządkowano prawo rzymskie.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VII. Życie w średniowieczu</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Dopisz pojęcie pasujące do opisu.</p>
+      <table class="compact">
+        <tr><td>1. Prawo miejskie wzorowane na rozwiązaniach niemieckiego Magdeburga, na którym lokowano miasta.</td><td style="width:38mm"></td></tr>
+        <tr><td>2. Danina w wysokości jednej dziesiątej plonów oddawana Kościołowi.</td><td></td></tr>
+        <tr><td>3. Zakony utrzymujące się z jałmużny i głoszące kazania, na przykład franciszkanie i dominikanie.</td><td></td></tr>
+        <tr><td>4. Wędrówka podejmowana w celach religijnych do miejsca świętego, np. do Santiago de Compostela.</td><td></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VIII. Polska pierwszych Piastów</h3><span class="points">0–8 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdym nawiasie podkreśl lub zapisz jedną poprawną odpowiedź.</p>
+      <p>
+        Pierwszym historycznym władcą Polski był <span class="pick">(1. Mieszko I / Bolesław Chrobry)</span>.
+        W 966 r. przyjął chrzest, a jego żoną była czeska księżniczka
+        <span class="pick">(2. Dobrawa / Rycheza)</span>. W 972 r. pokonał wojska margrabiego Hodona
+        w bitwie pod <span class="pick">(3. Cedynią / Legnicą)</span>. Jego syn koronował się na króla
+        w <span class="pick">(4. 1025 / 1076)</span> r., na krótko przed swoją śmiercią.
+        Po okresie kryzysu państwo odbudował <span class="pick">(5. Kazimierz Odnowiciel / Władysław Herman)</span>,
+        a jego główną siedzibą stał się <span class="pick">(6. Kraków / Poznań)</span>.
+        Testament z 1138 r., dzielący kraj między synów, ogłosił
+        <span class="pick">(7. Bolesław Krzywousty / Bolesław Śmiały)</span>, co rozpoczęło okres
+        <span class="pick">(8. rozbicia dzielnicowego / wojen z Krzyżakami)</span>.
+      </p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IX. Od rozbicia dzielnicowego do zjednoczenia</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uporządkuj wydarzenia chronologicznie. Wpisz cyfry od 1 (najwcześniejsze) do 6 (najpóźniejsze).</p>
+      <table class="compact">
+        <tr><td>A. Sprowadzenie Krzyżaków do Polski przez Konrada Mazowieckiego.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Bitwa pod Legnicą stoczona z Mongołami.</td><td></td></tr>
+        <tr><td>C. Ogłoszenie testamentu Bolesława Krzywoustego.</td><td></td></tr>
+        <tr><td>D. Koronacja Władysława Łokietka na króla Polski.</td><td></td></tr>
+        <tr><td>E. Zawarcie pokoju w Kaliszu z Krzyżakami.</td><td></td></tr>
+        <tr><td>F. Zajęcie Pomorza Gdańskiego przez Krzyżaków.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie X. Kazimierz Wielki i Andegawenowie</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P albo F.</p>
+      <table class="compact">
+        <tr><td>1. Kazimierz Wielki ufundował w 1364 r. uniwersytet w Krakowie.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Za panowania Kazimierza Wielkiego Polska odzyskała Pomorze Gdańskie.</td><td></td></tr>
+        <tr><td>3. Kazimierz Wielki przyłączył do Polski Ruś Halicką.</td><td></td></tr>
+        <tr><td>4. Statuty wiślicko-piotrkowskie ujednoliciły prawo obowiązujące w państwie.</td><td></td></tr>
+        <tr><td>5. Po śmierci Kazimierza Wielkiego tron objął jego siostrzeniec Ludwik Węgierski.</td><td></td></tr>
+        <tr><td>6. Przywilej koszycki z 1374 r. rozszerzył uprawnienia mieszczan.</td><td></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XI. Wielkie odkrycia geograficzne</h3><span class="points">0–7 p.</span></div>
+      <p class="lead">Rozwiąż krzyżówkę, a następnie wyjaśnij znaczenie hasła z zaznaczonej kolumny.</p>
+      <table class="compact" style="margin-bottom:2mm">
+        <tr><td>1. Szybki statek żaglowy używany przez portugalskich i hiszpańskich odkrywców.</td></tr>
+        <tr><td>2. Wielki zbiornik wodny, Atlantycki, przez który w 1492 r. płynął Krzysztof Kolumb.</td></tr>
+        <tr><td>3. Portugalski żeglarz, który rozpoczął pierwszą wyprawę dookoła świata.</td></tr>
+        <tr><td>4. Państwo na Półwyspie Iberyjskim, z którego wyruszył Vasco da Gama.</td></tr>
+        <tr><td>5. Lud Ameryki Środkowej podbity przez Hernána Cortésa.</td></tr>
+        <tr><td>6. Kruszec, obok złota masowo wywożony z Ameryki do Europy.</td></tr>
+      </table>
+      <table class="krzyzowka">
+        <tr><td class="numer">1.</td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">2.</td><td class="haslo"></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">3.</td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">4.</td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">5.</td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">6.</td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td></tr>
+      </table>
+      <p>Hasło: <span class="shortline"></span></p>
+      <p>Wyjaśnij, czym było hasło i jakie miało znaczenie dla dalekomorskich wypraw. (1 p.)</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XII. Reformacja</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń, czy podane zjawisko było przyczyną (P), czy skutkiem (S) reformacji.</p>
+      <table class="compact">
+        <tr><td>1. Sprzedaż odpustów i nadużycia w Kościele.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Powstanie kościołów protestanckich: luterańskiego i kalwińskiego.</td><td></td></tr>
+        <tr><td>3. Zwołanie soboru trydenckiego i reforma Kościoła katolickiego.</td><td></td></tr>
+        <tr><td>4. Upowszechnienie druku, które ułatwiło szybkie rozpowszechnianie pism.</td><td></td></tr>
+        <tr><td>5. Wojny religijne w Rzeszy, zakończone pokojem augsburskim.</td><td></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIII. Obraz jako źródło historyczne</h3><span class="points">0–5 p.</span></div>
+      <img class="art-image" src="assets/kopernik_matejko_1200.jpg"
+           alt="Obraz Jana Matejki przedstawiający uczonego obserwującego niebo z tarasu wieży">
+      <p class="source">Jan Matejko, „Astronom Kopernik, czyli rozmowa z Bogiem”, 1873 r.,
+        Collegium Novum Uniwersytetu Jagiellońskiego. Reprodukcja: Wikimedia Commons, domena publiczna.</p>
+      <p>1. Podaj imię i nazwisko uczonego przedstawionego na obrazie. <span class="shortline"></span></p>
+      <p>2. Podaj tytuł jego dzieła, w którym ogłosił swoją teorię. <span class="shortline"></span></p>
+      <p>3. Wyjaśnij krótko, na czym polegała teoria heliocentryczna.</p>
+      <div class="answer-space"></div>
+      <p>4. Podaj imię i nazwisko malarza, który namalował ten obraz. <span class="shortline"></span></p>
+      <p>5. Podaj rok wydania dzieła wymienionego w pytaniu 2. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIV. Analiza tekstu źródłowego</h3><span class="points">0–6 p.</span></div>
+      <div class="quote">
+        <p>„1. Iż za żywota naszego my i potomkowie nasi [...] nie mamy mianować ani obierać jakiego
+          [...] króla [...], a to dlatego, aby zawdy wiecznymi czasy po zejściu naszym [...] wolne
+          obieranie zostało wszem stanom koronnym [...].</p>
+        <p>4. O wojnie albo ruszeniu pospolitym nic zaczynać nie mamy [bez pozwolenia sejmu] [...].</p>
+        <p>9. Sejm walny [...] we dwie lecie najdalej być ma składan [...].</p>
+        <p>21. A jeślibyśmy [...] co przeciw prawom, wolnościom, artykułom [...] wykroczyli albo czego
+          nie wypełnili, tedy obywatele koronni obojga narodu od posłuszeństwa i wiary nam powinnej
+          wolne czyniemy [...]”.</p>
+      </div>
+      <p class="source">Dokument z 1573 r. Cyt. za: <em>Wiek XVI–XVIII w źródłach</em>, oprac. M. Sobańska-Bondaruk,
+        S.B. Lenard, Warszawa 1999, s. 108–110 (pisownia uwspółcześniona, skróty zaznaczono).
+        Objaśnienia: <em>zawdy</em> – zawsze, <em>we dwie lecie</em> – co dwa lata, <em>składan</em> – zwoływany.</p>
+      <p>1. Podaj nazwę dokumentu (1 p.) i rok jego uchwalenia (1 p.).</p>
+      <div class="answer-space"></div>
+      <p>2. Jaką zasadę wyboru władcy gwarantuje punkt 1? (1 p.)</p>
+      <div class="answer-space"></div>
+      <p>3. Kto – zgodnie z punktem 4 – decydował o rozpoczęciu wojny? (1 p.)</p>
+      <div class="answer-space"></div>
+      <p>4. Co, zgodnie z punktem 9, miało się odbywać co dwa lata? (1 p.)</p>
+      <div class="answer-space"></div>
+      <p>5. Jakie prawo przysługiwało szlachcie na mocy punktu 21? (1 p.)</p>
+      <div class="answer-space"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XV. Traktaty i rozejmy XVII wieku</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Dopasuj układ do jego postanowień. Wpisz litery A–G. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – rozejm w Dywilinie</div><div><strong>B</strong> – ugoda w Perejasławiu</div>
+        <div><strong>C</strong> – pokój w Oliwie</div><div><strong>D</strong> – rozejm w Andruszowie</div>
+        <div><strong>E</strong> – rozejm w Buczaczu</div><div><strong>F</strong> – pokój w Karłowicach</div>
+        <div><strong>G</strong> – pokój w Toruniu</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Jan Kazimierz zrzekł się pretensji do tronu szwedzkiego, co zakończyło potop.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Rzeczpospolita oddała Rosji Smoleńsk, Kijów i ziemie na lewym brzegu Dniepru.</td><td></td></tr>
+        <tr><td>3. Kozacy Bohdana Chmielnickiego uznali zwierzchnictwo cara.</td><td></td></tr>
+        <tr><td>4. Rzeczpospolita utraciła Podole z Kamieńcem Podolskim i zobowiązała się do haraczu.</td><td></td></tr>
+        <tr><td>5. Rzeczpospolita odzyskała Podole wraz z Kamieńcem Podolskim.</td><td></td></tr>
+        <tr><td>6. Rozejm z Moskwą zawarty po wyprawie królewicza Władysława, korzystny dla Rzeczypospolitej.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVI. Powstanie Stanów Zjednoczonych</h3><span class="points">0–4 p.</span></div>
+      <p>1. Podaj rok ogłoszenia Deklaracji niepodległości Stanów Zjednoczonych. <span class="shortline"></span></p>
+      <p>2. Podaj imię i nazwisko pierwszego prezydenta Stanów Zjednoczonych. <span class="shortline"></span></p>
+      <p>3. Wymień dwóch Polaków, którzy walczyli o niepodległość Stanów Zjednoczonych. (2 p.)</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVII. Wielka rewolucja we Francji</h3><span class="points">0–3 p.</span></div>
+      <p>1. Podaj dzień, miesiąc i rok zdobycia Bastylii. <span class="shortline"></span></p>
+      <p>2. Podaj nazwę dokumentu ogłoszonego w sierpniu 1789 r., który głosił wolność i równość wobec prawa.</p>
+      <div class="answer-space"></div>
+      <p>3. Podaj trzyczłonowe hasło rewolucji francuskiej. <span class="shortline"></span></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVIII. Sejm Wielki i Konstytucja 3 maja</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P albo F.</p>
+      <table class="compact">
+        <tr><td>1. Sejm Wielki obradował w latach 1788–1792.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Marszałkiem Sejmu Wielkiego ze strony koronnej był Stanisław Małachowski.</td><td></td></tr>
+        <tr><td>3. Sejm Wielki uchwalił powiększenie armii do 100 tysięcy żołnierzy.</td><td></td></tr>
+        <tr><td>4. Konstytucja 3 maja utrzymała wolną elekcję.</td><td></td></tr>
+        <tr><td>5. Konstytucja 3 maja zniosła liberum veto.</td><td></td></tr>
+        <tr><td>6. Konstytucja 3 maja wprowadziła trójpodział władzy.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIX. Upadek Rzeczypospolitej</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj datę roczną do wydarzenia. Każdej daty użyj tylko raz.</p>
+      <p><strong>Daty:</strong> 1772 &bull; 1792 &bull; 1793 &bull; 1794 &bull; 1795</p>
+      <table class="compact">
+        <tr><td>1. I rozbiór Polski.</td><td style="width:20mm"></td></tr>
+        <tr><td>2. Zawiązanie konfederacji targowickiej.</td><td></td></tr>
+        <tr><td>3. II rozbiór Polski.</td><td></td></tr>
+        <tr><td>4. Przysięga Tadeusza Kościuszki na rynku w Krakowie.</td><td></td></tr>
+        <tr><td>5. III rozbiór Polski.</td><td></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="page-break">
+    <h2>Karta odpowiedzi</h2>
+    <p class="muted">Jeżeli test jest przeprowadzany w warunkach konkursowych, odpowiedzi można przenieść na tę kartę.</p>
+    <table class="card compact">
+      <tr><th style="width:26mm">Zadanie</th><th>Odpowiedzi</th></tr>
+      <tr><td>I</td><td class="wide">1.__________ 2.__________ 3.__________ 4.__________ 5.__________ 6.__________ 7.__________</td></tr>
+      <tr><td>II</td><td>1.__ 2.__ 3.__ 4.__</td></tr>
+      <tr><td>III</td><td class="wide">1.____________ 2.____________ 3.____________ 4.____________</td></tr>
+      <tr><td>IV</td><td>1.__ 2.__ 3.__</td></tr>
+      <tr><td>V</td><td>A.__ B.__ C.__ D.__ E.__ &nbsp; F.________</td></tr>
+      <tr><td>VI</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>VII</td><td class="wide">1.____________ 2.____________ 3.____________ 4.____________</td></tr>
+      <tr><td>VIII</td><td class="wide">1._______ 2._______ 3._______ 4._______ 5._______ 6._______ 7._______ 8._______</td></tr>
+      <tr><td>IX</td><td>A.__ B.__ C.__ D.__ E.__ F.__</td></tr>
+      <tr><td>X</td><td>1.__ 2.__ 3.__ 4.__ 5.__ 6.__</td></tr>
+      <tr><td>XI</td><td class="wide">1._______ 2._______ 3._______ 4._______ 5._______ 6._______ &nbsp; hasło: _______</td></tr>
+      <tr><td>XII</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>XIII</td><td class="wide">1.____________ 2.____________ 4.____________ 5.______
+        <span class="muted small">(odpowiedź na pytanie 3. zapisz w arkuszu)</span></td></tr>
+      <tr><td>XIV</td><td class="wide"><span class="muted small">odpowiedzi zapisz w arkuszu</span></td></tr>
+      <tr><td>XV</td><td>1.__ 2.__ 3.__ 4.__ 5.__ 6.__</td></tr>
+      <tr><td>XVI</td><td>1._______ 2.____________ 3.____________________</td></tr>
+      <tr><td>XVII</td><td class="wide">1.____________ 2.____________________ 3.____________________</td></tr>
+      <tr><td>XVIII</td><td>1.__ 2.__ 3.__ 4.__ 5.__ 6.__</td></tr>
+      <tr><td>XIX</td><td>1._____ 2._____ 3._____ 4._____ 5._____</td></tr>
+    </table>
+    <p><strong>Wynik:</strong> <span class="shortline"></span> / 100 p.</p>
+    <p class="footer-note">Koniec arkusza. Sprawdź, czy odpowiedziałeś(-aś) na wszystkie pytania.</p>
+  </section>
+</body>
+</html>

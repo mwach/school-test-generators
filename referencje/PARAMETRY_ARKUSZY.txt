@@ -1,0 +1,26 @@
+plik                                  etap        typ      zadań   pkt   deklarowane     czas
+---------------------------------------------------------------------------------------------
+2017-2018-gim-rejonowy-historia-a     rejonowy    arkusz      18   100  18 zad./9 s.   90 min
+2017-2018-gim-rejonowy-historia-k     rejonowy    klucz       18   100             -        -
+2017-2018-gim-wojewodzki-historia-a   wojewódzki  arkusz      18   120  18 zad./9 s.   90 min
+2017-2018-gim-wojewodzki-historia-k   wojewódzki  klucz       18   120             -        -
+2018-2019-rejonowy-historia-a         rejonowy    arkusz      17   100 17 zad./11 s.   90 min
+2018-2019-rejonowy-historia-k         rejonowy    klucz       17   100             -        -
+2018-2019-szkolny-historia-a          szkolny     arkusz      20   100  20 zad./8 s.   60 min
+2018-2019-szkolny-historia-k          szkolny     klucz       20   100             -        -
+2019-2020-rejonowy-historia-a         rejonowy    arkusz      19   100  19 zad./9 s.   90 min
+2019-2020-rejonowy-historia-k         rejonowy    klucz       19   100             -        -
+2019-2020-szkolny-historia-a          szkolny     arkusz      21   100  21 zad./8 s.   60 min
+2019-2020-szkolny-historia-k          szkolny     klucz       21    99             -        -
+2022-2023-rejonowy-historia-a         rejonowy    arkusz      20   100             -   60 min
+2022-2023-rejonowy-historia-k         rejonowy    klucz       20   100             -   60 min
+2022-2023-szkolny-historia-a          szkolny     arkusz      21   100             -   60 min
+2022-2023-szkolny-historia-k          szkolny     klucz       21   100             -   60 min
+2023-2024-rejonowy-historia-a         rejonowy    arkusz      19   100             -   60 min
+2023-2024-rejonowy-historia-k         rejonowy    klucz       19   100             -   60 min
+2023-2024-szkolny-historia-a          szkolny     arkusz      19   100  19 zad./9 s.   60 min
+2023-2024-szkolny-historia-k          szkolny     klucz       19   100             -        -
+2024-2025-szkolny-historia-a          szkolny     arkusz      19   100 19 zad./14 s.   60 min
+2024-2025-szkolny-historia-k          szkolny     klucz       12    64             -        -
+2025-2026-szkolny-historia-a          szkolny     arkusz      18   100 18 zad./13 s.   60 min
+2025-2026-szkolny-historia-k          szkolny     klucz       18    99             -        -

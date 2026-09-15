@@ -1,0 +1,3247 @@
+{
+  "granica_zakresu": 1795,
+  "typy": [
+    "cywilizacje i państwa",
+    "władcy i dynastie",
+    "ustrój i prawo",
+    "wojny i bitwy",
+    "dyplomacja i traktaty",
+    "religia i Kościół",
+    "kultura i nauka",
+    "odkrycia i gospodarka"
+  ],
+  "pozycje": [
+    {
+      "sort": -3000,
+      "data": "ok. 3000 p.n.e.",
+      "wydarzenie": "Zjednoczenie Egiptu; powstanie pisma klinowego w Mezopotamii",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "cywilizacje i państwa",
+      "warianty": [],
+      "hasla": [
+        "klinow",
+        "hieroglif"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "E"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -2700,
+      "data": "ok. 2700–1400 p.n.e.",
+      "wydarzenie": "Cywilizacja minojska na Krecie – najstarsza cywilizacja Europy",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "cywilizacje i państwa",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "krecie",
+        "minojs"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [
+        "F"
+      ],
+      "ryzyko": "niskie",
+      "status": "wolne"
+    },
+    {
+      "sort": -1792,
+      "data": "1792–1750 p.n.e.",
+      "wydarzenie": "Panowanie Hammurabiego w Babilonie; kodeks Hammurabiego",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "B"
+      ],
+      "hasla": [
+        "babilo",
+        "hammur"
+      ],
+      "rok_w_arkuszu": [
+        "B"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "D",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -776,
+      "data": "776 p.n.e.",
+      "wydarzenie": "Pierwsze udokumentowane igrzyska olimpijskie w Grecji",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "kultura i nauka",
+      "warianty": [
+        "B"
+      ],
+      "hasla": [
+        "grecji",
+        "igrzys"
+      ],
+      "rok_w_arkuszu": [
+        "B"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "C",
+        "D",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -753,
+      "data": "753 p.n.e.",
+      "wydarzenie": "Tradycyjna data założenia Rzymu",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "cywilizacje i państwa",
+      "warianty": [
+        "B",
+        "D"
+      ],
+      "hasla": [
+        "rzymu",
+        "tradyc"
+      ],
+      "rok_w_arkuszu": [
+        "B"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -490,
+      "data": "490 p.n.e.",
+      "wydarzenie": "Bitwa pod Maratonem (wojny grecko-perskie)",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [
+        "marato"
+      ],
+      "rok_w_arkuszu": [
+        "C"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -480,
+      "data": "480 p.n.e.",
+      "wydarzenie": "Bitwy pod Termopilami i pod Salaminą",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [],
+      "hasla": [
+        "salami",
+        "termop"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "C",
+        "D"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -431,
+      "data": "431–404 p.n.e.",
+      "wydarzenie": "Wojna peloponeska; zwycięstwo Sparty nad Atenami",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "E"
+      ],
+      "hasla": [
+        "atenam",
+        "pelopo",
+        "sparty"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "D",
+        "E",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -334,
+      "data": "334 p.n.e.",
+      "wydarzenie": "Początek wyprawy Aleksandra Wielkiego przeciw Persji",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [],
+      "hasla": [
+        "aleksa",
+        "persji"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "D",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -264,
+      "data": "264–241 p.n.e.",
+      "wydarzenie": "Pierwsza wojna punicka",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "punick"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "D",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -218,
+      "data": "218 p.n.e.",
+      "wydarzenie": "Przeprawa Hannibala przez Alpy",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "hannib",
+        "punick"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "D",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -217,
+      "data": "218–201 p.n.e.",
+      "wydarzenie": "Druga wojna punicka",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "druga",
+        "punick"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "D",
+        "E",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -216,
+      "data": "216 p.n.e.",
+      "wydarzenie": "Bitwa pod Kannami – największa klęska Rzymian",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "kannam",
+        "rzymia",
+        "punick"
+      ],
+      "rok_w_arkuszu": [
+        "F"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "D",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -202,
+      "data": "202 p.n.e.",
+      "wydarzenie": "Bitwa pod Zamą; zwycięstwo Scypiona Afrykańskiego nad Hannibalem",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "afryka",
+        "hannib",
+        "scypio",
+        "punick"
+      ],
+      "rok_w_arkuszu": [
+        "F"
+      ],
+      "nazwa_w_arkuszu": [
+        "D"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -149,
+      "data": "149–146 p.n.e.",
+      "wydarzenie": "Trzecia wojna punicka",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "punick"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "D",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -146,
+      "data": "146 p.n.e.",
+      "wydarzenie": "Zburzenie Kartaginy",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "kartag",
+        "punick"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "D",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -44,
+      "data": "44 p.n.e.",
+      "wydarzenie": "Zabójstwo Juliusza Cezara (Idy marcowe)",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "władcy i dynastie",
+      "warianty": [],
+      "hasla": [
+        "cezara",
+        "julius",
+        "zabójs"
+      ],
+      "rok_w_arkuszu": [
+        "B"
+      ],
+      "nazwa_w_arkuszu": [
+        "D"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": -31,
+      "data": "31 p.n.e.",
+      "wydarzenie": "Bitwa pod Akcjum – początek cesarstwa rzymskiego",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "cywilizacje i państwa",
+      "warianty": [],
+      "hasla": [
+        "akcjum"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [],
+      "ryzyko": "brak",
+      "status": "wolne"
+    },
+    {
+      "sort": 313,
+      "data": "313",
+      "wydarzenie": "Edykt mediolański – koniec prześladowań chrześcijan",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "C",
+        "E"
+      ],
+      "hasla": [
+        "mediol"
+      ],
+      "rok_w_arkuszu": [
+        "E"
+      ],
+      "nazwa_w_arkuszu": [
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 395,
+      "data": "395",
+      "wydarzenie": "Podział cesarstwa rzymskiego na wschodnie i zachodnie",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "cywilizacje i państwa",
+      "warianty": [
+        "E"
+      ],
+      "hasla": [
+        "podzia"
+      ],
+      "rok_w_arkuszu": [
+        "E"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "C",
+        "D",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 476,
+      "data": "476",
+      "wydarzenie": "Upadek cesarstwa zachodniorzymskiego – koniec starożytności",
+      "epoka": "Starożytność",
+      "obszar": "powszechna",
+      "typ": "cywilizacje i państwa",
+      "warianty": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "hasla": [
+        "upadek"
+      ],
+      "rok_w_arkuszu": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "nazwa_w_arkuszu": [
+        "C",
+        "F",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 496,
+      "data": "496",
+      "wydarzenie": "Chrzest Chlodwiga – początek chrześcijańskiego państwa Franków",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "E"
+      ],
+      "hasla": [
+        "chlodw",
+        "frankó"
+      ],
+      "rok_w_arkuszu": [
+        "E"
+      ],
+      "nazwa_w_arkuszu": [
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 622,
+      "data": "622",
+      "wydarzenie": "Hidżra – ucieczka Mahometa z Mekki do Medyny, początek ery muzułmańskiej",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "A"
+      ],
+      "hasla": [
+        "hidżra",
+        "mahome",
+        "medyny",
+        "mekki"
+      ],
+      "rok_w_arkuszu": [
+        "A"
+      ],
+      "nazwa_w_arkuszu": [
+        "B",
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 732,
+      "data": "732",
+      "wydarzenie": "Bitwa pod Poitiers – Karol Młot zatrzymuje ekspansję arabską",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "B",
+        "C",
+        "E"
+      ],
+      "hasla": [
+        "karol",
+        "poitie"
+      ],
+      "rok_w_arkuszu": [
+        "B",
+        "C",
+        "E"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "D",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 800,
+      "data": "800",
+      "wydarzenie": "Koronacja cesarska Karola Wielkiego",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "władcy i dynastie",
+      "warianty": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "hasla": [
+        "karola"
+      ],
+      "rok_w_arkuszu": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "nazwa_w_arkuszu": [
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 843,
+      "data": "843",
+      "wydarzenie": "Traktat w Verdun – podział państwa Franków na trzy części",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "E"
+      ],
+      "hasla": [
+        "frankó",
+        "trakta",
+        "verdun"
+      ],
+      "rok_w_arkuszu": [
+        "E"
+      ],
+      "nazwa_w_arkuszu": [
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 911,
+      "data": "911",
+      "wydarzenie": "Nadanie Normandii wodzowi Normanów Rollonowi",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "E"
+      ],
+      "hasla": [
+        "norman",
+        "rollon"
+      ],
+      "rok_w_arkuszu": [
+        "E"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 962,
+      "data": "962",
+      "wydarzenie": "Koronacja Ottona I – powstanie Świętego Cesarstwa Rzymskiego",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "władcy i dynastie",
+      "warianty": [
+        "B"
+      ],
+      "hasla": [
+        "ottona",
+        "święte"
+      ],
+      "rok_w_arkuszu": [
+        "B"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "C",
+        "F",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 965,
+      "data": "965",
+      "wydarzenie": "Małżeństwo Mieszka I z czeską księżniczką Dobrawą",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "władcy i dynastie",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "dobraw",
+        "mieszk"
+      ],
+      "rok_w_arkuszu": [
+        "F"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 966,
+      "data": "966",
+      "wydarzenie": "Chrzest Polski (Mieszko I)",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "A",
+        "C",
+        "E",
+        "F"
+      ],
+      "hasla": [
+        "mieszk"
+      ],
+      "rok_w_arkuszu": [
+        "A",
+        "C"
+      ],
+      "nazwa_w_arkuszu": [
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 972,
+      "data": "972",
+      "wydarzenie": "Bitwa pod Cedynią – Mieszko I pokonuje margrabiego Hodona",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "A",
+        "B",
+        "C",
+        "F"
+      ],
+      "hasla": [
+        "cedyni",
+        "hodona",
+        "mieszk"
+      ],
+      "rok_w_arkuszu": [
+        "A",
+        "B",
+        "C",
+        "F"
+      ],
+      "nazwa_w_arkuszu": [
+        "D",
+        "E"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1000,
+      "data": "1000",
+      "wydarzenie": "Zjazd gnieźnieński",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "B",
+        "E"
+      ],
+      "hasla": [
+        "gnieźn",
+        "zjazd"
+      ],
+      "rok_w_arkuszu": [
+        "B",
+        "E"
+      ],
+      "nazwa_w_arkuszu": [
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1025,
+      "data": "1025",
+      "wydarzenie": "Koronacja i śmierć Bolesława Chrobrego – pierwsza koronacja w Polsce",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "władcy i dynastie",
+      "warianty": [
+        "A",
+        "B",
+        "C"
+      ],
+      "hasla": [
+        "bolesł",
+        "chrobr",
+        "polsce"
+      ],
+      "rok_w_arkuszu": [
+        "A",
+        "B",
+        "C"
+      ],
+      "nazwa_w_arkuszu": [
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1054,
+      "data": "1054",
+      "wydarzenie": "Wielka schizma wschodnia – podział na katolicyzm i prawosławie",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "A",
+        "D"
+      ],
+      "hasla": [],
+      "rok_w_arkuszu": [
+        "A"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [
+        "D"
+      ],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1066,
+      "data": "1066",
+      "wydarzenie": "Bitwa pod Hastings – podbój Anglii przez Normanów",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "E"
+      ],
+      "hasla": [
+        "hastin",
+        "norman"
+      ],
+      "rok_w_arkuszu": [
+        "E"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1076,
+      "data": "1076",
+      "wydarzenie": "Koronacja Bolesława Śmiałego",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "władcy i dynastie",
+      "warianty": [
+        "B",
+        "C"
+      ],
+      "hasla": [
+        "bolesł",
+        "śmiałe"
+      ],
+      "rok_w_arkuszu": [
+        "B",
+        "C"
+      ],
+      "nazwa_w_arkuszu": [
+        "A"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1077,
+      "data": "1077",
+      "wydarzenie": "Upokorzenie Henryka IV w Canossie (spór o inwestyturę)",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [
+        "canoss",
+        "henryk",
+        "upokor"
+      ],
+      "rok_w_arkuszu": [
+        "C"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1095,
+      "data": "1095",
+      "wydarzenie": "Wezwanie papieża Urbana II do krucjaty na synodzie w Clermont",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [
+        "clermo",
+        "urbana"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "C",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1096,
+      "data": "1096",
+      "wydarzenie": "Początek pierwszej krucjaty",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [
+        "C"
+      ],
+      "ryzyko": "niskie",
+      "status": "wolne"
+    },
+    {
+      "sort": 1099,
+      "data": "1099",
+      "wydarzenie": "Zdobycie Jerozolimy przez krzyżowców",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [
+        "jerozo"
+      ],
+      "rok_w_arkuszu": [
+        "C"
+      ],
+      "nazwa_w_arkuszu": [
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1138,
+      "data": "1138",
+      "wydarzenie": "Ustawa sukcesyjna Bolesława Krzywoustego – początek rozbicia dzielnicowego",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "A",
+        "C"
+      ],
+      "hasla": [
+        "bolesł",
+        "krzywo"
+      ],
+      "rok_w_arkuszu": [
+        "C"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1204,
+      "data": "1204",
+      "wydarzenie": "Zdobycie i splądrowanie Konstantynopola przez krzyżowców (IV krucjata)",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [
+        "konsta"
+      ],
+      "rok_w_arkuszu": [
+        "C"
+      ],
+      "nazwa_w_arkuszu": [
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1215,
+      "data": "1215",
+      "wydarzenie": "Wielka Karta Swobód w Anglii",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "D"
+      ],
+      "hasla": [
+        "karta",
+        "swobód"
+      ],
+      "rok_w_arkuszu": [
+        "D"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1226,
+      "data": "1226",
+      "wydarzenie": "Sprowadzenie Krzyżaków do Polski przez Konrada Mazowieckiego",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "C",
+        "F"
+      ],
+      "hasla": [
+        "konrad",
+        "mazowi",
+        "sprowa"
+      ],
+      "rok_w_arkuszu": [
+        "F"
+      ],
+      "nazwa_w_arkuszu": [
+        "C",
+        "E",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1236,
+      "data": "1236",
+      "wydarzenie": "Zdobycie Kordoby przez chrześcijan (rekonkwista)",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "kordob"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1241,
+      "data": "1241",
+      "wydarzenie": "Najazd mongolski na Polskę i bitwa pod Legnicą",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [
+        "legnic"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1295,
+      "data": "1295",
+      "wydarzenie": "Koronacja Przemysła II",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "władcy i dynastie",
+      "warianty": [
+        "B"
+      ],
+      "hasla": [
+        "przemy"
+      ],
+      "rok_w_arkuszu": [
+        "B"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1308,
+      "data": "1308",
+      "wydarzenie": "Zajęcie Gdańska i Pomorza Gdańskiego przez Krzyżaków",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [
+        "gdańsk"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "C",
+        "D",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1309,
+      "data": "1309",
+      "wydarzenie": "Malbork siedzibą wielkiego mistrza zakonu krzyżackiego",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "cywilizacje i państwa",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "malbor"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1320,
+      "data": "1320",
+      "wydarzenie": "Koronacja Władysława Łokietka – koniec rozbicia dzielnicowego",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "władcy i dynastie",
+      "warianty": [
+        "A",
+        "B",
+        "C"
+      ],
+      "hasla": [
+        "władys",
+        "łokiet"
+      ],
+      "rok_w_arkuszu": [
+        "A",
+        "B"
+      ],
+      "nazwa_w_arkuszu": [
+        "C",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1333,
+      "data": "1333–1370",
+      "wydarzenie": "Panowanie Kazimierza Wielkiego",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "władcy i dynastie",
+      "warianty": [
+        "B"
+      ],
+      "hasla": [
+        "kazimi"
+      ],
+      "rok_w_arkuszu": [
+        "B"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1337,
+      "data": "1337–1453",
+      "wydarzenie": "Wojna stuletnia między Anglią a Francją",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "D"
+      ],
+      "hasla": [
+        "anglią"
+      ],
+      "rok_w_arkuszu": [
+        "D"
+      ],
+      "nazwa_w_arkuszu": [
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1343,
+      "data": "1343",
+      "wydarzenie": "Pokój w Kaliszu z zakonem krzyżackim",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [
+        "kalisz"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1356,
+      "data": "1356",
+      "wydarzenie": "Nadanie Lwowowi praw miejskich na wzór magdeburski",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "odkrycia i gospodarka",
+      "warianty": [
+        "E"
+      ],
+      "hasla": [
+        "lwowow",
+        "magdeb"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "C"
+      ],
+      "tylko_w_kluczu": [
+        "E"
+      ],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1364,
+      "data": "1364",
+      "wydarzenie": "Założenie Akademii Krakowskiej przez Kazimierza Wielkiego",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "kultura i nauka",
+      "warianty": [
+        "C",
+        "F"
+      ],
+      "hasla": [
+        "kazimi"
+      ],
+      "rok_w_arkuszu": [
+        "C",
+        "F"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B",
+        "E",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1374,
+      "data": "1374",
+      "wydarzenie": "Przywilej koszycki – pierwszy wielki przywilej szlachecki",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [
+        "koszyc",
+        "szlach"
+      ],
+      "rok_w_arkuszu": [
+        "C"
+      ],
+      "nazwa_w_arkuszu": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1384,
+      "data": "1384",
+      "wydarzenie": "Koronacja Jadwigi Andegaweńskiej",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "władcy i dynastie",
+      "warianty": [
+        "D"
+      ],
+      "hasla": [
+        "andega",
+        "jadwig"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "C",
+        "D"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1385,
+      "data": "1385",
+      "wydarzenie": "Unia w Krewie – początek związku Polski z Litwą",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "D"
+      ],
+      "hasla": [
+        "krewie"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "D"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1387,
+      "data": "1387",
+      "wydarzenie": "Chrzest Litwy",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "D"
+      ],
+      "hasla": [
+        "litw"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "D",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1400,
+      "data": "1400",
+      "wydarzenie": "Odnowienie Akademii Krakowskiej przez Władysława Jagiełłę",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "kultura i nauka",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "jagieł",
+        "odnowi",
+        "władys"
+      ],
+      "rok_w_arkuszu": [
+        "F"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B",
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1410,
+      "data": "1410",
+      "wydarzenie": "Bitwa pod Grunwaldem (15 lipca)",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "B",
+        "D",
+        "E"
+      ],
+      "hasla": [
+        "grunwa"
+      ],
+      "rok_w_arkuszu": [
+        "B"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "D",
+        "E"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1411,
+      "data": "1411",
+      "wydarzenie": "Pierwszy pokój toruński",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "D"
+      ],
+      "hasla": [
+        "toruńs"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "D",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1440,
+      "data": "1440",
+      "wydarzenie": "Powstanie Związku Pruskiego przeciw zakonowi krzyżackiemu",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "związk"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "F",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1444,
+      "data": "1444",
+      "wydarzenie": "Bitwa pod Warną – śmierć Władysława III Warneńczyka",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "warneń",
+        "warną",
+        "władys"
+      ],
+      "rok_w_arkuszu": [
+        "F"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B",
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1447,
+      "data": "1447",
+      "wydarzenie": "Koronacja Kazimierza Jagiellończyka",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "władcy i dynastie",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "jagiel",
+        "kazimi"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1450,
+      "data": "ok. 1450",
+      "wydarzenie": "Prasa drukarska Jana Gutenberga",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "kultura i nauka",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "drukar",
+        "gutenb"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "F",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1453,
+      "data": "1453",
+      "wydarzenie": "Upadek Konstantynopola – koniec cesarstwa bizantyjskiego; koniec wojny stuletniej",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "D",
+        "F"
+      ],
+      "hasla": [
+        "bizant",
+        "konsta",
+        "upadek"
+      ],
+      "rok_w_arkuszu": [
+        "D",
+        "F"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1454,
+      "data": "1454",
+      "wydarzenie": "Wybuch wojny trzynastoletniej; klęska pod Chojnicami",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "chojni"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1463,
+      "data": "1463",
+      "wydarzenie": "Zwycięstwo flotylli kaperskiej w Zatoce Świeżej",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "zatoce",
+        "świeże"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1466,
+      "data": "1466",
+      "wydarzenie": "Drugi pokój toruński – odzyskanie Pomorza Gdańskiego",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "D",
+        "F"
+      ],
+      "hasla": [
+        "toruńs",
+        "gdańsk"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1469,
+      "data": "1469",
+      "wydarzenie": "Małżeństwo Izabeli Kastylijskiej i Ferdynanda Aragońskiego",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "władcy i dynastie",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "aragoń",
+        "ferdyn",
+        "izabel",
+        "kastyl"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1477,
+      "data": "1477–1489",
+      "wydarzenie": "Ołtarz Wita Stwosza w kościele Mariackim w Krakowie",
+      "epoka": "Średniowiecze",
+      "obszar": "Polska",
+      "typ": "kultura i nauka",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "mariac",
+        "stwosz"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1488,
+      "data": "1488",
+      "wydarzenie": "Opłynięcie Przylądka Dobrej Nadziei przez Bartolomeu Diasa",
+      "epoka": "Średniowiecze",
+      "obszar": "powszechna",
+      "typ": "odkrycia i gospodarka",
+      "warianty": [
+        "A"
+      ],
+      "hasla": [
+        "bartol",
+        "diasa",
+        "dobrej",
+        "nadzie",
+        "opłyni",
+        "przylą"
+      ],
+      "rok_w_arkuszu": [
+        "A"
+      ],
+      "nazwa_w_arkuszu": [
+        "D"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1492,
+      "data": "1492",
+      "wydarzenie": "Odkrycie Ameryki przez Kolumba; zdobycie Granady – koniec rekonkwisty",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "odkrycia i gospodarka",
+      "warianty": [
+        "A",
+        "C",
+        "F"
+      ],
+      "hasla": [
+        "ameryk",
+        "granad",
+        "kolumb",
+        "odkryc"
+      ],
+      "rok_w_arkuszu": [
+        "A",
+        "C",
+        "F"
+      ],
+      "nazwa_w_arkuszu": [
+        "B",
+        "E",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1498,
+      "data": "1498",
+      "wydarzenie": "Vasco da Gama dopływa do Indii",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "odkrycia i gospodarka",
+      "warianty": [
+        "A"
+      ],
+      "hasla": [
+        "indii",
+        "vasco"
+      ],
+      "rok_w_arkuszu": [
+        "A"
+      ],
+      "nazwa_w_arkuszu": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1501,
+      "data": "1501–1506",
+      "wydarzenie": "Panowanie Aleksandra Jagiellończyka",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "władcy i dynastie",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "aleksa",
+        "jagiel"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "C",
+        "D",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1505,
+      "data": "1505",
+      "wydarzenie": "Konstytucja Nihil novi – początek demokracji szlacheckiej",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "nihil"
+      ],
+      "rok_w_arkuszu": [
+        "F",
+        "G"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1517,
+      "data": "1517",
+      "wydarzenie": "Wystąpienie Marcina Lutra w Wittenberdze – początek reformacji",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "hasla": [
+        "lutra",
+        "marcin",
+        "witten",
+        "wystąp"
+      ],
+      "rok_w_arkuszu": [
+        "A",
+        "B"
+      ],
+      "nazwa_w_arkuszu": [
+        "D",
+        "F",
+        "G"
+      ],
+      "tylko_w_kluczu": [
+        "C"
+      ],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1521,
+      "data": "1521",
+      "wydarzenie": "Sejm Rzeszy w Wormacji; zdobycie Belgradu przez Turków",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "D",
+        "F"
+      ],
+      "hasla": [
+        "belgra",
+        "rzeszy",
+        "turków",
+        "wormac"
+      ],
+      "rok_w_arkuszu": [
+        "F"
+      ],
+      "nazwa_w_arkuszu": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1525,
+      "data": "1525",
+      "wydarzenie": "Hołd pruski (10 kwietnia)",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "D"
+      ],
+      "hasla": [
+        "hołd"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "D"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1526,
+      "data": "1526",
+      "wydarzenie": "Bitwa pod Mohaczem – Turcy opanowują większość Węgier",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "mohacz",
+        "turcy",
+        "węgier"
+      ],
+      "rok_w_arkuszu": [
+        "F"
+      ],
+      "nazwa_w_arkuszu": [
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1529,
+      "data": "1529",
+      "wydarzenie": "Pierwsze oblężenie Wiednia przez Turków",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "turków",
+        "wiedni"
+      ],
+      "rok_w_arkuszu": [
+        "F"
+      ],
+      "nazwa_w_arkuszu": [
+        "E",
+        "G"
+      ],
+      "tylko_w_kluczu": [
+        "D"
+      ],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1534,
+      "data": "1534",
+      "wydarzenie": "Akt supremacji Henryka VIII – powstanie Kościoła anglikańskiego",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "D"
+      ],
+      "hasla": [
+        "anglik",
+        "henryk"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B",
+        "C",
+        "G"
+      ],
+      "tylko_w_kluczu": [
+        "D"
+      ],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1543,
+      "data": "1543",
+      "wydarzenie": "Wydanie „O obrotach sfer niebieskich” Mikołaja Kopernika",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "kultura i nauka",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [
+        "kopern",
+        "mikoła"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "B",
+        "C",
+        "D",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1545,
+      "data": "1545–1563",
+      "wydarzenie": "Sobór trydencki – początek kontrreformacji",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [
+        "tryden"
+      ],
+      "rok_w_arkuszu": [
+        "G"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1555,
+      "data": "1555",
+      "wydarzenie": "Pokój augsburski – zasada „czyja władza, tego religia”",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "C",
+        "D"
+      ],
+      "hasla": [
+        "augsbu"
+      ],
+      "rok_w_arkuszu": [
+        "D"
+      ],
+      "nazwa_w_arkuszu": [
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1569,
+      "data": "1569",
+      "wydarzenie": "Unia lubelska – powstanie Rzeczypospolitej Obojga Narodów",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "A",
+        "B"
+      ],
+      "hasla": [
+        "lubels",
+        "narodó",
+        "obojga"
+      ],
+      "rok_w_arkuszu": [
+        "A"
+      ],
+      "nazwa_w_arkuszu": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1573,
+      "data": "1573",
+      "wydarzenie": "Konfederacja warszawska i pierwsza wolna elekcja (Henryk Walezy)",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "A",
+        "C",
+        "D"
+      ],
+      "hasla": [
+        "henryk",
+        "walezy",
+        "warsza"
+      ],
+      "rok_w_arkuszu": [
+        "A",
+        "C",
+        "D"
+      ],
+      "nazwa_w_arkuszu": [
+        "B",
+        "E",
+        "F",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1596,
+      "data": "1596",
+      "wydarzenie": "Unia brzeska – powstanie Kościoła greckokatolickiego",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "D"
+      ],
+      "hasla": [],
+      "rok_w_arkuszu": [
+        "D"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [
+        "E"
+      ],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1605,
+      "data": "1605",
+      "wydarzenie": "Bitwa pod Kircholmem",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "A"
+      ],
+      "hasla": [
+        "kircho"
+      ],
+      "rok_w_arkuszu": [
+        "A"
+      ],
+      "nazwa_w_arkuszu": [
+        "B"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1606,
+      "data": "1606–1609",
+      "wydarzenie": "Rokosz Zebrzydowskiego",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "E"
+      ],
+      "hasla": [
+        "zebrzy"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "G"
+      ],
+      "tylko_w_kluczu": [
+        "E"
+      ],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1610,
+      "data": "1610",
+      "wydarzenie": "Bitwa pod Kłuszynem",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "A"
+      ],
+      "hasla": [
+        "kłuszy"
+      ],
+      "rok_w_arkuszu": [
+        "A"
+      ],
+      "nazwa_w_arkuszu": [
+        "B"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1618,
+      "data": "1618–1648",
+      "wydarzenie": "Wojna trzydziestoletnia",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "D"
+      ],
+      "hasla": [],
+      "rok_w_arkuszu": [
+        "D"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1619,
+      "data": "1619",
+      "wydarzenie": "Rozejm w Dywilinie z Rosją",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [
+        "dywili"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1648,
+      "data": "1648",
+      "wydarzenie": "Wybuch powstania Chmielnickiego (Żółte Wody, Korsuń); pokój westfalski",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "A",
+        "D",
+        "E",
+        "F"
+      ],
+      "hasla": [
+        "chmiel",
+        "korsuń",
+        "westfa",
+        "żółte"
+      ],
+      "rok_w_arkuszu": [
+        "A",
+        "D"
+      ],
+      "nazwa_w_arkuszu": [
+        "B",
+        "C",
+        "E",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1649,
+      "data": "1649",
+      "wydarzenie": "Ścięcie króla Anglii Karola I",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "władcy i dynastie",
+      "warianty": [
+        "D"
+      ],
+      "hasla": [
+        "karola",
+        "ścięci"
+      ],
+      "rok_w_arkuszu": [
+        "D"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B",
+        "C",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1654,
+      "data": "1654",
+      "wydarzenie": "Ugoda perejasławska – uzależnienie Ukrainy od Rosji",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "C",
+        "F"
+      ],
+      "hasla": [
+        "pereja"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "C",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1655,
+      "data": "1655–1660",
+      "wydarzenie": "Potop szwedzki (Ujście, obrona Jasnej Góry; pokój w Oliwie 1660)",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "C",
+        "E"
+      ],
+      "hasla": [
+        "jasnej",
+        "oliwie",
+        "ujście"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "C",
+        "E"
+      ],
+      "tylko_w_kluczu": [
+        "F"
+      ],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1656,
+      "data": "1656",
+      "wydarzenie": "Śluby lwowskie Jana Kazimierza (1 kwietnia)",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "E"
+      ],
+      "hasla": [
+        "kazimi",
+        "śluby"
+      ],
+      "rok_w_arkuszu": [
+        "E"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1658,
+      "data": "1658",
+      "wydarzenie": "Wygnanie braci polskich z Rzeczypospolitej",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "religia i Kościół",
+      "warianty": [
+        "D"
+      ],
+      "hasla": [
+        "arianie",
+        "arianizm",
+        "bracia polscy",
+        "braci polskich"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "D"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1665,
+      "data": "1665–1666",
+      "wydarzenie": "Rokosz Lubomirskiego",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "E"
+      ],
+      "hasla": [
+        "lubomi"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "G"
+      ],
+      "tylko_w_kluczu": [
+        "E"
+      ],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1667,
+      "data": "1667",
+      "wydarzenie": "Rozejm w Andruszowie z Rosją",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "C",
+        "E"
+      ],
+      "hasla": [
+        "andrus"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "C",
+        "E"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1672,
+      "data": "1672",
+      "wydarzenie": "Pokój w Buczaczu z Turcją",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [
+        "buczac"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1683,
+      "data": "1683",
+      "wydarzenie": "Odsiecz wiedeńska Jana III Sobieskiego (12 września)",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "A",
+        "D",
+        "E",
+        "F"
+      ],
+      "hasla": [
+        "sobies",
+        "wiedeń"
+      ],
+      "rok_w_arkuszu": [
+        "A",
+        "D",
+        "F"
+      ],
+      "nazwa_w_arkuszu": [
+        "B",
+        "E"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1688,
+      "data": "1688",
+      "wydarzenie": "Chwalebna rewolucja w Anglii",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "ustrój i prawo",
+      "warianty": [],
+      "hasla": [],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [],
+      "ryzyko": "brak",
+      "status": "wolne"
+    },
+    {
+      "sort": 1699,
+      "data": "1699",
+      "wydarzenie": "Pokój w Karłowicach",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "C"
+      ],
+      "hasla": [
+        "karłow"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1700,
+      "data": "1700–1721",
+      "wydarzenie": "Wielka wojna północna",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [
+        "F"
+      ],
+      "ryzyko": "niskie",
+      "status": "wolne"
+    },
+    {
+      "sort": 1703,
+      "data": "1703",
+      "wydarzenie": "Założenie Petersburga przez Piotra I",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "cywilizacje i państwa",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "peters",
+        "piotra"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "E",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1709,
+      "data": "1709",
+      "wydarzenie": "Bitwa pod Połtawą – zwycięstwo Rosji nad Szwecją",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "połtaw"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1712,
+      "data": "1712",
+      "wydarzenie": "Petersburg stolicą Rosji",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "cywilizacje i państwa",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "peters"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1717,
+      "data": "1717",
+      "wydarzenie": "Sejm niemy",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "D"
+      ],
+      "hasla": [],
+      "rok_w_arkuszu": [
+        "D"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1721,
+      "data": "1721",
+      "wydarzenie": "Piotr I przyjmuje tytuł imperatora",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "władcy i dynastie",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "piotr"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1748,
+      "data": "1748",
+      "wydarzenie": "„O duchu praw” Monteskiusza",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "kultura i nauka",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "montes"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "D",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1751,
+      "data": "1751",
+      "wydarzenie": "Początek wydawania Wielkiej Encyklopedii Francuskiej",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "kultura i nauka",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "encykl"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "D",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1762,
+      "data": "1762",
+      "wydarzenie": "„Umowa społeczna” Jana Jakuba Rousseau",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "kultura i nauka",
+      "warianty": [
+        "F"
+      ],
+      "hasla": [
+        "jakuba",
+        "rousse",
+        "umowa"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1764,
+      "data": "1764–1795",
+      "wydarzenie": "Panowanie Stanisława Augusta Poniatowskiego",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "władcy i dynastie",
+      "warianty": [],
+      "hasla": [
+        "august",
+        "poniat",
+        "stanis"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "G"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1765,
+      "data": "1765",
+      "wydarzenie": "Powstanie Teatru Narodowego w Warszawie",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "kultura i nauka",
+      "warianty": [
+        "B"
+      ],
+      "hasla": [
+        "narodo",
+        "teatru",
+        "warsza"
+      ],
+      "rok_w_arkuszu": [
+        "B",
+        "G"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1768,
+      "data": "1768–1772",
+      "wydarzenie": "Konfederacja barska",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "D"
+      ],
+      "hasla": [],
+      "rok_w_arkuszu": [
+        "D"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1772,
+      "data": "1772",
+      "wydarzenie": "Pierwszy rozbiór Polski",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "hasla": [],
+      "rok_w_arkuszu": [
+        "C",
+        "D",
+        "F",
+        "G"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [
+        "B",
+        "E"
+      ],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1773,
+      "data": "1773",
+      "wydarzenie": "Sejm rozbiorowy (protest Rejtana); powstanie Komisji Edukacji Narodowej",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "kultura i nauka",
+      "warianty": [
+        "B",
+        "C",
+        "D"
+      ],
+      "hasla": [
+        "edukac",
+        "komisj",
+        "narodo",
+        "rejtan"
+      ],
+      "rok_w_arkuszu": [
+        "B",
+        "D"
+      ],
+      "nazwa_w_arkuszu": [
+        "E",
+        "G"
+      ],
+      "tylko_w_kluczu": [
+        "C"
+      ],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1776,
+      "data": "1776",
+      "wydarzenie": "Deklaracja niepodległości USA (4 lipca)",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "A",
+        "C"
+      ],
+      "hasla": [
+        "zjednoczonych"
+      ],
+      "rok_w_arkuszu": [
+        "A"
+      ],
+      "nazwa_w_arkuszu": [
+        "B",
+        "C"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1787,
+      "data": "1787",
+      "wydarzenie": "Uchwalenie konstytucji Stanów Zjednoczonych",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "E"
+      ],
+      "hasla": [
+        "zjednoczonych"
+      ],
+      "rok_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "B",
+        "C"
+      ],
+      "tylko_w_kluczu": [
+        "E"
+      ],
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1788,
+      "data": "1788–1792",
+      "wydarzenie": "Obrady Sejmu Wielkiego (Czteroletniego)",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "C",
+        "E",
+        "F"
+      ],
+      "hasla": [
+        "cztero",
+        "obrady"
+      ],
+      "rok_w_arkuszu": [
+        "C",
+        "E"
+      ],
+      "nazwa_w_arkuszu": [
+        "D",
+        "G"
+      ],
+      "tylko_w_kluczu": [
+        "F"
+      ],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1789,
+      "data": "1789",
+      "wydarzenie": "Wybuch rewolucji francuskiej – zburzenie Bastylii (14 lipca)",
+      "epoka": "Nowożytność",
+      "obszar": "powszechna",
+      "typ": "cywilizacje i państwa",
+      "warianty": [
+        "A",
+        "C"
+      ],
+      "hasla": [
+        "bastyl"
+      ],
+      "rok_w_arkuszu": [
+        "A",
+        "C"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1791,
+      "data": "1791",
+      "wydarzenie": "Uchwalenie Konstytucji 3 maja",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "A",
+        "B",
+        "E",
+        "F"
+      ],
+      "hasla": [],
+      "rok_w_arkuszu": [
+        "E",
+        "F",
+        "G"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [
+        "A",
+        "B"
+      ],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1792,
+      "data": "1792",
+      "wydarzenie": "Konfederacja targowicka i wojna w obronie konstytucji",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "ustrój i prawo",
+      "warianty": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F"
+      ],
+      "hasla": [
+        "targow"
+      ],
+      "rok_w_arkuszu": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "G"
+      ],
+      "nazwa_w_arkuszu": [
+        "B"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1793,
+      "data": "1793",
+      "wydarzenie": "Drugi rozbiór Polski; sejm grodzieński",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "B",
+        "C",
+        "E",
+        "F"
+      ],
+      "hasla": [
+        "grodzi"
+      ],
+      "rok_w_arkuszu": [
+        "C",
+        "F",
+        "G"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [
+        "B",
+        "E"
+      ],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1794,
+      "data": "1794",
+      "wydarzenie": "Powstanie kościuszkowskie (Racławice, Maciejowice)",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "wojny i bitwy",
+      "warianty": [
+        "B",
+        "C",
+        "E",
+        "F"
+      ],
+      "hasla": [
+        "kościu",
+        "maciej",
+        "racław"
+      ],
+      "rok_w_arkuszu": [
+        "C",
+        "E",
+        "F",
+        "G"
+      ],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1795,
+      "data": "1795",
+      "wydarzenie": "Trzeci rozbiór Polski – Polska znika z map na 123 lata",
+      "epoka": "Nowożytność",
+      "obszar": "Polska",
+      "typ": "dyplomacja i traktaty",
+      "warianty": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "hasla": [],
+      "rok_w_arkuszu": [
+        "A",
+        "C",
+        "F",
+        "G"
+      ],
+      "nazwa_w_arkuszu": [],
+      "tylko_w_kluczu": [
+        "B",
+        "D",
+        "E"
+      ],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    }
+  ]
+}

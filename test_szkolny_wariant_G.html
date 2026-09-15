@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Historia – etap szkolny – wariant G</title>
+  <style>
+    @page { size: A4; margin: 14mm 14mm 16mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+      font-size: 10.4pt; line-height: 1.28;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.08; margin-bottom: 5mm; color: #163a63; }
+    h2 { font-size: 15pt; color: #163a63; margin: 0 0 4mm; }
+    h3 { font-size: 11.4pt; margin: 0; color: #163a63; }
+    .cover {
+      min-height: 255mm; border: 2.2px solid #1f5a91; padding: 15mm 14mm;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { color: #9a5a00; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; }
+    .subtitle { font-size: 15pt; font-weight: 700; margin-bottom: 9mm; }
+    .meta {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm;
+      padding: 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 7mm;
+    }
+    .meta strong { color: #163a63; }
+    .code { border-bottom: 1px solid #172033; min-width: 55mm; display: inline-block; }
+    .notice { margin-top: auto; font-size: 9.2pt; color: #4c596b; }
+    .page-break { break-before: page; }
+    .instructions { padding: 5mm 6mm; background: #f6f3ed; border: 1px solid #d8cdb9; margin-bottom: 6mm; }
+    .instructions ol { margin: 2mm 0 0 6mm; padding-left: 4mm; }
+    .task {
+      border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+      border-radius: 2px; padding: 3mm 4mm; margin: 0 0 4mm;
+      break-inside: avoid;
+    }
+    .task-head {
+      display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 2mm;
+    }
+    .points { white-space: nowrap; font-weight: 700; color: #9a5a00; }
+    .lead { font-weight: 700; }
+    .source { font-size: 8.4pt; color: #5c6878; margin: 2mm 0; }
+    table { width: 100%; border-collapse: collapse; margin: 2mm 0; }
+    th, td { border: 1px solid #8090a2; padding: 2.2mm; vertical-align: top; }
+    th { background: #eaf1f7; color: #163a63; text-align: left; }
+    .compact th, .compact td { padding: 1.1mm 1.7mm; }
+    .choices { columns: 3; column-gap: 6mm; margin: 1.5mm 0; }
+    .choices div { break-inside: avoid; margin-bottom: 1mm; }
+    .shortline { display: inline-block; border-bottom: 1px dotted #566273; min-width: 30mm; height: 5mm; }
+    .answer-space { border-bottom: 1px dotted #566273; min-height: 7mm; margin-top: 1.2mm; }
+    .answer-space.two { min-height: 16mm; }
+    .quote {
+      background: #f7f8fa; border-left: 4px solid #9a5a00; padding: 3mm 4mm;
+      font-family: Georgia, serif; font-size: 10.2pt; margin: 3mm 0;
+    }
+    .quote p { margin: 0 0 2mm; }
+    .quote p:last-child { margin-bottom: 0; }
+    .svg-wrap { border: 1px solid #c5ced8; background: #fbfcfd; padding: 1.5mm; margin: 2mm 0; text-align: center; }
+    .map-image { display: block; margin: 0 auto; width: 100%; max-width: 152mm; height: auto; }
+    .art-image { display: block; margin: 0 auto; width: 100%; max-width: 150mm; height: auto; }
+    .ramka {
+      border: 1px dashed #9a5a00; background: #fdfaf4; padding: 2mm 3mm; margin: 2mm 0;
+      font-weight: 700; text-align: center; letter-spacing: .4px;
+    }
+    .small { font-size: 9pt; }
+    .muted { color: #5c6878; }
+    .pick { font-weight: 700; color: #163a63; }
+    .krzyzowka { width: auto; margin: 3mm 0; border-collapse: collapse; }
+    .krzyzowka td {
+      width: 6.5mm; height: 6.5mm; border: 1px solid #66748a; padding: 0;
+      text-align: center; font-weight: 700;
+    }
+    .krzyzowka td.numer {
+      width: 7mm; border: none; text-align: right; padding-right: 1.5mm; font-weight: 400;
+    }
+    .krzyzowka td.pusta { border: none; background: none; }
+    .krzyzowka td.haslo { background: #f5e3c8; }
+    .card td { height: 8mm; }
+    .card .wide { height: 14mm; }
+    .footer-note { font-size: 8.5pt; color: #606b79; border-top: 1px solid #c7cfd8; padding-top: 2mm; }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="eyebrow">Arkusz treningowy • wariant G</div>
+    <h1>Wojewódzki Konkurs Przedmiotowy z Historii</h1>
+    <div class="subtitle">Etap I – szkolny</div>
+    <div class="meta">
+      <div><strong>Zakres:</strong> działy I–XVII podstawy programowej</div>
+      <div><strong>Czas pracy:</strong> 60 minut</div>
+      <div><strong>Liczba zadań:</strong> 19</div>
+      <div><strong>Maksymalna liczba punktów:</strong> 100</div>
+      <div><strong>Wariant:</strong> G</div>
+      <div><strong>Ziarno wariantu:</strong> 2026-09-14-G</div>
+    </div>
+    <p><strong>KOD UCZNIA:</strong> <span class="code">&nbsp;</span></p>
+    <div class="instructions">
+      <h2>Instrukcja dla ucznia</h2>
+      <ol>
+        <li>Sprawdź, czy arkusz zawiera 19 zadań i kartę odpowiedzi.</li>
+        <li>Czytaj uważnie polecenia. Odpowiadaj wyłącznie w miejscach do tego przeznaczonych.</li>
+        <li>Jeśli polecenie nie stanowi inaczej, za każdy poprawnie uzupełniony element otrzymujesz 1 punkt.</li>
+        <li>W zadaniach P/F wpisz <strong>P</strong> (prawda) albo <strong>F</strong> (fałsz).</li>
+        <li>Nie używaj korektora ani urządzeń elektronicznych.</li>
+        <li>Pracuj samodzielnie. Na rozwiązanie testu masz 60 minut.</li>
+      </ol>
+    </div>
+    <p class="notice">
+      Materiał autorski do ćwiczeń, opracowany na podstawie regulaminu szczegółowego oraz
+      archiwalnych arkuszy etapu szkolnego Kujawsko-Pomorskiego Kuratora Oświaty
+      z lat 2018/2019–2025/2026. Nie jest oficjalnym arkuszem konkursowym.
+    </p>
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie I. Kultura starożytnych Greków</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj nazwę do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – teatr</div>
+        <div><strong>B</strong> – Partenon</div>
+        <div><strong>C</strong> – agora</div>
+        <div><strong>D</strong> – Akropol</div>
+        <div><strong>E</strong> – igrzyska olimpijskie</div>
+        <div><strong>F</strong> – tragedia</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Świątynia bogini Ateny, wzniesiona na wzgórzu górującym nad Atenami.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Zawody sportowe ku czci Zeusa, rozgrywane co cztery lata w Olimpii.</td><td></td></tr>
+        <tr><td>3. Główny plac miasta greckiego, miejsce handlu i zgromadzeń obywateli.</td><td></td></tr>
+        <tr><td>4. Utwór dramatyczny o poważnej treści, kończący się zwykle klęską bohatera.</td><td></td></tr>
+        <tr><td>5. Budowla z półkolistą widownią, wznoszoną najczęściej na zboczu wzgórza.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie II. Armia i podboje rzymskie</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Podstawową jednostką armii rzymskiej był legion, liczący kilka tysięcy żołnierzy.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Żołnierze rzymscy po zakończeniu wieloletniej służby nie otrzymywali ani żołdu, ani ziemi.</td><td></td></tr>
+        <tr><td>3. Rzymianie budowali utwardzone drogi, którymi wojsko mogło szybko przemieszczać się po państwie.</td><td></td></tr>
+        <tr><td>4. Granice cesarstwa umacniano pasem fortyfikacji i strażnic nazywanym limes.</td><td></td></tr>
+        <tr><td>5. Armię rzymską tworzyli wyłącznie najemnicy sprowadzani z Germanii.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie III. Reguła świętego Benedykta</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Przeczytaj tekst i wykonaj polecenia.</p>
+      <div class="quote">
+        <p>„Bezczynność jest wrogiem duszy. Dlatego też bracia muszą się zajmować w określonych
+          godzinach pracą fizyczną i również w określonych godzinach czytaniem duchownym. [...]
+          Jeśli zaś konieczność miejscowa albo ubóstwo wymagać będą, by sami zbierali plony,
+          niech się nie smucą, bo wtedy są prawdziwymi mnichami, gdy żyją z pracy rąk swoich.”</p>
+      </div>
+      <p class="source">Reguła świętego Benedykta, rozdział 48 (fragment, pisownia uwspółcześniona).</p>
+      <p>1. Podaj nazwę zakonu, którego życie porządkował ten zbiór przepisów. <span class="shortline"></span></p>
+      <p>2. Podaj wiek, w którym reguła ta powstała. <span class="shortline"></span></p>
+      <p>3. Wypisz z tekstu dwa zajęcia, na które mnisi mieli mieć wyznaczone godziny.</p>
+      <div class="answer-space"></div>
+      <p>4. Podaj dwuwyrazowe łacińskie hasło, którym streszcza się tę zasadę życia zakonnego.
+        <span class="shortline"></span></p>
+      <p>5. Wyjaśnij, jakie znaczenie dla dzisiejszej wiedzy o starożytności miała praca mnichów
+        przepisujących księgi.</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IV. Wyprawy krzyżowe</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń, czy podane zjawisko było przyczyną (P), czy skutkiem (S) wypraw krzyżowych.</p>
+      <table class="compact">
+        <tr><td>1. Wezwanie papieża Urbana II na synodzie w Clermont do odzyskania Ziemi Świętej.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Powstanie zakonów rycerskich: templariuszy, joannitów i Krzyżaków.</td><td></td></tr>
+        <tr><td>3. Opanowanie Jerozolimy przez Turków seldżuckich i utrudnianie pielgrzymek do miejsc świętych.</td><td></td></tr>
+        <tr><td>4. Ożywienie handlu miast włoskich z krajami Bliskiego Wschodu.</td><td></td></tr>
+        <tr><td>5. Zdobycie i splądrowanie Konstantynopola przez uczestników czwartej wyprawy.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie V. Hanza – związek miast handlowych</h3><span class="points">0–7 p.</span></div>
+      <p class="lead">Na mapie oznaczono sześć miast. Do każdego opisu dopisz właściwy numer 1–6.</p>
+      <div class="svg-wrap">
+        <img class="map-image" src="assets/hanza_wariant_G.svg"
+             alt="Mapa konturowa Europy Północnej z sześcioma miastami oznaczonymi numerami od 1 do 6">
+      </div>
+      <p class="source">Mapa bazowa: SimpleMapLab na podstawie danych Natural Earth 1:50 mln, domena publiczna (CC0);
+        oznaczenia i opracowanie zadania: własne. Cienkie jasne linie to współczesne granice państw,
+        naniesione wyłącznie dla ułatwienia orientacji.</p>
+      <table class="compact">
+        <tr><td>A. Miasto uznawane za główny ośrodek związku, w którym odbywały się jego zjazdy.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Port u ujścia Wisły, w XV w. najludniejsze miasto państwa zakonnego, później największy port Rzeczypospolitej.</td><td></td></tr>
+        <tr><td>C. Najdalej na wschód wysunięty kantor związku, w kupieckiej republice nad jeziorem Ilmen.</td><td></td></tr>
+        <tr><td>D. Kantor w Norwegii, ośrodek handlu suszonymi rybami.</td><td></td></tr>
+        <tr><td>E. Kantor we Flandrii, pośredniczący w handlu suknem.</td><td></td></tr>
+        <tr><td>F. Port u ujścia Dźwiny, główne miasto Inflant.</td><td></td></tr>
+      </table>
+      <p>G. Podaj nazwę związku miast handlowych, którego dotyczy mapa. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VI. Chronologia Europy XIV i XV wieku</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uporządkuj wydarzenia chronologicznie. Wpisz cyfry od 1 (najwcześniejsze)
+        do 5 (najpóźniejsze).</p>
+      <table class="compact">
+        <tr><td>A. Zbudowanie przez Jana Gutenberga prasy drukarskiej z ruchomą czcionką.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Zdobycie Konstantynopola przez Turków osmańskich.</td><td></td></tr>
+        <tr><td>C. Wybuch wojny stuletniej między Anglią a Francją.</td><td></td></tr>
+        <tr><td>D. Dotarcie wyprawy Krzysztofa Kolumba do wysp Ameryki.</td><td></td></tr>
+        <tr><td>E. Epidemia dżumy zwanej czarną śmiercią, która ogarnęła Europę.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VII. Akt unii lubelskiej</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Przeczytaj tekst i wykonaj polecenia.</p>
+      <div class="quote">
+        <p>„Iż już Królestwo Polskie i Wielkie Księstwo Litewskie jest jedno nierozdzielne
+          i nieróżne ciało, a także nieróżna, ale jedna a spólna Rzeczpospolita, która się
+          ze dwu państw i narodów w jeden lud zniosła i spoiła.”</p>
+      </div>
+      <p class="source">Akt unii lubelskiej (fragment, pisownia uwspółcześniona).</p>
+      <p>1. Podaj rok zawarcia tej unii. <span class="shortline"></span></p>
+      <p>2. Podaj nazwę państwa, które na jej mocy powstało. <span class="shortline"></span></p>
+      <p>3. Podaj imię i przydomek króla, za którego panowania zawarto unię.
+        <span class="shortline"></span></p>
+      <p>4. Wymień jeden wspólny organ lub urząd obu części tego państwa.
+        <span class="shortline"></span></p>
+      <p>5. Podaj jedną dziedzinę, w której Korona i Litwa zachowały odrębność.
+        <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VIII. Kościół katolicki wobec reformacji</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj nazwę lub postać do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – inkwizycja</div>
+        <div><strong>B</strong> – reformacja</div>
+        <div><strong>C</strong> – jezuici</div>
+        <div><strong>D</strong> – Ignacy Loyola</div>
+        <div><strong>E</strong> – sobór trydencki</div>
+        <div><strong>F</strong> – indeks ksiąg zakazanych</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Obradujący w latach 1545–1563 zjazd biskupów, który wyznaczył zasady odnowy Kościoła katolickiego.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Zakon powołany do obrony wiary katolickiej, prowadzący szkoły i misje.</td><td></td></tr>
+        <tr><td>3. Spis publikacji, których katolikom nie wolno było czytać.</td><td></td></tr>
+        <tr><td>4. Hiszpański szlachcic i dawny żołnierz, założyciel Towarzystwa Jezusowego.</td><td></td></tr>
+        <tr><td>5. Sąd kościelny powołany do ścigania osób oskarżonych o herezję.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IX. Obraz jako źródło historyczne</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Obejrzyj reprodukcję obrazu i wykonaj polecenia.</p>
+      <div class="svg-wrap">
+        <img class="art-image" src="assets/batory_pskow_matejko.jpg"
+             alt="Obraz przedstawiający króla w złotej zbroi siedzącego przed namiotem, przed nim klęczący posłowie z chlebem i solą oraz duchowny w czarnym stroju">
+      </div>
+      <p class="source">Jan Matejko, „Batory pod Pskowem”, 1872, Zamek Królewski w Warszawie – Muzeum;
+        reprodukcja w domenie publicznej (Wikimedia Commons).</p>
+      <p>1. Podaj imię i nazwisko autora obrazu. <span class="shortline"></span></p>
+      <p>2. Siedzący w zbroi władca to Stefan Batory. Podaj nazwę księstwa, którym rządził
+        przed objęciem tronu polskiego. <span class="shortline"></span></p>
+      <p>3. Podaj nazwę państwa, z którym Rzeczpospolita prowadziła przedstawioną tu wojnę
+        o Inflanty. <span class="shortline"></span></p>
+      <p>4. Podaj nazwę rozejmu zawartego w 1582 r., który tę wojnę zakończył.
+        <span class="shortline"></span></p>
+      <p>5. Wyjaśnij, dlaczego obraz namalowany w XIX w. nie może być traktowany jako wierny
+        zapis wyglądu tego wydarzenia.</p>
+      <div class="answer-space two"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie X. Anglia w czasach Elżbiety I</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">W zadaniach 1–5 zaznacz albo wpisz literę jednej poprawnej odpowiedzi.</p>
+      <table class="compact">
+        <tr><td>1. Elżbieta I pochodziła z dynastii:<br>
+          <span class="pick">A.</span> Stuartów &nbsp; <span class="pick">B.</span> Tudorów &nbsp;
+          <span class="pick">C.</span> Lancasterów &nbsp; <span class="pick">D.</span> Yorków</td>
+          <td style="width:16mm"></td></tr>
+        <tr><td>2. Kościół anglikański powstał w Anglii za panowania:<br>
+          <span class="pick">A.</span> Henryka VIII &nbsp; <span class="pick">B.</span> Ryszarda III &nbsp;
+          <span class="pick">C.</span> Jakuba I &nbsp; <span class="pick">D.</span> Karola I</td><td></td></tr>
+        <tr><td>3. Wielka Armada, rozbita w starciu z flotą angielską i przez sztormy, była flotą:<br>
+          <span class="pick">A.</span> Francji &nbsp; <span class="pick">B.</span> Niderlandów &nbsp;
+          <span class="pick">C.</span> Hiszpanii &nbsp; <span class="pick">D.</span> Portugalii</td><td></td></tr>
+        <tr><td>4. Klęska Wielkiej Armady umocniła pozycję Anglii jako:<br>
+          <span class="pick">A.</span> cesarstwa &nbsp; <span class="pick">B.</span> państwa kościelnego &nbsp;
+          <span class="pick">C.</span> republiki &nbsp; <span class="pick">D.</span> potęgi morskiej</td><td></td></tr>
+        <tr><td>5. Za panowania Elżbiety I tworzył dramatopisarz:<br>
+          <span class="pick">A.</span> Dante Alighieri &nbsp; <span class="pick">B.</span> Molier &nbsp;
+          <span class="pick">C.</span> William Szekspir &nbsp; <span class="pick">D.</span> Miguel Cervantes</td><td></td></tr>
+      </table>
+      <p>6. Podaj rok klęski Wielkiej Armady. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XI. Wojsko Rzeczypospolitej</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Wpisz pojęcie pasujące do opisu.</p>
+      <table class="compact">
+        <tr><td>1. Ciężka jazda polska, rozpoznawana po skrzydłach umocowanych przy siodle lub zbroi.</td><td style="width:52mm"></td></tr>
+        <tr><td>2. Długa broń drzewcowa, którą jeździec uderzał w pierwszym starciu.</td><td></td></tr>
+        <tr><td>3. Oddział jazdy będący podstawową jednostką organizacyjną wojska.</td><td></td></tr>
+        <tr><td>4. Wojsko zwoływane spośród szlachty, zobowiązanej stawić się konno i zbrojnie.</td><td></td></tr>
+        <tr><td>5. Piechota utworzona przez Stefana Batorego z chłopów z dóbr królewskich.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XII. Rokosze szlacheckie w XVII wieku</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Rokoszem nazywano zbrojne wystąpienie szlachty przeciwko królowi.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Rokosz Zebrzydowskiego wybuchł przeciw planom wzmocnienia władzy królewskiej przez Zygmunta III Wazę.</td><td></td></tr>
+        <tr><td>3. Rokoszanie zwyciężyli w bitwie pod Guzowem i zmusili Zygmunta III do zrzeczenia się tronu.</td><td></td></tr>
+        <tr><td>4. Rokosz Lubomirskiego był wymierzony w plan wyboru następcy tronu za życia Jana Kazimierza.</td><td></td></tr>
+        <tr><td>5. Rokosze wzmacniały władzę królewską i porządkowały ustrój Rzeczypospolitej.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIII. Gdańsk i handel zbożem</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Wykonaj polecenia 1–5.</p>
+      <table class="compact">
+        <tr><td>1. Rzeka, którą spławiano zboże z głębi kraju do Gdańska.</td><td style="width:52mm"></td></tr>
+        <tr><td>2. Płaskodenna łódź rzeczna używana do spławiania zboża.</td><td></td></tr>
+        <tr><td>3. Budowla portowa służąca do przechowywania zboża przed załadunkiem na statki.</td><td></td></tr>
+        <tr><td>4. Gospodarstwo szlacheckie nastawione na produkcję zboża na sprzedaż, oparte na pracy pańszczyźnianej.</td><td></td></tr>
+      </table>
+      <p>5. Wyjaśnij, dlaczego rozwój eksportu zboża pogarszał położenie chłopów
+        w Rzeczypospolitej.</p>
+      <div class="answer-space two"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIV. Sarmatyzm i obyczaj szlachecki</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj pojęcie do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – kontusz</div>
+        <div><strong>B</strong> – pańszczyzna</div>
+        <div><strong>C</strong> – mecenat</div>
+        <div><strong>D</strong> – złota wolność</div>
+        <div><strong>E</strong> – sarmatyzm</div>
+        <div><strong>F</strong> – karabela</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Przekonanie szlachty o pochodzeniu od starożytnych Sarmatów, kształtujące jej obyczaj i strój.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Wierzchni strój szlachecki z rozciętymi rękawami, noszony na żupan i przepasany pasem.</td><td></td></tr>
+        <tr><td>3. Ozdobna szabla, nieodłączny element ubioru szlachcica.</td><td></td></tr>
+        <tr><td>4. Ogół przywilejów, które szlachta uważała za podstawę ustroju Rzeczypospolitej.</td><td></td></tr>
+        <tr><td>5. Przymusowa, darmowa praca chłopa na gruncie pana.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XV. Krzyżówka – wojsko dawnej Rzeczypospolitej</h3><span class="points">0–7 p.</span></div>
+      <p class="lead">Rozwiąż krzyżówkę, a następnie wyjaśnij znaczenie hasła z zaznaczonej kolumny.</p>
+      <table class="compact" style="margin-bottom:2mm">
+        <tr><td>1. Część zbroi chroniąca głowę wojownika.</td></tr>
+        <tr><td>2. Spis Kozaków przyjętych na żołd Rzeczypospolitej.</td></tr>
+        <tr><td>3. Rodzaj wojska walczącego przy użyciu dział.</td></tr>
+        <tr><td>4. Długa broń palna piechoty, ładowana od wylotu lufy.</td></tr>
+        <tr><td>5. Broń sieczna o zakrzywionej głowni, noszona przez szlachtę.</td></tr>
+        <tr><td>6. Polowe umocnienie usypane z ziemi.</td></tr>
+      </table>
+      <table class="krzyzowka">
+        <tr><td class="numer">1.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="haslo"></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">2.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">3.</td><td class="pusta"></td><td class="pusta"></td><td></td><td></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">4.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">5.</td><td class="pusta"></td><td class="pusta"></td><td></td><td></td><td class="haslo"></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">6.</td><td class="pusta"></td><td></td><td></td><td></td><td class="haslo"></td><td></td><td></td><td></td></tr>
+      </table>
+      <p>Hasło: <span class="shortline"></span></p>
+      <p>Wyjaśnij, kogo określano tym słowem. (1 p.)</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVI. Sejm Rzeczypospolitej</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Najwyższym organem władzy ustawodawczej Rzeczypospolitej był <span class="shortline"></span>
+        <strong>(1)</strong>, zwoływany zwykle co dwa lata. Tworzyli go król, senat oraz
+        <span class="shortline"></span> <strong>(2)</strong>, do której posłów wybierano na
+        zgromadzeniach szlachty zwanych <span class="shortline"></span> <strong>(3)</strong>.
+        Od 1652 r. sprzeciw jednego posła mógł zerwać obrady — prawo to nazywano
+        <span class="shortline"></span> <strong>(4)</strong>. Zasadę, że król nie może ustanawiać
+        nowych praw bez zgody szlachty, wprowadziła konstytucja <span class="shortline"></span>
+        <strong>(5)</strong> z 1505 r.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVII. Gospodarka nowożytnej Europy</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Wpisz pojęcie pasujące do opisu.</p>
+      <table class="compact">
+        <tr><td>1. Duży zakład, w którym wyroby powstają ręcznie, a pracę dzieli się między robotników wykonujących pojedyncze czynności.</td><td style="width:52mm"></td></tr>
+        <tr><td>2. Polityka gospodarcza zalecająca popieranie wywozu towarów i ograniczanie przywozu.</td><td></td></tr>
+        <tr><td>3. Opłata pobierana od towarów przewożonych przez granicę państwa.</td><td></td></tr>
+        <tr><td>4. Spółka kupiecka, której państwo nadało wyłączne prawo handlu z określonym obszarem.</td><td></td></tr>
+        <tr><td>5. Wyłączne prawo do wytwarzania lub sprzedaży jakiegoś towaru.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVIII. Reformy czasów stanisławowskich</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Wykonaj polecenia 1–5.</p>
+      <p>1. Podaj rok powołania Komisji Edukacji Narodowej. <span class="shortline"></span></p>
+      <p>2. Podaj nazwę zakonu, po którego kasacie Komisja przejęła majątek na utrzymanie szkół.
+        <span class="shortline"></span></p>
+      <p>3. Podaj nazwę szkoły otwartej w 1765 r., kształcącej przyszłych oficerów i urzędników,
+        kierowanej przez Adama Kazimierza Czartoryskiego. <span class="shortline"></span></p>
+      <p>4. Podaj nazwę zespołu powołanego przez Komisję do opracowania nowych podręczników.
+        <span class="shortline"></span></p>
+      <p>5. Wyjaśnij, dlaczego powołanie Komisji Edukacji Narodowej uważa się za reformę nowatorską
+        w skali ówczesnej Europy.</p>
+      <div class="answer-space two"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIX. Upadek Rzeczypospolitej</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Do każdego wydarzenia dopisz właściwy rok, wybierając z ramki.
+        Jedna data jest zbędna.</p>
+      <div class="ramka">1772 &nbsp;•&nbsp; 1791 &nbsp;•&nbsp; 1792 &nbsp;•&nbsp; 1793 &nbsp;•&nbsp; 1794 &nbsp;•&nbsp; 1795</div>
+      <table class="compact">
+        <tr><td>1. Zawiązanie konfederacji targowickiej.</td><td style="width:24mm"></td></tr>
+        <tr><td>2. Trzeci rozbiór Polski.</td><td></td></tr>
+        <tr><td>3. Pierwszy rozbiór Polski.</td><td></td></tr>
+        <tr><td>4. Przysięga Tadeusza Kościuszki na rynku w Krakowie.</td><td></td></tr>
+        <tr><td>5. Uchwalenie Konstytucji 3 maja.</td><td></td></tr>
+      </table>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+    <h2>Karta odpowiedzi — wariant G</h2>
+    <p class="small muted">Kod ucznia: <span class="code">&nbsp;</span></p>
+    <table class="card compact">
+      <tr><th style="width:42mm">Zadanie</th><th>Odpowiedzi</th><th style="width:20mm">Punkty</th></tr>
+      <tr><td>I. Kultura Greków</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>II. Armia rzymska</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>III. Reguła św. Benedykta</td><td class="wide"></td><td></td></tr>
+      <tr><td>IV. Wyprawy krzyżowe</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>V. Hanza (mapa)</td><td>A …… B …… C …… D …… E …… F …… G ……</td><td></td></tr>
+      <tr><td>VI. Chronologia XIV–XV w.</td><td>A …… B …… C …… D …… E ……</td><td></td></tr>
+      <tr><td>VII. Akt unii lubelskiej</td><td class="wide"></td><td></td></tr>
+      <tr><td>VIII. Kościół wobec reformacji</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>IX. Obraz jako źródło</td><td class="wide"></td><td></td></tr>
+      <tr><td>X. Anglia Elżbiety I</td><td>1 …… 2 …… 3 …… 4 …… 5 …… 6 ……</td><td></td></tr>
+      <tr><td>XI. Wojsko Rzeczypospolitej</td><td class="wide"></td><td></td></tr>
+      <tr><td>XII. Rokosze szlacheckie</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>XIII. Gdańsk i handel zbożem</td><td class="wide"></td><td></td></tr>
+      <tr><td>XIV. Sarmatyzm</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>XV. Krzyżówka</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVI. Sejm Rzeczypospolitej</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVII. Gospodarka nowożytna</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVIII. Reformy stanisławowskie</td><td class="wide"></td><td></td></tr>
+      <tr><td>XIX. Upadek Rzeczypospolitej</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td><strong>Razem</strong></td><td></td><td><strong>/ 100</strong></td></tr>
+    </table>
+    <p class="footer-note">Arkusz treningowy, wariant G, ziarno 2026-09-14-G. Materiał autorski,
+      nie jest oficjalnym arkuszem Kujawsko-Pomorskiego Kuratora Oświaty.</p>
+  </section>
+</body>
+</html>

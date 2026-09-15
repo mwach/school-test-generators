@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Historia – etap szkolny – wariant F</title>
+  <style>
+    @page { size: A4; margin: 14mm 14mm 16mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+      font-size: 10.4pt; line-height: 1.28;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.08; margin-bottom: 5mm; color: #163a63; }
+    h2 { font-size: 15pt; color: #163a63; margin: 0 0 4mm; }
+    h3 { font-size: 11.4pt; margin: 0; color: #163a63; }
+    .cover {
+      min-height: 255mm; border: 2.2px solid #1f5a91; padding: 15mm 14mm;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { color: #9a5a00; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; }
+    .subtitle { font-size: 15pt; font-weight: 700; margin-bottom: 9mm; }
+    .meta {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm;
+      padding: 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 7mm;
+    }
+    .meta strong { color: #163a63; }
+    .code { border-bottom: 1px solid #172033; min-width: 55mm; display: inline-block; }
+    .notice { margin-top: auto; font-size: 9.2pt; color: #4c596b; }
+    .page-break { break-before: page; }
+    .instructions { padding: 5mm 6mm; background: #f6f3ed; border: 1px solid #d8cdb9; margin-bottom: 6mm; }
+    .instructions ol { margin: 2mm 0 0 6mm; padding-left: 4mm; }
+    .task {
+      border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+      border-radius: 2px; padding: 3mm 4mm; margin: 0 0 4mm;
+      break-inside: avoid;
+    }
+    .task-head {
+      display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 2mm;
+    }
+    .points { white-space: nowrap; font-weight: 700; color: #9a5a00; }
+    .lead { font-weight: 700; }
+    .source { font-size: 8.4pt; color: #5c6878; margin: 2mm 0; }
+    table { width: 100%; border-collapse: collapse; margin: 2mm 0; }
+    th, td { border: 1px solid #8090a2; padding: 2.2mm; vertical-align: top; }
+    th { background: #eaf1f7; color: #163a63; text-align: left; }
+    .compact th, .compact td { padding: 1.1mm 1.7mm; }
+    .choices { columns: 3; column-gap: 6mm; margin: 1.5mm 0; }
+    .choices div { break-inside: avoid; margin-bottom: 1mm; }
+    .shortline { display: inline-block; border-bottom: 1px dotted #566273; min-width: 30mm; height: 5mm; }
+    .answer-space { border-bottom: 1px dotted #566273; min-height: 7mm; margin-top: 1.2mm; }
+    .answer-space.two { min-height: 16mm; }
+    .quote {
+      background: #f7f8fa; border-left: 4px solid #9a5a00; padding: 3mm 4mm;
+      font-family: Georgia, serif; font-size: 10.2pt; margin: 3mm 0;
+    }
+    .quote p { margin: 0 0 2mm; }
+    .quote p:last-child { margin-bottom: 0; }
+    .svg-wrap { border: 1px solid #c5ced8; background: #fbfcfd; padding: 1.5mm; margin: 2mm 0; text-align: center; }
+    .map-image { display: block; margin: 0 auto; width: 100%; max-width: 96mm; height: auto; }
+    .art-image { display: block; margin: 0 auto; width: 100%; max-width: 158mm; height: auto; }
+    .small { font-size: 9pt; }
+    .muted { color: #5c6878; }
+    .pick { font-weight: 700; color: #163a63; }
+    .krzyzowka { width: auto; margin: 3mm 0; border-collapse: collapse; }
+    .krzyzowka td {
+      width: 6.5mm; height: 6.5mm; border: 1px solid #66748a; padding: 0;
+      text-align: center; font-weight: 700;
+    }
+    .krzyzowka td.numer {
+      width: 7mm; border: none; text-align: right; padding-right: 1.5mm; font-weight: 400;
+    }
+    .krzyzowka td.pusta { border: none; background: none; }
+    .krzyzowka td.haslo { background: #f5e3c8; }
+    .card td { height: 8mm; }
+    .card .wide { height: 14mm; }
+    .footer-note { font-size: 8.5pt; color: #606b79; border-top: 1px solid #c7cfd8; padding-top: 2mm; }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="eyebrow">Arkusz treningowy • wariant F</div>
+    <h1>Wojewódzki Konkurs Przedmiotowy z Historii</h1>
+    <div class="subtitle">Etap I – szkolny</div>
+    <div class="meta">
+      <div><strong>Zakres:</strong> działy I–XVII podstawy programowej</div>
+      <div><strong>Czas pracy:</strong> 60 minut</div>
+      <div><strong>Liczba zadań:</strong> 19</div>
+      <div><strong>Maksymalna liczba punktów:</strong> 100</div>
+      <div><strong>Wariant:</strong> F</div>
+      <div><strong>Ziarno wariantu:</strong> 2026-09-12-F</div>
+    </div>
+    <p><strong>KOD UCZNIA:</strong> <span class="code">&nbsp;</span></p>
+    <div class="instructions">
+      <h2>Instrukcja dla ucznia</h2>
+      <ol>
+        <li>Sprawdź, czy arkusz zawiera 19 zadań i kartę odpowiedzi.</li>
+        <li>Czytaj uważnie polecenia. Odpowiadaj wyłącznie w miejscach do tego przeznaczonych.</li>
+        <li>Jeśli polecenie nie stanowi inaczej, za każdy poprawnie uzupełniony element otrzymujesz 1 punkt.</li>
+        <li>W zadaniach P/F wpisz <strong>P</strong> (prawda) albo <strong>F</strong> (fałsz).</li>
+        <li>Nie używaj korektora ani urządzeń elektronicznych.</li>
+        <li>Pracuj samodzielnie. Na rozwiązanie testu masz 60 minut.</li>
+      </ol>
+    </div>
+    <p class="notice">
+      Materiał autorski do ćwiczeń, opracowany na podstawie regulaminu szczegółowego oraz
+      archiwalnych arkuszy etapu szkolnego Kujawsko-Pomorskiego Kuratora Oświaty
+      z lat 2018/2019–2025/2026. Nie jest oficjalnym arkuszem konkursowym.
+    </p>
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie I. Mezopotamia – cywilizacja między rzekami</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Wpisz pojęcie lub nazwę pasującą do opisu.</p>
+      <table class="compact">
+        <tr><td>1. Pismo Mezopotamii, odciskane rylcem na glinianych tabliczkach.</td><td style="width:52mm"></td></tr>
+        <tr><td>2. Najstarszy znany zbiór praw, spisany na kamiennej steli przez władcę Babilonu.</td><td></td></tr>
+        <tr><td>3. Schodkowa świątynia w kształcie wieży, wznoszona w miastach Mezopotamii.</td><td></td></tr>
+        <tr><td>4. Lud, który założył w Mezopotamii pierwsze miasta-państwa, m.in. Ur i Uruk.</td><td></td></tr>
+        <tr><td>5. Nazwy dwóch rzek, między którymi leżała Mezopotamia.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie II. Fenicjanie i Kreta – ludzie morza</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj pojęcie lub nazwę do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – labirynt</div><div><strong>B</strong> – purpura</div>
+        <div><strong>C</strong> – Sparta</div><div><strong>D</strong> – alfabet</div>
+        <div><strong>E</strong> – Fenicjanie</div><div><strong>F</strong> – Kreta</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Lud żeglarzy i kupców ze wschodniego wybrzeża Morza Śródziemnego, zakładający kolonie na całym jego obszarze.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Pismo złożone ze znaków oznaczających głoski; od niego wywodzą się pisma europejskie.</td><td></td></tr>
+        <tr><td>3. Wyspa, na której rozwinęła się najstarsza cywilizacja Europy.</td><td></td></tr>
+        <tr><td>4. Pałac w Knossos o tak zawiłym układzie pomieszczeń, że dał początek mitowi o Minotaurze.</td><td></td></tr>
+        <tr><td>5. Bardzo drogi barwnik, wytwarzany z morskich ślimaków, zastrzeżony dla dostojników.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie III. Starożytne Chiny i Indie</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Konfucjusz był władcą, który zjednoczył Chiny.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Chińczycy wynaleźli papier, jedwab, proch i kompas.</td><td></td></tr>
+        <tr><td>3. Buddyzm powstał w Chinach i dopiero potem dotarł do Indii.</td><td></td></tr>
+        <tr><td>4. Wielki Mur Chiński miał chronić państwo przed najazdami ludów z północy.</td><td></td></tr>
+        <tr><td>5. W starożytnych Indiach społeczeństwo dzieliło się na zamknięte grupy zwane kastami.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IV. Wojny punickie</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj pojęcie lub postać do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Hannibal</div><div><strong>B</strong> – Scypion Afrykański</div>
+        <div><strong>C</strong> – słonie bojowe</div><div><strong>D</strong> – Aleksander Wielki</div>
+        <div><strong>E</strong> – Kanny</div><div><strong>F</strong> – Kartagina</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Miasto w Afryce Północnej, główny rywal Rzymu w walce o panowanie nad Morzem Śródziemnym.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Wódz, który przeprowadził armię przez Alpy i wkroczył do Italii.</td><td></td></tr>
+        <tr><td>3. Bitwa z 216 r. p.n.e., w której Rzymianie ponieśli największą klęskę.</td><td></td></tr>
+        <tr><td>4. Rzymski dowódca, który w 202 r. p.n.e. zwyciężył pod Zamą.</td><td></td></tr>
+        <tr><td>5. Zwierzęta użyte w walce przez wojska kartagińskie, budzące przerażenie Rzymian.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie V. Mieszko I i początki państwa polskiego</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uzupełnij tekst, wpisując w luki litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Dobrawę</div><div><strong>B</strong> – Cedynią</div>
+        <div><strong>C</strong> – Piastów</div><div><strong>D</strong> – Jagiellonów</div>
+        <div><strong>E</strong> – łacińskiej</div><div><strong>F</strong> – Mieszko I</div>
+      </div>
+      <p>Pierwszym historycznym władcą Polski był <span class="shortline"></span> <strong>(1)</strong>,
+        panujący z dynastii <span class="shortline"></span> <strong>(2)</strong>. W 965 r. poślubił
+        czeską księżniczkę <span class="shortline"></span> <strong>(3)</strong>, a rok później przyjął
+        chrzest. Dzięki temu Polska weszła do kręgu kultury
+        <span class="shortline"></span> <strong>(4)</strong>. W 972 r. władca ten pokonał wojska
+        margrabiego Hodona w bitwie pod <span class="shortline"></span> <strong>(5)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VI. Zakony i rycerstwo w średniowieczu</h3><span class="points">0–7 p.</span></div>
+      <p class="lead">Rozwiąż krzyżówkę, a następnie wyjaśnij znaczenie hasła z zaznaczonej kolumny.</p>
+      <table class="compact" style="margin-bottom:2mm">
+        <tr><td>1. Zbiór przepisów określających życie wspólnoty zakonnej.</td></tr>
+        <tr><td>2. Zakon, który zakładał klasztory na nieuprawnych terenach i słynął z gospodarności.</td></tr>
+        <tr><td>3. Zakon żebraczy założony przez świętego Franciszka z Asyżu.</td></tr>
+        <tr><td>4. Młodzieniec służący rycerzowi i przygotowujący się do pasowania.</td></tr>
+        <tr><td>5. Znak rozpoznawczy rodu rycerskiego, umieszczany na tarczy.</td></tr>
+        <tr><td>6. Budynek, w którym mieszka wspólnota zakonna.</td></tr>
+      </table>
+      <table class="krzyzowka">
+        <tr><td class="numer">1.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">2.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">3.</td><td></td><td></td><td></td><td></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">4.</td><td class="pusta"></td><td class="pusta"></td><td></td><td></td><td class="haslo"></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">5.</td><td class="pusta"></td><td class="pusta"></td><td></td><td></td><td class="haslo"></td><td></td></tr>
+        <tr><td class="numer">6.</td><td></td><td></td><td></td><td></td><td class="haslo"></td><td></td><td></td><td></td></tr>
+      </table>
+      <p>Hasło: <span class="shortline"></span></p>
+      <p>Wyjaśnij, kogo określano tym słowem. (1 p.)</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VII. Zakon krzyżacki w Prusach</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Zakon krzyżacki powstał w czasie wypraw krzyżowych w Palestynie.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Krzyżacy zwrócili Polsce ziemię chełmińską zaraz po podbiciu Prusów.</td><td></td></tr>
+        <tr><td>3. Krzyżaków sprowadził do Polski w 1226 r. książę Konrad Mazowiecki, licząc na pomoc w walce z Prusami.</td><td></td></tr>
+        <tr><td>4. Zakon krzyżacki od początku podlegał władzy królów Polski.</td><td></td></tr>
+        <tr><td>5. Główną siedzibą wielkiego mistrza zakonu został zamek w Malborku.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VIII. Wynalazki i technika średniowiecza</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj wynalazek do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – trójpolówka</div><div><strong>B</strong> – koło garncarskie</div>
+        <div><strong>C</strong> – zbroja płytowa</div><div><strong>D</strong> – młyn wodny</div>
+        <div><strong>E</strong> – proch strzelniczy</div><div><strong>F</strong> – prasa drukarska</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Urządzenie wykorzystujące siłę nurtu rzeki do napędzania kamieni mielących zboże.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Sposób uprawy, w którym pole dzielono na trzy części, a jedną pozostawiano nieobsianą.</td><td></td></tr>
+        <tr><td>3. Wynalazek Jana Gutenberga, który umożliwił szybkie powielanie książek.</td><td></td></tr>
+        <tr><td>4. Mieszanina, która dotarła do Europy z Chin i zmieniła sposób prowadzenia wojen.</td><td></td></tr>
+        <tr><td>5. Osłona ciała rycerza wykonana z dopasowanych metalowych blach.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IX. Kultura polskiego średniowiecza</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj postać lub instytucję do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Wit Stwosz</div><div><strong>B</strong> – Jan Długosz</div>
+        <div><strong>C</strong> – Mikołaj Kopernik</div><div><strong>D</strong> – Gall Anonim</div>
+        <div><strong>E</strong> – Akademia Krakowska</div><div><strong>F</strong> – Wincenty Kadłubek</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Autor najstarszej kroniki dziejów Polski, napisanej po łacinie na początku XII w.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Biskup krakowski, autor kolejnej kroniki, pełnej legend o początkach Polski.</td><td></td></tr>
+        <tr><td>3. Uczelnia założona w 1364 r. przez Kazimierza Wielkiego, odnowiona w 1400 r.</td><td></td></tr>
+        <tr><td>4. Rzeźbiarz, twórca ołtarza w kościele Mariackim w Krakowie.</td><td></td></tr>
+        <tr><td>5. Kronikarz z XV w., autor „Roczników, czyli kronik słynnego Królestwa Polskiego”.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie X. Rekonkwista i zjednoczenie Hiszpanii</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Rekonkwistą nazywano walkę chrześcijańskich władców o odzyskanie Półwyspu Iberyjskiego z rąk muzułmanów.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Rekonkwista zakończyła się w 1492 r. zdobyciem Kordoby.</td><td></td></tr>
+        <tr><td>3. Połączenie Kastylii i Aragonii nastąpiło dzięki małżeństwu Izabeli i Ferdynanda.</td><td></td></tr>
+        <tr><td>4. Zakończenie rekonkwisty przypadło na ten sam rok, w którym Kolumb dotarł do Ameryki.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XI. Kazimierz Jagiellończyk i wojna trzynastoletnia</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uporządkuj wydarzenia chronologicznie. Wpisz cyfry od 1 (najwcześniejsze) do 6 (najpóźniejsze).</p>
+      <table class="compact">
+        <tr><td>A. Zwycięstwo flotylli kaperskiej w Zatoce Świeżej.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Powstanie Związku Pruskiego, zwróconego przeciw zakonowi krzyżackiemu.</td><td></td></tr>
+        <tr><td>C. Zawarcie drugiego pokoju toruńskiego.</td><td></td></tr>
+        <tr><td>D. Klęska wojsk polskich w bitwie pod Chojnicami.</td><td></td></tr>
+        <tr><td>E. Objęcie tronu polskiego przez Kazimierza Jagiellończyka.</td><td></td></tr>
+        <tr><td>F. Wybuch wojny trzynastoletniej i poddanie się stanów pruskich królowi Polski.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XII. Analiza tekstu źródłowego</h3><span class="points">0–6 p.</span></div>
+      <div class="quote">
+        <p>„Ponieważ prawa ogólne i ustawy publiczne dotyczą nie pojedynczego człowieka, ale ogółu
+          narodu, przeto na tym walnym sejmie radomskim wraz ze wszystkimi królestwa naszego prałatami,
+          radami i posłami ziemskimi za słuszne i sprawiedliwe uznaliśmy, jakoż postanowiliśmy,
+          iż odtąd na potomne czasy nic nowego (<em>nihil novi</em>) stanowionym być nie ma przez nas
+          i naszych następców, bez wspólnego zezwolenia senatorów i posłów ziemskich, co by było
+          z ujmą i ku uciążeniu Rzeczypospolitej oraz ze szkodą i krzywdą czyjąśkolwiek, tudzież
+          zmierzało ku zmianie prawa ogólnego i wolności publicznej”.</p>
+      </div>
+      <p class="source">Konstytucja <em>Nihil novi</em>, uchwalona na sejmie walnym w Radomiu w 1505 r.
+        Cyt. za: S. Godek, M. Wilczek-Karczewska, <em>Historia ustroju i prawa w Polsce do 1772/1795.
+        Wybór źródeł</em>, Warszawa 2006, s. 65.
+        Objaśnienia: <em>prałaci</em> – wysocy duchowni, <em>rady</em> – senatorowie,
+        <em>posłowie ziemscy</em> – przedstawiciele szlachty wybrani w ziemiach,
+        <em>z ujmą</em> – ze szkodą.</p>
+      <p>1. Podaj imię oraz nazwę dynastii króla, w czasie panowania którego uchwalono ten dokument. (1 p.)
+        <span class="shortline"></span></p>
+      <p>2. Wypisz z tekstu nazwy dwóch grup, bez których zgody król nie mógł już ustanawiać nowych praw. (1 p.)</p>
+      <div class="answer-space"></div>
+      <p>3. Podaj nazwę zgromadzenia, które od tej pory decydowało wspólnie z królem o prawach
+        w państwie. (1 p.) <span class="shortline"></span></p>
+      <p>4. Wyjaśnij, jak ten dokument zmienił pozycję szlachty w państwie. (1 p.)</p>
+      <div class="answer-space"></div>
+      <p>5. Podaj nazwę ustroju Rzeczypospolitej, którego początek wiąże się z tą konstytucją. (1 p.)
+        <span class="shortline"></span></p>
+      <p>6. Wyjaśnij, jaki był odległy, niekorzystny dla państwa skutek tak szerokich uprawnień
+        szlachty. (1 p.)</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIII. Miasta i mieszczaństwo w Rzeczypospolitej</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Wpisz pojęcie pasujące do opisu.</p>
+      <table class="compact">
+        <tr><td>1. Dokument królewski nadający osadzie prawa miejskie.</td><td style="width:52mm"></td></tr>
+        <tr><td>2. Zgromadzenie rządzące miastem, na którego czele stał burmistrz.</td><td></td></tr>
+        <tr><td>3. Najbogatsza grupa mieszczan, z której wybierano władze miasta.</td><td></td></tr>
+        <tr><td>4. Najbiedniejsza warstwa mieszkańców miasta, pozbawiona praw miejskich.</td><td></td></tr>
+        <tr><td>5. Budynek będący siedzibą władz miejskich, stawiany zwykle przy rynku.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIV. Imperium Osmańskie w Europie</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Na współczesnej mapie konturowej oznaczono pięć miejsc związanych z ekspansją
+        Turcji osmańskiej. Do każdego opisu dopisz właściwy numer 1–5.</p>
+      <div class="svg-wrap">
+        <img class="map-image" src="assets/imperium_osmanskie_wariant_F.svg"
+             alt="Mapa konturowa Europy Środkowej i Bałkanów z pięcioma miejscami oznaczonymi numerami od 1 do 5">
+      </div>
+      <p class="source">Mapa bazowa: SimpleMapLab na podstawie danych Natural Earth 1:50 mln, domena publiczna (CC0);
+        oznaczenia i opracowanie zadania: własne.</p>
+      <table class="compact">
+        <tr><td>A. Miasto zdobyte przez Turków w 1453 r., co oznaczało koniec cesarstwa bizantyjskiego.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Stolica państwa Habsburgów, oblegana przez Turków w 1529 i 1683 r.</td><td></td></tr>
+        <tr><td>C. Miejsce bitwy z 1444 r., w której poległ król Polski i Węgier Władysław III.</td><td></td></tr>
+        <tr><td>D. Twierdza nad Dunajem, zdobyta przez Turków w 1521 r.</td><td></td></tr>
+        <tr><td>E. Miejsce bitwy z 1526 r., po której Turcy opanowali większą część Węgier.</td><td></td></tr>
+      </table>
+      <p>F. Podaj rok odsieczy wiedeńskiej. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XV. Powstanie Chmielnickiego</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń, czy podane zjawisko było przyczyną (P), czy skutkiem (S) powstania
+        Bohdana Chmielnickiego.</p>
+      <table class="compact">
+        <tr><td>1. Odmowa zwiększenia liczby Kozaków rejestrowych oraz ucisk ludności ukraińskiej przez właścicieli wielkich majątków.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Wyniszczenie ziem ukraińskich i osłabienie Rzeczypospolitej przed najazdem szwedzkim.</td><td></td></tr>
+        <tr><td>3. Klęski wojsk polskich pod Żółtymi Wodami i Korsuniem, poniesione w walce z Kozakami wspieranymi przez Tatarów.</td><td></td></tr>
+        <tr><td>4. Sprzeciw prawosławnych Kozaków wobec ograniczania praw ich wyznania.</td><td></td></tr>
+        <tr><td>5. Zawarcie ugody perejasławskiej i uzależnienie Ukrainy od Rosji.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVI. Rosja Piotra I</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Piotr I wprowadzał w Rosji wzorowane na Europie Zachodniej zwyczaje, stroje i urzędy.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Piotr I przyjął dla siebie tytuł imperatora, czyli cesarza.</td><td></td></tr>
+        <tr><td>3. W wielkiej wojnie północnej Szwecja pobiła Rosję w bitwie pod Połtawą.</td><td></td></tr>
+        <tr><td>4. Nową stolicą państwa Piotr I uczynił zbudowany na podmokłym terenie Petersburg.</td><td></td></tr>
+        <tr><td>5. Piotr I zrezygnował z walki o dostęp do Morza Bałtyckiego.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVII. Oświecenie w Europie</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj postać lub pojęcie do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Wolter</div><div><strong>B</strong> – oświecenie</div>
+        <div><strong>C</strong> – Marcin Luter</div><div><strong>D</strong> – Denis Diderot</div>
+        <div><strong>E</strong> – Monteskiusz</div><div><strong>F</strong> – Jan Jakub Rousseau</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Myśliciel, który głosił potrzebę podziału władzy na ustawodawczą, wykonawczą i sądowniczą.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Filozof znany z krytyki Kościoła oraz obrony tolerancji i wolności słowa.</td><td></td></tr>
+        <tr><td>3. Autor poglądu, że władza pochodzi z umowy społecznej zawartej przez lud.</td><td></td></tr>
+        <tr><td>4. Redaktor Wielkiej Encyklopedii Francuskiej.</td><td></td></tr>
+        <tr><td>5. Nazwa epoki, w której rozum uznano za główne narzędzie poznania świata.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVIII. Obraz jako źródło historyczne</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Przyjrzyj się obrazowi i odpowiedz na pytania.</p>
+      <div class="svg-wrap">
+        <img class="art-image" src="assets/konstytucja_3_maja_matejko.jpg"
+             alt="Obraz Jana Matejki przedstawiający uroczysty pochód po uchwaleniu Konstytucji 3 maja">
+      </div>
+      <p class="source">Jan Matejko, <em>Konstytucja 3 maja 1791</em>, 1891 r., olej na płótnie,
+        247 × 446 cm, Zamek Królewski w Warszawie. Domena publiczna, Wikimedia Commons.</p>
+      <p>1. Podaj dzień, miesiąc i rok wydarzenia przedstawionego na obrazie. (1 p.)
+        <span class="shortline"></span></p>
+      <p>2. Podaj nazwę sejmu, który uchwalił ten dokument, oraz lata jego obrad. (1 p.)
+        <span class="shortline"></span></p>
+      <p>3. Podaj imię i nazwisko króla panującego w chwili uchwalenia konstytucji. (1 p.)
+        <span class="shortline"></span></p>
+      <p>4. Wymień dwie zmiany ustrojowe wprowadzone przez tę konstytucję. (1 p.)</p>
+      <div class="answer-space"></div>
+      <p>5. Podaj nazwę organu władzy wykonawczej, który konstytucja powoływała u boku króla. (1 p.)
+        <span class="shortline"></span></p>
+      <p>6. Wyjaśnij, dlaczego obraz namalowany w 1891 r. nie jest wiarygodnym źródłem wiedzy
+        o wyglądzie tej uroczystości. (1 p.)</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIX. Rozbiory i upadek Rzeczypospolitej</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj nazwę do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Racławice</div><div><strong>B</strong> – kosynierzy</div>
+        <div><strong>C</strong> – sejm grodzieński</div><div><strong>D</strong> – konfederacja targowicka</div>
+        <div><strong>E</strong> – Tadeusz Kościuszko</div><div><strong>F</strong> – Maciejowice</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Zawiązana w 1792 r. przeciw Konstytucji 3 maja; wezwała do Polski wojska rosyjskie.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Przywódca powstania z 1794 r., który złożył przysięgę na rynku w Krakowie.</td><td></td></tr>
+        <tr><td>3. Bitwa z 1794 r., w której o zwycięstwie zadecydował atak chłopów uzbrojonych w kosy.</td><td></td></tr>
+        <tr><td>4. Bitwa z 1794 r., po której przywódca powstania trafił do rosyjskiej niewoli.</td><td></td></tr>
+        <tr><td>5. Zgromadzenie, które w 1793 r. pod naciskiem Rosji zatwierdziło drugi rozbiór.</td><td></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="page-break">
+    <h2>Karta odpowiedzi</h2>
+    <p class="muted">Jeżeli test jest przeprowadzany w warunkach konkursowych, odpowiedzi można przenieść na tę kartę.</p>
+    <table class="card compact">
+      <tr><th style="width:26mm">Zadanie</th><th>Odpowiedzi</th></tr>
+      <tr><td>I</td><td class="wide">1.____________ 2.____________ 3.____________ 4.____________ 5.____________</td></tr>
+      <tr><td>II</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>III</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>IV</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>V</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>VI</td><td class="wide">1._______ 2._______ 3._______ 4._______ 5._______ 6._______ &nbsp; hasło: _______
+        <span class="muted small">(wyjaśnienie hasła zapisz w arkuszu)</span></td></tr>
+      <tr><td>VII</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>VIII</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>IX</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>X</td><td>1.__ 2.__ 3.__ 4.__</td></tr>
+      <tr><td>XI</td><td>A.__ B.__ C.__ D.__ E.__ F.__</td></tr>
+      <tr><td>XII</td><td class="wide">1.____________ 3.____________ 5.____________
+        <span class="muted small">(odpowiedzi na pytania 2., 4. i 6. zapisz w arkuszu)</span></td></tr>
+      <tr><td>XIII</td><td class="wide">1.____________ 2.____________ 3.____________ 4.____________ 5.____________</td></tr>
+      <tr><td>XIV</td><td>A.__ B.__ C.__ D.__ E.__ &nbsp; F.____________</td></tr>
+      <tr><td>XV</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>XVI</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>XVII</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>XVIII</td><td class="wide">1.____________ 2.____________ 3.____________ 5.____________
+        <span class="muted small">(odpowiedzi na pytania 4. i 6. zapisz w arkuszu)</span></td></tr>
+      <tr><td>XIX</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+    </table>
+    <p><strong>Wynik:</strong> <span class="shortline"></span> / 100 p.</p>
+    <p class="footer-note">Koniec arkusza. Sprawdź, czy odpowiedziałeś(-aś) na wszystkie pytania.</p>
+  </section>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Historia – etap szkolny – wariant E</title>
+  <style>
+    @page { size: A4; margin: 14mm 14mm 16mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+      font-size: 10.4pt; line-height: 1.28;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.08; margin-bottom: 5mm; color: #163a63; }
+    h2 { font-size: 15pt; color: #163a63; margin: 0 0 4mm; }
+    h3 { font-size: 11.4pt; margin: 0; color: #163a63; }
+    .cover {
+      min-height: 255mm; border: 2.2px solid #1f5a91; padding: 15mm 14mm;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { color: #9a5a00; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; }
+    .subtitle { font-size: 15pt; font-weight: 700; margin-bottom: 9mm; }
+    .meta {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm;
+      padding: 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 7mm;
+    }
+    .meta strong { color: #163a63; }
+    .code { border-bottom: 1px solid #172033; min-width: 55mm; display: inline-block; }
+    .notice { margin-top: auto; font-size: 9.2pt; color: #4c596b; }
+    .page-break { break-before: page; }
+    .instructions { padding: 5mm 6mm; background: #f6f3ed; border: 1px solid #d8cdb9; margin-bottom: 6mm; }
+    .instructions ol { margin: 2mm 0 0 6mm; padding-left: 4mm; }
+    .task {
+      border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+      border-radius: 2px; padding: 3mm 4mm; margin: 0 0 4mm;
+      break-inside: avoid;
+    }
+    .task-head {
+      display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 2mm;
+    }
+    .points { white-space: nowrap; font-weight: 700; color: #9a5a00; }
+    .lead { font-weight: 700; }
+    .source { font-size: 8.4pt; color: #5c6878; margin: 2mm 0; }
+    table { width: 100%; border-collapse: collapse; margin: 2mm 0; }
+    th, td { border: 1px solid #8090a2; padding: 2.2mm; vertical-align: top; }
+    th { background: #eaf1f7; color: #163a63; text-align: left; }
+    .compact th, .compact td { padding: 1.1mm 1.7mm; }
+    .choices { columns: 3; column-gap: 6mm; margin: 1.5mm 0; }
+    .choices div { break-inside: avoid; margin-bottom: 1mm; }
+    .shortline { display: inline-block; border-bottom: 1px dotted #566273; min-width: 30mm; height: 5mm; }
+    .answer-space { border-bottom: 1px dotted #566273; min-height: 7mm; margin-top: 1.2mm; }
+    .answer-space.two { min-height: 16mm; }
+    .quote {
+      background: #f7f8fa; border-left: 4px solid #9a5a00; padding: 3mm 4mm;
+      font-family: Georgia, serif; font-size: 10.2pt; margin: 3mm 0;
+    }
+    .quote p { margin: 0 0 2mm; }
+    .quote p:last-child { margin-bottom: 0; }
+    .svg-wrap { border: 1px solid #c5ced8; background: #fbfcfd; padding: 1.5mm; margin: 2mm 0; text-align: center; }
+    .map-image { display: block; margin: 0 auto; width: 100%; max-width: 96mm; height: auto; }
+    .art-image { display: block; margin: 0 auto; width: 100%; max-width: 165mm; height: auto; }
+    .small { font-size: 9pt; }
+    .muted { color: #5c6878; }
+    .pick { font-weight: 700; color: #163a63; }
+    .krzyzowka { width: auto; margin: 3mm 0; border-collapse: collapse; }
+    .krzyzowka td {
+      width: 6.5mm; height: 6.5mm; border: 1px solid #66748a; padding: 0;
+      text-align: center; font-weight: 700;
+    }
+    .krzyzowka td.numer {
+      width: 7mm; border: none; text-align: right; padding-right: 1.5mm; font-weight: 400;
+    }
+    .krzyzowka td.pusta { border: none; background: none; }
+    .krzyzowka td.haslo { background: #f5e3c8; }
+    .card td { height: 8mm; }
+    .card .wide { height: 14mm; }
+    .footer-note { font-size: 8.5pt; color: #606b79; border-top: 1px solid #c7cfd8; padding-top: 2mm; }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="eyebrow">Arkusz treningowy • wariant E</div>
+    <h1>Wojewódzki Konkurs Przedmiotowy z Historii</h1>
+    <div class="subtitle">Etap I – szkolny</div>
+    <div class="meta">
+      <div><strong>Zakres:</strong> działy I–XVII podstawy programowej</div>
+      <div><strong>Czas pracy:</strong> 60 minut</div>
+      <div><strong>Liczba zadań:</strong> 19</div>
+      <div><strong>Maksymalna liczba punktów:</strong> 100</div>
+      <div><strong>Wariant:</strong> E</div>
+      <div><strong>Ziarno wariantu:</strong> 2026-09-11-E</div>
+    </div>
+    <p><strong>KOD UCZNIA:</strong> <span class="code">&nbsp;</span></p>
+    <div class="instructions">
+      <h2>Instrukcja dla ucznia</h2>
+      <ol>
+        <li>Sprawdź, czy arkusz zawiera 19 zadań i kartę odpowiedzi.</li>
+        <li>Czytaj uważnie polecenia. Odpowiadaj wyłącznie w miejscach do tego przeznaczonych.</li>
+        <li>Jeśli polecenie nie stanowi inaczej, za każdy poprawnie uzupełniony element otrzymujesz 1 punkt.</li>
+        <li>W zadaniach P/F wpisz <strong>P</strong> (prawda) albo <strong>F</strong> (fałsz).</li>
+        <li>Nie używaj korektora ani urządzeń elektronicznych.</li>
+        <li>Pracuj samodzielnie. Na rozwiązanie testu masz 60 minut.</li>
+      </ol>
+    </div>
+    <p class="notice">
+      Materiał autorski do ćwiczeń, opracowany na podstawie regulaminu szczegółowego oraz
+      archiwalnych arkuszy etapu szkolnego Kujawsko-Pomorskiego Kuratora Oświaty
+      z lat 2018/2019–2025/2026. Nie jest oficjalnym arkuszem konkursowym.
+    </p>
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie I. Starożytny Egipt</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj pojęcie do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – piramida</div><div><strong>B</strong> – mumifikacja</div>
+        <div><strong>C</strong> – pismo klinowe</div><div><strong>D</strong> – faraon</div>
+        <div><strong>E</strong> – papirus</div><div><strong>F</strong> – hieroglify</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Władca Egiptu, uważany przez poddanych za żyjącego boga.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Pismo starożytnych Egipcjan, złożone ze znaków obrazkowych.</td><td></td></tr>
+        <tr><td>3. Materiał do pisania wytwarzany z rośliny rosnącej nad Nilem.</td><td></td></tr>
+        <tr><td>4. Grobowiec faraona wznoszony z kamienia w kształcie ostrosłupa.</td><td></td></tr>
+        <tr><td>5. Zabieg zabezpieczający ciało zmarłego przed rozkładem.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie II. Ateny i Sparta</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P albo F.</p>
+      <table class="compact">
+        <tr><td>1. W demokracji ateńskiej prawa polityczne przysługiwały wszystkim mieszkańcom miasta, także kobietom i niewolnikom.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. W Sparcie równocześnie panowało dwóch królów.</td><td></td></tr>
+        <tr><td>3. Wojna peloponeska zakończyła się zwycięstwem Aten nad Spartą.</td><td></td></tr>
+        <tr><td>4. W Atenach narodziła się demokracja, a najważniejszym organem władzy było zgromadzenie ludowe.</td><td></td></tr>
+        <tr><td>5. Wychowanie spartańskie przygotowywało chłopców przede wszystkim do służby wojskowej.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie III. Życie codzienne w starożytnym Rzymie</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Wpisz pojęcie pasujące do opisu.</p>
+      <table class="compact">
+        <tr><td>1. Owalna budowla, w której odbywały się walki gladiatorów.</td><td style="width:52mm"></td></tr>
+        <tr><td>2. Publiczne łaźnie rzymskie, będące też miejscem spotkań i rozmów.</td><td></td></tr>
+        <tr><td>3. Główny plac Rzymu, ośrodek życia politycznego, religijnego i handlowego.</td><td></td></tr>
+        <tr><td>4. Powiedzenie określające zjednywanie sobie ubogich rozdawnictwem zboża i widowiskami.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IV. Upadek cesarstwa zachodniorzymskiego</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uzupełnij tekst, wybierając wyrazy z ramki. Jedna odpowiedź jest zbędna;
+        w razie potrzeby dopasuj formę gramatyczną.</p>
+      <div class="choices">
+        <div><strong>Hunowie</strong></div><div><strong>Odoaker</strong></div>
+        <div><strong>Teodozjusz Wielki</strong></div><div><strong>starożytność</strong></div>
+        <div><strong>476</strong></div><div><strong>313</strong></div>
+      </div>
+      <p>W 395 r. cesarz <span class="shortline"></span> <strong>(1)</strong> podzielił państwo rzymskie
+        między dwóch synów – tak powstały cesarstwo wschodnie i cesarstwo zachodnie. Już wcześniej
+        na ziemie cesarstwa napływały plemiona germańskie, uciekające przed koczownikami zwanymi
+        <span class="shortline"></span> <strong>(2)</strong>. W <span class="shortline"></span> <strong>(3)</strong> r.
+        germański wódz <span class="shortline"></span> <strong>(4)</strong> pozbawił władzy ostatniego
+        cesarza zachodniorzymskiego. Wydarzenie to historycy uznają za koniec
+        <span class="shortline"></span> <strong>(5)</strong> i początek średniowiecza.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie V. Wikingowie i Normanowie</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj pojęcie lub nazwę do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Normandia</div><div><strong>B</strong> – Leif Eriksson</div>
+        <div><strong>C</strong> – Hastings</div><div><strong>D</strong> – wikingowie</div>
+        <div><strong>E</strong> – Lechendorf</div><div><strong>F</strong> – drakkar</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Skandynawscy wojownicy i żeglarze, którzy od VIII w. napadali na wybrzeża Europy.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Długi, smukły okręt wojenny ludów północy, poruszany wiosłami i żaglem.</td><td></td></tr>
+        <tr><td>3. Żeglarz, który około 1000 r. dotarł do wybrzeży Ameryki Północnej.</td><td></td></tr>
+        <tr><td>4. Kraina w północnej Francji, nadana w 911 r. wodzowi normańskiemu.</td><td></td></tr>
+        <tr><td>5. Bitwa z 1066 r., po której Wilhelm Zdobywca opanował Anglię.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VI. Państwo Franków</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Dopasuj postać lub wydarzenie do opisu. Wpisz litery A–E. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – traktat w Verdun</div><div><strong>B</strong> – Justynian Wielki</div>
+        <div><strong>C</strong> – Karol Młot</div><div><strong>D</strong> – Chlodwig</div>
+        <div><strong>E</strong> – Karol Wielki</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Władca Franków, który w 496 r. przyjął chrzest wraz ze swoją drużyną.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Wódz Franków, który w 732 r. pod Poitiers powstrzymał najazd Arabów.</td><td></td></tr>
+        <tr><td>3. Król Franków koronowany w 800 r. w Rzymie na cesarza.</td><td></td></tr>
+        <tr><td>4. Umowa z 843 r., na mocy której państwo Franków podzielono na trzy części.</td><td></td></tr>
+      </table>
+    </div>
+
+<div class="task">
+      <div class="task-head"><h3>Zadanie VII. Słowianie i sąsiedzi Polski</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P albo F.</p>
+      <table class="compact">
+        <tr><td>1. Słowian dzieli się na trzy grupy: zachodnich, wschodnich i południowych.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Ruś Kijowska przyjęła chrzest z Bizancjum za panowania Włodzimierza Wielkiego.</td><td></td></tr>
+        <tr><td>3. Czechy przyjęły chrzest później niż państwo Mieszka I.</td><td></td></tr>
+        <tr><td>4. Państwo wielkomorawskie przyjęło chrześcijaństwo w obrządku słowiańskim dzięki misji Cyryla i Metodego.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VIII. Obraz jako źródło historyczne</h3><span class="points">0–5 p.</span></div>
+      <img class="art-image" src="assets/grunwald_matejko.jpg"
+           alt="Obraz Jana Matejki przedstawiający zgiełk wielkiej bitwy: w centrum jeździec w czerwonym stroju z uniesionym mieczem, obok ginący rycerz w białym płaszczu, w tle chorągwie z czarnymi krzyżami">
+      <p class="source">Jan Matejko, „Bitwa pod Grunwaldem”, 1878 r., olej na płótnie, 426 × 987 cm;
+        Muzeum Narodowe w Warszawie (nr inw. MP 443). Reprodukcja: Wikimedia Commons, domena publiczna.</p>
+      <p>1. Podaj imię i nazwisko malarza, który namalował ten obraz. <span class="shortline"></span></p>
+      <p>2. Podaj datę roczną bitwy przedstawionej na obrazie. <span class="shortline"></span></p>
+      <p>3. Podaj nazwę zakonu rycerskiego, przeciwko któremu toczono tę bitwę. <span class="shortline"></span></p>
+      <p>4. Wymień dwa państwa, których wojska walczyły w tej bitwie po wspólnej stronie.</p>
+      <div class="answer-space"></div>
+      <p>5. Wyjaśnij, dlaczego ten obraz nie jest wiarygodnym źródłem wiedzy o przebiegu bitwy.</p>
+      <div class="answer-space"></div>
+    </div>
+
+<div class="task">
+      <div class="task-head"><h3>Zadanie IX. Wielkie odkrycia geograficzne</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń, czy podane zjawisko było przyczyną (P), czy skutkiem (S) wielkich odkryć geograficznych.</p>
+      <table class="compact">
+        <tr><td>1. Poszukiwanie nowej drogi morskiej do Indii po opanowaniu Bliskiego Wschodu przez Turków.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Napływ do Europy wielkich ilości złota i srebra, powodujący wzrost cen.</td><td></td></tr>
+        <tr><td>3. Udoskonalenie karaweli, kompasu i astrolabium.</td><td></td></tr>
+        <tr><td>4. Powstanie rozległych imperiów kolonialnych Hiszpanii i Portugalii.</td><td></td></tr>
+        <tr><td>5. Zniszczenie państw Azteków i Inków przez konkwistadorów.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie X. Miasta Rzeczypospolitej Obojga Narodów</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Na współczesnej mapie konturowej oznaczono pięć miast ważnych dla dziejów Rzeczypospolitej.
+        Do każdego opisu dopisz właściwy numer 1–5.</p>
+      <div class="svg-wrap">
+        <img class="map-image" src="assets/rzeczpospolita_miasta_wariant_E.svg"
+             alt="Mapa konturowa Europy Środkowej z pięcioma miastami oznaczonymi numerami od 1 do 5">
+      </div>
+      <p class="source">Mapa bazowa: SimpleMapLab na podstawie danych Natural Earth 1:50 mln, domena publiczna (CC0);
+        oznaczenia i opracowanie zadania: własne.</p>
+      <table class="compact">
+        <tr><td>A. Miasto koronacyjne królów Polski, siedziba Akademii Krakowskiej.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Główny port Rzeczypospolitej nad Bałtykiem, przez który wywożono zboże.</td><td></td></tr>
+        <tr><td>C. Stolica Wielkiego Księstwa Litewskiego.</td><td></td></tr>
+        <tr><td>D. Miasto, do którego za panowania Zygmunta III Wazy przeniesiono stolicę państwa.</td><td></td></tr>
+        <tr><td>E. Główne miasto Rusi Czerwonej, przyłączonej do Polski przez Kazimierza Wielkiego.</td><td></td></tr>
+      </table>
+      <p>F. Podaj nazwę rzeki, którą spławiano zboże do miasta oznaczonego numerem 1.
+        <span class="shortline"></span></p>
+    </div>
+
+<div class="task">
+      <div class="task-head"><h3>Zadanie XI. Wieś i gospodarka folwarczna</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">A. Wpisz pojęcie pasujące do opisu.</p>
+      <table class="compact">
+        <tr><td>1. Duże gospodarstwo szlacheckie, produkujące zboże przeznaczone na sprzedaż.</td><td style="width:52mm"></td></tr>
+        <tr><td>2. Przymusowa, nieodpłatna praca chłopa na gruntach pana.</td><td></td></tr>
+        <tr><td>3. Zależność osobista chłopa od pana, zakazująca mu opuszczenia wsi bez zgody.</td><td></td></tr>
+        <tr><td>4. Określenie Rzeczypospolitej jako głównego dostawcy zboża dla Europy Zachodniej.</td><td></td></tr>
+      </table>
+      <p>B. 5. Podaj nazwę stanu społecznego, do którego należeli właściciele folwarków.
+        <span class="shortline"></span></p>
+      <p>6. Wyjaśnij, dlaczego rozwój folwarków pogarszał położenie chłopów.</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XII. Obyczaje i kultura szlachecka</h3><span class="points">0–7 p.</span></div>
+      <p class="lead">Rozwiąż krzyżówkę, a następnie wyjaśnij znaczenie hasła z zaznaczonej kolumny.</p>
+      <table class="compact" style="margin-bottom:2mm">
+        <tr><td>1. Kultura i obyczajowość szlachty polskiej, wywodzącej swój rodowód od starożytnych Sarmatów.</td></tr>
+        <tr><td>2. Urzędnik stojący na czele województwa.</td></tr>
+        <tr><td>3. Wierzchni strój noszony przez szlachcica, zapinany na pętlice.</td></tr>
+        <tr><td>4. Przedstawiciel szlachty wybrany na sejmiku, aby reprezentować ziemię na sejmie walnym.</td></tr>
+        <tr><td>5. Ciężka jazda Rzeczypospolitej, słynąca ze skrzydeł u zbroi.</td></tr>
+        <tr><td>6. Broń biała, będąca nieodłącznym elementem stroju szlacheckiego.</td></tr>
+      </table>
+      <table class="krzyzowka">
+        <tr><td class="numer">1.</td><td></td><td></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">2.</td><td class="pusta"></td><td></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">3.</td><td class="pusta"></td><td class="pusta"></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">4.</td><td class="pusta"></td><td></td><td class="haslo"></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">5.</td><td></td><td></td><td class="haslo"></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">6.</td><td class="pusta"></td><td></td><td class="haslo"></td><td></td><td></td><td></td><td></td></tr>
+      </table>
+      <p>Hasło: <span class="shortline"></span></p>
+      <p>Wyjaśnij, czym było hasło i przeciwko komu było skierowane. (1 p.)</p>
+      <div class="answer-space"></div>
+    </div>
+
+<div class="task">
+      <div class="task-head"><h3>Zadanie XIII. Rzeczpospolita w XVII wieku</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uporządkuj wydarzenia chronologicznie. Wpisz cyfry od 1 (najwcześniejsze) do 6 (najpóźniejsze).</p>
+      <table class="compact">
+        <tr><td>A. Zawarcie pokoju w Oliwie.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Odsiecz wiedeńska.</td><td></td></tr>
+        <tr><td>C. Wybuch powstania Bohdana Chmielnickiego.</td><td></td></tr>
+        <tr><td>D. Zawarcie rozejmu w Andruszowie z Rosją.</td><td></td></tr>
+        <tr><td>E. Obrona Jasnej Góry przed Szwedami.</td><td></td></tr>
+        <tr><td>F. Kapitulacja pospolitego ruszenia pod Ujściem.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIV. Analiza tekstu źródłowego</h3><span class="points">0–6 p.</span></div>
+      <div class="quote">
+        <p>„Wielka Boga Człowieka Matko, Najświętsza Dziewico. Ja, Jan Kazimierz [...] do Najświętszych
+          stóp Twoich przypadłszy, Ciebie dziś za Patronkę moją i za Królową państw moich obieram.
+          Tak samego siebie, jak i moje Królestwo polskie, księstwo litewskie, ruskie, pruskie,
+          mazowieckie, żmudzkie, inflanckie [...] Twojej osobliwej opiece i obronie polecam [...].</p>
+        <p>Obiecuję wreszcie i ślubuję, że kiedy [...] nad wrogami, a szczególnie nad Szwedem odniosę
+          zwycięstwo, będę się starał u Stolicy Apostolskiej, aby na podziękowanie [...] dzień ten
+          corocznie uroczyście [...] był święcony [...].</p>
+        <p>Skoro zaś z wielką serca mego żałością wyraźnie widzę, że za jęki i ucisk kmieci spadły
+          w tym siedmioleciu na Królestwo moje [...] plagi: powietrza, wojny i innych nieszczęść,
+          przyrzekam ponadto i ślubuję, że po nastaniu pokoju wraz ze wszystkimi stanami wszelkich
+          będę używał środków, aby lud Królestwa mego od niesprawiedliwych ciężarów i ucisków wyzwolić”.</p>
+      </div>
+      <p class="source">Śluby złożone przez króla w katedrze lwowskiej 1 kwietnia 1656 r.
+        Cyt. za: <em>Liturgia godzin</em>, t. II, Pallottinum, Poznań 1984, s. 1390 (skróty zaznaczono).
+        Objaśnienia: <em>kmiecie</em> – chłopi, <em>plaga powietrza</em> – epidemia, <em>siedmiolecie</em> – ostatnie siedem lat.</p>
+      <p>1. Podaj imię władcy składającego ślubowanie oraz nazwę dynastii, z której pochodził. (1 p.)</p>
+      <div class="answer-space"></div>
+      <p>2. Podaj nazwę wojny, w czasie której złożono to ślubowanie. (1 p.) <span class="shortline"></span></p>
+      <p>3. Wypisz z tekstu nazwę nieprzyjaciela, nad którym król chce odnieść zwycięstwo. (1 p.)
+        <span class="shortline"></span></p>
+      <p>4. Kogo król obrał za Patronkę i Królową swoich państw? (1 p.) <span class="shortline"></span></p>
+      <p>5. Wypisz z tekstu obietnicę króla dotyczącą chłopów. (1 p.)</p>
+      <div class="answer-space"></div>
+      <p>6. Wyjaśnij, czy król spełnił tę obietnicę. (1 p.)</p>
+      <div class="answer-space"></div>
+    </div>
+
+<div class="task">
+      <div class="task-head"><h3>Zadanie XV. Kultura baroku w Europie</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj pojęcie lub postać do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Rembrandt</div><div><strong>B</strong> – Leonardo da Vinci</div>
+        <div><strong>C</strong> – Wersal</div><div><strong>D</strong> – Peter Paul Rubens</div>
+        <div><strong>E</strong> – barok</div><div><strong>F</strong> – Gian Lorenzo Bernini</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Styl w sztuce XVII w., cechujący się przepychem, ruchem i silnymi kontrastami światła i cienia.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Okazała rezydencja Ludwika XIV, naśladowana przez dwory całej Europy.</td><td></td></tr>
+        <tr><td>3. Włoski rzeźbiarz i architekt, twórca kolumnady przed bazyliką św. Piotra w Rzymie.</td><td></td></tr>
+        <tr><td>4. Niderlandzki malarz, mistrz światłocienia, autor „Straży nocnej”.</td><td></td></tr>
+        <tr><td>5. Flamandzki malarz barokowy, znany z rozbudowanych, pełnych ruchu kompozycji.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVI. Kolonializm i gospodarka nowożytna</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P albo F.</p>
+      <table class="compact">
+        <tr><td>1. Pierwsze imperia kolonialne zbudowały Anglia i Francja, wyprzedzając Hiszpanię i Portugalię.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Kolonie to ziemie podbite i uzależnione politycznie oraz gospodarczo od państwa europejskiego.</td><td></td></tr>
+        <tr><td>3. Plantacje w Ameryce opierały się głównie na pracy najemnej wolnych robotników z Europy.</td><td></td></tr>
+        <tr><td>4. Handel trójkątny łączył Europę, Afrykę i Amerykę; z Afryki wywożono niewolników.</td><td></td></tr>
+        <tr><td>5. Z Ameryki sprowadzono do Europy między innymi ziemniaki, kukurydzę, pomidory i kakao.</td><td></td></tr>
+      </table>
+    </div>
+
+<div class="task">
+      <div class="task-head"><h3>Zadanie XVII. Oświecony absolutyzm</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">A. Dopasuj postać lub pojęcie do opisu. Wpisz litery A–E. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – oświecony absolutyzm</div><div><strong>B</strong> – Ludwik XIV</div>
+        <div><strong>C</strong> – Katarzyna II</div><div><strong>D</strong> – Maria Teresa</div>
+        <div><strong>E</strong> – Fryderyk II</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Król Prus zwany Wielkim, który nazwał siebie „pierwszym sługą państwa”.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Caryca Rosji, która rozszerzyła granice państwa i uczestniczyła w rozbiorach Polski.</td><td></td></tr>
+        <tr><td>3. Władczyni Austrii, która przeprowadziła reformy szkolnictwa i administracji.</td><td></td></tr>
+        <tr><td>4. Ustrój, w którym monarcha ma pełnię władzy, ale rządzi w duchu idei oświecenia.</td><td></td></tr>
+      </table>
+      <p>B. 5. Podaj dwie reformy typowe dla panowania oświeconych monarchów.</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVIII. Sejm Wielki i Konstytucja 3 maja</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uzupełnij tekst, wybierając wyrazy z ramki. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>1788</strong></div><div><strong>1791</strong></div>
+        <div><strong>Stany Zjednoczone</strong></div><div><strong>liberum veto</strong></div>
+        <div><strong>Straż Praw</strong></div><div><strong>Anglia</strong></div>
+      </div>
+      <p>Obrady Sejmu Wielkiego, zwanego też Czteroletnim, rozpoczęły się w
+        <span class="shortline"></span> <strong>(1)</strong> r. Jego najważniejszym dziełem była
+        uchwalona 3 maja <span class="shortline"></span> <strong>(2)</strong> r. Ustawa Rządowa,
+        czyli Konstytucja 3 maja – pierwsza taka ustawa w Europie i druga na świecie, po konstytucji
+        <span class="shortline"></span> <strong>(3)</strong>. Konstytucja znosiła wolną elekcję oraz
+        <span class="shortline"></span> <strong>(4)</strong>, czyli prawo jednego posła do zerwania sejmu.
+        Władzę wykonawczą powierzono królowi wraz z rządem zwanym
+        <span class="shortline"></span> <strong>(5)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIX. Rozbiory i upadek Rzeczypospolitej</h3><span class="points">0–7 p.</span></div>
+      <p class="lead">A. Uzupełnij tabelę datami rocznymi rozbiorów Polski.</p>
+      <table class="compact">
+        <tr><th>Rozbiór</th><th style="width:32mm">Rok</th><th>Państwa uczestniczące</th></tr>
+        <tr><td>1. Pierwszy rozbiór</td><td></td><td>Rosja, Prusy, Austria</td></tr>
+        <tr><td>2. Drugi rozbiór</td><td></td><td>Rosja, Prusy</td></tr>
+        <tr><td>3. Trzeci rozbiór</td><td></td><td>Rosja, Prusy, Austria</td></tr>
+      </table>
+      <p>B. 4. Podaj nazwę konfederacji zawiązanej w 1792 r. przeciwko Konstytucji 3 maja.
+        <span class="shortline"></span></p>
+      <p>5. Podaj imię i nazwisko przywódcy powstania z 1794 r. <span class="shortline"></span></p>
+      <p>6. Podaj nazwę bitwy z 1794 r., w której o zwycięstwie zadecydował udział kosynierów.
+        <span class="shortline"></span></p>
+      <p>7. Podaj imię i nazwisko ostatniego króla Polski. <span class="shortline"></span></p>
+    </div>
+  </section>
+
+  <section class="page-break">
+    <h2>Karta odpowiedzi</h2>
+    <p class="muted">Jeżeli test jest przeprowadzany w warunkach konkursowych, odpowiedzi można przenieść na tę kartę.</p>
+    <table class="card compact">
+      <tr><th style="width:26mm">Zadanie</th><th>Odpowiedzi</th></tr>
+      <tr><td>I</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>II</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>III</td><td class="wide">1.____________ 2.____________ 3.____________ 4.____________</td></tr>
+      <tr><td>IV</td><td class="wide">1.____________ 2.____________ 3.______ 4.____________ 5.____________</td></tr>
+      <tr><td>V</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>VI</td><td>1.__ 2.__ 3.__ 4.__</td></tr>
+      <tr><td>VII</td><td>1.__ 2.__ 3.__ 4.__</td></tr>
+      <tr><td>VIII</td><td class="wide">1.____________ 2.______ 3.____________
+        <span class="muted small">(odpowiedzi na pytania 4. i 5. zapisz w arkuszu)</span></td></tr>
+      <tr><td>IX</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>X</td><td>A.__ B.__ C.__ D.__ E.__ &nbsp; F.____________</td></tr>
+      <tr><td>XI</td><td class="wide">1.____________ 2.____________ 3.____________ 4.____________ 5.____________
+        <span class="muted small">(odpowiedź na pytanie 6. zapisz w arkuszu)</span></td></tr>
+      <tr><td>XII</td><td class="wide">1._______ 2._______ 3._______ 4._______ 5._______ 6._______ &nbsp; hasło: _______
+        <span class="muted small">(wyjaśnienie hasła zapisz w arkuszu)</span></td></tr>
+      <tr><td>XIII</td><td>A.__ B.__ C.__ D.__ E.__ F.__</td></tr>
+      <tr><td>XIV</td><td class="wide"><span class="muted small">odpowiedzi zapisz w arkuszu</span></td></tr>
+      <tr><td>XV</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>XVI</td><td>1.__ 2.__ 3.__ 4.__ 5.__</td></tr>
+      <tr><td>XVII</td><td class="wide">1.__ 2.__ 3.__ 4.__
+        <span class="muted small">(odpowiedź na pytanie 5. zapisz w arkuszu)</span></td></tr>
+      <tr><td>XVIII</td><td class="wide">1.______ 2.______ 3.____________ 4.____________ 5.____________</td></tr>
+      <tr><td>XIX</td><td class="wide">1.______ 2.______ 3.______ 4.____________ 5.____________ 6.____________ 7.____________</td></tr>
+    </table>
+    <p><strong>Wynik:</strong> <span class="shortline"></span> / 100 p.</p>
+    <p class="footer-note">Koniec arkusza. Sprawdź, czy odpowiedziałeś(-aś) na wszystkie pytania.</p>
+  </section>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Podglądy stron renderowane przy weryfikacji PDF-ów — odtwarzalne z arkuszy HTML
+output/**/*.png
