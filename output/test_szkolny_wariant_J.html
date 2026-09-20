@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Historia – etap szkolny – wariant J</title>
+  <style>
+    @page { size: A4; margin: 14mm 14mm 16mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+      font-size: 10.4pt; line-height: 1.28;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.08; margin-bottom: 5mm; color: #163a63; }
+    h2 { font-size: 15pt; color: #163a63; margin: 0 0 4mm; }
+    h3 { font-size: 11.4pt; margin: 0; color: #163a63; }
+    .cover {
+      min-height: 255mm; border: 2.2px solid #1f5a91; padding: 15mm 14mm;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { color: #9a5a00; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; }
+    .subtitle { font-size: 15pt; font-weight: 700; margin-bottom: 9mm; }
+    .meta {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm;
+      padding: 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 7mm;
+    }
+    .meta strong { color: #163a63; }
+    .code { border-bottom: 1px solid #172033; min-width: 55mm; display: inline-block; }
+    .notice { margin-top: auto; font-size: 9.2pt; color: #4c596b; }
+    .page-break { break-before: page; }
+    .instructions { padding: 5mm 6mm; background: #f6f3ed; border: 1px solid #d8cdb9; margin-bottom: 6mm; }
+    .instructions ol { margin: 2mm 0 0 6mm; padding-left: 4mm; }
+    .task {
+      border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+      border-radius: 2px; padding: 3mm 4mm; margin: 0 0 4mm;
+      break-inside: avoid;
+    }
+    .task-head {
+      display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 2mm;
+    }
+    .points { white-space: nowrap; font-weight: 700; color: #9a5a00; }
+    .lead { font-weight: 700; }
+    .source { font-size: 8.4pt; color: #5c6878; margin: 2mm 0; }
+    table { width: 100%; border-collapse: collapse; margin: 2mm 0; }
+    th, td { border: 1px solid #8090a2; padding: 2.2mm; vertical-align: top; }
+    th { background: #eaf1f7; color: #163a63; text-align: left; }
+    .compact th, .compact td { padding: 1.1mm 1.7mm; }
+    .choices { columns: 3; column-gap: 6mm; margin: 1.5mm 0; }
+    .choices div { break-inside: avoid; margin-bottom: 1mm; }
+    .shortline { display: inline-block; border-bottom: 1px dotted #566273; min-width: 30mm; height: 5mm; }
+    .answer-space { border-bottom: 1px dotted #566273; min-height: 7mm; margin-top: 1.2mm; }
+    .answer-space.two { min-height: 16mm; }
+    .quote {
+      background: #f7f8fa; border-left: 4px solid #9a5a00; padding: 3mm 4mm;
+      font-family: Georgia, serif; font-size: 10.2pt; margin: 3mm 0;
+    }
+    .quote p { margin: 0 0 2mm; }
+    .quote p:last-child { margin-bottom: 0; }
+    .svg-wrap { border: 1px solid #c5ced8; background: #fbfcfd; padding: 1.5mm; margin: 2mm 0; text-align: center; }
+    .map-image { display: block; margin: 0 auto; width: 100%; max-width: 152mm; height: auto; }
+    .art-image { display: block; margin: 0 auto; width: 100%; max-width: 150mm; height: auto; }
+    .ramka {
+      border: 1px dashed #9a5a00; background: #fdfaf4; padding: 2mm 3mm; margin: 2mm 0;
+      font-weight: 700; text-align: center; letter-spacing: .4px;
+    }
+    .small { font-size: 9pt; }
+    .muted { color: #5c6878; }
+    .pick { font-weight: 700; color: #163a63; }
+    .krzyzowka { width: auto; margin: 3mm 0; border-collapse: collapse; }
+    .krzyzowka td {
+      width: 6.5mm; height: 6.5mm; border: 1px solid #66748a; padding: 0;
+      text-align: center; font-weight: 700;
+    }
+    .krzyzowka td.numer {
+      width: 7mm; border: none; text-align: right; padding-right: 1.5mm; font-weight: 400;
+    }
+    .krzyzowka td.haslo { background: #f5e3c8; }
+    .card td { height: 8mm; }
+    .card .wide { height: 14mm; }
+    .footer-note { font-size: 8.5pt; color: #606b79; border-top: 1px solid #c7cfd8; padding-top: 2mm; }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="eyebrow">Arkusz treningowy • wariant J</div>
+    <h1>Wojewódzki Konkurs Przedmiotowy z Historii</h1>
+    <div class="subtitle">Etap I – szkolny</div>
+    <div class="meta">
+      <div><strong>Zakres:</strong> działy I–XVII podstawy programowej</div>
+      <div><strong>Czas pracy:</strong> 60 minut</div>
+      <div><strong>Liczba zadań:</strong> 19</div>
+      <div><strong>Maksymalna liczba punktów:</strong> 100</div>
+      <div><strong>Wariant:</strong> J</div>
+      <div><strong>Ziarno wariantu:</strong> 2026-09-19-J</div>
+    </div>
+    <p><strong>KOD UCZNIA:</strong> <span class="code">&nbsp;</span></p>
+    <div class="instructions">
+      <h2>Instrukcja dla ucznia</h2>
+      <ol>
+        <li>Sprawdź, czy arkusz zawiera 19 zadań i kartę odpowiedzi.</li>
+        <li>Czytaj uważnie polecenia. Odpowiadaj wyłącznie w miejscach do tego przeznaczonych.</li>
+        <li>Jeśli polecenie nie stanowi inaczej, za każdy poprawnie uzupełniony element otrzymujesz 1 punkt.</li>
+        <li>W zadaniach P/F wpisz <strong>P</strong> (prawda) albo <strong>F</strong> (fałsz).</li>
+        <li>Nie używaj korektora ani urządzeń elektronicznych.</li>
+        <li>Pracuj samodzielnie. Na rozwiązanie testu masz 60 minut.</li>
+      </ol>
+    </div>
+    <p class="notice">
+      Materiał autorski do ćwiczeń, opracowany na podstawie regulaminu szczegółowego oraz
+      archiwalnych arkuszy etapu szkolnego Kujawsko-Pomorskiego Kuratora Oświaty
+      z lat 2018/2019–2025/2026. Nie jest oficjalnym arkuszem konkursowym.
+    </p>
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie I. Sobór w Konstancji</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Od 1378 r. w Kościele zachodnim trwał kryzys zwany <span class="shortline"></span>
+        <strong>(1)</strong>, w czasie którego nawet trzech duchownych jednocześnie ogłaszało się
+        prawowitym papieżem. Aby zakończyć ten podział, w latach 1414–1418 zwołano sobór w mieście
+        <span class="shortline"></span> <strong>(2)</strong> nad Jeziorem Bodeńskim. Sobór wybrał
+        jednego, powszechnie uznanego papieża, <span class="shortline"></span> <strong>(3)</strong>,
+        kończąc tym samym schizmę. Ten sam sobór skazał na spalenie na stosie czeskiego kaznodzieję
+        i reformatora <span class="shortline"></span> <strong>(4)</strong>, oskarżonego o herezję
+        mimo listu żelaznego gwarantującego mu bezpieczeństwo. Wyrok wywołał w Czechach wybuch
+        długotrwałych wojen zwanych <span class="shortline"></span> <strong>(5)</strong>. Na soborze
+        przebywała też delegacja polska, broniąca praw Litwy do jej ziem wobec roszczeń zakonu
+        krzyżackiego; przewodził jej prawnik i rektor Akademii Krakowskiej,
+        <span class="shortline"></span> <strong>(6)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie II. Wojna dwóch róż</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Dopasuj hasło do opisu. Wpisz litery A–G. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Lancasterowie</div>
+        <div><strong>B</strong> – Bosworth</div>
+        <div><strong>C</strong> – róża Tudorów</div>
+        <div><strong>D</strong> – Yorkowie</div>
+        <div><strong>E</strong> – Wilhelm Zdobywca</div>
+        <div><strong>F</strong> – Ryszard III</div>
+        <div><strong>G</strong> – Henryk Tudor</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Ród panujący w Anglii, którego herbem była biała róża.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Ród panujący w Anglii, którego herbem była czerwona róża.</td><td></td></tr>
+        <tr><td>3. Ostatni król Anglii z dynastii Yorków, poległy w decydującej bitwie 1485 r.</td><td></td></tr>
+        <tr><td>4. Miejsce bitwy z 1485 r., w której zginął ostatni król z rodu Yorków.</td><td></td></tr>
+        <tr><td>5. Zwycięzca spod Bosworth, zakładający nową dynastię i zaślubiający dziedziczkę Yorków, aby połączyć obie zwaśnione strony.</td><td></td></tr>
+        <tr><td>6. Nowy symbol dynastii, łączący barwy obu dawnych rodów.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie III. Unia kalmarska</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>W 1397 r. w szwedzkim mieście <span class="shortline"></span> <strong>(1)</strong> trzy
+        skandynawskie królestwa — Dania, Szwecja i <span class="shortline"></span>
+        <strong>(2)</strong> — połączyły się pod berłem jednego władcy, tworząc unię nazwaną od
+        miejsca jej zawarcia. Doprowadziła do niej energiczna władczyni duńska
+        <span class="shortline"></span> <strong>(3)</strong>, faktycznie rządząca całą unią mimo
+        formalnego osadzenia na tronie młodego krewniaka. Unia rozpadła się ostatecznie w 1523 r.,
+        gdy koronę szwedzką zdobył przywódca antyduńskiego powstania,
+        <span class="shortline"></span> <strong>(4)</strong>, zakładając własną dynastię. Dłużej,
+        bo aż do 1814 r., przetrwał związek Danii z <span class="shortline"></span>
+        <strong>(5)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IV. Podbój Ameryki – Aztekowie i Inkowie</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj hasło do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Atahualpa</div>
+        <div><strong>B</strong> – Ferdynand Magellan</div>
+        <div><strong>C</strong> – Tenochtitlan</div>
+        <div><strong>D</strong> – Hernán Cortés</div>
+        <div><strong>E</strong> – Moctezuma II</div>
+        <div><strong>F</strong> – Francisco Pizarro</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Hiszpański konkwistador, który w latach 1519–1521 podbił państwo Azteków.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Władca Azteków, pojmany podczas podboju jego stolicy i zmarły w niewyjaśnionych okolicznościach.</td><td></td></tr>
+        <tr><td>3. Stolica państwa Azteków, zbudowana na wyspach jeziora, dziś w miejscu centrum Meksyku.</td><td></td></tr>
+        <tr><td>4. Hiszpański konkwistador, który podbił państwo Inków w Ameryce Południowej.</td><td></td></tr>
+        <tr><td>5. Władca Inków, pojmany podstępnie i stracony przez Hiszpanów mimo zapłaconego okupu.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie V. Iwan IV Groźny i początki carskiej Rosji</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Iwan IV jako pierwszy władca Moskwy przyjął w 1547 r. tytuł cara.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Przydomek „Groźny” nadano mu współcześnie za jego łagodne i pokojowe rządy.</td><td></td></tr>
+        <tr><td>3. Iwan IV podbił chanaty kazański i astrachański, poszerzając państwo moskiewskie na wschód.</td><td></td></tr>
+        <tr><td>4. Oprícznina była elitarną formacją znaną z okrucieństwa wobec bojarów podejrzewanych o zdradę.</td><td></td></tr>
+        <tr><td>5. Iwan IV zostawił po sobie silne państwo i bezproblemowe następstwo tronu.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VI. Karol V Habsburg</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj hasło do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Filip II</div>
+        <div><strong>B</strong> – Maria Teresa</div>
+        <div><strong>C</strong> – Sulejman Wspaniały</div>
+        <div><strong>D</strong> – Ferdynand I Habsburg</div>
+        <div><strong>E</strong> – Franciszek I</div>
+        <div><strong>F</strong> – cesarz rzymsko-niemiecki</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Tytuł, który Karol V łączył z koroną Hiszpanii i dziedzicznymi ziemiami austriackimi Habsburgów.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Główny rywal Karola V do dominacji w Europie, król Francji.</td><td></td></tr>
+        <tr><td>3. Turecki sułtan, sprzymierzeniec Francji przeciw Karolowi V, którego flota i wojska zagrażały posiadłościom Habsburgów.</td><td></td></tr>
+        <tr><td>4. Syn Karola V, który po jego abdykacji w 1556 r. odziedziczył Hiszpanię, Niderlandy i kolonie zamorskie.</td><td></td></tr>
+        <tr><td>5. Brat Karola V, który odziedziczył dziedziczne ziemie austriackie i tytuł cesarski.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VII. Wenecja – republika kupców</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Republika Wenecka była państwem-miastem rządzonym przez dożę, wybieranego dożywotnio przez
+        radę patrycjuszy zwaną <span class="shortline"></span> <strong>(1)</strong>. Potęgę
+        gospodarczą budowała na handlu z Bizancjum i światem <span class="shortline"></span>
+        <strong>(2)</strong>, sprowadzając do Europy przyprawy korzenne i jedwab. Okręty budowano
+        seryjnie, niemal jak na linii produkcyjnej, w słynnej stoczni państwowej zwanej
+        <span class="shortline"></span> <strong>(3)</strong>. Wenecjanie słynęli też z wyrobu
+        szkła na pobliskiej wyspie <span class="shortline"></span> <strong>(4)</strong>, dokąd
+        przeniesiono wszystkie huty ze względu na ryzyko pożaru. Znaczenie miasta zaczęło słabnąć
+        pod koniec XV w., po <span class="shortline"></span> <strong>(5)</strong>, gdy nowe szlaki
+        handlowe do Azji ominęły Morze Śródziemne.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VIII. Fryderyk II Wielki i wzrost potęgi Prus</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Fryderyk II Wielki uczynił z Prus jedno z czołowych mocarstw militarnych Europy XVIII w.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Wojny śląskie, które Fryderyk II stoczył z Austrią, zakończyły się utratą Śląska przez Prusy na rzecz Marii Teresy.</td><td></td></tr>
+        <tr><td>3. Fryderyk II był zwolennikiem oświeconego absolutyzmu i korespondował z Wolterem.</td><td></td></tr>
+        <tr><td>4. Prusy pod rządami Fryderyka II odmówiły udziału w rozbiorach osłabionej Rzeczypospolitej.</td><td></td></tr>
+        <tr><td>5. Sojusz Prus z Rosją Katarzyny II ułatwił obu mocarstwom ingerencję w sprawy wewnętrzne Rzeczypospolitej.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IX. Krzyżówka – mocarstwa i podboje XV–XVI wieku</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Rozwiąż krzyżówkę, a następnie wyjaśnij znaczenie hasła z zaznaczonej kolumny.</p>
+      <table class="compact" style="margin-bottom:2mm">
+        <tr><td>1. Stolica państwa Azteków, zdobyta przez Hiszpanów w 1521 r.</td></tr>
+        <tr><td>2. Turecki władca, rywal Karola V Habsburga o dominację w Europie i na Morzu Śródziemnym.</td></tr>
+        <tr><td>3. Tytuł elekcyjnego władcy Republiki Weneckiej.</td></tr>
+        <tr><td>4. Tajna formacja i system terroru wobec bojarów podejrzewanych o zdradę, wprowadzony przez Iwana IV Groźnego.</td></tr>
+        <tr><td>5. Państwo, w którym w 1547 r. Iwan IV jako pierwszy władca przyjął tytuł cara.</td></tr>
+      </table>
+      <table class="krzyzowka">
+        <tr><td class="numer">1.</td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">2.</td><td></td><td class="haslo"></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">3.</td><td class="haslo"></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">4.</td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">5.</td><td class="haslo"></td><td></td><td></td><td></td><td></td></tr>
+      </table>
+      <p>Hasło: <span class="shortline"></span></p>
+      <p>Wyjaśnij, z jaką dynastią angielską kojarzy się to hasło i jak doszło do jej powstania. (1 p.)</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie X. Trzy unie polsko-litewskie</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Na mapie oznaczono pięć miejsc. Do każdego opisu dopisz właściwy numer 1–5.</p>
+      <div class="svg-wrap">
+        <img class="map-image" src="../assets/unie_polsko_litewskie_wariant_J.svg"
+             alt="Mapa konturowa ziem polskich i litewskich z pięcioma miejscami oznaczonymi numerami od 1 do 5">
+      </div>
+      <p class="source">Mapa bazowa: Natural Earth 1:50 mln, domena publiczna (CC0),
+        <a href="https://commons.wikimedia.org/wiki/File:Blank_Map_of_europe.svg">Wikimedia Commons</a>;
+        oznaczenia i opracowanie zadania: własne. Cienkie jasne linie to współczesne granice
+        państwowe, naniesione wyłącznie dla ułatwienia orientacji.</p>
+      <table class="compact">
+        <tr><td>A. Miejsce zawarcia w 1385 r. pierwszego aktu unii Polski z Litwą, zapowiadającego chrzest Litwy i małżeństwo Jadwigi z Jagiełłą.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Miejsce unii z 1413 r., potwierdzającej odrębność Wielkiego Księstwa Litewskiego przy jednoczesnym zacieśnieniu sojuszu z Polską.</td><td></td></tr>
+        <tr><td>C. Miasto, w którym w 1569 r. powołano do życia wspólną Rzeczpospolitą Obojga Narodów.</td><td></td></tr>
+        <tr><td>D. Stolica Wielkiego Księstwa Litewskiego.</td><td></td></tr>
+        <tr><td>E. Stolica Królestwa Polskiego w czasie zawierania pierwszych dwóch unii.</td><td></td></tr>
+      </table>
+      <p>F. Podaj rok zawarcia unii lubelskiej. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XI. Obraz jako źródło historyczne</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Obejrzyj reprodukcję obrazu i wykonaj polecenia.</p>
+      <div class="svg-wrap">
+        <img class="art-image" src="../assets/warszawa_bellotto.jpg"
+             alt="Widok panoramy Warszawy z tarasu Zamku Królewskiego, z rzeką w oddali i placem ćwiczeń na pierwszym planie">
+      </div>
+      <p class="source">Bernardo Bellotto (zwany Canaletto), „Widok Warszawy z tarasu Zamku
+        Królewskiego”, ok. 1773, dawniej w zbiorach Zamku Królewskiego w Warszawie;
+        reprodukcja w domenie publicznej (Wikimedia Commons / Google Art Project).</p>
+      <p>1. Podaj imię i nazwisko autora obrazu. <span class="shortline"></span></p>
+      <p>2. Jakim przydomkiem, wziętym od swojego słynnego wuja, malarza z Wenecji, posługiwał się
+        też autor (co bywa źródłem pomyłek w atrybucji jego dzieł)? <span class="shortline"></span></p>
+      <p>3. Podaj temat i przybliżony rok powstania obrazu. <span class="shortline"></span></p>
+      <p>4. Podaj imię i nazwisko króla polskiego, na którego dworze pracował malarz, tworząc całą
+        serię takich widoków miasta. <span class="shortline"></span></p>
+      <p>5. Podaj nazwę rzeki widocznej w tle obrazu. <span class="shortline"></span></p>
+      <p>6. Wyjaśnij, dlaczego drobiazgowo dokładne widoki miejskie tego malarza okazały się
+        z czasem szczególnie cenne dla Warszawy, nie tylko jako dzieła sztuki.</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XII. Paweł Włodkowic i sobór w Konstancji</h3><span class="points">0–6 p.</span></div>
+      <div class="quote">
+        <p>„Ani papież, ani cesarz nie są panami całego świata co do rzeczy doczesnych, należących
+          do niewiernych [...], dlatego niewierni mogą zgodnie z prawem posiadać własne państwa
+          i władzę, i nie wolno im tego bezprawnie odbierać.”</p>
+      </div>
+      <p class="source">Paweł Włodkowic, traktat przedłożony soborowi w Konstancji, 1415–1416 r.;
+        fragment w tłumaczeniu i pisowni uwspółcześnionej.</p>
+      <p>1. Podaj imię i nazwisko autora cytowanego traktatu. <span class="shortline"></span></p>
+      <p>2. Jaką funkcję pełnił autor na Akademii Krakowskiej? <span class="shortline"></span></p>
+      <p>3. Przed jakim międzynarodowym zgromadzeniem kościelnym przedstawiono ten traktat
+        w latach 1414–1418? <span class="shortline"></span></p>
+      <p>4. Z jakim zakonem toczył się spór, w którym argumentów Włodkowica użyto jako polskiej
+        racji? <span class="shortline"></span></p>
+      <p>5. Jaką główną tezę o prawach ludów niechrześcijańskich głosi zacytowany fragment?</p>
+      <div class="answer-space"></div>
+      <p>6. Wyjaśnij, dlaczego poglądy Włodkowica uznaje się dziś za jedno z wczesnych źródeł
+        nowożytnego prawa międzynarodowego.</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIII. Zbigniew Oleśnicki i regencja</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Oceń, czy podane zjawisko było przyczyną (P), czy skutkiem (S) szczególnej
+        pozycji biskupa Zbigniewa Oleśnickiego w państwie po 1434 r.</p>
+      <table class="compact">
+        <tr><td>1. Śmierć króla Władysława Jagiełły w 1434 r. i objęcie tronu przez małoletniego Władysława III.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Potrzeba silnej ręki, zdolnej utrzymać porządek w państwie w okresie małoletniości króla.</td><td></td></tr>
+        <tr><td>3. Faktyczne sprawowanie rządów w imieniu młodego władcy przez biskupa krakowskiego Zbigniewa Oleśnickiego.</td><td></td></tr>
+        <tr><td>4. Otrzymanie przez Oleśnickiego godności kardynalskiej jako pierwszego Polaka w dziejach, przy sprzeciwie części możnych wobec jego wpływów.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIV. Jan Zamoyski</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">W zadaniach 1–5 zaznacz albo wpisz literę jednej poprawnej odpowiedzi.</p>
+      <table class="compact">
+        <tr><td>1. Jan Zamoyski piastował jednocześnie urząd kanclerza wielkiego koronnego oraz:<br>
+          <span class="pick">A.</span> podskarbiego wielkiego koronnego &nbsp; <span class="pick">B.</span> marszałka wielkiego koronnego &nbsp;
+          <span class="pick">C.</span> hetmana wielkiego koronnego &nbsp; <span class="pick">D.</span> wojewody krakowskiego</td>
+          <td style="width:16mm"></td></tr>
+        <tr><td>2. Miasto założone przez Zamoyskiego jako wzorcowy, renesansowy ośrodek handlu i nauki nosi nazwę:<br>
+          <span class="pick">A.</span> Szczebrzeszyn &nbsp; <span class="pick">B.</span> Krasnystaw &nbsp;
+          <span class="pick">C.</span> Tomaszów &nbsp; <span class="pick">D.</span> Zamość</td><td></td></tr>
+        <tr><td>3. W 1594 r. Zamoyski założył w swoim mieście uczelnię, znaną jako:<br>
+          <span class="pick">A.</span> Akademia Krakowska &nbsp; <span class="pick">B.</span> Akademia Zamojska &nbsp;
+          <span class="pick">C.</span> Collegium Nobilium &nbsp; <span class="pick">D.</span> Akademia Wileńska</td><td></td></tr>
+        <tr><td>4. W 1588 r., podczas bezkrólewia po śmierci Stefana Batorego, wojska Zamoyskiego pokonały pod Byczyną habsburskiego pretendenta do tronu:<br>
+          <span class="pick">A.</span> Maksymiliana III &nbsp; <span class="pick">B.</span> Ferdynanda II &nbsp;
+          <span class="pick">C.</span> Rudolfa II &nbsp; <span class="pick">D.</span> Karola Habsburga</td><td></td></tr>
+        <tr><td>5. Skutkiem zwycięstwa pod Byczyną i pojmania pretendenta było:<br>
+          <span class="pick">A.</span> przyłączenie Śląska do Rzeczypospolitej &nbsp; <span class="pick">B.</span> abdykacja Zygmunta III Wazy &nbsp;
+          <span class="pick">C.</span> wzmocnienie pozycji Zygmunta III Wazy i zrzeczenie się przez pretendenta praw do korony &nbsp; <span class="pick">D.</span> wybuch wojny z cesarstwem</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XV. Sejm Czteroletni – reformatorzy</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj postać lub pojęcie do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Stanisław Małachowski</div>
+        <div><strong>B</strong> – Tadeusz Rejtan</div>
+        <div><strong>C</strong> – Sejm Czteroletni</div>
+        <div><strong>D</strong> – Hugo Kołłątaj</div>
+        <div><strong>E</strong> – Stanisław Staszic</div>
+        <div><strong>F</strong> – Ignacy Potocki</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Ksiądz, publicysta i główny ideolog obozu reform, nazywany duszą stronnictwa patriotycznego (środowisko tzw. Kuźnicy).</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Marszałek litewski sejmu, współautor Konstytucji 3 maja, później jeden z przywódców powstania kościuszkowskiego.</td><td></td></tr>
+        <tr><td>3. Marszałek sejmu ze strony koronnej, przewodniczący obradom w dniu uchwalenia konstytucji.</td><td></td></tr>
+        <tr><td>4. Autor głośnych „Uwag nad życiem Jana Zamoyskiego” (1787), krytykujących wady ustroju i wzywających do reform.</td><td></td></tr>
+        <tr><td>5. Sejm, który w latach 1788–1792 uchwalił szereg reform ustrojowych Rzeczypospolitej.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVI. Rada Nieustająca</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Wykonaj polecenia 1–4.</p>
+      <p>1. Podaj rok powołania Rady Nieustającej. <span class="shortline"></span></p>
+      <p>2. Pod naciskiem którego mocarstwa doszło do jej utworzenia, wkrótce po pierwszym
+        rozbiorze? <span class="shortline"></span></p>
+      <p>3. Na czym polegała krytyka Rady Nieustającej ze strony patriotów w czasie Sejmu
+        Czteroletniego?</p>
+      <div class="answer-space"></div>
+      <p>4. Podaj rok, w którym Sejm Czteroletni zniósł Radę Nieustającą. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVII. Rzeź Pragi 1794 roku</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">W zadaniach 1–5 zaznacz albo wpisz literę jednej poprawnej odpowiedzi.</p>
+      <table class="compact">
+        <tr><td>1. Praga to prawobrzeżna dzielnica miasta:<br>
+          <span class="pick">A.</span> Krakowa &nbsp; <span class="pick">B.</span> Warszawy &nbsp;
+          <span class="pick">C.</span> Wilna &nbsp; <span class="pick">D.</span> Lublina</td>
+          <td style="width:16mm"></td></tr>
+        <tr><td>2. Szturm i rzeź ludności Pragi w listopadzie 1794 r. przeprowadziły wojska:<br>
+          <span class="pick">A.</span> pruskie &nbsp; <span class="pick">B.</span> austriackie &nbsp;
+          <span class="pick">C.</span> rosyjskie &nbsp; <span class="pick">D.</span> tureckie</td><td></td></tr>
+        <tr><td>3. Dowódcą wojsk, które dokonały rzezi Pragi, był:<br>
+          <span class="pick">A.</span> Aleksander Suworow &nbsp; <span class="pick">B.</span> Iwan Fersen &nbsp;
+          <span class="pick">C.</span> Katarzyna II &nbsp; <span class="pick">D.</span> Grigorij Potiomkin</td><td></td></tr>
+        <tr><td>4. Bezpośrednim skutkiem rzezi Pragi była:<br>
+          <span class="pick">A.</span> odsiecz dla oblężonej Warszawy &nbsp; <span class="pick">B.</span> kapitulacja Warszawy i faktyczny koniec powstania kościuszkowskiego &nbsp;
+          <span class="pick">C.</span> zwycięstwo powstańców i wyzwolenie kraju &nbsp; <span class="pick">D.</span> zawarcie korzystnego rozejmu z Rosją</td><td></td></tr>
+        <tr><td>5. Wydarzenia w Pradze przyspieszyły ostateczny rozbiór Rzeczypospolitej, do którego doszło w:<br>
+          <span class="pick">A.</span> 1793 r. &nbsp; <span class="pick">B.</span> 1794 r. &nbsp;
+          <span class="pick">C.</span> 1795 r. &nbsp; <span class="pick">D.</span> 1797 r.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVIII. Kazimierz Pułaski w Ameryce</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Wykonaj polecenia 1–5.</p>
+      <p>1. Podaj imię i nazwisko polskiego szlachcica, uczestnika konfederacji barskiej, który po
+        jej upadku wyemigrował do Ameryki Północnej. <span class="shortline"></span></p>
+      <p>2. U jakiego naczelnego dowódcy zgłosił się do służby po przybyciu do Ameryki w 1777 r.?
+        <span class="shortline"></span></p>
+      <p>3. Jaką formację wojskową zorganizował, za co bywa dziś nazywany „ojcem” pewnej broni
+        armii amerykańskiej? <span class="shortline"></span></p>
+      <p>4. Podczas jakiego oblężenia w 1779 r. odniósł śmiertelne rany? <span class="shortline"></span></p>
+      <p>5. Wymień innego Polaka, który podobnie jak on wsławił się w wojnie o niepodległość
+        Stanów Zjednoczonych, budując fortyfikacje (m.in. w West Point). <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIX. Panowanie Stanisława Augusta Poniatowskiego</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uporządkuj wydarzenia chronologicznie. Wpisz cyfry od 1 (najwcześniejsze)
+        do 6 (najpóźniejsze).</p>
+      <table class="compact">
+        <tr><td>A. Rzeź Pragi i upadek powstania kościuszkowskiego.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Elekcja Stanisława Augusta Poniatowskiego na króla Polski.</td><td></td></tr>
+        <tr><td>C. Trzeci rozbiór Polski i abdykacja króla.</td><td></td></tr>
+        <tr><td>D. Zawiązanie konfederacji targowickiej i drugi rozbiór Polski.</td><td></td></tr>
+        <tr><td>E. Uchwalenie Konstytucji 3 maja.</td><td></td></tr>
+        <tr><td>F. Rozpoczęcie obrad Sejmu Czteroletniego.</td><td></td></tr>
+      </table>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+    <h2>Karta odpowiedzi — wariant J</h2>
+    <p class="small muted">Kod ucznia: <span class="code">&nbsp;</span></p>
+    <table class="card compact">
+      <tr><th style="width:42mm">Zadanie</th><th>Odpowiedzi</th><th style="width:20mm">Punkty</th></tr>
+      <tr><td>I. Sobór w Konstancji</td><td class="wide"></td><td></td></tr>
+      <tr><td>II. Wojna dwóch róż</td><td>1 …… 2 …… 3 …… 4 …… 5 …… 6 ……</td><td></td></tr>
+      <tr><td>III. Unia kalmarska</td><td class="wide"></td><td></td></tr>
+      <tr><td>IV. Podbój Ameryki</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>V. Iwan Groźny</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>VI. Karol V Habsburg</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>VII. Wenecja</td><td class="wide"></td><td></td></tr>
+      <tr><td>VIII. Fryderyk II</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>IX. Krzyżówka</td><td class="wide"></td><td></td></tr>
+      <tr><td>X. Trzy unie (mapa)</td><td>A …… B …… C …… D …… E …… F ……</td><td></td></tr>
+      <tr><td>XI. Obraz jako źródło</td><td class="wide"></td><td></td></tr>
+      <tr><td>XII. Paweł Włodkowic</td><td class="wide"></td><td></td></tr>
+      <tr><td>XIII. Zbigniew Oleśnicki</td><td>1 …… 2 …… 3 …… 4 ……</td><td></td></tr>
+      <tr><td>XIV. Jan Zamoyski</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>XV. Reformatorzy Sejmu</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>XVI. Rada Nieustająca</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVII. Rzeź Pragi</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>XVIII. Kazimierz Pułaski</td><td class="wide"></td><td></td></tr>
+      <tr><td>XIX. Stanisław August (chronologia)</td><td>A …… B …… C …… D …… E …… F ……</td><td></td></tr>
+      <tr><td><strong>Razem</strong></td><td></td><td><strong>/ 100</strong></td></tr>
+    </table>
+    <p class="footer-note">Arkusz treningowy, wariant J, ziarno 2026-09-19-J. Materiał autorski,
+      nie jest oficjalnym arkuszem Kujawsko-Pomorskiego Kuratora Oświaty.</p>
+  </section>
+</body>
+</html>

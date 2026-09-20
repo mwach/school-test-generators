@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Historia – etap szkolny – wariant I</title>
+  <style>
+    @page { size: A4; margin: 14mm 14mm 16mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+      font-size: 10.4pt; line-height: 1.28;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.08; margin-bottom: 5mm; color: #163a63; }
+    h2 { font-size: 15pt; color: #163a63; margin: 0 0 4mm; }
+    h3 { font-size: 11.4pt; margin: 0; color: #163a63; }
+    .cover {
+      min-height: 255mm; border: 2.2px solid #1f5a91; padding: 15mm 14mm;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { color: #9a5a00; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; }
+    .subtitle { font-size: 15pt; font-weight: 700; margin-bottom: 9mm; }
+    .meta {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm;
+      padding: 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 7mm;
+    }
+    .meta strong { color: #163a63; }
+    .code { border-bottom: 1px solid #172033; min-width: 55mm; display: inline-block; }
+    .notice { margin-top: auto; font-size: 9.2pt; color: #4c596b; }
+    .page-break { break-before: page; }
+    .instructions { padding: 5mm 6mm; background: #f6f3ed; border: 1px solid #d8cdb9; margin-bottom: 6mm; }
+    .instructions ol { margin: 2mm 0 0 6mm; padding-left: 4mm; }
+    .task {
+      border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+      border-radius: 2px; padding: 3mm 4mm; margin: 0 0 4mm;
+      break-inside: avoid;
+    }
+    .task-head {
+      display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 2mm;
+    }
+    .points { white-space: nowrap; font-weight: 700; color: #9a5a00; }
+    .lead { font-weight: 700; }
+    .source { font-size: 8.4pt; color: #5c6878; margin: 2mm 0; }
+    table { width: 100%; border-collapse: collapse; margin: 2mm 0; }
+    th, td { border: 1px solid #8090a2; padding: 2.2mm; vertical-align: top; }
+    th { background: #eaf1f7; color: #163a63; text-align: left; }
+    .compact th, .compact td { padding: 1.1mm 1.7mm; }
+    .choices { columns: 3; column-gap: 6mm; margin: 1.5mm 0; }
+    .choices div { break-inside: avoid; margin-bottom: 1mm; }
+    .shortline { display: inline-block; border-bottom: 1px dotted #566273; min-width: 30mm; height: 5mm; }
+    .answer-space { border-bottom: 1px dotted #566273; min-height: 7mm; margin-top: 1.2mm; }
+    .answer-space.two { min-height: 16mm; }
+    .quote {
+      background: #f7f8fa; border-left: 4px solid #9a5a00; padding: 3mm 4mm;
+      font-family: Georgia, serif; font-size: 10.2pt; margin: 3mm 0;
+    }
+    .quote p { margin: 0 0 2mm; }
+    .quote p:last-child { margin-bottom: 0; }
+    .svg-wrap { border: 1px solid #c5ced8; background: #fbfcfd; padding: 1.5mm; margin: 2mm 0; text-align: center; }
+    .map-image { display: block; margin: 0 auto; width: 100%; max-width: 152mm; height: auto; }
+    .art-image { display: block; margin: 0 auto; width: 100%; max-width: 150mm; height: auto; }
+    .ramka {
+      border: 1px dashed #9a5a00; background: #fdfaf4; padding: 2mm 3mm; margin: 2mm 0;
+      font-weight: 700; text-align: center; letter-spacing: .4px;
+    }
+    .small { font-size: 9pt; }
+    .muted { color: #5c6878; }
+    .pick { font-weight: 700; color: #163a63; }
+    .krzyzowka { width: auto; margin: 3mm 0; border-collapse: collapse; }
+    .krzyzowka td {
+      width: 6.5mm; height: 6.5mm; border: 1px solid #66748a; padding: 0;
+      text-align: center; font-weight: 700;
+    }
+    .krzyzowka td.numer {
+      width: 7mm; border: none; text-align: right; padding-right: 1.5mm; font-weight: 400;
+    }
+    .krzyzowka td.pusta { border: none; background: none; }
+    .krzyzowka td.haslo { background: #f5e3c8; }
+    .card td { height: 8mm; }
+    .card .wide { height: 14mm; }
+    .footer-note { font-size: 8.5pt; color: #606b79; border-top: 1px solid #c7cfd8; padding-top: 2mm; }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="eyebrow">Arkusz treningowy • wariant I</div>
+    <h1>Wojewódzki Konkurs Przedmiotowy z Historii</h1>
+    <div class="subtitle">Etap I – szkolny</div>
+    <div class="meta">
+      <div><strong>Zakres:</strong> działy I–XVII podstawy programowej</div>
+      <div><strong>Czas pracy:</strong> 60 minut</div>
+      <div><strong>Liczba zadań:</strong> 19</div>
+      <div><strong>Maksymalna liczba punktów:</strong> 100</div>
+      <div><strong>Wariant:</strong> I</div>
+      <div><strong>Ziarno wariantu:</strong> 2026-09-18-I</div>
+    </div>
+    <p><strong>KOD UCZNIA:</strong> <span class="code">&nbsp;</span></p>
+    <div class="instructions">
+      <h2>Instrukcja dla ucznia</h2>
+      <ol>
+        <li>Sprawdź, czy arkusz zawiera 19 zadań i kartę odpowiedzi.</li>
+        <li>Czytaj uważnie polecenia. Odpowiadaj wyłącznie w miejscach do tego przeznaczonych.</li>
+        <li>Jeśli polecenie nie stanowi inaczej, za każdy poprawnie uzupełniony element otrzymujesz 1 punkt.</li>
+        <li>W zadaniach P/F wpisz <strong>P</strong> (prawda) albo <strong>F</strong> (fałsz).</li>
+        <li>Nie używaj korektora ani urządzeń elektronicznych.</li>
+        <li>Pracuj samodzielnie. Na rozwiązanie testu masz 60 minut.</li>
+      </ol>
+    </div>
+    <p class="notice">
+      Materiał autorski do ćwiczeń, opracowany na podstawie regulaminu szczegółowego oraz
+      archiwalnych arkuszy etapu szkolnego Kujawsko-Pomorskiego Kuratora Oświaty
+      z lat 2018/2019–2025/2026. Nie jest oficjalnym arkuszem konkursowym.
+    </p>
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie I. Demokracja ateńska – Solon i Klejstenes</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj hasło do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – ekklesia</div>
+        <div><strong>B</strong> – Perykles</div>
+        <div><strong>C</strong> – Solon</div>
+        <div><strong>D</strong> – eupatrydzi</div>
+        <div><strong>E</strong> – ostracyzm</div>
+        <div><strong>F</strong> – Klejstenes</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Ateński reformator, który w 594 r. p.n.e. zniósł niewolę za długi i podzielił obywateli na cztery klasy majątkowe według dochodów.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Polityk, który ok. 508 r. p.n.e. podzielił obywateli na dziesięć nowych, terytorialnych plemion i wprowadził radę pięciuset.</td><td></td></tr>
+        <tr><td>3. Procedura głosowania skorupkami, w której zgromadzenie mogło skazać obywatela zagrażającego demokracji na dziesięcioletnie wygnanie.</td><td></td></tr>
+        <tr><td>4. Najwyższy organ władzy w demokracji ateńskiej, w którym każdy pełnoprawny obywatel mógł zabrać głos i głosować.</td><td></td></tr>
+        <tr><td>5. Ateński mąż stanu, za którego rządów w V w. p.n.e. demokracja ateńska i kultura miasta osiągnęły swój szczyt.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie II. Sobór nicejski i cesarz Konstantyn Wielki</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Cesarz <span class="shortline"></span> <strong>(1)</strong>, po zwycięstwie nad rywalem
+        Maksencjuszem pod mostem Mulwijskim w 312 r., rok później wydał wraz ze współrządcą edykt
+        tolerancyjny, znany jako edykt <span class="shortline"></span> <strong>(2)</strong> (313 r.),
+        kończący prześladowania chrześcijan. W 325 r. zwołał do miasta
+        <span class="shortline"></span> <strong>(3)</strong> pierwszy sobór powszechny w dziejach
+        Kościoła, na którym potępiono naukę kapłana <span class="shortline"></span>
+        <strong>(4)</strong>, głoszącego, że Syn Boży nie jest równy Ojcu. Sobór ustalił jednolite
+        wyznanie wiary, zwane <span class="shortline"></span> <strong>(5)</strong>. Kilka lat później
+        cesarz przeniósł stolicę cesarstwa nad Bosfor, do miasta, które odtąd nosiło jego imię –
+        <span class="shortline"></span> <strong>(6)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie III. Wojna domowa w Anglii i republika Cromwella</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Wojnę domową w Anglii wywołał spór o zakres władzy między królem Karolem I Stuartem a parlamentem.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Armia parlamentu, tzw. Nowy Model Armii, walczyła pod dowództwem Olivera Cromwella.</td><td></td></tr>
+        <tr><td>3. Król Karol I został uniewinniony przez sąd parlamentarny i w 1649 r. przywrócony na tron.</td><td></td></tr>
+        <tr><td>4. Po egzekucji króla w Anglii ogłoszono republikę, zwaną Wspólnotą Narodową (Commonwealth).</td><td></td></tr>
+        <tr><td>5. Po śmierci Cromwella monarchię obalono na zawsze i Anglia pozostała republiką do dziś.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IV. Chronologia wielkich odkryć geograficznych</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uporządkuj wydarzenia chronologicznie. Wpisz cyfry od 1 (najwcześniejsze)
+        do 6 (najpóźniejsze).</p>
+      <table class="compact">
+        <tr><td>A. Zawarcie traktatu w Tordesillas, dzielącego świat pozaeuropejski między Hiszpanię i Portugalię.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Powrót do Hiszpanii ocalałego okrętu wyprawy Ferdynanda Magellana, dowodzonego przez Juana Sebastiána Elcano.</td><td></td></tr>
+        <tr><td>C. Opłynięcie Przylądka Dobrej Nadziei przez Bartolomeu Diasa.</td><td></td></tr>
+        <tr><td>D. Dotarcie Vasco da Gamy drogą morską do Indii.</td><td></td></tr>
+        <tr><td>E. Dotarcie wyprawy Krzysztofa Kolumba do wysp Ameryki Środkowej.</td><td></td></tr>
+        <tr><td>F. Wyruszenie floty Ferdynanda Magellana w pierwszą wyprawę dookoła świata.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie V. Trzecia wyprawa krzyżowa</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">W zadaniach 1–5 zaznacz albo wpisz literę jednej poprawnej odpowiedzi.</p>
+      <table class="compact">
+        <tr><td>1. Trzecia wyprawa krzyżowa (1189–1192) była odpowiedzią na:<br>
+          <span class="pick">A.</span> najazd Turków seldżuckich na Hiszpanię &nbsp; <span class="pick">B.</span> zdobycie Konstantynopola &nbsp;
+          <span class="pick">C.</span> zdobycie Jerozolimy przez Saladyna &nbsp; <span class="pick">D.</span> upadek Bizancjum</td>
+          <td style="width:16mm"></td></tr>
+        <tr><td>2. Jednym z przywódców trzeciej krucjaty, angielskim królem zwanym Lwie Serce, był:<br>
+          <span class="pick">A.</span> Jan bez Ziemi &nbsp; <span class="pick">B.</span> Wilhelm Zdobywca &nbsp;
+          <span class="pick">C.</span> Edward I &nbsp; <span class="pick">D.</span> Ryszard I</td><td></td></tr>
+        <tr><td>3. Głównym muzułmańskim przeciwnikiem krzyżowców podczas trzeciej wyprawy był sułtan:<br>
+          <span class="pick">A.</span> Saladyn &nbsp; <span class="pick">B.</span> Bajazyd &nbsp;
+          <span class="pick">C.</span> Sulejman Wspaniały &nbsp; <span class="pick">D.</span> Mehmed II</td><td></td></tr>
+        <tr><td>4. Trzecia krucjata zakończyła się:<br>
+          <span class="pick">A.</span> odzyskaniem Jerozolimy przez chrześcijan na trwałe &nbsp; <span class="pick">B.</span> całkowitą klęską i zaniechaniem dalszych wypraw krzyżowych &nbsp;
+          <span class="pick">C.</span> rozejmem, który zapewnił pielgrzymom dostęp do Jerozolimy, pozostającej w rękach muzułmanów &nbsp; <span class="pick">D.</span> przyłączeniem Egiptu do państw krzyżowych</td><td></td></tr>
+        <tr><td>5. Podczas marszu na Ziemię Świętą utonął w rzece w Azji Mniejszej cesarz niemiecki:<br>
+          <span class="pick">A.</span> Fryderyk Barbarossa &nbsp; <span class="pick">B.</span> Otton I &nbsp;
+          <span class="pick">C.</span> Henryk IV &nbsp; <span class="pick">D.</span> Karol Wielki</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VI. Dioklecjan i system tetrarchii</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj hasło do opisu. Wpisz litery A–F. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – edykt cen maksymalnych</div>
+        <div><strong>B</strong> – pryncypat</div>
+        <div><strong>C</strong> – dominat</div>
+        <div><strong>D</strong> – tetrarchia</div>
+        <div><strong>E</strong> – prześladowanie chrześcijan</div>
+        <div><strong>F</strong> – abdykacja</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Ustrój wprowadzony przez Dioklecjana, w którym cesarz otwarcie przyjmował boskie tytuły i wschodnią etykietę dworską, np. całowanie szat władcy.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. System rządów czterech współwładców (dwóch augustów i dwóch cezarów), wprowadzony przez Dioklecjana dla sprawniejszego zarządzania rozległym cesarstwem.</td><td></td></tr>
+        <tr><td>3. Zarządzenie Dioklecjana z 301 r., ustalające górne granice cen towarów i wysokości płac, mające powstrzymać inflację.</td><td></td></tr>
+        <tr><td>4. Dobrowolne ustąpienie z tronu – krok, na który jako pierwszy w dziejach Rzymu zdecydował się Dioklecjan w 305 r., osiadając potem w pałacu w Splicie.</td><td></td></tr>
+        <tr><td>5. Ostatnie i najsurowsze prześladowanie wyznawców chrześcijaństwa w cesarstwie rzymskim, trwające od 303 r.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VII. Justynian Wielki i odrodzenie Bizancjum</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Cesarz bizantyjski <span class="shortline"></span> <strong>(1)</strong>, panujący w VI w.,
+        dążył do odbudowy jedności dawnego cesarstwa rzymskiego. Jego wódz
+        <span class="shortline"></span> <strong>(2)</strong> odzyskał dla cesarstwa Afrykę Północną
+        oraz Italię, odbierając je germańskim Wandalom i Ostrogotom. Cesarz nakazał uczonym
+        prawnikom zebranie i uporządkowanie całego prawa rzymskiego w jeden zbiór, znany jako
+        <span class="shortline"></span> <strong>(3)</strong>. W stolicy cesarstwa, Konstantynopolu,
+        wzniósł wspaniałą świątynię <span class="shortline"></span> <strong>(4)</strong>, przez wieki
+        największą budowlę sakralną chrześcijaństwa. Duży wpływ na politykę cesarza miała jego żona,
+        była aktorka, cesarzowa <span class="shortline"></span> <strong>(5)</strong>. Odzyskane ziemie
+        na Zachodzie utrzymały się przy cesarstwie tylko na krótko, częściowo z powodu epidemii dżumy,
+        zwanej od imienia władcy <span class="shortline"></span> <strong>(6)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VIII. Karol Wielki i cesarstwo Franków</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Karol Wielki został koronowany na cesarza przez papieża w Rzymie w roku 800.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Koronacja Karola Wielkiego odbyła się już w IX wieku.</td><td></td></tr>
+        <tr><td>3. Państwo Karola Wielkiego po jego śmierci zostało na mocy traktatu w Verdun (843 r.) podzielone między trzech jego wnuków.</td><td></td></tr>
+        <tr><td>4. Karol Wielki przyjął koronę cesarską z rąk patriarchy Konstantynopola.</td><td></td></tr>
+        <tr><td>5. Odnowienie nauki i szkolnictwa na dworze Karola Wielkiego, z udziałem uczonego Alkuina z Yorku, nazywamy renesansem karolińskim.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IX. Początki islamu – Mahomet i hidżra</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Twórcą islamu był urodzony w mieście <span class="shortline"></span> <strong>(1)</strong>
+        kupiec <span class="shortline"></span> <strong>(2)</strong>, który ok. 610 r. zaczął głosić,
+        że jest prorokiem jedynego Boga, zwanego po arabsku <span class="shortline"></span>
+        <strong>(3)</strong>. Prześladowany przez miejscowych kupców, w 622 r. przeniósł się wraz
+        ze zwolennikami do miasta <span class="shortline"></span> <strong>(4)</strong> – wydarzenie
+        to, zwane <span class="shortline"></span> <strong>(5)</strong>, wyznacza początek
+        muzułmańskiego kalendarza.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie X. Potop szwedzki (1655–1660)</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Na mapie oznaczono pięć miejsc. Do każdego opisu dopisz właściwy numer 1–5.</p>
+      <div class="svg-wrap">
+        <img class="map-image" src="../assets/potop_szwedzki_wariant_I.svg"
+             alt="Mapa konturowa ziem polskich z pięcioma miejscami kampanii potopu szwedzkiego oznaczonymi numerami od 1 do 5">
+      </div>
+      <p class="source">Mapa bazowa: Natural Earth 1:50 mln, domena publiczna (CC0),
+        <a href="https://commons.wikimedia.org/wiki/File:Blank_Map_of_europe.svg">Wikimedia Commons</a>;
+        oznaczenia i opracowanie zadania: własne. Cienkie jasne linie to współczesne granice
+        państwowe, naniesione wyłącznie dla ułatwienia orientacji.</p>
+      <table class="compact">
+        <tr><td>A. Miasto, pod którym we wrześniu 1655 r. bez walki poddało się pospolite ruszenie wielkopolskie, otwierając Szwedom drogę w głąb kraju.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Klasztor, którego obrona na przełomie 1655 i 1656 r. stała się symbolem oporu wobec najeźdźcy i punktem zwrotnym wojny.</td><td></td></tr>
+        <tr><td>C. Stolica królewska, dwukrotnie zdobywana przez wojska szwedzkie i odbijana przez siły Rzeczypospolitej.</td><td></td></tr>
+        <tr><td>D. Dawna stolica królewska w Małopolsce, zdobyta przez Karola X Gustawa jesienią 1655 r.</td><td></td></tr>
+        <tr><td>E. Największy port Rzeczypospolitej nad Bałtykiem, którego mieszczanie odmówili poddania się Szwedom i wytrzymali oblężenie floty.</td><td></td></tr>
+      </table>
+      <p>F. Podaj rok zawarcia pokoju w Oliwie, który zakończył wojnę ze Szwecją.
+        <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XI. Obraz jako źródło historyczne</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Obejrzyj reprodukcję obrazu i wykonaj polecenia.</p>
+      <div class="svg-wrap">
+        <img class="art-image" src="../assets/stanczyk_matejko.jpg"
+             alt="Obraz przedstawiający zamyślonego błazna w stroju błazeńskim, siedzącego samotnie w komnacie, podczas gdy w oddali trwa dworski bal">
+      </div>
+      <p class="source">Jan Matejko, „Stańczyk”, 1862, Muzeum Narodowe w Warszawie;
+        reprodukcja w domenie publicznej (Wikimedia Commons).</p>
+      <p>1. Podaj imię i nazwisko autora obrazu. <span class="shortline"></span></p>
+      <p>2. Podaj tytuł obrazu i rok jego powstania. <span class="shortline"></span></p>
+      <p>3. Podaj imię królowej, na której dworze rozgrywa się przedstawiona scena.
+        <span class="shortline"></span></p>
+      <p>4. Podaj nazwę miasta na wschodzie, którego utrata na rzecz Moskwy w 1514 r. jest
+        bezpośrednim powodem smutku bohatera obrazu. <span class="shortline"></span></p>
+      <p>5. Jaką funkcję (używając dawnego określenia) pełnił Stańczyk na dworze królewskim?
+        <span class="shortline"></span></p>
+      <p>6. Wyjaśnij, na czym polega kontrast między postacią Stańczyka a tłem obrazu i jaki jest
+        jego sens.</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XII. Statut kaliski</h3><span class="points">0–6 p.</span></div>
+      <div class="quote">
+        <p>„Jeżeli Żyd zostanie oskarżony przez chrześcijanina o zabicie dziecka chrześcijańskiego,
+          oskarżenie takie musi zostać potwierdzone zeznaniami trzech chrześcijan i trzech Żydów;
+          w przeciwnym razie oskarżyciel poniesie taką karę, jaka groziłaby oskarżonemu.”</p>
+      </div>
+      <p class="source">Statut kaliski (Ogólna karta swobód żydowskich), 1264 r.; fragment skrócony
+        i uwspółcześniony.</p>
+      <p>1. Podaj rok wydania przywileju, z którego pochodzi cytat. <span class="shortline"></span></p>
+      <p>2. Podaj imię i przydomek władcy, który wydał ten dokument. <span class="shortline"></span></p>
+      <p>3. Jakiej grupie mieszkańców Polski dokument nadawał opiekę i przywileje prawne?
+        <span class="shortline"></span></p>
+      <p>4. Jak nazywa się oszczercze oskarżenie o mordowanie dzieci chrześcijańskich w celach
+        rytualnych, przed którym zacytowany fragment chronił Żydów?
+        <span class="shortline"></span></p>
+      <p>5. Podaj nazwę miasta, w którym wydano ten dokument, a które nadało mu nazwę.
+        <span class="shortline"></span></p>
+      <p>6. Wyjaśnij, dlaczego władcy polscy w XIII w. byli zainteresowani sprowadzaniem
+        i ochroną ludności żydowskiej.</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIII. Abdykacja Jana Kazimierza</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Oceń, czy podane zjawisko było przyczyną (P), czy skutkiem (S) abdykacji
+        Jana Kazimierza w 1668 r.</p>
+      <table class="compact">
+        <tr><td>1. Wieloletnie wojny – potop szwedzki, powstanie Chmielnickiego i wojna z Rosją – wyniszczyły skarb i osłabiły autorytet króla.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Rokosz Lubomirskiego (1665–1666), skierowany przeciw planom obioru następcy tronu za życia króla.</td><td></td></tr>
+        <tr><td>3. Kolejne, już trzecie z rzędu, bezkrólewie i wolna elekcja nowego władcy Rzeczypospolitej.</td><td></td></tr>
+        <tr><td>4. Objęcie tronu przez Michała Korybuta Wiśniowieckiego, pierwszego od czasów Piastów rodowitego szlachcica na tronie polskim.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIV. Wojny z Turcją za Michała Korybuta Wiśniowieckiego</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">W zadaniach 1–5 zaznacz albo wpisz literę jednej poprawnej odpowiedzi.</p>
+      <table class="compact">
+        <tr><td>1. Michał Korybut Wiśniowiecki został wybrany na króla Polski w roku:<br>
+          <span class="pick">A.</span> 1669 &nbsp; <span class="pick">B.</span> 1668 &nbsp;
+          <span class="pick">C.</span> 1672 &nbsp; <span class="pick">D.</span> 1674</td>
+          <td style="width:16mm"></td></tr>
+        <tr><td>2. Podczas jego panowania Turcy zdobyli twierdzę broniącą południowo-wschodnich rubieży Rzeczypospolitej:<br>
+          <span class="pick">A.</span> Zbaraż &nbsp; <span class="pick">B.</span> Żwaniec &nbsp;
+          <span class="pick">C.</span> Kamieniec Podolski &nbsp; <span class="pick">D.</span> Chocim</td><td></td></tr>
+        <tr><td>3. Niekorzystny dla Rzeczypospolitej pokój z Turcją zawarto w 1672 r. w miejscowości:<br>
+          <span class="pick">A.</span> Żurawno &nbsp; <span class="pick">B.</span> Karłowice &nbsp;
+          <span class="pick">C.</span> Chocim &nbsp; <span class="pick">D.</span> Buczacz</td><td></td></tr>
+        <tr><td>4. Na mocy tego pokoju Rzeczpospolita:<br>
+          <span class="pick">A.</span> odzyskała Podole &nbsp; <span class="pick">B.</span> utraciła Podole z Kamieńcem Podolskim i zobowiązała się do haraczu &nbsp;
+          <span class="pick">C.</span> przyłączyła Wołoszczyznę &nbsp; <span class="pick">D.</span> zawarła wieczysty pokój z Turcją</td><td></td></tr>
+        <tr><td>5. Sejm odrzucił warunki tego traktatu, a rewanż za utratę Podola przyniosło wkrótce zwycięstwo pod Chocimiem (1673), odniesione przez hetmana, późniejszego króla:<br>
+          <span class="pick">A.</span> Jana Sobieskiego &nbsp; <span class="pick">B.</span> Stefana Czarnieckiego &nbsp;
+          <span class="pick">C.</span> Jana Kazimierza &nbsp; <span class="pick">D.</span> Michała Korybuta Wiśniowieckiego</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XV. Krzyżówka – przywileje szlacheckie</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Rozwiąż krzyżówkę, a następnie wyjaśnij znaczenie hasła z zaznaczonej kolumny.</p>
+      <table class="compact" style="margin-bottom:2mm">
+        <tr><td>1. Przywileje wydane przez Kazimierza Jagiellończyka w 1454 r., w których król zobowiązał się nie zwoływać pospolitego ruszenia i nie stanowić nowych praw bez zgody sejmików ziemskich.</td></tr>
+        <tr><td>2. Przywilej z 1496 r., ograniczający możliwość opuszczania wsi przez chłopów i zwalniający szlachtę z części ceł.</td></tr>
+        <tr><td>3. Mieszkaniec wsi, przywiązywany na mocy przywileju z zadania 2. coraz silniej do ziemi i pana.</td></tr>
+        <tr><td>4. Przywilej z 1501 r., wzmacniający władzę senatu kosztem króla, uchylony już cztery lata później.</td></tr>
+        <tr><td>5. Stan uprzywilejowany, na rzecz którego uchwalano kolejne przywileje w XV i na początku XVI wieku.</td></tr>
+      </table>
+      <table class="krzyzowka">
+        <tr><td class="numer">1.</td><td class="haslo"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td></tr>
+        <tr><td class="numer">2.</td><td class="pusta"></td><td class="haslo"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td></tr>
+        <tr><td class="numer">3.</td><td class="pusta"></td><td class="haslo"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td></tr>
+        <tr><td class="numer">4.</td><td class="pusta"></td><td class="haslo"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td></tr>
+        <tr><td class="numer">5.</td><td class="pusta"></td><td class="pusta"></td><td class="haslo"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td></tr>
+      </table>
+      <p>Hasło: <span class="shortline"></span></p>
+      <p>Wyjaśnij, z czym kojarzy się to hasło i do jakiego wydarzenia z 1505 r. nawiązuje. (1 p.)</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVI. Trzy żony Zygmunta Augusta</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Dopasuj postać do opisu. Wpisz litery A–E. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Bona Sforza</div>
+        <div><strong>B</strong> – Anna Jagiellonka</div>
+        <div><strong>C</strong> – Elżbieta Habsburżanka</div>
+        <div><strong>D</strong> – Barbara Radziwiłłówna</div>
+        <div><strong>E</strong> – Katarzyna Habsburżanka</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Pierwsza żona Zygmunta Augusta, córka cesarza Ferdynanda I Habsburga; zmarła w 1545 r., dwa lata po ślubie.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Matka Zygmunta Augusta, księżniczka włoska, przeciwna małżeństwu syna z litewską magnatką.</td><td></td></tr>
+        <tr><td>3. Trzecia żona króla, siostra jego pierwszej żony, z którą władca żył w separacji, choć nigdy formalnie się nie rozwiódł.</td><td></td></tr>
+        <tr><td>4. Druga żona króla, litewska magnatka z rodu Radziwiłłów, poślubiona potajemnie, a ukoronowana na królową w 1550 r.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVII. Koronacja Jadwigi Andegaweńskiej</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Wykonaj polecenia 1–5.</p>
+      <p>1. Podaj rok koronacji Jadwigi Andegaweńskiej na władczynię Polski.
+        <span class="shortline"></span></p>
+      <p>2. Jakim tytułem, podkreślającym pełnię władzy monarszej, a nie tylko rolę żony króla,
+        określano formalnie Jadwigę w akcie koronacyjnym? <span class="shortline"></span></p>
+      <p>3. Podaj imię i przydomek wielkiego księcia litewskiego, za którego Jadwiga wyszła za mąż
+        w 1386 r. <span class="shortline"></span></p>
+      <p>4. Jak nazywał się akt zawarty rok wcześniej, w 1385 r., na zamku na Litwie, który
+        poprzedził to małżeństwo i przewidywał chrzest Litwy? <span class="shortline"></span></p>
+      <p>5. Podaj imię ojca Jadwigi, króla Węgier i Polski, po którego śmierci wynikł spór
+        o sukcesję. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVIII. Sejm grodzieński 1793 roku</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Sejm grodzieński w 1793 r. odbywał się pod naciskiem wojsk rosyjskich obecnych w mieście obrad.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Sejm grodzieński zatwierdził drugi rozbiór Polski.</td><td></td></tr>
+        <tr><td>3. Posłowie na sejmie grodzieńskim swobodnie i bez przeszkód debatowali nad traktatem rozbiorowym.</td><td></td></tr>
+        <tr><td>4. Ostatnim aktem sejmu grodzieńskiego było uchwalenie nowej, reformującej ustrój konstytucji.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIX. Konfederacja targowicka i upadek Rzeczypospolitej</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uporządkuj wydarzenia chronologicznie. Wpisz cyfry od 1 (najwcześniejsze)
+        do 6 (najpóźniejsze).</p>
+      <table class="compact">
+        <tr><td>A. Trzeci rozbiór Polski.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Wybuch powstania kościuszkowskiego i zwycięstwo pod Racławicami.</td><td></td></tr>
+        <tr><td>C. Zawiązanie konfederacji targowickiej.</td><td></td></tr>
+        <tr><td>D. Klęska pod Maciejowicami i wzięcie do niewoli Tadeusza Kościuszki.</td><td></td></tr>
+        <tr><td>E. Drugi rozbiór Polski.</td><td></td></tr>
+        <tr><td>F. Wojna w obronie Konstytucji 3 maja.</td><td></td></tr>
+      </table>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+    <h2>Karta odpowiedzi — wariant I</h2>
+    <p class="small muted">Kod ucznia: <span class="code">&nbsp;</span></p>
+    <table class="card compact">
+      <tr><th style="width:42mm">Zadanie</th><th>Odpowiedzi</th><th style="width:20mm">Punkty</th></tr>
+      <tr><td>I. Demokracja ateńska</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>II. Sobór nicejski</td><td class="wide"></td><td></td></tr>
+      <tr><td>III. Wojna domowa w Anglii</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>IV. Wielkie odkrycia</td><td>A …… B …… C …… D …… E …… F ……</td><td></td></tr>
+      <tr><td>V. Trzecia krucjata</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>VI. Dioklecjan</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>VII. Justynian Wielki</td><td class="wide"></td><td></td></tr>
+      <tr><td>VIII. Karol Wielki</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>IX. Początki islamu</td><td class="wide"></td><td></td></tr>
+      <tr><td>X. Potop szwedzki (mapa)</td><td>A …… B …… C …… D …… E …… F ……</td><td></td></tr>
+      <tr><td>XI. Obraz jako źródło</td><td class="wide"></td><td></td></tr>
+      <tr><td>XII. Statut kaliski</td><td class="wide"></td><td></td></tr>
+      <tr><td>XIII. Abdykacja Jana Kazimierza</td><td>1 …… 2 …… 3 …… 4 ……</td><td></td></tr>
+      <tr><td>XIV. Wiśniowiecki i Turcja</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>XV. Krzyżówka</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVI. Żony Zygmunta Augusta</td><td>1 …… 2 …… 3 …… 4 ……</td><td></td></tr>
+      <tr><td>XVII. Koronacja Jadwigi</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVIII. Sejm grodzieński</td><td>1 …… 2 …… 3 …… 4 ……</td><td></td></tr>
+      <tr><td>XIX. Targowica i rozbiory</td><td>A …… B …… C …… D …… E …… F ……</td><td></td></tr>
+      <tr><td><strong>Razem</strong></td><td></td><td><strong>/ 100</strong></td></tr>
+    </table>
+    <p class="footer-note">Arkusz treningowy, wariant I, ziarno 2026-09-18-I. Materiał autorski,
+      nie jest oficjalnym arkuszem Kujawsko-Pomorskiego Kuratora Oświaty.</p>
+  </section>
+</body>
+</html>
