@@ -35,7 +35,7 @@ Zasady stosowania limitu:
 - liczbę powtórzeń podaj w kluczu, w sekcji kontroli rozkładu treści.
 
 Priorytet mają: zgodność z zakresem etapu, poprawność merytoryczna, suma 100 punktów
-i równowaga historia powszechna/historia Polski. Jeżeli trzymanie się nowych tematów
+i wymagany podział punktów (co najmniej 50% z historii Polski — patrz § 3). Jeżeli trzymanie się nowych tematów
 wymuszałoby zadania spoza zakresu albo naciągane merytorycznie, wybierz powtórzenie
 mieszczące się w limicie.
 
@@ -44,7 +44,8 @@ mieszczące się w limicie.
 Wszystkie wydarzenia mieszczące się w zakresie konkursu (do III rozbioru, 1795 r.) są zebrane
 w bazie generowanej przez `tools/baza_pytan.py` — 129 pozycji z podziałem na obszar
 (historia Polski / powszechna), typ zagadnienia i oceną **ryzyka powtórzenia** względem
-arkuszy A–F:
+dotychczasowych arkuszy, plus 1 dodatkowa pozycja z **rozszerzenia rejonowego** (patrz niżej
+i § 2) — razem 130.
 
 | ryzyko | co znaczy | jak używać |
 | --- | --- | --- |
@@ -53,16 +54,25 @@ arkuszy A–F:
 | `średnie` | nazwa własna była w arkuszu, ale bez daty | można użyć, pytając o inny aspekt |
 | `wysokie` | data była w treści arkusza | liczy się do limitu 30% |
 
-Stan po wariancie F: `brak` 2, `niskie` 5, `średnie` 49, `wysokie` 73. **Pula samych dat jest
-praktycznie wyczerpana** — świeżości kolejnych wariantów nie da się już budować na
-nieużywanych datach, tylko na nowym ujęciu znanych wydarzeń: innym źródle, innej formie
-zadania, innym aspekcie tego samego faktu. Naturalnym zapleczem są pozycje `średnie`:
-nazwa pojawiła się w arkuszu, ale pytanie o samą datę jest wciąż nowe.
+Stan po wariancie I: `brak` 0, `niskie` 0, `średnie` 40, `wysokie` 89. **Pula samych dat jest
+całkowicie wyczerpana** (już od wariantu H/I żadna pozycja z ustalonej listy dat nie ma statusu
+`brak` ani `niskie`) — świeżości kolejnych wariantów nie da się już budować na dobieraniu
+nieużywanych dat z tej tabeli, tylko na nowym ujęciu znanych wydarzeń (innym źródle, innej
+formie zadania, innym aspekcie) albo na faktach spoza tej listy dat w ogóle — postaciach,
+instytucjach czy dokumentach, które dotąd pojawiały się wyłącznie jako pojedyncze pozycje
+w bankach dopasowań innych zadań (§ „Powtarzalność zagadnień między wariantami” wyżej).
+Naturalnym zapleczem są nadal pozycje `średnie`: nazwa pojawiła się w arkuszu, ale pytanie
+o samą datę jest wciąż nowe.
 
 Ryzyko wyliczane jest automatycznie — skrypt szuka w arkuszach roku wydarzenia oraz rdzeni
-jego nazw własnych. Przy zagadnieniach opisanych w arkuszu bardzo omownie ocena może być
-zaniżona, dlatego przed użyciem pozycji zajrzyj do wskazanego wariantu. Jeśli trafisz na
-takie pudło, dopisz brakujące hasło do `HASLA_DODATKOWE` w skrypcie.
+jego nazw własnych, z zapasową fazą wydobywania haseł dla wydarzeń o ogólnie brzmiącej nazwie
+(np. „Początek pierwszej krucjaty”, „Wielka wojna północna”), które inaczej nigdy nie dostałyby
+ani jednego hasła i zawsze wyglądałyby na świeże, niezależnie od tego, ile razy realnie
+wystąpiły pod pełniejszą nazwą w arkuszach (por. uwaga 1. do wariantu I niżej). Mimo to przy
+zagadnieniach opisanych w arkuszu bardzo omownie ocena wciąż może być zaniżona — automatyczna
+klasyfikacja jest heurystyką, nie dowodem — dlatego przed użyciem pozycji **zawsze**
+zweryfikuj ją narzędziem `--rg` (niżej), a nie tylko kolumną ryzyka. Jeśli trafisz na pudło,
+dopisz brakujące hasło do `HASLA_DODATKOWE` w skrypcie.
 
 Użycie:
 
@@ -70,7 +80,16 @@ Użycie:
 python3 tools/baza_pytan.py           # podsumowanie i lista pozycji do wzięcia
 python3 tools/baza_pytan.py --json    # output/baza_pytan.json do dalszego przetwarzania
 python3 tools/baza_pytan.py --html    # widok do PDF (output/Baza_potencjalnych_pytan.pdf)
+python3 tools/baza_pytan.py --rg "fraza1" "fraza2" ...
 ```
+
+`--rg` przeszukuje treść **wszystkich** arkuszy i kluczy naraz pod kątem podanych fraz
+(bez rozróżniania wielkości liter) i pokazuje, w którym wariancie i w jakim kontekście
+każda z nich występuje. To zamiennik ręcznej pętli `rg -qi fraza test_szkolny_wariant_?.html`
+po kandydatach na temat — zamiast osobnego polecenia dla każdej nazwy własnej sprawdzasz od
+razu całą listę kandydatów jednym wywołaniem. Uruchamiaj go **przed** wyborem tematów do
+nowego wariantu, dla każdego kandydata z listy z podsumowania, a nie tylko wtedy, gdy kolumna
+ryzyka budzi wątpliwości — to ona bywa zaniżona, nie odwrotnie.
 
 Po dodaniu nowego wariantu nie trzeba nic aktualizować ręcznie — skrypt czyta arkusze
 i klucze z `output/`, więc wystarczy uruchomić go ponownie.
@@ -114,6 +133,39 @@ Granicą chronologiczną etapu szkolnego jest III rozbiór Polski w 1795 r. Nie 
 wprowadzać zagadnień z epoki napoleońskiej ani XIX wieku. Dla etapu rejonowego granicą
 jest powstanie styczniowe, a etap wojewódzki obejmuje całą podstawę programową.
 
+**Kryterium daty jest twarde i nie podlega dalszemu rozluźnieniu** (decyzja zamawiającego,
+2026-09-19): żadna data w arkuszu etapu szkolnego nie powinna przekraczać **1800 r.** — to
+warunek nadrzędny nad samym pojęciem etapu rejonowego (który formalnie sięga do 1863 r.).
+
+### Wyjątek: rozszerzenie rejonowe dla historii Polski (decyzja zamawiającego, 2026-09-19)
+
+Żeby zwiększyć pulę tematów z historii Polski — która, jak pokazała praktyka wariantów F–J,
+wyczerpuje się szybciej niż powszechna — arkusz etapu szkolnego **może** dodatkowo sięgnąć po
+pojedyncze zagadnienia z etapu **rejonowego**, ale tylko na tych warunkach naraz:
+
+- dotyczy **wyłącznie** zagadnień z historii Polski, nigdy powszechnej;
+- **najwyżej 2 zadania w jednym arkuszu** (`LIMIT_REJONOWY` w `tools/baza_pytan.py`) — ich
+  poziom trudności jest wyższy niż reszty materiału etapu szkolnego;
+- **data wydarzenia nie później niż 1800 r.** (`GRANICA_REJONOWY` w `tools/baza_pytan.py`) —
+  to twarde wymaganie, niższe niż formalny zakres etapu rejonowego (do powstania styczniowego,
+  1863 r.). W praktyce zawęża to pulę do jednej pozycji z obecnie zebranych dat: powstanie
+  Legionów Polskich we Włoszech (1797 r., `ROZSZERZENIE_REJONOWE` w `tools/baza_pytan.py`).
+  Dopisanie kolejnej pozycji (musi mieścić się w latach 1796–1800 i dotyczyć historii Polski)
+  wymaga dodania jej jednocześnie do `generuj_tabele_daty.DANE` (jeśli jeszcze jej tam nie ma),
+  do `KLASYFIKACJA` (z obszarem `"Polska"`) i do `ROZSZERZENIE_REJONOWE`;
+- takie zadanie oznacz w jego tytule jako dodatkowe/trudniejsze (np. „Zadanie XVI (zadanie
+  dodatkowe, etap rejonowy). Legiony Polskie we Włoszech”), a w kluczu w uwagach metodycznych
+  wyjaśnij, że wykracza poza deklarowany na stronie tytułowej zakres „działy I–XVII” — inaczej
+  strona tytułowa wprowadza ucznia w błąd co do rzeczywistej zawartości arkusza;
+- **nie zmienia** to deklarowanego zakresu arkusza na stronie tytułowej ani granicy 1795 r. dla
+  reszty zadań — to punktowy wyjątek dla najwyżej dwóch zadań, ograniczony dodatkowo twardym
+  sufitem daty (1800 r.), nie przesunięcie całej cezury etapu szkolnego.
+
+`tools/baza_pytan.py` bez dodatkowych flag włącza tę pulę automatycznie (pole `poza_etap_szkolny`
+w JSON-ie i osobna sekcja „Rozszerzenie rejonowe” w podsumowaniu terminalowym oraz w widoku HTML)
+i przypomina o limicie, ale go nie egzekwuje — pilnowanie liczby użytych zadań rejonowych
+w jednym arkuszu należy do autora wariantu.
+
 ## 3. Parametry arkusza
 
 Wzorzec potwierdzony pomiarem oryginalnych arkuszy z `referencje/arkusze/`
@@ -126,9 +178,18 @@ Wzorzec potwierdzony pomiarem oryginalnych arkuszy z `referencje/arkusze/`
 - wartość pojedynczego zadania: najczęściej 3–6 punktów, maksymalnie 10;
 - objętość arkusza: 8–14 stron, nowsze są dłuższe z powodu materiałów źródłowych;
 - numeracja zadań rzymska, punktacja zapisywana jako `Zadanie VII (0 – 5 p.)`;
-- orientacyjny podział punktów:
-  - 48–53 pkt – historia powszechna;
-  - 47–52 pkt – historia Polski;
+- podział punktów między obszary — **wymaganie nadrzędne, ustalone decyzją zamawiającego
+  (2026-09-19, skorygowane tego samego dnia z pierwotnych 60%)**:
+  - **historia Polski: co najmniej 50% punktów** (50–55 pkt na 100 jako praktyczny cel);
+  - historia powszechna: pozostałe punkty (45–50 pkt na 100);
+  - archiwalne arkusze kuratoryjne mierzone w tym dokumencie wychodzą na 48–53 pkt historia
+    powszechna / 47–52 pkt historia Polski — bardzo blisko obecnego wymagania, więc w praktyce
+    wystarczy pilnować, żeby historia Polski nie spadła poniżej połowy punktów, bez odchodzenia
+    daleko od kalibracji na archiwum;
+  - konsekwencja dla doboru tematów: `tools/baza_pytan.py` wielokrotnie odnotowywał (warianty
+    F, G, H), że zagadnienia z historii Polski wyczerpują się szybciej niż powszechne, bo jest
+    ich w podstawie programowej mniej — przy planowaniu kolejnego wariantu nadal warto zacząć
+    od ułożenia zadań polskich, a dopiero potem dobrać powszechne;
 - wszystkie odpowiedzi powinny być możliwe do zapisania w osobnej karcie odpowiedzi.
 
 Każdy wariant powinien mieć własne oznaczenie i ziarno, np.:
@@ -322,7 +383,16 @@ Różnice, które należy uwzględnić:
 ## 7. Zasady korzystania ze źródeł
 
 1. Najpierw ustal zakres na podstawie obowiązującego regulaminu.
-2. Arkusze archiwalne wykorzystuj do analizy struktury, nie do kopiowania pytań.
+2. Arkusze archiwalne kujawsko-pomorskie (`referencje/arkusze/`) wykorzystuj wyłącznie do
+   analizy struktury, nie do kopiowania pytań. **Wyjątek** (decyzja zamawiającego,
+   2026-09-20): z arkuszy mazowieckich (`referencje/arkusze/mazowieckie/`), pomorskich
+   (`referencje/arkusze/pomorskie/`) i zachodniopomorskich
+   (`referencje/arkusze/zachodniopomorskie/`), skatalogowanych łącznie w
+   `output/bank_pytan_zewnetrznych.json`, wolno zaczerpnąć wprost do 30–50% zadań nowego
+   wariantu — reszta nadal musi być napisana od nowa. Źródła pomorskie i zachodniopomorskie
+   sięgają XIX–XX w.; wybieraj z nich tylko pozycje oznaczone `w_zakresie_1795: true`.
+   Zapożyczone zadanie odnotuj w pliku banku jako `"uzyte"` z literą wariantu, a punktację
+   przelicz z pierwotnej skali 50 na 100.
 3. Każdą odpowiedź sprawdź przynajmniej w jednym źródle instytucjonalnym lub
    zatwierdzonym podręczniku.
 4. Fakty potencjalnie niejednoznaczne sprawdź w dwóch niezależnych źródłach.
@@ -432,7 +502,8 @@ Przed przekazaniem plików należy sprawdzić:
 - czy suma punktów wynosi dokładnie 100;
 - czy liczba zadań zgadza się z instrukcją;
 - czy każde zadanie ma odpowiedź w kluczu;
-- czy zakres nie wykracza poza 1795 r.;
+- czy żadna data nie przekracza 1800 r., a poza III rozbiorem (1795 r.) w arkuszu są najwyżej
+  2 jawnie oznaczone zadania z rozszerzenia rejonowego (§ 2);
 - czy mapy mają poprawne kontury i oznaczenia oraz są czytelne po wydrukowaniu;
 - czy położenie każdego punktu na mapie zgadza się z odpowiedzią w kluczu;
 - czy pytania nie zawierają niezamierzonych podpowiedzi.
@@ -480,7 +551,8 @@ Najpierw skalibruj się na lokalnym archiwum w katalogu `referencje/`:
 Zakres (etap szkolny):
 - działy I–XVII podstawy programowej historii dla klas 5–8;
 - od cywilizacji starożytnych do III rozbioru Polski w 1795 r.;
-- bez epoki napoleońskiej i XIX wieku.
+- bez epoki napoleońskiej i XIX wieku; ta granica jest twarda i nie podlega rozszerzeniu —
+  żadne daty powyżej 1800 r. nie powinny pojawić się w arkuszu.
 
 Gdyby polecenie dotyczyło innego etapu, zmień zakres: rejonowy obejmuje działy I–XXI
 (do powstania styczniowego, 60 minut), a wojewódzki działy I–XLI (90 minut).
@@ -489,7 +561,11 @@ Parametry:
 - 60 minut;
 - 18–19 zadań;
 - dokładnie 100 punktów;
-- około połowy punktów z historii powszechnej i połowy z historii Polski;
+- co najmniej 50% punktów (50–55 pkt) z historii Polski, resztę (45–50 pkt) z historii
+  powszechnej — to wymaganie nadrzędne;
+- żadna data w arkuszu nie może przekraczać 1800 r.; wyjątkowo, dla historii Polski, wolno
+  użyć do 2 zadań z etapu rejonowego pod warunkiem daty nie późniejszej niż 1800 r. — patrz
+  „Wyjątek: rozszerzenie rejonowe” w § 2;
 - poziom i struktura zbliżone do arkuszy kuratoryjnych z poprzednich lat.
 
 Zastosuj co najmniej sześć typów zadań, w tym obowiązkowo:
@@ -558,7 +634,9 @@ Przed zakończeniem automatycznie sprawdź:
 - sumę 100 punktów;
 - zgodność liczby zadań z instrukcją;
 - kompletność klucza;
-- zakres chronologiczny;
+- zakres chronologiczny (żadne daty powyżej 1800 r.; dopuszczalny wyjątek: maks. 2 zadania
+  z rozszerzenia rejonowego, § 2, i tak nie później niż 1800 r.);
+- podział punktów między obszary (co najmniej 50% z historii Polski);
 - udział zadań powtarzających temat (limit 30%);
 - czy żaden klucz nie jest przewidywalny — brak ciągów rosnących typu A, B, C, D
   oraz 1, 2, 3, 4 i brak długich serii w zadaniach prawda/fałsz;
@@ -724,6 +802,118 @@ Trzy obserwacje z wariantu H:
    warto z góry sprawdzić `ls assets/*.jpg`, żeby wiedzieć, czy trzeba dograć nowy obraz, zanim
    zaplanuje się treść zadania.
 
+- `output/test_szkolny_wariant_I.pdf` — 19 zadań, 100 p., ziarno `2026-09-18-I`, 12 stron;
+  `output/klucz_odpowiedzi_wariant_I.pdf` — 7 stron.
+
+Tematy wykorzystane w wariancie I (użyte ponownie liczą się do limitu 30% powtórzeń): demokracja
+ateńska (Solon, Klejstenes), sobór nicejski i cesarz Konstantyn Wielki, wojna domowa w Anglii
+i republika Cromwella, chronologia wielkich odkryć geograficznych, trzecia wyprawa krzyżowa
+(Ryszard Lwie Serce, Saladyn), Dioklecjan i system tetrarchii, Justynian Wielki i odrodzenie
+Bizancjum, Karol Wielki i cesarstwo Franków, początki islamu (Mahomet, hidżra), mapa potopu
+szwedzkiego, „Stańczyk” Matejki (utrata Smoleńska 1514), Statut kaliski, przyczyny i skutki
+abdykacji Jana Kazimierza, wojny z Turcją za Michała Korybuta Wiśniowieckiego, krzyżówka
+o przywilejach szlacheckich z hasłem NIHIL, żony Zygmunta Augusta, koronacja Jadwigi
+Andegaweńskiej, sejm grodzieński 1793 r., konfederacja targowicka i rozbiory. Powtórzeń jest
+5 na 19 zadań (26%): wielkie odkrycia geograficzne (wcześniej krzyżówka w C, przyczyny i skutki
+w E), trzecia krucjata (wcześniej przyczyny i skutki całego ruchu krzyżowego w G), mapa potopu
+szwedzkiego (wcześniej dwie pozycje w chronologii Rzeczypospolitej XVII w. w E), wojny z Turcją
+za Wiśniowieckiego (wcześniej pozycja w dopasowaniu traktatów w C) i konfederacja
+targowicka/rozbiory (temat zamykający każdy dotychczasowy wariant).
+
+Pięć obserwacji z wariantu I:
+
+1. **Gdy pula tematów na poziomie „nazwa własna jako element listy” też się kurczy, warto
+   sięgnąć po zupełnie nową postać lub wydarzenie zamiast pogłębiać już rozwinięte.** Zamiast
+   kolejnego zadania o Justynianie czy Dioklecjanie zbudowanym wokół pojedynczej daty, wariant I
+   wprowadził trzy postacie/wydarzenia nieobecne dotąd nawet jako opcje w bankach dopasowań:
+   sobór nicejski, wojnę domową w Anglii i Statut kaliski. Sprawdzenie przez `rg` samych imion
+   (Konstantyn, Nicea, Cromwell, kaliski) po wszystkich arkuszach A–H potwierdziło zero trafień —
+   taki podwójny test (baza pytań + `rg` po treści) jest szybszy niż domyślanie się świeżości
+   z samej kolumny ryzyka.
+
+2. **Mapa nie musi pokazywać jednego regionu — może objąć cały kraj, jeśli zadanie tego wymaga.**
+   Wcześniejsze mapy (E, G, H) kadrowały pojedynczy region (miasta Rzeczypospolitej, wybrzeże
+   Bałtyku, Pomorze Gdańskie). Zadanie o potopie szwedzkim wymagało punktów rozrzuconych po całej
+   Polsce (Ujście na zachodzie, Warszawa na wschodzie, Gdańsk na wybrzeżu, Kraków w Małopolsce) —
+   kadr `viewBox="855 1210 200 260"` z zachowaniem tej samej reguły (wypełnione morze i ląd,
+   strzałka północy, punkty liczone rachunkowo z odwzorowania Mercatora) sprawdził się równie
+   dobrze przy większej skali, pokazując charakterystyczny zarys Zatoki Gdańskiej na północy
+   i górzystą granicę południową.
+
+3. **Siatka krzyżówki nie musi mieć komórek wypełniających ponad długość hasła.** W wariantach
+   E–H liczba komórek w wierszu krzyżówki przekraczała długość wpisywanego słowa (np. czterokomórkowe
+   słowo WICI w wariancie H miało osiem komórek w wierszu), co nie ma odzwierciedlenia w rzeczywistej
+   liczbie liter i wprowadza niespójność między siatką a kluczem. Wariant I użył siatki, w której
+   liczba komórek w każdym wierszu równa się dokładnie długości słowa (NIESZAWSKIE — 11 komórek,
+   CHŁOP — 5 komórek itd.), z jedną komórką „haslo” na obliczonej pozycji litery docelowego hasła.
+   To prostsze i ściślejsze rozwiązanie — warto je przyjąć jako standard w kolejnych wariantach.
+
+4. **Ósmy obraz Matejki kończy pulę lokalnych reprodukcji.** Po „Stańczyku” (pobranym z Wikimedia
+   Commons i zapisanym jako `assets/stanczyk_matejko.jpg`) wykorzystano już wszystkie znane, dobrze
+   udokumentowane w domenie publicznej obrazy Matejki pasujące tematycznie i chronologicznie do
+   zakresu etapu szkolnego (do 1795 r.). Kolejne warianty będą musiały albo sięgnąć po innego
+   malarza lub inny typ źródła ikonograficznego (rycina, moneta, dokument z pieczęcią), albo
+   dokładniej przeszukać twórczość Matejki pod kątem mniej znanych, lecz wciąż trafnych tematycznie
+   płócien.
+
+5. **Ręczne sprawdzanie świeżości tematu przez pojedyncze wywołania `rg` po każdym kandydacie
+   było głównym wąskim gardłem czasowym całego wariantu — poprawiono to od razu po jego
+   ukończeniu.** `tools/baza_pytan.py` dostał dwie zmiany: (a) zapasową fazę wydobywania haseł
+   dla wydarzeń o ogólnie brzmiącej nazwie, które wcześniej zawsze wyglądały na świeże niezależnie
+   od realnego użycia (np. „Początek pierwszej krucjaty” i „Wielka wojna północna” — po poprawce
+   od razu poprawnie wyszły jako `średnie`, zgodnie z tym, co i tak już wiadomo z arkuszy G i F);
+   (b) tryb `--rg "fraza1" "fraza2" ...`, przeszukujący treść wszystkich arkuszy i kluczy naraz,
+   zamiast osobnego polecenia terminala dla każdego kandydata. Obu używaj **przed** wyborem
+   tematów do kolejnego wariantu, nie tylko przy wątpliwościach — kolumna ryzyka nadal jest
+   heurystyką, którą trzeba potwierdzać, a nie rozstrzygnięciem.
+
+- `output/test_szkolny_wariant_J.pdf` — 19 zadań, 100 p., ziarno `2026-09-19-J`, 12 stron;
+  `output/klucz_odpowiedzi_wariant_J.pdf` — 7 stron.
+
+Tematy wykorzystane w wariancie J (użyte ponownie liczą się do limitu 30% powtórzeń): sobór
+w Konstancji i Jan Hus, wojna dwóch róż, unia kalmarska, podbój Ameryki (Aztekowie i Inkowie),
+Iwan IV Groźny i początki carskiej Rosji, Karol V Habsburg, Wenecja jako republika kupiecka,
+Fryderyk II Wielki i wzrost Prus, krzyżówka z hasłem TUDOR, mapa trzech unii polsko-litewskich
+(Krewo, Horodło, Lublin), widok Warszawy Bernarda Bellotta, Paweł Włodkowic na soborze
+w Konstancji, Zbigniew Oleśnicki i regencja, Jan Zamoyski i bitwa pod Byczyną, reformatorzy Sejmu
+Czteroletniego, Rada Nieustająca, rzeź Pragi, Kazimierz Pułaski w Ameryce, chronologia panowania
+Stanisława Augusta Poniatowskiego. Powtórzeń są tylko 3 na 19 zadań (16%): mapa trzech unii
+(dwa z pięciu punktów — Krewo i Lublin — powtarzają tematy z wariantów D, B i G), Jan Zamoyski
+i Byczyna (wcześniej jedna para w zbiorczym dopasowaniu dowódca–bitwa w wariancie B) i chronologia
+zamykająca panowanie Stanisława Augusta (temat zamykający każdy dotychczasowy wariant).
+
+Wariant J powstał jako pierwszy z systematycznym użyciem trybu `--rg` narzędzia
+`tools/baza_pytan.py` (dodanego po wariancie I) do sprawdzania świeżości kandydatów na temat —
+efekt jest wymierny: 16% powtórzeń wobec 21–26% w wariantach E–I, mimo że sama tabela dat
+(`tools/baza_pytan.py` bez `--rg`) pokazywała **zero** zupełnie wolnych pozycji już od wariantu H.
+Dwie obserwacje z tego procesu:
+
+1. **Kilkanaście-kilkadziesiąt fraz sprawdzonych jednym poleceniem `--rg` zastąpiło dziesiątki
+   osobnych wywołań `rg`.** Dwa wywołania (jedno na ok. 30 fraz, drugie na ok. 20) wystarczyły,
+   żeby ustalić, które z brainstormowanych kandydatów (unia kalmarska, wojna dwóch róż, podbój
+   Ameryki, Iwan Groźny, Karol V, Wenecja, Fryderyk II, Jan Hus, Paweł Włodkowic, Zbigniew
+   Oleśnicki, Jan Zamoyski, Rada Nieustająca, rzeź Pragi, Kazimierz Pułaski i kilkanaście innych)
+   są wolne, a które już zajęte — i w jakim dokładnie kontekście (pojedyncza opcja w banku
+   dopasowania kontra pełnoprawny temat zadania). To właśnie ta faza była największym wąskim
+   gardłem czasowym przy wariancie I; przy wariancie J zajęła ułamek czasu.
+
+2. **Im więcej wariantów, tym bardziej opłaca się szukać postaci i wydarzeń w ogóle nieobecnych
+   w dotychczasowych arkuszach, zamiast pogłębiać już rozwinięte tematy.** Zamiast kolejnego
+   zadania o np. Karolu Wielkim czy Justynianie (jak w wariancie I), tym razem znalazły się
+   zupełnie nowe postacie i wydarzenia — żadna z nich nie wymagała nawet schodzenia na poziom
+   podtematu, bo mieszczą się w zakresie etapu szkolnego, a mimo to nikt ich dotąd nie użył.
+   Wniosek praktyczny: przy planowaniu kolejnego wariantu warto najpierw wygenerować szeroką listę
+   kandydatów (co najmniej 25–30 fraz) i przepuścić ją przez `--rg`, zanim zacznie się zawężać
+   wybór do tematów tylko „wyglądających” na świeże.
+
+Przy tej okazji źródło ikonograficzne po raz pierwszy nie pochodzi z twórczości Jana Matejki —
+zamiast kolejnej reprodukcji sceny historycznej użyto „Widoku Warszawy z tarasu Zamku
+Królewskiego” Bernarda Bellotta (ok. 1773 r.), zapisanego jako `assets/warszawa_bellotto.jpg`.
+To dokumentacyjny widok topograficzny, a nie dramatyczna scena — inny rodzaj źródła
+ikonograficznego, co samo w sobie wzbogaca zadanie o pytanie odróżniające charakter źródła.
+Krzyżówka w zadaniu IX stosuje też skorygowaną konwencję z wariantu I: liczba komórek w wierszu
+równa się dokładnie długości hasła, bez komórek wypełniających ponad tę długość.
+
 ### Liczenie stron PDF — tylko przez PDFKit
 
 Zliczanie wystąpień `/Type /Page` w surowych bajtach PDF **jest zawodne** i zaniża wynik, gdy Chrome
@@ -842,12 +1032,14 @@ zmieniać treść, styl oraz tworzyć kolejne warianty.
   ```
 
 - `tools/baza_pytan.py` — baza potencjalnych pytań: wydarzenia w zakresie konkursu
-  (do 1795 r.) z obszarem, typem zagadnienia i oceną ryzyka powtórzenia względem arkuszy A–F.
-  Punkt wyjścia przy doborze tematów do nowego wariantu — patrz sekcja
-  „Baza potencjalnych pytań”:
+  (do 1795 r.) z obszarem, typem zagadnienia i oceną ryzyka powtórzenia względem dotychczasowych
+  arkuszy. Punkt wyjścia przy doborze tematów do nowego wariantu — patrz sekcja
+  „Baza potencjalnych pytań”. Tryb `--rg` przeszukuje treść wszystkich arkuszy i kluczy naraz
+  pod kątem podanych fraz i zastępuje ręczne, pojedyncze wywołania `rg` po kandydatach na temat:
 
   ```bash
   python3 tools/baza_pytan.py
+  python3 tools/baza_pytan.py --rg "Justynian" "sobór nicejski" "Statut kaliski"
   ```
 
 Skrypty korzystają wyłącznie z narzędzi dostępnych w systemie (Swift z PDFKit, python3),

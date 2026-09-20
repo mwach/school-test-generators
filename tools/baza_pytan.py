@@ -1,9 +1,22 @@
 #!/usr/bin/env python3
-"""Baza potencjalnych pytań — wydarzenia mieszczące się w zakresie konkursu (do III rozbioru, 1795 r.).
+"""Baza potencjalnych pytań — wydarzenia mieszczące się w zakresie konkursu (do III rozbioru, 1795 r.),
+plus wąski, jawnie oznaczony wyjątek dla historii Polski etapu rejonowego (patrz niżej).
 
 Źródłem dat jest `tools/generuj_tabele_daty.py`; tutaj dochodzi klasyfikacja potrzebna przy
 komponowaniu arkusza: obszar (historia Polski / powszechna) oraz typ zagadnienia. Wydarzenia
-po 1795 r. są poza zakresem Wojewódzkiego Konkursu Przedmiotowego i do bazy nie wchodzą.
+powszechne po 1795 r. są poza zakresem etapu szkolnego i do bazy nie wchodzą.
+
+Wyjątek (decyzja zamawiającego, 2026-09-19, ostatecznie skorygowana): dla historii Polski baza
+dopuszcza też wydarzenia z etapu **rejonowego**, ale pod dwoma twardymi warunkami naraz —
+**data nie później niż `GRANICA_REJONOWY` (1800 r.)** i **najwyżej `LIMIT_REJONOWY` takie
+zadania w jednym arkuszu**. Kryterium daty jest twarde: mimo że etap rejonowy formalnie sięga
+do powstania styczniowego (1863 r.), tutaj wolno korzystać wyłącznie z wydarzeń do 1800 r.
+włącznie — to zawęża `ROZSZERZENIE_REJONOWE` praktycznie do jednej pozycji (1797 r.), dopóki
+ktoś nie dopisze do `generuj_tabele_daty.DANE` kolejnego polskiego wydarzenia z lat 1796–1800.
+Rekordy z rozszerzenia mają w JSON-ie i widoku HTML pole `poza_etap_szkolny: true` — pilnuj
+limitu ręcznie przy komponowaniu wariantu, skrypt tylko go przypomina, nie egzekwuje. Takie
+zadanie oznacz w treści arkusza jako dodatkowe/trudniejsze (np. w tytule zadania), żeby nie
+sugerować uczniowi, że cały arkusz obejmuje ten zakres.
 
 Status „wolne” oznacza, że zagadnienie nie wystąpiło jeszcze w żadnym dotychczasowym arkuszu,
 czyli można je wykorzystać bez naruszania limitu 30% powtórzeń. Arkusze i klucze czytane są
@@ -13,6 +26,13 @@ Użycie:
     python3 tools/baza_pytan.py                 # podsumowanie w terminalu
     python3 tools/baza_pytan.py --json          # zapis output/baza_pytan.json
     python3 tools/baza_pytan.py --html          # widok HTML na stdout
+    python3 tools/baza_pytan.py --rg "fraza1" "fraza2" ...
+        # wyszukuje podane frazy (bez rozróżniania wielkości liter) w treści WSZYSTKICH
+        # arkuszy i kluczy naraz i pokazuje, gdzie i w jakim kontekście trafiają — to
+        # zamiennik ręcznej pętli `rg -qi fraza test_szkolny_wariant_?.html` po kandydatach
+        # na temat nowego zadania. Uruchamiaj to PRZED wyborem tematu, nie po napisaniu
+        # zadania: własna ocena „ryzyka” w tabeli poniżej bywa zaniżona przy tematach
+        # o ogólnie brzmiącej nazwie (patrz uwaga 1. do wariantu I w specyfikacji, § 12).
 """
 import html
 import importlib.util
@@ -22,6 +42,16 @@ import sys
 from collections import Counter, defaultdict
 
 GRANICA_ZAKRESU = 1795  # III rozbiór Polski — koniec zakresu konkursu
+
+# Wyjątek dla historii Polski etapu rejonowego (patrz docstring modułu i § 2 specyfikacji).
+# GRANICA_REJONOWY (1800) jest twardym wymaganiem zamawiającego, NIŻSZYM niż formalny zakres
+# etapu rejonowego (do 1863 r.) — nie podnosić bez wyraźnej nowej decyzji. Klucze sortowania
+# w ROZSZERZENIE_REJONOWE muszą być <= GRANICA_REJONOWY, odpowiadać pozycjom w
+# `generuj_tabele_daty.DANE` i mieć obszar "Polska" w KLASYFIKACJA niżej — inaczej `zbuduj()`
+# przerwie pracę z czytelnym błędem.
+GRANICA_REJONOWY = 1800
+ROZSZERZENIE_REJONOWE = {1797}
+LIMIT_REJONOWY = 2  # maks. liczba zadań z tego rozszerzenia w jednym arkuszu etapu szkolnego
 
 # Arkusze, klucze i wyniki tego skryptu leżą w output/ — patrz sekcja 9 specyfikacji.
 KATALOG_WYJSCIA = pathlib.Path(__file__).parent.parent / 'output'
@@ -175,6 +205,8 @@ KLASYFIKACJA = {
     1793: ("Polska", "dyplomacja i traktaty"),
     1794: ("Polska", "wojny i bitwy"),
     1795: ("Polska", "dyplomacja i traktaty"),
+    # --- rozszerzenie rejonowe (tylko Polska, data <= GRANICA_REJONOWY; § 2 specyfikacji) ---
+    1797: ("Polska", "wojny i bitwy"),
 }
 
 
@@ -254,12 +286,22 @@ STOP_RDZENIE = {_rdzen(w) for w in STOPLISTA}
 def _hasla(wydarzenie):
     """Rdzenie nazw odróżniających wydarzenie od innych. Bierzemy nazwy własne oraz
     przymiotniki odmiejscowe pisane małą literą („toruński”, „perejasławska”), bo często
-    to one identyfikują wydarzenie w treści zadania."""
+    to one identyfikują wydarzenie w treści zadania.
+
+    Zapasowa faza (gdy powyższe da pustą listę) bierze pod uwagę każde słowo o długości
+    co najmniej 6 znaków, niezależnie od wielkości liter. Bez niej tytuły złożone wyłącznie
+    ze słów ogólnych — „Początek pierwszej krucjaty”, „Wielka wojna północna” — nigdy nie
+    dostają ani jednego hasła, więc skrypt nie jest w stanie wykryć, że zagadnienie zostało
+    użyte, choćby pojawiało się w arkuszach dziesięć razy pod inną, pełniejszą nazwą (por.
+    uwaga 1. do wariantu I w specyfikacji, § 12)."""
     import re
     slowa = re.findall(r'[A-ZĄĆĘŁŃÓŚŹŻ][\wąćęłńóśźż-]{4,}', wydarzenie)
     slowa += re.findall(r'\b[a-ząćęłńóśźż]{5,}(?:ski|skie|skiego|ska|cki|ckie|cka|nski|ński)\b',
                         wydarzenie)
     rdzenie = {_rdzen(s) for s in slowa} - STOP_RDZENIE
+    if not rdzenie:
+        zapasowe = re.findall(r'[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]{6,}', wydarzenie)
+        rdzenie = {_rdzen(s) for s in zapasowe} - STOP_RDZENIE
     return sorted(rdzenie)
 
 
@@ -297,12 +339,58 @@ def _uzycie_w_arkuszach(rekordy, katalog):
     return rekordy
 
 
+def wyszukaj_frazy(frazy, katalog):
+    """Szuka podanych fraz (bez rozróżniania wielkości liter) w treści arkuszy i kluczy
+    wszystkich dostępnych wariantów naraz. Zastępuje ręczne, pojedyncze wywołania
+    `rg -qi fraza test_szkolny_wariant_?.html` używane dotąd przy sprawdzaniu świeżości
+    tematu — dla każdej frazy pokazuje od razu wszystkie warianty, w których występuje,
+    razem z krótkim kontekstem, więc dziesiątki kandydatów na temat sprawdza się jednym
+    poleceniem zamiast dziesiątek osobnych."""
+    import re
+    warianty = _warianty_dostepne(katalog)
+    for fraza in frazy:
+        wzorzec = re.compile(re.escape(fraza), re.IGNORECASE)
+        trafienia = []
+        for w in warianty:
+            for rodzaj, wzor in (('arkusz', 'test_szkolny_wariant_%s.html'),
+                                 ('klucz', 'klucz_odpowiedzi_wariant_%s.html')):
+                p = katalog / (wzor % w)
+                if not p.exists():
+                    continue
+                tekst = _tekst_bez_stylu(p)
+                m = wzorzec.search(tekst)
+                if m:
+                    lewo = tekst[max(0, m.start() - 45):m.start()].strip()
+                    prawo = tekst[m.end():m.end() + 45].strip()
+                    trafione = tekst[m.start():m.end()]
+                    trafienia.append((w, rodzaj, f'…{lewo} »{trafione}« {prawo}…'))
+        print(f'\n„{fraza}”')
+        if trafienia:
+            for w, rodzaj, kontekst in trafienia:
+                print(f'  {w} ({rodzaj}): {kontekst}')
+        else:
+            print('  brak trafień w żadnym arkuszu ani kluczu — temat wygląda na świeży')
+
+
 def zbuduj():
     dane, epoki = _dane_dat()
-    w_zakresie = [d for d in dane if d[0] <= GRANICA_ZAKRESU]
+    zla_data = {s for s in ROZSZERZENIE_REJONOWE if s > GRANICA_REJONOWY}
+    if zla_data:
+        raise SystemExit('ROZSZERZENIE_REJONOWE przekracza twardą granicę GRANICA_REJONOWY '
+                          f'({GRANICA_REJONOWY} r.): ' + ', '.join(map(str, sorted(zla_data))))
+    zle_rozszerzenie = ROZSZERZENIE_REJONOWE - {d[0] for d in dane}
+    if zle_rozszerzenie:
+        raise SystemExit('ROZSZERZENIE_REJONOWE wskazuje klucze spoza generuj_tabele_daty.DANE: '
+                          + ', '.join(map(str, sorted(zle_rozszerzenie))))
+    w_zakresie = [d for d in dane if d[0] <= GRANICA_ZAKRESU or d[0] in ROZSZERZENIE_REJONOWE]
     brak = [d[1] for d in w_zakresie if d[0] not in KLASYFIKACJA]
     if brak:
         raise SystemExit('Brak klasyfikacji dla pozycji: ' + ', '.join(brak))
+    zla_klasyfikacja = [d[1] for d in w_zakresie if d[0] in ROZSZERZENIE_REJONOWE
+                        and KLASYFIKACJA[d[0]][0] != 'Polska']
+    if zla_klasyfikacja:
+        raise SystemExit('ROZSZERZENIE_REJONOWE dopuszcza wyłącznie historię Polski, a nie taką '
+                          'klasyfikację mają: ' + ', '.join(zla_klasyfikacja))
     rekordy = []
     for sort, etykieta, wydarzenie, warianty, _z_listy in w_zakresie:
         obszar, typ = KLASYFIKACJA[sort]
@@ -315,21 +403,28 @@ def zbuduj():
             'obszar': obszar,
             'typ': typ,
             'warianty': warianty.split() if warianty else [],
+            'poza_etap_szkolny': sort > GRANICA_ZAKRESU,
         })
     return _uzycie_w_arkuszach(rekordy, KATALOG_WYJSCIA)
 
 
 def podsumowanie(rek):
     wolne = [r for r in rek if r['status'] == 'wolne']
-    print(f'Baza potencjalnych pytań — zakres do {GRANICA_ZAKRESU} r.')
-    print(f'  pozycji razem: {len(rek)}')
+    rejonowe = [r for r in rek if r['poza_etap_szkolny']]
+    print(f'Baza potencjalnych pytań — zakres do {GRANICA_ZAKRESU} r. '
+          f'plus rozszerzenie rejonowe: {len(rejonowe)} poz. (Polska, do {GRANICA_REJONOWY} r.)')
+    print(f'  pozycji razem: {len(rek)} (w tym {len(rejonowe)} rejonowych)')
     zakres_wariantow = _zakres_etykieta(_warianty_dostepne(KATALOG_WYJSCIA))
     print(f'\nRyzyko powtórzenia (na podstawie arkuszy {zakres_wariantow}):')
     for poz in ('brak', 'niskie', 'średnie', 'wysokie'):
         n = sum(1 for r in rek if r['ryzyko'] == poz)
         print(f'  {poz:9s} {n:3d}')
     print(f'\nDo wykorzystania w kolejnym wariancie (ryzyko brak lub niskie): {len(wolne)}')
-    print('\nWg obszaru — to wąskie gardło przy bilansie 50/50:')
+    print(f'\nRozszerzenie rejonowe (data <= {GRANICA_REJONOWY} r.) '
+          f'— pamiętaj o limicie {LIMIT_REJONOWY} takich zadań na arkusz:')
+    for r in rejonowe:
+        print(f'  [{r["ryzyko"]:7s}] {r["data"]:6s} {r["wydarzenie"][:60]}')
+    print('\nWg obszaru — cel to co najmniej 50% punktów z historii Polski (§ 3 specyfikacji):')
     for obszar in ('Polska', 'powszechna'):
         w = [r for r in wolne if r['obszar'] == obszar]
         wsz = [r for r in rek if r['obszar'] == obszar]
@@ -406,7 +501,14 @@ def widok_html(rek):
            '<li><span class="uzyte">ŚREDNIE</span> — nazwa własna wystąpiła w treści arkusza, '
            'ale bez daty. Można wrócić do zagadnienia w innej formie zadania.</li>',
            '<li><span class="blok">WYSOKIE</span> — data wystąpiła w treści arkusza. '
-           'Powtórzenie liczy się do limitu 30%.</li>', '</ul>']
+           'Powtórzenie liczy się do limitu 30%.</li>', '</ul>',
+           f'<div class="intro">Sekcja „Wiek XIX” niżej to <strong>rozszerzenie rejonowe</strong> '
+           f'({len(ROZSZERZENIE_REJONOWE)} pozycja): wydarzenia z historii Polski, dopuszczone '
+           f'wyłącznie po to, żeby zwiększyć pulę tematów polskich przy wymaganiu 50% punktów '
+           f'(§ 3 specyfikacji) — pod twardym warunkiem daty nie późniejszej niż '
+           f'{GRANICA_REJONOWY} r., niższym niż formalny zakres etapu rejonowego (do 1863 r.). '
+           f'Użyj <strong>co najwyżej {LIMIT_REJONOWY}</strong> takich zadań w jednym arkuszu '
+           f'i oznacz je w treści jako dodatkowe/trudniejsze.</div>']
 
     # zbiorcza tabela dostępnych zasobów
     out += ['<h2>Ile zagadnień zostało do wykorzystania</h2>',
@@ -456,6 +558,13 @@ def widok_html(rek):
 
 
 if __name__ == '__main__':
+    if '--rg' in sys.argv:
+        frazy = [a for a in sys.argv[sys.argv.index('--rg') + 1:] if not a.startswith('--')]
+        if not frazy:
+            raise SystemExit('Podaj co najmniej jedną frazę po --rg, np.:\n'
+                              '  python3 tools/baza_pytan.py --rg "Justynian" "sobór nicejski"')
+        wyszukaj_frazy(frazy, KATALOG_WYJSCIA)
+        sys.exit(0)
     rekordy = zbuduj()
     if '--json' in sys.argv:
         cel = KATALOG_WYJSCIA / 'baza_pytan.json'

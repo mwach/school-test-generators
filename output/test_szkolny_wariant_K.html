@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Historia – etap szkolny – wariant K</title>
+  <style>
+    @page { size: A4; margin: 14mm 14mm 16mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+      font-size: 10.4pt; line-height: 1.28;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.08; margin-bottom: 5mm; color: #163a63; }
+    h2 { font-size: 15pt; color: #163a63; margin: 0 0 4mm; }
+    h3 { font-size: 11.4pt; margin: 0; color: #163a63; }
+    .cover {
+      min-height: 255mm; border: 2.2px solid #1f5a91; padding: 15mm 14mm;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { color: #9a5a00; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; }
+    .subtitle { font-size: 15pt; font-weight: 700; margin-bottom: 9mm; }
+    .meta {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm;
+      padding: 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 7mm;
+    }
+    .meta strong { color: #163a63; }
+    .code { border-bottom: 1px solid #172033; min-width: 55mm; display: inline-block; }
+    .notice { margin-top: auto; font-size: 9.2pt; color: #4c596b; }
+    .page-break { break-before: page; }
+    .instructions { padding: 5mm 6mm; background: #f6f3ed; border: 1px solid #d8cdb9; margin-bottom: 6mm; }
+    .instructions ol { margin: 2mm 0 0 6mm; padding-left: 4mm; }
+    .task {
+      border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+      border-radius: 2px; padding: 3mm 4mm; margin: 0 0 4mm;
+      break-inside: avoid;
+    }
+    .task-head {
+      display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 2mm;
+    }
+    .points { white-space: nowrap; font-weight: 700; color: #9a5a00; }
+    .lead { font-weight: 700; }
+    .source { font-size: 8.4pt; color: #5c6878; margin: 2mm 0; }
+    table { width: 100%; border-collapse: collapse; margin: 2mm 0; }
+    th, td { border: 1px solid #8090a2; padding: 2.2mm; vertical-align: top; }
+    th { background: #eaf1f7; color: #163a63; text-align: left; }
+    .compact th, .compact td { padding: 1.1mm 1.7mm; }
+    .choices { columns: 3; column-gap: 6mm; margin: 1.5mm 0; }
+    .choices div { break-inside: avoid; margin-bottom: 1mm; }
+    .shortline { display: inline-block; border-bottom: 1px dotted #566273; min-width: 30mm; height: 5mm; }
+    .answer-space { border-bottom: 1px dotted #566273; min-height: 7mm; margin-top: 1.2mm; }
+    .answer-space.two { min-height: 16mm; }
+    .quote {
+      background: #f7f8fa; border-left: 4px solid #9a5a00; padding: 3mm 4mm;
+      font-family: Georgia, serif; font-size: 10.2pt; margin: 3mm 0;
+    }
+    .quote p { margin: 0 0 2mm; }
+    .quote p:last-child { margin-bottom: 0; }
+    .svg-wrap { border: 1px solid #c5ced8; background: #fbfcfd; padding: 1.5mm; margin: 2mm 0; text-align: center; }
+    .map-image { display: block; margin: 0 auto; width: 100%; max-width: 152mm; height: auto; }
+    .art-image { display: block; margin: 0 auto; width: 100%; max-width: 150mm; height: auto; }
+    .ramka {
+      border: 1px dashed #9a5a00; background: #fdfaf4; padding: 2mm 3mm; margin: 2mm 0;
+      font-weight: 700; text-align: center; letter-spacing: .4px;
+    }
+    .small { font-size: 9pt; }
+    .muted { color: #5c6878; }
+    .pick { font-weight: 700; color: #163a63; }
+    .card td { height: 8mm; }
+    .card .wide { height: 14mm; }
+    .footer-note { font-size: 8.5pt; color: #606b79; border-top: 1px solid #c7cfd8; padding-top: 2mm; }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="eyebrow">Arkusz treningowy • wariant K</div>
+    <h1>Wojewódzki Konkurs Przedmiotowy z Historii</h1>
+    <div class="subtitle">Etap I – szkolny</div>
+    <div class="meta">
+      <div><strong>Zakres:</strong> działy I–XVII podstawy programowej</div>
+      <div><strong>Czas pracy:</strong> 60 minut</div>
+      <div><strong>Liczba zadań:</strong> 19</div>
+      <div><strong>Maksymalna liczba punktów:</strong> 100</div>
+      <div><strong>Wariant:</strong> K</div>
+      <div><strong>Ziarno wariantu:</strong> 2026-09-20-K</div>
+    </div>
+    <p><strong>KOD UCZNIA:</strong> <span class="code">&nbsp;</span></p>
+    <div class="instructions">
+      <h2>Instrukcja dla ucznia</h2>
+      <ol>
+        <li>Sprawdź, czy arkusz zawiera 19 zadań i kartę odpowiedzi.</li>
+        <li>Czytaj uważnie polecenia. Odpowiadaj wyłącznie w miejscach do tego przeznaczonych.</li>
+        <li>Jeśli polecenie nie stanowi inaczej, za każdy poprawnie uzupełniony element otrzymujesz 1 punkt.</li>
+        <li>W zadaniach P/F wpisz <strong>P</strong> (prawda) albo <strong>F</strong> (fałsz).</li>
+        <li>Nie używaj korektora ani urządzeń elektronicznych.</li>
+        <li>Pracuj samodzielnie. Na rozwiązanie testu masz 60 minut.</li>
+      </ol>
+    </div>
+    <p class="notice">
+      Materiał autorski do ćwiczeń, opracowany na podstawie regulaminu szczegółowego, archiwalnych
+      arkuszy etapu szkolnego Kujawsko-Pomorskiego Kuratora Oświaty (2018/2019–2025/2026) oraz —
+      w części zadań (zob. klucz) — arkuszy Konkursu Historycznego Kuratorium Oświaty w Warszawie
+      dla województwa mazowieckiego (2019/2020–2025/2026). Nie jest oficjalnym arkuszem konkursowym
+      żadnego z kuratoriów.
+    </p>
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie I. Ustrój Aten i Sparty</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Ateny i Sparta, dwie największe polis starożytnej Grecji, wykształciły odmienne ustroje.
+        W Atenach po reformach Klejstenesa z <span class="shortline"></span> <strong>(1)</strong>
+        r. p.n.e. władzę sprawowało zgromadzenie ludowe zwane <span class="shortline"></span>
+        <strong>(2)</strong>, w którym głos mógł zabierać każdy pełnoprawny obywatel. W Sparcie
+        władzę dzielili dwaj dziedziczni <span class="shortline"></span> <strong>(3)</strong>, rada
+        starszych oraz urzędnicy zwani <span class="shortline"></span> <strong>(4)</strong>,
+        sprawujący nadzór nad całym życiem państwa. Chłopcy spartańscy od siódmego roku życia
+        przechodzili surowe wychowanie wojskowe zwane <span class="shortline"></span>
+        <strong>(5)</strong>. Podstawą gospodarki Sparty była praca podbitej ludności miejscowej,
+        przypisanej do uprawianej ziemi i zwanej <span class="shortline"></span>
+        <strong>(6)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie II. Zakony średniowieczne</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Do każdego opisu dopasuj nazwę zakonu. Wpisz litery A–G. Cztery odpowiedzi są
+        zbędne.</p>
+      <div class="choices">
+        <div><strong>A</strong> – jezuici</div>
+        <div><strong>B</strong> – joannici</div>
+        <div><strong>C</strong> – Krzyżacy</div>
+        <div><strong>D</strong> – benedyktyni</div>
+        <div><strong>E</strong> – dominikanie</div>
+        <div><strong>F</strong> – franciszkanie</div>
+        <div><strong>G</strong> – templariusze</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. „W oparciu o regułę św. Augustyna zakon składał się przede wszystkim z ludzi,
+          którzy nie mieli święceń kapłańskich [...]. Charakterystycznym symbolem był czerwony
+          krzyż [na] białym płaszczu, na lewym ramieniu.”</td><td style="width:16mm"></td></tr>
+        <tr><td>2. „Zakon założony w VI w. we Włoszech. Reguła nakazuje harmonijne łączenie
+          wspólnej modlitwy z pracą fizyczną i umysłową. [...] W prowadzonych szkołach,
+          bibliotekach i skryptoriach klasztornych ocalili wiele z dorobku starożytności.”</td><td></td></tr>
+        <tr><td>3. „Założony w 1206 r. zakon powstał w celu przeciwdziałania ruchowi katarów i
+          odegrał główną rolę w rozwoju inkwizycji. [...] Zakon wydał wielu wybitnych filozofów i
+          teologów (m.in. Tomasz z Akwinu).”</td><td></td></tr>
+      </table>
+      <p class="source">Fragmenty na podstawie: Konkurs Historyczny dla klas IV–VIII szkół
+        podstawowych województwa mazowieckiego, etap szkolny 2020/2021, zadanie 7.</p>
+      <p>4. Wskaż literę opcji oznaczającej zakon rycerski założony przez krzyżowców w Ziemi
+        Świętej w XII w., zajmujący się przede wszystkim opieką nad pielgrzymami i szpitalnictwem
+        (stąd jego nazwa). <span class="shortline"></span></p>
+      <p>5. Podaj łacińską zasadę, którą podsumowuje się benedyktyński ideał łączenia modlitwy z
+        pracą. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie III. Podział i upadek Cesarstwa Rzymskiego</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Cesarstwo Rzymskie podzielono ostatecznie na część wschodnią i zachodnią w
+          395 r., za panowania Teodozjusza I.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Cesarstwo Zachodniorzymskie przetrwało dłużej niż Cesarstwo
+          Wschodniorzymskie.</td><td></td></tr>
+        <tr><td>3. Ostatniego cesarza zachodniorzymskiego, Romulusa Augustulusa, obalił germański
+          wódz Odoaker w 476 r.</td><td></td></tr>
+        <tr><td>4. Stolicą Cesarstwa Wschodniorzymskiego był Rzym.</td><td></td></tr>
+        <tr><td>5. Upadek Cesarstwa Zachodniorzymskiego uznaje się umownie za cezurę między
+          starożytnością a średniowieczem.</td><td></td></tr>
+        <tr><td>6. Język łaciński pozostał głównym językiem urzędowym Cesarstwa
+          Wschodniorzymskiego aż do jego upadku w 1453 r.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IV. Wielka Schizma Wschodnia</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Do każdej cechy dopisz, czy dotyczy ona Kościoła katolickiego (K), czy
+        prawosławnego (P) — jednego z dwóch wyznań ukształtowanych po rozłamie 1054 r.</p>
+      <table class="compact">
+        <tr><td>1. Uznaje zwierzchnictwo papieża jako głowy całego Kościoła.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Dopuszcza żonatych mężczyzn do święceń kapłańskich niższego stopnia.</td><td></td></tr>
+        <tr><td>3. W wyznaniu wiary zawiera dodatek „Filioque”, o pochodzeniu Ducha Świętego
+          także od Syna.</td><td></td></tr>
+        <tr><td>4. Językiem liturgii pozostawał przez wieki głównie grecki oraz języki narodowe
+          (np. cerkiewnosłowiański).</td><td></td></tr>
+        <tr><td>5. Najwyższą władzę duchową sprawuje kolegium równych sobie patriarchów, bez
+          jednego zwierzchnika całego Kościoła.</td><td></td></tr>
+        <tr><td>6. Do Eucharystii używa chleba przaśnego (niekwaszonego).</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie V. Wyprawy krzyżowe</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uporządkuj wydarzenia chronologicznie. Wpisz cyfry od 1 (najwcześniejsze) do
+        5 (najpóźniejsze).</p>
+      <table class="compact">
+        <tr><td>A. Upadek Akki, ostatniej twierdzy krzyżowców w Ziemi Świętej.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Wezwanie papieża Urbana II do wyprawy na soborze w Clermont.</td><td></td></tr>
+        <tr><td>C. Zdobycie Konstantynopola przez krzyżowców podczas IV krucjaty.</td><td></td></tr>
+        <tr><td>D. Nieudana II krucjata pod wodzą królów Francji i Niemiec.</td><td></td></tr>
+        <tr><td>E. Zdobycie Jerozolimy przez krzyżowców podczas I krucjaty.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VI. List Krzysztofa Kolumba</h3><span class="points">0–5 p.</span></div>
+      <div class="quote">
+        <p>„Na trzydziesty drugi dzień po wyjeździe z Kadyksu przybyłem na morze Indyjskie i
+          odkryłem tam bardzo liczne i gęsto zaludnione wyspy, które bez czyjegokolwiek protestu
+          objąłem w posiadanie naszego najmiłościwszego króla przez uroczystą proklamację i
+          zawieszenie flagi hiszpańskiej. Pierwszą z tych wysp nazwałem San Salwador z
+          wdzięczności dla Zbawiciela.”</p>
+      </div>
+      <p class="source">Na podstawie: Teksty źródłowe do nauki historii w szkole, nr 14:
+        Odrodzenie, Warszawa 1960, s. 5; cyt. za: Konkurs Historyczny woj. mazowieckiego, etap
+        szkolny 2021/2022, zadanie 22.</p>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Autorem cytowanego listu był <span class="shortline"></span> <strong>(1)</strong>.
+        Opisana w liście wyprawa wyruszyła z portu <span class="shortline"></span>
+        <strong>(2)</strong> w Hiszpanii. Odkryte wyspy leżą na półkuli
+        <span class="shortline"></span> <strong>(3)</strong>. Wyprawa miała miejsce w
+        <span class="shortline"></span> <strong>(4)</strong> (podaj wiek i jego połowę). Rokiem
+        wyprawy był <span class="shortline"></span> <strong>(5)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VII. Vasco da Gama</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">W zadaniach 1–5 zaznacz albo wpisz literę jednej poprawnej odpowiedzi.</p>
+      <table class="compact">
+        <tr><td>1. Vasco da Gama był żeglarzem pochodzącym z:<br>
+          <span class="pick">A.</span> Hiszpanii &nbsp; <span class="pick">B.</span> Portugalii &nbsp;
+          <span class="pick">C.</span> Włoch &nbsp; <span class="pick">D.</span> Anglii</td>
+          <td style="width:16mm"></td></tr>
+        <tr><td>2. Wyprawa Vasco da Gamy z lat 1497–1498 jako pierwsza opłynęła przylądek zwany:<br>
+          <span class="pick">A.</span> Dobrej Nadziei &nbsp; <span class="pick">B.</span> Igielnym &nbsp;
+          <span class="pick">C.</span> Horn &nbsp; <span class="pick">D.</span> Zielonym</td><td></td></tr>
+        <tr><td>3. Celem i zarazem miejscem docelowym wyprawy było indyjskie miasto portowe:<br>
+          <span class="pick">A.</span> Goa &nbsp; <span class="pick">B.</span> Bombaj &nbsp;
+          <span class="pick">C.</span> Madras &nbsp; <span class="pick">D.</span> Kalikat</td><td></td></tr>
+        <tr><td>4. Sukces wyprawy Vasco da Gamy oznaczał dla Portugalii przede wszystkim:<br>
+          <span class="pick">A.</span> odkrycie Ameryki &nbsp; <span class="pick">B.</span> podbój
+          Chin &nbsp; <span class="pick">C.</span> otwarcie morskiej drogi do Indii, z pominięciem
+          szlaków lądowych &nbsp; <span class="pick">D.</span> założenie kolonii w Ameryce Północnej</td><td></td></tr>
+        <tr><td>5. Sponsorem wyprawy Vasco da Gamy był król Portugalii:<br>
+          <span class="pick">A.</span> Manuel I &nbsp; <span class="pick">B.</span> Henryk Żeglarz &nbsp;
+          <span class="pick">C.</span> Jan II &nbsp; <span class="pick">D.</span> Sebastian</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VIII. Renesans – mecenasi i artyści</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Dopasuj hasło do opisu. Wpisz litery A–F.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Michał Anioł Buonarroti</div>
+        <div><strong>B</strong> – Leonardo da Vinci</div>
+        <div><strong>C</strong> – Wawrzyniec Wspaniały</div>
+        <div><strong>D</strong> – Rafael Santi</div>
+        <div><strong>E</strong> – Sandro Botticelli</div>
+        <div><strong>F</strong> – papież Juliusz II</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Wszechstronny twórca, autor „Mony Lisy” i „Ostatniej Wieczerzy”, zajmujący się
+          też anatomią i inżynierią.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Autor fresków plafonu Kaplicy Sykstyńskiej oraz rzeźby „Dawida”.</td><td></td></tr>
+        <tr><td>3. Malarz nadworny papieży, autor fresku „Szkoła Ateńska” w Watykanie.</td><td></td></tr>
+        <tr><td>4. Władca Florencji z rodu bankierów, hojny mecenas artystów i uczonych w drugiej
+          połowie XV w.</td><td></td></tr>
+        <tr><td>5. Papież, który zlecił budowę nowej bazyliki św. Piotra i sprowadził do Rzymu
+          najwybitniejszych artystów epoki.</td><td></td></tr>
+        <tr><td>6. Autor obrazu „Narodziny Wenus”, tworzący na dworze florenckich
+          Medyceuszy.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IX. Wojna trzydziestoletnia</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Wojna trzydziestoletnia rozpoczęła się w <span class="shortline"></span>
+        <strong>(1)</strong> r. wydarzeniem znanym jako defenestracja praska. Konflikt, pierwotnie
+        religijny spór między katolikami a <span class="shortline"></span> <strong>(2)</strong>, z
+        czasem przekształcił się w wojnę o dominację w Europie — po stronie protestanckiej
+        interweniowała nawet katolicka Francja, a wcześniej wojska skandynawskiego królestwa
+        <span class="shortline"></span> <strong>(3)</strong> pod wodzą Gustawa II Adolfa. Wojna
+        szczególnie spustoszyła ziemie <span class="shortline"></span> <strong>(4)</strong>,
+        tracące nawet jedną trzecią ludności. Zakończył ją w 1648 r. pokój zawarty w
+        <span class="shortline"></span> <strong>(5)</strong>, uznający m.in. niepodległość
+        Holandii i Szwajcarii.</p>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie X. Kult świętego biskupa krakowskiego</h3><span class="points">0–4 p.</span></div>
+      <div class="quote">
+        <p>„Potykał się za sprawiedliwość, przed gniewem króla nie ustąpił: i staje żołnierz
+          Chrystusowy za krzywdę ludu sam do walki. Ponieważ stale wypominał on okrucieństwo
+          tyranowi, koronę zdobył męczennika, padł posiekany na kawałki.”</p>
+      </div>
+      <p class="source">Fragment pieśni na podstawie: Konkurs Historyczny woj. mazowieckiego,
+        etap szkolny 2019/2020, zadanie 8.</p>
+      <p class="lead">Wykonaj polecenia 1–4.</p>
+      <p>1. Cytowany tekst stanowi świadectwo kultu świętego biskupa
+        <span class="shortline"></span>.</p>
+      <p>2. Wspomnianym w tekście „tyranem” miał być król Bolesław
+        <span class="shortline"></span> (podaj przydomek).</p>
+      <p>3. Autor tekstu wyraża przekonanie, że śmierć świętego nastąpiła wskutek
+        <span class="shortline"></span>.</p>
+      <p>4. Podaj przybliżony rok tego wydarzenia. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XI. Kryzysy i zjazdy Polski XIII wieku</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uporządkuj wydarzenia chronologicznie. Wpisz cyfry od 1 (najwcześniejsze) do
+        5 (najpóźniejsze).</p>
+      <table class="compact">
+        <tr><td>A. Stłumienie przez Władysława Łokietka buntu wójta Alberta w Krakowie.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Zezwolenie Henryka Brodatego na pierwszą na ziemiach polskich lokację na
+          prawie magdeburskim.</td><td></td></tr>
+        <tr><td>C. Śmierć Henryka Pobożnego w bitwie z Mongołami pod Legnicą.</td><td></td></tr>
+        <tr><td>D. Sprowadzenie Krzyżaków do ziemi chełmińskiej przez Konrada
+          Mazowieckiego.</td><td></td></tr>
+        <tr><td>E. Koronacja Przemysła II na króla Polski w Gnieźnie.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XII. Bitwy Rzeczypospolitej w XVII wieku</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Na mapie oznaczono cztery pola bitew. Do każdego opisu dopisz właściwy numer
+        1–4.</p>
+      <div class="svg-wrap">
+        <img class="map-image" src="../assets/bitwy_xvii_w_wariant_K.svg"
+             alt="Mapa konturowa wschodniej części Europy z czterema polami bitew Rzeczypospolitej w XVII wieku, oznaczonymi numerami od 1 do 4">
+      </div>
+      <p class="source">Mapa bazowa: Natural Earth 1:50 mln, domena publiczna (CC0),
+        <a href="https://commons.wikimedia.org/wiki/File:Blank_Map_of_europe.svg">Wikimedia Commons</a>;
+        oznaczenia i opracowanie zadania: własne. Cienkie jasne linie to współczesne granice
+        państwowe, naniesione wyłącznie dla ułatwienia orientacji.</p>
+      <table class="compact">
+        <tr><td>A. Bitwa, w której husaria pod wodzą hetmana Stanisława Żółkiewskiego pokonała
+          połączone wojska moskiewskie i szwedzkie.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Zwycięska obrona obozu polsko-litewsko-kozackiego przed liczniejszą armią
+          turecką nad Dniestrem.</td><td></td></tr>
+        <tr><td>C. Bitwa w Inflantach, w której niewielkie siły hetmana Jana Karola Chodkiewicza
+          rozgromiły liczniejszą armię szwedzką.</td><td></td></tr>
+        <tr><td>D. Kilkutygodniowe oblężenie warownego obozu wojsk Rzeczypospolitej przez
+          oddziały Bohdana Chmielnickiego i Tatarów krymskich.</td><td></td></tr>
+      </table>
+      <p>E. Podaj rok bitwy opisanej w wierszu A. <span class="shortline"></span> &nbsp;&nbsp;
+        F. Podaj rok bitwy opisanej w wierszu B. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIII. Władcy z dynastii Jagiellonów</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Do każdego opisu podaj imię i przydomek (lub numer) opisanego władcy.</p>
+      <table class="compact">
+        <tr><td>1. Odzyskał z rąk krzyżackich ziemię dobrzyńską, zapewnił szlachcie nietykalność
+          osobistą i majątkową, odnowił podupadającą Akademię Krakowską.</td><td style="width:30mm"></td></tr>
+        <tr><td>2. Przyznał sejmikom ziemskim decydującą rolę w kwestii zwoływania pospolitego
+          ruszenia i uchwalania nowych podatków, przywrócił Polsce po 158 latach dostęp do
+          Bałtyku.</td><td></td></tr>
+        <tr><td>3. Zaakceptował przekształcenie Rady Królewskiej w Senat i ogólnopolskiego zjazdu
+          szlachty w izbę poselską sejmu, ograniczył prawa chłopów, wprowadzając zasadę, że w
+          ciągu roku tylko jeden chłop może opuścić wieś.</td><td></td></tr>
+        <tr><td>4. Zobowiązał się, że nie podejmie żadnych nowych decyzji w sprawach państwa bez
+          zgody izby poselskiej i senatu, zatwierdził tzw. Statut Łaskiego.</td><td></td></tr>
+        <tr><td>5. Po śmierci ostatnich Piastów mazowieckich wcielił do Polski Mazowsze,
+          zaakceptował przekształcenie państwa zakonnego w świeckie księstwo i przyjął hołd od
+          pierwszego luterańskiego księcia Prus.</td><td></td></tr>
+        <tr><td>6. Wprowadził do sejmu polskiego posłów i senatorów litewskich, zaczął wybijać
+          jednakową monetę dla Korony i Litwy, stworzył pierwszą w historii Polski flotę
+          wojenną.</td><td></td></tr>
+      </table>
+      <p class="source">Opisy na podstawie: Encyklopedia szkolna. Historia, Warszawa 2004; cyt.
+        za: Konkurs Historyczny woj. mazowieckiego, etap szkolny 2022/2023, zadanie 17.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIV. Dokumenty ustrojowe Rzeczpospolitej szlacheckiej</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Do każdego tekstu dopasuj nazwę dokumentu, z którego pochodzi. Wpisz litery
+        A–D. Jedna odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Artykuły henrykowskie</div>
+        <div><strong>B</strong> – Konfederacja warszawska</div>
+        <div><strong>C</strong> – Pacta conventa</div>
+        <div><strong>D</strong> – Unia lubelska</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. „Aby były solidne układy między Koroną Polską a Królestwem Francuskim [...].
+          Aby król francuski wszystkie długi królewskie i Rzeczpospolitej popłacił [...]. Aby tu
+          cudzoziemców żadnych król nie trzymał.”</td><td style="width:16mm"></td></tr>
+        <tr><td>2. „Iż za żywota naszego my i potomkowie nasi królowie polscy nie mamy mianować
+          ani obierać [...] żadnym sposobem [...] króla, na państwo sukcesora naszego sadzać, a to
+          dlatego, aby zawdy wiecznymi czasy [...] wolne obieranie zostawało wszem stanom
+          koronnym.”</td><td></td></tr>
+        <tr><td>3. „Ponieważ w Rzeczpospolitej naszej jest różnorodność w sprawie wiary
+          chrześcijańskiej [...] obiecujemy to sobie wspólnie [...] iż którzy jesteśmy różniący
+          się w religii chrześcijańskiej, pokój między sobą zachować, a dla różnej wiary [...]
+          krwi nie przelewać.”</td><td></td></tr>
+      </table>
+      <p class="source">Fragmenty na podstawie: Konkurs Historyczny woj. mazowieckiego, etap
+        szkolny 2022/2023, zadanie 23.</p>
+      <p>4. Który z czterech wymienionych dokumentów (A–D), inaczej niż pozostałe, obowiązywał w
+        niezmienionej formie każdego kolejnego elekta, zamiast być ustalanym od nowa przy każdej
+        elekcji? Podaj literę i nazwę. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XV. Lokacja wsi na prawie niemieckim</h3><span class="points">0–4 p.</span></div>
+      <div class="quote">
+        <p>„My, komes Jan razem z bratem naszym Wojciechem [...] dziedzictwo nasze, Radlino,
+          Marcinowi ze Staniewa i jego dziedzicom oddaliśmy w celu lokacji na prawie niemieckim
+          [...]. Ażeby ci uprawiający przerzeczoną wioskę mogli wypłacić wszystko, otrzymają 9 lat
+          wolnych od wszelkich danin i opłat.”</p>
+      </div>
+      <p class="source">Fragment na podstawie: Konkurs Historyczny woj. mazowieckiego, etap
+        szkolny 2023/2024, zadanie 15.</p>
+      <p class="lead">Wykonaj polecenia 1–4.</p>
+      <p>1. Powyższy tekst stanowi fragment dokumentu zwanego <span class="shortline"></span>.</p>
+      <p>2. Wieś, o której mowa w tekście, znajdowała się w majątku
+        <span class="shortline"></span> (podaj, do jakiego stanu należał właściciel).</p>
+      <p>3. Przez dziewięć lat mieszkańcy wsi byli zwolnieni z <span class="shortline"></span>
+        (podaj rodzaj świadczenia na rzecz pana).</p>
+      <p>4. Podaj wiek (lub dwa sąsiednie wieki), w którym najczęściej lokowano na ziemiach
+        polskich wsie na prawie niemieckim. <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVI. Kazimierz Wielki – reformy państwa</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Kazimierz Wielki, ostatni król Polski z dynastii Piastów, przeszedł do historii dzięki
+        gruntownym reformom państwa. W latach 1346–1347 zebrał i spisał prawo zwyczajowe w tzw.
+        statutach <span class="shortline"></span> <strong>(1)</strong> (nazwa dwóch miast, w
+        których je ogłoszono). Aby wzmocnić obronność kraju, otoczył murami i wzniósł od podstaw
+        kilkadziesiąt zamków, dzięki czemu przypisuje mu się powiedzenie, że »zastał Polskę
+        <span class="shortline"></span> <strong>(2)</strong>, a zostawił
+        <span class="shortline"></span> <strong>(3)</strong>«. Roztaczał opiekę nad chłopami, za
+        co bywał nazywany „królem <span class="shortline"></span> <strong>(4)</strong>”. W 1334 r.
+        potwierdził i rozszerzył na całą Polskę wcześniejszy statut kaliski, gwarantujący
+        przywileje ludności <span class="shortline"></span> <strong>(5)</strong>, uciekającej
+        wówczas przed prześladowaniami z zachodniej Europy. W 1364 r. założył w Krakowie uczelnię,
+        znaną dziś jako <span class="shortline"></span> <strong>(6)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVII. Obraz jako źródło historyczne</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Obejrzyj reprodukcję obrazu i wykonaj polecenia.</p>
+      <div class="svg-wrap">
+        <img class="art-image" src="../assets/grunwald_matejko.jpg"
+             alt="Fragment obrazu Jana Matejki Bitwa pod Grunwaldem, przedstawiającego dynamiczną scenę bitewną z wieloma postaciami">
+      </div>
+      <p class="source">Jan Matejko, „Bitwa pod Grunwaldem”, 1878, Muzeum Narodowe w Warszawie;
+        reprodukcja w domenie publicznej (Wikimedia Commons).</p>
+      <p>1. Podaj tytuł obrazu, imię i nazwisko autora oraz przybliżony rok powstania.
+        <span class="shortline"></span></p>
+      <p>2. Jakiej bitwie (rok i strony konfliktu) poświęcony jest obraz?
+        <span class="shortline"></span></p>
+      <p>3. Wymień jedną postać historyczną przedstawioną na obrazie w chwili śmierci.
+        <span class="shortline"></span></p>
+      <p>4. Rzeczywista bitwa trwała wiele godzin i miała złożony przebieg. Wyjaśnij, w jaki
+        sposób malarz „skondensował” czas na obrazie.</p>
+      <div class="answer-space"></div>
+      <p>5. Wyjaśnij, dlaczego obraz przedstawiający wydarzenie sprzed prawie 500 lat powstał
+        akurat w 1878 r., w czasach zaborów.</p>
+      <div class="answer-space"></div>
+      <p>6. Wyjaśnij, czym różni się obraz historyczny malowany kilkaset lat po wydarzeniu od
+        źródła współczesnego temu wydarzeniu (np. kroniki).</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVIII. Sejm Wielki i Konstytucja 3 maja</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">W zadaniach 1–5 zaznacz albo wpisz literę jednej poprawnej odpowiedzi.</p>
+      <table class="compact">
+        <tr><td>1. Sejm Wielki (Czteroletni) obradował w latach:<br>
+          <span class="pick">A.</span> 1772–1776 &nbsp; <span class="pick">B.</span> 1788–1792 &nbsp;
+          <span class="pick">C.</span> 1791–1795 &nbsp; <span class="pick">D.</span> 1793–1795</td>
+          <td style="width:16mm"></td></tr>
+        <tr><td>2. Konstytucję 3 maja uchwalono w:<br>
+          <span class="pick">A.</span> 1789 r. &nbsp; <span class="pick">B.</span> 1790 r. &nbsp;
+          <span class="pick">C.</span> 1791 r. &nbsp; <span class="pick">D.</span> 1792 r.</td><td></td></tr>
+        <tr><td>3. Konstytucja 3 maja zniosła zasadę wolnej elekcji, wprowadzając:<br>
+          <span class="pick">A.</span> republikę &nbsp; <span class="pick">B.</span> tron
+          dziedziczny w ramach jednej dynastii &nbsp; <span class="pick">C.</span> rządy Rady
+          Nieustającej &nbsp; <span class="pick">D.</span> unię personalną z Saksonią</td><td></td></tr>
+        <tr><td>4. Konstytucja 3 maja zniosła szkodliwą dla sprawności obrad sejmu zasadę:<br>
+          <span class="pick">A.</span> liberum veto &nbsp; <span class="pick">B.</span> nihil
+          novi &nbsp; <span class="pick">C.</span> wolnej elekcji viritim &nbsp;
+          <span class="pick">D.</span> pacta conventa</td><td></td></tr>
+        <tr><td>5. W obronie ustroju sprzed Konstytucji 3 maja część magnaterii zawiązała w 1792
+          r. w Petersburgu konfederację, sprowadzając na Polskę wojska rosyjskie; nazywała się
+          ona konfederacją:<br>
+          <span class="pick">A.</span> barską &nbsp; <span class="pick">B.</span> targowicką &nbsp;
+          <span class="pick">C.</span> warszawską &nbsp; <span class="pick">D.</span> tarnogrodzką</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIX. August II Mocny i wojna północna</h3><span class="points">0–5 p.</span></div>
+      <div class="quote">
+        <p>„Po 1740 r. dochody wielkich właścicieli ziemskich wzrosły jeszcze bardziej. Eksport
+          zboża przez Gdańsk, który w latach 1700–1719 wynosił średnio 20 tys. łasztów rocznie,
+          zaraz potem w okresie powojennej normalizacji podniósł się do 30 tys., aby w latach 60.
+          wzrosnąć do 50 tys. rocznie [...]. Wzrost zamożności nie dotyczył mieszczan i chłopów,
+          lecz szlachty i magnaterii.”</p>
+      </div>
+      <p class="source">U. Augustyniak, Historia Polski 1572–1795, Warszawa 2008, s. 241; cyt. za:
+        Konkurs Historyczny woj. mazowieckiego, etap szkolny 2024/2025, zadanie 29 (tam z
+        ilustracją pomnika konnego Augusta II Mocnego w Dreźnie).</p>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Stolica niemieckich (saskich) posiadłości władcy, którego panowanie przypada na okres
+        opisany w tekście, znajdowała się w <span class="shortline"></span>
+        <strong>(1)</strong>. „Okres powojennej normalizacji”, o którym mowa w tekście, nastąpił
+        po zniszczeniach dokonanych przez wojska <span class="shortline"></span>
+        <strong>(2)</strong> i <span class="shortline"></span> <strong>(3)</strong> podczas
+        wielkiej wojny północnej. Władca ten, znany z przydomka „Mocny”, nazywał się
+        <span class="shortline"></span> <strong>(4)</strong>. Wielka wojna północna toczyła się w
+        przybliżeniu w latach <span class="shortline"></span> <strong>(5)</strong>.</p>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+    <h2>Karta odpowiedzi — wariant K</h2>
+    <p class="small muted">Kod ucznia: <span class="code">&nbsp;</span></p>
+    <table class="card compact">
+      <tr><th style="width:42mm">Zadanie</th><th>Odpowiedzi</th><th style="width:20mm">Punkty</th></tr>
+      <tr><td>I. Ateny i Sparta</td><td class="wide"></td><td></td></tr>
+      <tr><td>II. Zakony średniowieczne</td><td class="wide"></td><td></td></tr>
+      <tr><td>III. Cesarstwo Rzymskie</td><td>1 …… 2 …… 3 …… 4 …… 5 …… 6 ……</td><td></td></tr>
+      <tr><td>IV. Wielka Schizma Wschodnia</td><td>1 …… 2 …… 3 …… 4 …… 5 …… 6 ……</td><td></td></tr>
+      <tr><td>V. Wyprawy krzyżowe</td><td>A …… B …… C …… D …… E ……</td><td></td></tr>
+      <tr><td>VI. List Kolumba</td><td class="wide"></td><td></td></tr>
+      <tr><td>VII. Vasco da Gama</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>VIII. Renesans</td><td>1 …… 2 …… 3 …… 4 …… 5 …… 6 ……</td><td></td></tr>
+      <tr><td>IX. Wojna trzydziestoletnia</td><td class="wide"></td><td></td></tr>
+      <tr><td>X. Kult św. biskupa</td><td class="wide"></td><td></td></tr>
+      <tr><td>XI. Polska XIII w. (chronologia)</td><td>A …… B …… C …… D …… E ……</td><td></td></tr>
+      <tr><td>XII. Bitwy XVII w. (mapa)</td><td class="wide"></td><td></td></tr>
+      <tr><td>XIII. Jagiellonowie</td><td class="wide"></td><td></td></tr>
+      <tr><td>XIV. Dokumenty ustrojowe</td><td class="wide"></td><td></td></tr>
+      <tr><td>XV. Lokacja wsi</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVI. Kazimierz Wielki</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVII. Obraz — Grunwald</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVIII. Sejm Wielki, Konstytucja 3 maja</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>XIX. August II Mocny</td><td class="wide"></td><td></td></tr>
+      <tr><td><strong>Razem</strong></td><td></td><td><strong>/ 100</strong></td></tr>
+    </table>
+    <p class="footer-note">Arkusz treningowy, wariant K, ziarno 2026-09-20-K. Materiał autorski,
+      nie jest oficjalnym arkuszem żadnego kuratorium.</p>
+  </section>
+</body>
+</html>

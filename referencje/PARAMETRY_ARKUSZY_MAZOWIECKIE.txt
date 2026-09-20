@@ -1,0 +1,28 @@
+plik                                  etap        typ      zadań   pkt   deklarowane     czas
+---------------------------------------------------------------------------------------------
+2019-2020-szkolny-historia-a          szkolny     arkusz      26     -             -   90 min
+2019-2020-szkolny-historia-k          szkolny     klucz        0     -             -        -
+2020-2021-szkolny-historia-a          szkolny     arkusz      26    50             -   90 min
+2020-2021-szkolny-historia-k          szkolny     klucz        2     -             -        -
+2021-2022-szkolny-historia-a          szkolny     arkusz      30    50             -   90 min
+2021-2022-szkolny-historia-k          szkolny     klucz        0     -             -        -
+2022-2023-szkolny-historia-a          szkolny     arkusz      26    50             -   90 min
+2022-2023-szkolny-historia-k          szkolny     klucz        0     -             -        -
+2023-2024-szkolny-historia-a          szkolny     arkusz      30    48             -   90 min
+2023-2024-szkolny-historia-k          szkolny     klucz        0     -             -        -
+2024-2025-szkolny-historia-a          szkolny     arkusz      29    50             -   90 min
+2024-2025-szkolny-historia-k          szkolny     klucz        0     -             -        -
+2025-2026-szkolny-historia-a          szkolny     arkusz      23     -             -   90 min
+2025-2026-szkolny-historia-k          szkolny     klucz        0     -             -        -
+
+Uwaga: tools/analizuj_arkusze.py rozpoznaje wzorzec "ZADANIE <rzymski> (0 – N p.)" oraz
+tabelaryczny klucz kujawsko-pomorski. Arkusze mazowieckie numerują zadania cyframi arabskimi
+i zapisują punktację jako "(0–N pkt)" lub "(0-N)", a klucz to płaska lista "1. B", "2. PF" —
+stąd zerowe/zaniżone wartości w kolumnach dotyczących kluczy i część arkuszy bez sumy punktów
+w tym zestawieniu. Dokładne punktacje poszczególnych zadań (zweryfikowane ręcznie z treścią
+i kluczem) są w `output/bank_pytan_zewnetrznych.json`. Maksymalna liczba punktów w każdym
+z tych arkuszy to zawsze 50 (skala kuratorium warszawskiego, inna niż 100-punktowa skala
+kujawsko-pomorska — przy zapożyczaniu zadania do własnego arkusza punktację trzeba przeliczyć
+na własną skalę, nie kopiować wprost).
+
+Odtwarzane poleceniem: python3 tools/analizuj_arkusze.py referencje/tekst/mazowieckie

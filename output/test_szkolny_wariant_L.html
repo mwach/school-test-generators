@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Historia – etap szkolny – wariant L</title>
+  <style>
+    @page { size: A4; margin: 14mm 14mm 16mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+      font-size: 10.4pt; line-height: 1.28;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.08; margin-bottom: 5mm; color: #163a63; }
+    h2 { font-size: 15pt; color: #163a63; margin: 0 0 4mm; }
+    h3 { font-size: 11.4pt; margin: 0; color: #163a63; }
+    .cover {
+      min-height: 255mm; border: 2.2px solid #1f5a91; padding: 15mm 14mm;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { color: #9a5a00; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; }
+    .subtitle { font-size: 15pt; font-weight: 700; margin-bottom: 9mm; }
+    .meta {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm;
+      padding: 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 7mm;
+    }
+    .meta strong { color: #163a63; }
+    .code { border-bottom: 1px solid #172033; min-width: 55mm; display: inline-block; }
+    .notice { margin-top: auto; font-size: 9.2pt; color: #4c596b; }
+    .page-break { break-before: page; }
+    .instructions { padding: 5mm 6mm; background: #f6f3ed; border: 1px solid #d8cdb9; margin-bottom: 6mm; }
+    .instructions ol { margin: 2mm 0 0 6mm; padding-left: 4mm; }
+    .task {
+      border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+      border-radius: 2px; padding: 3mm 4mm; margin: 0 0 4mm;
+      break-inside: avoid;
+    }
+    .task-head {
+      display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 2mm;
+    }
+    .points { white-space: nowrap; font-weight: 700; color: #9a5a00; }
+    .lead { font-weight: 700; }
+    .source { font-size: 8.4pt; color: #5c6878; margin: 2mm 0; }
+    table { width: 100%; border-collapse: collapse; margin: 2mm 0; }
+    th, td { border: 1px solid #8090a2; padding: 2.2mm; vertical-align: top; }
+    th { background: #eaf1f7; color: #163a63; text-align: left; }
+    .compact th, .compact td { padding: 1.1mm 1.7mm; }
+    .choices { columns: 3; column-gap: 6mm; margin: 1.5mm 0; }
+    .choices div { break-inside: avoid; margin-bottom: 1mm; }
+    .shortline { display: inline-block; border-bottom: 1px dotted #566273; min-width: 30mm; height: 5mm; }
+    .answer-space { border-bottom: 1px dotted #566273; min-height: 7mm; margin-top: 1.2mm; }
+    .answer-space.two { min-height: 16mm; }
+    .quote {
+      background: #f7f8fa; border-left: 4px solid #9a5a00; padding: 3mm 4mm;
+      font-family: Georgia, serif; font-size: 10.2pt; margin: 3mm 0;
+    }
+    .quote p { margin: 0 0 2mm; }
+    .quote p:last-child { margin-bottom: 0; }
+    .svg-wrap { border: 1px solid #c5ced8; background: #fbfcfd; padding: 1.5mm; margin: 2mm 0; text-align: center; }
+    .map-image { display: block; margin: 0 auto; width: 100%; max-width: 152mm; height: auto; }
+    .art-image { display: block; margin: 0 auto; width: 100%; max-width: 150mm; height: auto; }
+    .ramka {
+      border: 1px dashed #9a5a00; background: #fdfaf4; padding: 2mm 3mm; margin: 2mm 0;
+      font-weight: 700; text-align: center; letter-spacing: .4px;
+    }
+    .small { font-size: 9pt; }
+    .muted { color: #5c6878; }
+    .pick { font-weight: 700; color: #163a63; }
+    .card td { height: 8mm; }
+    .card .wide { height: 14mm; }
+    .footer-note { font-size: 8.5pt; color: #606b79; border-top: 1px solid #c7cfd8; padding-top: 2mm; }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="eyebrow">Arkusz treningowy • wariant L</div>
+    <h1>Wojewódzki Konkurs Przedmiotowy z Historii</h1>
+    <div class="subtitle">Etap I – szkolny</div>
+    <div class="meta">
+      <div><strong>Zakres:</strong> działy I–XVII podstawy programowej</div>
+      <div><strong>Czas pracy:</strong> 60 minut</div>
+      <div><strong>Liczba zadań:</strong> 19</div>
+      <div><strong>Maksymalna liczba punktów:</strong> 100</div>
+      <div><strong>Wariant:</strong> L</div>
+      <div><strong>Ziarno wariantu:</strong> 2026-09-20-L</div>
+    </div>
+    <p><strong>KOD UCZNIA:</strong> <span class="code">&nbsp;</span></p>
+    <div class="instructions">
+      <h2>Instrukcja dla ucznia</h2>
+      <ol>
+        <li>Sprawdź, czy arkusz zawiera 19 zadań i kartę odpowiedzi.</li>
+        <li>Czytaj uważnie polecenia. Odpowiadaj wyłącznie w miejscach do tego przeznaczonych.</li>
+        <li>Jeśli polecenie nie stanowi inaczej, za każdy poprawnie uzupełniony element
+          otrzymujesz 1 punkt.</li>
+        <li>W zadaniach P/F wpisz <strong>P</strong> (prawda) albo <strong>F</strong> (fałsz).</li>
+        <li>Nie używaj korektora ani urządzeń elektronicznych.</li>
+        <li>Pracuj samodzielnie. Na rozwiązanie testu masz 60 minut.</li>
+      </ol>
+    </div>
+    <p class="notice">
+      Materiał autorski do ćwiczeń, opracowany na podstawie regulaminu szczegółowego, archiwalnych
+      arkuszy etapu szkolnego Kujawsko-Pomorskiego Kuratora Oświaty (2018/2019–2025/2026) oraz —
+      w części zadań (zob. klucz) — arkuszy Konkursu Historycznego kuratoriów oświaty w Warszawie
+      (woj. mazowieckie), Gdańsku (woj. pomorskie) i Szczecinie (woj. zachodniopomorskie). Nie jest
+      oficjalnym arkuszem konkursowym żadnego z kuratoriów.
+    </p>
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie I. Fenicjanie i kolonizacja śródziemnomorska</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Fenicjanie, lud zamieszkujący wąski pas wybrzeża wschodniego Morza Śródziemnego
+        (dzisiejszy Liban), zawdzięczali swoją potęgę przede wszystkim żegludze i handlowi. Ich
+        najważniejsze miasta-państwa to Byblos, Sydon oraz <span class="shortline"></span>
+        <strong>(1)</strong>, słynące z produkcji cennego barwnika zwanego
+        <span class="shortline"></span> <strong>(2)</strong>, pozyskiwanego z morskich ślimaków.
+        Fenicjanie założyli liczne kolonie handlowe w basenie Morza Śródziemnego, z których
+        najpotężniejszą, leżącą na wybrzeżu dzisiejszej Tunezji, była
+        <span class="shortline"></span> <strong>(3)</strong>, założona według tradycji w
+        <span class="shortline"></span> <strong>(4)</strong> r. p.n.e. (podaj wiek). Najtrwalszym
+        dziedzictwem kulturowym Fenicjan stało się jednak wynalezienie
+        <span class="shortline"></span> <strong>(5)</strong> — zapisu dźwięków mowy za pomocą
+        niewielkiej liczby znaków, przejętego później i rozpowszechnionego przez Greków.
+        Poszukując surowców, żeglarze fenicjańscy docierali nawet do wybrzeży dzisiejszej Wielkiej
+        Brytanii po metal zwany <span class="shortline"></span> <strong>(6)</strong>, z którego
+        wraz z miedzią wytwarzano brąz.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie II. Wojny grecko-perskie</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Na mapie oznaczono literami trzy miejsca bitew wojen grecko-perskich.
+        Dopasuj do każdego opisu właściwą literę.</p>
+      <div class="svg-wrap">
+        <img class="map-image" src="../assets/wojny_persko_greckie_wariant_L.svg"
+             alt="Mapa Grecji z trzema miejscami bitew wojen perskich oznaczonymi literami A, B i C">
+      </div>
+      <p class="source">Mapa bazowa: Natural Earth 1:50 mln, domena publiczna (CC0),
+        <a href="https://commons.wikimedia.org/wiki/File:Blank_Map_of_europe.svg">Wikimedia Commons</a>;
+        oznaczenia i opracowanie zadania: własne.</p>
+      <table class="compact">
+        <tr><td>1. Bitwa lądowa z 490 r. p.n.e., w której niewielkie siły ateńskie pokonały
+          znacznie liczniejszą armię perską Dariusza I, zmuszając ją do odwrotu znad wybrzeża
+          Attyki.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Bitwa morska z 480 r. p.n.e. stoczona w wąskiej cieśninie, w której flota
+          grecka pod wodzą Temistoklesa zniszczyła znacznie liczniejszą flotę perską
+          Kserksesa.</td><td></td></tr>
+        <tr><td>3. Trzydniowa bitwa obronna w wąskim wąwozie górskim, w której niewielki oddział
+          grecki pod wodzą króla spartańskiego Leonidasa powstrzymywał przez pewien czas armię
+          perską, zanim został okrążony i wybity do nogi.</td><td></td></tr>
+      </table>
+      <p class="lead">Spośród trzech opisanych powyżej bitew oraz czwartej — lądowej bitwy pod
+        Platejami (479 r. p.n.e.), kończącej wojny grecko-perskie — uszereguj wszystkie cztery
+        chronologicznie. Wpisz cyfry od 1 (najwcześniejsza) do 4 (najpóźniejsza).</p>
+      <table class="compact">
+        <tr><td>Bitwa opisana w punkcie 1.</td><td style="width:16mm"></td></tr>
+        <tr><td>Bitwa opisana w punkcie 2.</td><td></td></tr>
+        <tr><td>Bitwa opisana w punkcie 3.</td><td></td></tr>
+        <tr><td>Bitwa pod Platejami</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie III. Prawo rzymskie — Corpus Iuris Civilis</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>W VI w. n.e. cesarz bizantyński <span class="shortline"></span> <strong>(1)</strong>
+        zlecił zebranie i usystematyzowanie całego dotychczasowego dorobku prawa rzymskiego.
+        Powstałe w latach 528–534 dzieło, złożone z czterech części — Kodeksu, Digestów
+        (Pandektów), Instytucji oraz późniejszych Nowel — nazwano w czasach nowożytnych łacińskim
+        mianem <span class="shortline"></span> <strong>(2)</strong>, czyli „Zbiorem Prawa
+        Cywilnego”. Digesta stanowiły zbiór wypisów z pism dawnych rzymskich
+        <span class="shortline"></span> <strong>(3)</strong> (podaj, jaki zawód mieli twórcy
+        cytowanych opinii prawnych), natomiast Instytucje pełniły funkcję
+        <span class="shortline"></span> <strong>(4)</strong> dla studentów prawa. Zbiór ten
+        odegrał szczególną rolę w Europie Zachodniej od XI w., kiedy to jego intensywne
+        studiowanie rozpoczęto na uniwersytecie w <span class="shortline"></span>
+        <strong>(5)</strong> we Włoszech, co dało początek nowożytnej nauce prawa. Do dziś w
+        systemach prawnych wywodzących się z tradycji rzymskiej obowiązuje sformułowana już
+        wtedy zasada domniemania niewinności oskarżonego, znana z łacińskiej formuły
+        <span class="shortline"></span> <strong>(6)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IV. Bolesław Chrobry i jego sąsiedzi</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Do każdej z relacji pierwszego polskiego króla, Bolesława Chrobrego, z
+        wymienioną postacią dopisz rok (lub lata) wydarzenia oraz krótko jego istotę.</p>
+      <p><strong>A. Biskup Wojciech.</strong> Rok: <span class="shortline"></span>
+        <strong>(1)</strong>. Wydarzenie: <span class="shortline"></span> <strong>(2)</strong>
+        (podaj, na czym polegała misja biskupa i jak się zakończyła).</p>
+      <p><strong>B. Otton III.</strong> Rok: <span class="shortline"></span> <strong>(3)</strong>.
+        Wydarzenie: <span class="shortline"></span> <strong>(4)</strong> (podaj nazwę spotkania
+        obu władców i jego najważniejszy skutek kościelny).</p>
+      <p><strong>C. Henryk II.</strong> Lata: <span class="shortline"></span>
+        <strong>(5)</strong>. Wydarzenie: <span class="shortline"></span> <strong>(6)</strong>
+        (podaj, o co toczył się spór i jak został zakończony).</p>
+      <p class="source">Na podstawie: Konkurs Historyczny woj. pomorskiego, etap szkolny 2022/2023,
+        zadanie 5 (tam w formie opisowej — tu przeredagowano na uzupełnianie luk).</p>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie V. Sprowadzenie Krzyżaków do Polski</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>W 1226 r. książę mazowiecki <span class="shortline"></span> <strong>(1)</strong>,
+        borykający się z najazdami pogańskich Prusów, sprowadził na ziemię chełmińską rycerski
+        zakon niemiecki, którego oficjalna, pełna nazwa brzmiała: Zakon Szpitala Najświętszej
+        Marii Panny Domu Niemieckiego, w skrócie zwany <span class="shortline"></span>
+        <strong>(2)</strong>. Prawo zakonu do posiadania sprowadzonych ziem potwierdził w tym
+        samym roku cesarz Fryderyk II Hohenstauf bullą wystawioną w mieście
+        <span class="shortline"></span> <strong>(3)</strong> we Włoszech. Zakon zobowiązał się w
+        zamian do podboju i chrystianizacji Prusów. Już wkrótce jednak okazało się, że dąży on do
+        budowy własnego, niezależnego państwa — pierwszym większym konfliktem polsko-krzyżackim
+        o ziemię pomorską był spór z przełomu <span class="shortline"></span>
+        <strong>(4)</strong> w. (podaj dwa sąsiednie stulecia), zakończony zajęciem Pomorza
+        Gdańskiego przez zakon w 1308 r. Krzyżacką stolicę, warownię nad Nogatem, założono i
+        nazwano <span class="shortline"></span> <strong>(5)</strong>. Ostatecznie potęgę zakonu
+        złamała klęska w bitwie pod <span class="shortline"></span> <strong>(6)</strong> w
+        1410 r.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VI. Kolonizacja na prawie niemieckim</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Od XIII w. na ziemiach polskich rozpowszechniła się kolonizacja miast i wsi na prawie
+        niemieckim, wzorowanym najczęściej na przywilejach miast Środy Śląskiej lub
+        <span class="shortline"></span> <strong>(1)</strong>. Całą organizacją nowej osady
+        zajmował się przedsiębiorca zwany <span class="shortline"></span> <strong>(2)</strong>,
+        który za swoje usługi otrzymywał dziedziczny urząd sołtysa oraz dodatkowe działki ziemi.
+        Nowo osiedleni chłopi byli na początku zwalniani na kilka lub kilkanaście lat od
+        świadczeń na rzecz pana — taki okres ulgi nazywano <span class="shortline"></span>
+        <strong>(3)</strong>. Po jego upływie chłopi płacili panu głównie stały czynsz w
+        pieniądzu lub naturaliach, w odróżnieniu od dotychczasowego prawa polskiego, opartego
+        przede wszystkim na <span class="shortline"></span> <strong>(4)</strong> (świadczeniu w
+        postaci pracy na polu pana). Wsie lokowane na prawie niemieckim miały zwykle regularny
+        układ przestrzenny, z domami rozmieszczonymi wzdłuż jednej drogi — taki typ wsi nazywa się
+        <span class="shortline"></span> <strong>(5)</strong>. Nowy typ osadnictwa przyczynił się
+        do znacznego <span class="shortline"></span> <strong>(6)</strong> produkcji rolnej (podaj,
+        co się z nią stało pod wpływem tych zmian).</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VII. Zakony nierycerskie</h3><span class="points">0–3 p.</span></div>
+      <p class="lead">Do każdego opisu dopasuj nazwę zakonu. Wpisz litery A–F. Trzy odpowiedzi są
+        zbędne.</p>
+      <div class="choices">
+        <div><strong>A</strong> – bazylianie</div>
+        <div><strong>B</strong> – cystersi</div>
+        <div><strong>C</strong> – dominikanie</div>
+        <div><strong>D</strong> – franciszkanie</div>
+        <div><strong>E</strong> – karmelici</div>
+        <div><strong>F</strong> – paulini</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Zakon żebraczy założony w XIII w. przez Hiszpana, którego członków nazywano
+          popularnie „psami Pańskimi” (łac. Domini canes); odegrał główną rolę w organizacji
+          inkwizycji i rozwoju scholastyki uniwersyteckiej.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Zakon reformowany, wywodzący się z benedyktynów, założony we Francji w 1098 r.,
+          znany z surowej dyscypliny, białych habitów oraz zakładania klasztorów z dala od miast,
+          m.in. licznych fundacji na Śląsku i Pomorzu.</td><td></td></tr>
+        <tr><td>3. Zakon żebraczy założony w XIII w. przez Włocha z Asyżu, głoszący ideał
+          ubóstwa, pokory i pracy wśród najuboższych mieszkańców miast.</td><td></td></tr>
+      </table>
+      <p class="source">Nazwy zakonów na podstawie: Konkurs Historyczny woj. zachodniopomorskiego,
+        etap szkolny 2022/2023, zadanie 7; opisy własne.</p>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VIII. Sobór w Konstancji</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Zwołany w 1414 r. do miasta nad Jeziorem Bodeńskim sobór miał rozwiązać trzy narosłe
+        problemy Kościoła katolickiego: spory teologiczne, potrzebę reform oraz przede wszystkim
+        tzw. <span class="shortline"></span> <strong>(1)</strong> — sytuację, w której
+        jednocześnie tron papieski rościło sobie aż trzech pretendentów. Sobór ostatecznie
+        doprowadził do wyboru jednego, powszechnie uznanego papieża,
+        <span class="shortline"></span> <strong>(2)</strong> [imię i numer], w 1417 r. Na soborze
+        osądzono również za herezję czeskiego reformatora religijnego
+        <span class="shortline"></span> <strong>(3)</strong>, którego w 1415 r. spalono na
+        stosie, mimo że przybył do Konstancji z listem żelaznym gwarantującym mu bezpieczeństwo.
+        W obradach wzięła udział delegacja polska, w której wyróżnił się prawnik
+        <span class="shortline"></span> <strong>(4)</strong>, broniący Polski przed roszczeniami
+        zakonu krzyżackiego i głoszący tezę, że nawracanie pogan siłą jest sprzeczne z prawem
+        chrześcijańskim. Sobór potępił też oszczercze pismo wymierzone w króla Władysława
+        Jagiełłę, napisane przez krzyżackiego zakonnika <span class="shortline"></span>
+        <strong>(5)</strong>. Śmierć czeskiego reformatora wywołała w jego ojczyźnie wybuch
+        wieloletnich wojen religijno-narodowych, znanych jako wojny
+        <span class="shortline"></span> <strong>(6)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IX. Podróżnicy i odkrywcy</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Dopasuj do każdego podróżnika jego osiągnięcie. Wpisz cyfry 1–6. Jedna
+        odpowiedź jest zbędna.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Bartolomeo Dias</div>
+        <div><strong>B</strong> – Vasco da Gama</div>
+        <div><strong>C</strong> – Marco Polo</div>
+        <div><strong>D</strong> – Benedykt Polak</div>
+        <div><strong>E</strong> – John Cabot</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Uczestniczył w misji na dwór mongolski do Karakorum.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Odkrył Nową Fundlandię i Labrador.</td><td></td></tr>
+        <tr><td>3. Pierwszy Europejczyk, który dopłynął drogą morską do Indii.</td><td></td></tr>
+        <tr><td>4. Udowodnił, że opłynięcie Afryki od południa jest możliwe.</td><td></td></tr>
+        <tr><td>5. Pierwszy Europejczyk, który odbył lądową podróż do Indii i Chin i opisał ją w
+          słynnej relacji.</td><td></td></tr>
+      </table>
+      <p class="small muted">(Dostępna jest też odpowiedź 6, dotycząca wyprawy, która jako
+        pierwsza w dziejach opłynęła kulę ziemską — nie pasuje ona do żadnej z wymienionych
+        postaci A–E.)</p>
+      <p class="source">Na podstawie: Konkurs Historyczny woj. pomorskiego, etap szkolny
+        2020/2021, zadanie 6.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie X. Traktat w Tordesillas</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Rywalizacja o nowo odkrywane ziemie pozaeuropejskie między dwoma pierwszymi mocarstwami
+        kolonialnymi, Hiszpanią i <span class="shortline"></span> <strong>(1)</strong>, została
+        uregulowana traktatem podpisanym w 1494 r. w hiszpańskim miasteczku
+        <span class="shortline"></span> <strong>(2)</strong>. Ustalono w nim umowną linię
+        demarkacyjną biegnącą południkowo w odległości 370 mil morskich na zachód od archipelagu
+        <span class="shortline"></span> <strong>(3)</strong> (nazwa wysp na Oceanie Atlantyckim,
+        będących wówczas portugalską kolonią). Ziemie leżące na wschód od tej linii miały przypaść
+        <span class="shortline"></span> <strong>(4)</strong>, a na zachód —
+        <span class="shortline"></span> <strong>(5)</strong>. Dzięki takiemu przebiegowi linii
+        demarkacyjnej pod panowanie portugalskie, mimo podziału, trafiła później odkryta wschodnia
+        część Ameryki Południowej, znana dziś jako <span class="shortline"></span>
+        <strong>(6)</strong> (nazwa współczesnego państwa, gdzie do dziś językiem urzędowym jest
+        portugalski).</p>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XI. Wyprawa Ferdynanda Magellana</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>We wrześniu 1519 r. z hiszpańskiego portu Sanlúcar de Barrameda wypłynęła flota pięciu
+        okrętów pod dowództwem Portugalczyka pozostającego na służbie króla Hiszpanii,
+        <span class="shortline"></span> <strong>(1)</strong> [imię i nazwisko]. Celem wyprawy było
+        znalezienie zachodniej drogi morskiej do Moluków — Wysp Korzennych. Po opłynięciu Ameryki
+        Południowej przez cieśninę, której nadano imię dowódcy, flota przepłynęła ogromny, spokojny
+        ocean, nazwany przez żeglarzy <span class="shortline"></span> <strong>(2)</strong>. Sam
+        dowódca zginął w 1521 r. na filipińskiej wyspie <span class="shortline"></span>
+        <strong>(3)</strong> w starciu z miejscowym wodzem Lapu-Lapu. Wyprawę do Hiszpanii
+        sprowadził ostatecznie jeden z ocalałych okrętów, <span class="shortline"></span>
+        <strong>(4)</strong> [nazwa statku], pod dowództwem <span class="shortline"></span>
+        <strong>(5)</strong> [imię i nazwisko], docierając do portu we wrześniu 1522 r. Wyprawa ta
+        jako pierwsza w dziejach dokonała <span class="shortline"></span> <strong>(6)</strong>
+        (podaj jednym określeniem, czego dokonała).</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XII. Zjazd wiedeński 1515 roku</h3><span class="points">0–5 p.</span></div>
+      <div class="quote">
+        <p>„W połowie lipca 1515 r. odbył się kongres trzech monarchów w Wiedniu. Owocem
+          kilkudniowych obrad było, obok zobowiązania cesarza Maksymiliana do wycofania się z
+          wrogich dla Polski pozycji wobec wielkiego mistrza i księcia Wasyla III, przede
+          wszystkim zawieszenie dalszej rywalizacji obu domów przez uroczyste zapowiedzi
+          ślubów.”</p>
+      </div>
+      <p class="source">L. Kolankowski, Polska Jagiellonów. Dzieje polityczne, Olsztyn 1991, s.
+        148; cyt. za: Konkurs Historyczny woj. mazowieckiego, etap szkolny 2020/2021, zadanie 24.</p>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>W zjeździe wiedeńskim w 1515 r. wzięli udział król Polski Zygmunt I Stary, jego brat,
+        król Węgier i Czech <span class="shortline"></span> <strong>(1)</strong> [imię], oraz
+        cesarz <span class="shortline"></span> <strong>(2)</strong> [imię]. Zjazd rozbił
+        dotychczasowy sojusz Habsburgów z wielkim księciem moskiewskim
+        <span class="shortline"></span> <strong>(3)</strong> [imię], wymierzony przeciwko Polsce
+        i Litwie. Przypieczętowaniem porozumienia stało się podwójne małżeństwo dzieci Władysława
+        Jagiellończyka z wnukami cesarza — jeden z wnuków cesarza, <span class="shortline"></span>
+        <strong>(4)</strong> [imię], poślubił córkę Władysława, Annę. Po bezpotomnej śmierci syna
+        Władysława, króla <span class="shortline"></span> <strong>(5)</strong> [imię], poległego
+        w bitwie pod Mohaczem w 1526 r., korony czeska i węgierska — zgodnie z ustaleniami zjazdu
+        — przypadły Habsburgom.</p>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIII. Hołd pruski jako źródło ikonograficzne</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Obejrzyj reprodukcję obrazu i wykonaj polecenia.</p>
+      <div class="svg-wrap">
+        <img class="art-image" src="../assets/hold_pruski_matejko.jpg"
+             alt="Fragment obrazu Jana Matejki Hołd pruski, przedstawiającego klęczącą postać składającą hołd królowi na tronie, w otoczeniu dworu">
+      </div>
+      <p class="source">Jan Matejko, „Hołd pruski”, 1882, Muzeum Narodowe w Krakowie; reprodukcja
+        w domenie publicznej (Wikimedia Commons).</p>
+      <p>1. Podaj rok przedstawionego na obrazie wydarzenia oraz miasto, w którym się odbyło.
+        <span class="shortline"></span></p>
+      <p>2. Podaj tytuł i imię klęczącej postaci składającej hołd oraz imię i przydomek władcy,
+        któremu go składano. <span class="shortline"></span></p>
+      <p>3. Jakie przekształcenie ustrojowe państwa krzyżackiego uwiecznia ten hołd?
+        <span class="shortline"></span></p>
+      <p>4. Obraz powstał w 1882 r., czyli ponad 350 lat po przedstawionym wydarzeniu, w okresie
+        zaborów. Wyjaśnij, w jakim celu Matejko malował tak duże płótna historyczne w tym
+        okresie.</p>
+      <div class="answer-space"></div>
+      <p>5. Podaj jedną różnicę między tym, jak wydarzenie jest przedstawione na obrazie (np.
+        tłum świadków, gesty, emocje), a tym, jak zostało ono odnotowane w suchych, współczesnych
+        mu kronikach i dokumentach dyplomatycznych.</p>
+      <div class="answer-space"></div>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIV. Demokracja szlachecka</h3><span class="points">0–3 p.</span></div>
+      <div class="quote">
+        <p>„(…) Zjazd senatorów i posłów zwany sejmem (…) odbywa się następującym sposobem. Król
+          rozpisuje listy do biskupów, wojewodów, większych kasztelanów, a nawet do tych
+          mniejszych, którzy mądrością lub bogactwy przed innymi celują, uwiadamia ich o
+          zwołaniu sejmu (…). Szlachta zbiera się wtedy po swych ziemiach i powiatach na zjazdy
+          zwane partykularne, na których posłów wybiera (…). Po wybraniu posłów następują trzy
+          inne zjazdy zwane generalne (…).”</p>
+      </div>
+      <p class="source">Cyt. za: Konkurs Historyczny woj. zachodniopomorskiego, etap szkolny
+        2019/2020, zadanie 11.</p>
+      <p class="lead">Na podstawie tekstu źródłowego wykonaj polecenia.</p>
+      <p>1. Podaj nazwę ustroju politycznego Rzeczypospolitej opisanego w tekście, w którym
+        pełnia władzy politycznej należała do stanu szlacheckiego. <span class="shortline"></span></p>
+      <p>2. Podaj nazwę lokalnych zjazdów szlachty danej ziemi lub powiatu, na których wybierano
+        posłów na sejm. <span class="shortline"></span></p>
+      <p>3. Podaj nazwę trzech zjazdów poprzedzających obrady sejmu walnego, na które zjeżdżali
+        się posłowie i senatorowie poszczególnych prowincji (Wielkopolski, Małopolski i Litwy).
+        <span class="shortline"></span></p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XV. Traktaty i rozejmy Rzeczypospolitej w XVII wieku</h3><span class="points">0–3 p.</span></div>
+      <p class="lead">Uporządkuj chronologicznie traktaty i rozejmy kończące wojny
+        Rzeczypospolitej w XVII w. Wpisz cyfry od 1 (najwcześniejszy) do 4 (najpóźniejszy).</p>
+      <table class="compact">
+        <tr><td>A. Rozejm w Andruszowie — wojna z Rosją.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Pokój Grzymułtowskiego — wojna z Rosją.</td><td></td></tr>
+        <tr><td>C. Rozejm w Altmarku (Sztumskiej Wsi) — wojna ze Szwecją.</td><td></td></tr>
+        <tr><td>D. Pokój w Oliwie — wojna ze Szwecją (tzw. potop szwedzki).</td><td></td></tr>
+      </table>
+      <p class="source">Na podstawie: Konkurs Historyczny woj. zachodniopomorskiego, etap szkolny
+        2018/2019, zadanie 13.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVI. Obrona Jasnej Góry</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Jesienią 1655 r., w czasie najazdu szwedzkiego zwanego potopem, gdy niemal cała
+        Rzeczpospolita znalazła się pod okupacją wojsk Karola X Gustawa, jednym z nielicznych
+        ośrodków oporu stał się ufortyfikowany klasztor na Jasnej Górze w Częstochowie, należący
+        do zakonu <span class="shortline"></span> <strong>(1)</strong>. Obroną klasztoru
+        kierował przeor <span class="shortline"></span> <strong>(2)</strong> [imię i nazwisko].
+        Blisko miesięczne, zakończone niepowodzeniem oblężenie (listopad–grudzień 1655 r.) uznano
+        za symboliczny punkt zwrotny wojny ze Szwedami, po którym opór wobec najeźdźcy zaczął się
+        rozszerzać na cały kraj. Kilka miesięcy później, w kwietniu 1656 r., król
+        <span class="shortline"></span> <strong>(3)</strong> [imię i przydomek] w katedrze we
+        Lwowie złożył uroczyste śluby, ogłaszając Matkę Boską <span class="shortline"></span>
+        <strong>(4)</strong> Rzeczypospolitej, w zamian obiecując m.in. poprawę losu chłopów.
+        Wojska szwedzkie ostatecznie opuściły ziemie Rzeczypospolitej po zwycięskiej dla Polaków
+        trzydniowej bitwie stoczonej w <span class="shortline"></span> <strong>(5)</strong>
+        1656 r. Wojna ze Szwecją zakończyła się ostatecznie w 1660 r. pokojem zawartym w
+        <span class="shortline"></span> <strong>(6)</strong>.</p>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVII. Śluby lwowskie Jana Kazimierza</h3><span class="points">0–5 p.</span></div>
+      <div class="quote">
+        <p>„Ja, król, do Twych Najświętszych stóp przychodząc, tę oto konfederacyję czynię:
+          Ciebie za Patronkę moją i państwa mego Królową dzisiaj obieram. Obiecuję Tobie [...]
+          Synowi Twemu Jezusowi Chrystusowi cześć i chwałę [...] rozszerzać, gdy otrzymam
+          wiktoryę nad Szwedem. A że z wielkim żalem serca mego uznaję [...] jęczenie w presji
+          ubogiego pospólstwa oraczów, przez żołnierstwo uciemiężonego [...] obowiązuję się [...]
+          ażeby odtąd utrapione pospólstwo wolne było od wszelkiego okrucieństwa.”</p>
+      </div>
+      <p class="source">Cyt. za: Konkurs Historyczny woj. mazowieckiego, etap szkolny 2021/2022,
+        zadanie 28.</p>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Cytowane słowa wypowiedział król <span class="shortline"></span> <strong>(1)</strong>
+        [imię i przydomek]. Przyrzeczenie złożył w katedrze w <span class="shortline"></span>
+        <strong>(2)</strong> [miasto], w <span class="shortline"></span> <strong>(3)</strong>
+        [miesiąc i rok]. Król ogłosił w nim Matkę Boską <span class="shortline"></span>
+        <strong>(4)</strong> swego państwa. Jednocześnie obiecał poprawić los stanu
+        <span class="shortline"></span> <strong>(5)</strong>, uciemiężonego dotąd nadmiernymi
+        powinnościami wobec żołnierstwa.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVIII. Przywileje szlacheckie — chronologia</h3><span class="points">0–3 p.</span></div>
+      <p class="lead">Poniższe cztery fragmenty przywilejów i konstytucji szlacheckich uszereguj
+        chronologicznie. Wpisz cyfry od 1 (najwcześniejszy) do 4 (najpóźniejszy).</p>
+      <table class="compact">
+        <tr><td><strong>Tekst I.</strong> „Prawa ogólne i ustawy dotyczą nie pojedynczego
+          człowieka, ale ogółu narodu, przeto na tym walnym sejmie radomskim postanowiliśmy, iż
+          odtąd na potomne czasy nic nowego stanowionym być nie ma przez nas i naszych następców,
+          bez wspólnego zezwolenia senatorów i posłów ziemskich.”</td><td style="width:16mm"></td></tr>
+        <tr><td><strong>Tekst II.</strong> „My, Jan Olbracht, postanowiliśmy, że mieszczanom i
+          plebejuszom nie wolno dóbr ziemskich kupować, a to dlatego, że oni posiadając takie
+          dobra, zwykli szukać sposobności uwolnienia się od wypraw wojennych.”</td><td></td></tr>
+        <tr><td><strong>Tekst III.</strong> „Władysław, z Bożej łaski król Polski, przyrzekamy
+          najuroczyściej, że żadnego obywatela nie będziemy więzili, ani więzić i karać nie
+          dozwolimy, aż nam albo staroście naszemu przez sędziego wydany zostanie.”</td><td></td></tr>
+        <tr><td><strong>Tekst IV.</strong> „My, Ludwik, chcemy zadowolić się tym tylko, aby
+          corocznie nam i następcom naszym na znak najwyższego panowania i uznania korony
+          Królestwa Polskiego płacono po dwa grosze zwykłej monety z każdego osiadłego i
+          dzierżonego łanu lub jego części.”</td><td></td></tr>
+      </table>
+      <p class="source">Fragmenty na podstawie: Wiek V–XV w źródłach. Wybór tekstów źródłowych z
+        propozycjami metodycznymi dla nauczycieli historii, studentów i uczniów, oprac. M.
+        Sobańska-Bondaruk, S.B. Lenard, Warszawa 1999; cyt. za: Konkurs Historyczny woj.
+        mazowieckiego, etap szkolny 2024/2025, zadanie 17 (tam pytanie o dokument pierwszy i
+        ostatni, tu rozszerzone do pełnego uszeregowania czterech dokumentów).</p>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIX. Powstanie kościuszkowskie i Uniwersał połaniecki</h3><span class="points">0–7 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Powstanie kościuszkowskie rozpoczęło się <span class="shortline"></span>
+        <strong>(1)</strong> [data dzienna i rok] przysięgą złożoną przez Tadeusza Kościuszkę na
+        rynku w <span class="shortline"></span> <strong>(2)</strong> [miasto]. Pierwszym
+        sukcesem powstania było zwycięstwo pod <span class="shortline"></span>
+        <strong>(3)</strong> [miejscowość], w którym szczególnie odznaczyli się uzbrojeni w kosy
+        chłopscy ochotnicy zwani <span class="shortline"></span> <strong>(4)</strong>, a wśród
+        nich wyróżnił się bohaterski <span class="shortline"></span> <strong>(5)</strong>
+        [imię i nazwisko chłopa, który zdobył armatę]. Chcąc zjednać dla powstania szerokie
+        rzesze chłopstwa, Kościuszko wydał w maju 1794 r. w miejscowości Połaniec akt prawny
+        znany jako <span class="shortline"></span> <strong>(6)</strong>, który ograniczał wymiar
+        pańszczyzny i dawał chłopom osobistą wolność pod warunkiem uregulowania zobowiązań wobec
+        dworu. Mimo tych i innych wysiłków powstanie zakończyło się klęską — po przegranej bitwie
+        pod Maciejowicami i upadku Warszawy doszło w 1795 r. do ostatecznego,
+        <span class="shortline"></span> <strong>(7)</strong> [numer porządkowy] rozbioru Polski,
+        kończącego istnienie państwa polskiego na 123 lata.</p>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+    <h2>Karta odpowiedzi — wariant L</h2>
+    <p class="small muted">Kod ucznia: <span class="code">&nbsp;</span></p>
+    <table class="card compact">
+      <tr><th style="width:42mm">Zadanie</th><th>Odpowiedzi</th><th style="width:20mm">Punkty</th></tr>
+      <tr><td>I. Fenicjanie</td><td class="wide"></td><td></td></tr>
+      <tr><td>II. Wojny grecko-perskie</td><td class="wide"></td><td></td></tr>
+      <tr><td>III. Prawo rzymskie</td><td class="wide"></td><td></td></tr>
+      <tr><td>IV. Bolesław Chrobry i sąsiedzi</td><td class="wide"></td><td></td></tr>
+      <tr><td>V. Sprowadzenie Krzyżaków</td><td class="wide"></td><td></td></tr>
+      <tr><td>VI. Kolonizacja na prawie niemieckim</td><td class="wide"></td><td></td></tr>
+      <tr><td>VII. Zakony nierycerskie</td><td>1 …… 2 …… 3 ……</td><td></td></tr>
+      <tr><td>VIII. Sobór w Konstancji</td><td class="wide"></td><td></td></tr>
+      <tr><td>IX. Podróżnicy i odkrywcy</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>X. Traktat w Tordesillas</td><td class="wide"></td><td></td></tr>
+      <tr><td>XI. Wyprawa Magellana</td><td class="wide"></td><td></td></tr>
+      <tr><td>XII. Zjazd wiedeński 1515</td><td class="wide"></td><td></td></tr>
+      <tr><td>XIII. Hołd pruski — obraz</td><td class="wide"></td><td></td></tr>
+      <tr><td>XIV. Demokracja szlachecka</td><td class="wide"></td><td></td></tr>
+      <tr><td>XV. Traktaty i rozejmy XVII w.</td><td>A …… B …… C …… D ……</td><td></td></tr>
+      <tr><td>XVI. Obrona Jasnej Góry</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVII. Śluby lwowskie</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVIII. Przywileje szlacheckie</td><td>I …… II …… III …… IV ……</td><td></td></tr>
+      <tr><td>XIX. Powstanie kościuszkowskie</td><td class="wide"></td><td></td></tr>
+      <tr><td><strong>Razem</strong></td><td></td><td><strong>/ 100</strong></td></tr>
+    </table>
+    <p class="footer-note">Arkusz treningowy, wariant L, ziarno 2026-09-20-L. Materiał autorski,
+      nie jest oficjalnym arkuszem żadnego kuratorium.</p>
+  </section>
+</body>
+</html>

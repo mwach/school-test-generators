@@ -19,7 +19,9 @@
       "obszar": "powszechna",
       "typ": "cywilizacje i państwa",
       "warianty": [],
+      "poza_etap_szkolny": false,
       "hasla": [
+        "klinow",
         "klinow",
         "hieroglif"
       ],
@@ -42,6 +44,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "krecie",
         "minojs"
@@ -66,6 +69,7 @@
       "warianty": [
         "B"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "babilo",
         "hammur"
@@ -93,6 +97,7 @@
       "warianty": [
         "B"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "grecji",
         "igrzys"
@@ -105,7 +110,8 @@
         "C",
         "D",
         "G",
-        "H"
+        "H",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -122,6 +128,7 @@
         "B",
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "rzymu",
         "tradyc"
@@ -136,7 +143,11 @@
         "E",
         "F",
         "G",
-        "H"
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -152,16 +163,16 @@
       "warianty": [
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "marato"
       ],
       "rok_w_arkuszu": [
-        "C"
+        "C",
+        "L"
       ],
       "nazwa_w_arkuszu": [],
-      "tylko_w_kluczu": [
-        "H"
-      ],
+      "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
@@ -173,12 +184,14 @@
       "obszar": "powszechna",
       "typ": "wojny i bitwy",
       "warianty": [],
+      "poza_etap_szkolny": false,
       "hasla": [
         "salami",
         "termop"
       ],
       "rok_w_arkuszu": [
-        "H"
+        "H",
+        "L"
       ],
       "nazwa_w_arkuszu": [
         "C",
@@ -198,6 +211,7 @@
       "warianty": [
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "atenam",
         "pelopo",
@@ -209,7 +223,8 @@
         "D",
         "E",
         "G",
-        "H"
+        "H",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -223,6 +238,7 @@
       "obszar": "powszechna",
       "typ": "wojny i bitwy",
       "warianty": [],
+      "poza_etap_szkolny": false,
       "hasla": [
         "aleksa",
         "persji"
@@ -232,7 +248,8 @@
         "A",
         "D",
         "F",
-        "H"
+        "H",
+        "J"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -248,7 +265,9 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
+        "punick",
         "punick"
       ],
       "rok_w_arkuszu": [],
@@ -271,6 +290,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "hannib",
         "punick"
@@ -295,6 +315,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "druga",
         "punick"
@@ -304,7 +325,8 @@
         "D",
         "E",
         "F",
-        "H"
+        "H",
+        "I"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -320,6 +342,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "kannam",
         "rzymia",
@@ -348,6 +371,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "afryka",
         "hannib",
@@ -375,7 +399,9 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
+        "punick",
         "punick"
       ],
       "rok_w_arkuszu": [],
@@ -398,6 +424,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "kartag",
         "punick"
@@ -420,6 +447,7 @@
       "obszar": "powszechna",
       "typ": "władcy i dynastie",
       "warianty": [],
+      "poza_etap_szkolny": false,
       "hasla": [
         "cezara",
         "julius",
@@ -430,7 +458,8 @@
       ],
       "nazwa_w_arkuszu": [
         "D",
-        "H"
+        "H",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -444,6 +473,7 @@
       "obszar": "powszechna",
       "typ": "cywilizacje i państwa",
       "warianty": [],
+      "poza_etap_szkolny": false,
       "hasla": [
         "akcjum"
       ],
@@ -466,11 +496,13 @@
         "C",
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "mediol"
       ],
       "rok_w_arkuszu": [
-        "E"
+        "E",
+        "I"
       ],
       "nazwa_w_arkuszu": [
         "C"
@@ -489,18 +521,22 @@
       "warianty": [
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "podzia"
       ],
       "rok_w_arkuszu": [
-        "E"
+        "E",
+        "K"
       ],
       "nazwa_w_arkuszu": [
         "A",
         "C",
         "D",
         "F",
-        "H"
+        "H",
+        "J",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -519,6 +555,7 @@
         "D",
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "upadek"
       ],
@@ -526,12 +563,15 @@
         "A",
         "B",
         "D",
-        "E"
+        "E",
+        "K"
       ],
       "nazwa_w_arkuszu": [
         "C",
         "F",
-        "G"
+        "G",
+        "I",
+        "J"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -547,6 +587,7 @@
       "warianty": [
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "chlodw",
         "frankó"
@@ -555,7 +596,8 @@
         "E"
       ],
       "nazwa_w_arkuszu": [
-        "C"
+        "C",
+        "I"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -571,6 +613,7 @@
       "warianty": [
         "A"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "hidżra",
         "mahome",
@@ -578,7 +621,8 @@
         "mekki"
       ],
       "rok_w_arkuszu": [
-        "A"
+        "A",
+        "I"
       ],
       "nazwa_w_arkuszu": [
         "B",
@@ -600,6 +644,7 @@
         "C",
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "karol",
         "poitie"
@@ -613,7 +658,11 @@
         "A",
         "D",
         "G",
-        "H"
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -632,6 +681,7 @@
         "C",
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "karola"
       ],
@@ -639,11 +689,15 @@
         "A",
         "B",
         "C",
-        "E"
+        "E",
+        "I"
       ],
       "nazwa_w_arkuszu": [
         "G",
-        "H"
+        "H",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -659,17 +713,21 @@
       "warianty": [
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "frankó",
         "trakta",
         "verdun"
       ],
       "rok_w_arkuszu": [
-        "E"
+        "E",
+        "I"
       ],
       "nazwa_w_arkuszu": [
         "C",
-        "H"
+        "H",
+        "J",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -685,6 +743,7 @@
       "warianty": [
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "norman",
         "rollon"
@@ -707,6 +766,7 @@
       "warianty": [
         "B"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "ottona",
         "święte"
@@ -718,7 +778,8 @@
         "A",
         "C",
         "F",
-        "G"
+        "G",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -734,6 +795,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "dobraw",
         "mieszk"
@@ -746,7 +808,10 @@
         "B",
         "C",
         "D",
-        "E"
+        "E",
+        "I",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -765,6 +830,7 @@
         "E",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "mieszk"
       ],
@@ -776,7 +842,10 @@
         "B",
         "D",
         "E",
-        "F"
+        "F",
+        "I",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -795,6 +864,7 @@
         "C",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "cedyni",
         "hodona",
@@ -808,7 +878,10 @@
       ],
       "nazwa_w_arkuszu": [
         "D",
-        "E"
+        "E",
+        "I",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -825,6 +898,7 @@
         "B",
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "gnieźn",
         "zjazd"
@@ -834,7 +908,9 @@
         "E"
       ],
       "nazwa_w_arkuszu": [
-        "G"
+        "G",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -852,6 +928,7 @@
         "B",
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "bolesł",
         "chrobr",
@@ -863,7 +940,10 @@
         "C"
       ],
       "nazwa_w_arkuszu": [
-        "F"
+        "F",
+        "I",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -880,15 +960,26 @@
         "A",
         "D"
       ],
-      "hasla": [],
+      "poza_etap_szkolny": false,
+      "hasla": [
+        "katoli",
+        "podzia",
+        "prawos"
+      ],
       "rok_w_arkuszu": [
         "A",
-        "H"
+        "H",
+        "K"
       ],
-      "nazwa_w_arkuszu": [],
-      "tylko_w_kluczu": [
-        "D"
+      "nazwa_w_arkuszu": [
+        "C",
+        "D",
+        "F",
+        "G",
+        "J",
+        "L"
       ],
+      "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
@@ -902,6 +993,7 @@
       "warianty": [
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "hastin",
         "norman"
@@ -910,7 +1002,9 @@
         "E"
       ],
       "nazwa_w_arkuszu": [],
-      "tylko_w_kluczu": [],
+      "tylko_w_kluczu": [
+        "J"
+      ],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
@@ -925,6 +1019,7 @@
         "B",
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "bolesł",
         "śmiałe"
@@ -934,7 +1029,9 @@
         "C"
       ],
       "nazwa_w_arkuszu": [
-        "A"
+        "A",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -950,6 +1047,7 @@
       "warianty": [
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "canoss",
         "henryk",
@@ -962,7 +1060,11 @@
         "A",
         "B",
         "G",
-        "H"
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -978,6 +1080,7 @@
       "warianty": [
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "clermo",
         "urbana"
@@ -985,7 +1088,8 @@
       "rok_w_arkuszu": [],
       "nazwa_w_arkuszu": [
         "C",
-        "G"
+        "G",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -1001,14 +1105,20 @@
       "warianty": [
         "C"
       ],
-      "hasla": [],
+      "poza_etap_szkolny": false,
+      "hasla": [
+        "krucja"
+      ],
       "rok_w_arkuszu": [],
-      "nazwa_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "I",
+        "K"
+      ],
       "tylko_w_kluczu": [
         "C"
       ],
-      "ryzyko": "niskie",
-      "status": "wolne"
+      "ryzyko": "średnie",
+      "status": "wykorzystane"
     },
     {
       "sort": 1099,
@@ -1020,6 +1130,7 @@
       "warianty": [
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "jerozo"
       ],
@@ -1027,7 +1138,9 @@
         "C"
       ],
       "nazwa_w_arkuszu": [
-        "G"
+        "G",
+        "I",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1044,6 +1157,7 @@
         "A",
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "bolesł",
         "krzywo"
@@ -1053,7 +1167,9 @@
       ],
       "nazwa_w_arkuszu": [
         "A",
-        "B"
+        "B",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1069,6 +1185,7 @@
       "warianty": [
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "konsta"
       ],
@@ -1077,7 +1194,11 @@
       ],
       "nazwa_w_arkuszu": [
         "G",
-        "H"
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1093,6 +1214,7 @@
       "warianty": [
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "karta",
         "swobód"
@@ -1107,7 +1229,11 @@
         "C",
         "E",
         "F",
-        "G"
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1124,18 +1250,23 @@
         "C",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "konrad",
         "mazowi",
         "sprowa"
       ],
       "rok_w_arkuszu": [
-        "F"
+        "F",
+        "L"
       ],
       "nazwa_w_arkuszu": [
         "C",
         "E",
-        "G"
+        "G",
+        "I",
+        "J",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1151,6 +1282,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "kordob"
       ],
@@ -1172,12 +1304,14 @@
       "warianty": [
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "legnic"
       ],
       "rok_w_arkuszu": [],
       "nazwa_w_arkuszu": [
-        "C"
+        "C",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -1193,6 +1327,7 @@
       "warianty": [
         "B"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "przemy"
       ],
@@ -1200,7 +1335,8 @@
         "B"
       ],
       "nazwa_w_arkuszu": [
-        "H"
+        "H",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1216,19 +1352,23 @@
       "warianty": [
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "gdańsk"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "L"
+      ],
       "nazwa_w_arkuszu": [
         "A",
         "C",
         "D",
         "G",
-        "H"
+        "H",
+        "K"
       ],
       "tylko_w_kluczu": [],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -1241,6 +1381,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "malbor"
       ],
@@ -1248,7 +1389,9 @@
       "nazwa_w_arkuszu": [
         "F"
       ],
-      "tylko_w_kluczu": [],
+      "tylko_w_kluczu": [
+        "L"
+      ],
       "ryzyko": "średnie",
       "status": "wykorzystane"
     },
@@ -1264,6 +1407,7 @@
         "B",
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "władys",
         "łokiet"
@@ -1274,7 +1418,10 @@
       ],
       "nazwa_w_arkuszu": [
         "C",
-        "F"
+        "F",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [
         "H"
@@ -1292,6 +1439,7 @@
       "warianty": [
         "B"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "kazimi"
       ],
@@ -1303,7 +1451,11 @@
         "C",
         "E",
         "F",
-        "G"
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1319,6 +1471,7 @@
       "warianty": [
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "anglią"
       ],
@@ -1342,6 +1495,7 @@
       "warianty": [
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "kalisz"
       ],
@@ -1363,13 +1517,15 @@
       "warianty": [
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "lwowow",
         "magdeb"
       ],
       "rok_w_arkuszu": [],
       "nazwa_w_arkuszu": [
-        "C"
+        "C",
+        "K"
       ],
       "tylko_w_kluczu": [
         "E"
@@ -1388,18 +1544,23 @@
         "C",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "kazimi"
       ],
       "rok_w_arkuszu": [
         "C",
-        "F"
+        "F",
+        "K"
       ],
       "nazwa_w_arkuszu": [
         "A",
         "B",
         "E",
-        "G"
+        "G",
+        "I",
+        "J",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1415,6 +1576,7 @@
       "warianty": [
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "koszyc",
         "szlach"
@@ -1428,7 +1590,11 @@
         "E",
         "F",
         "G",
-        "H"
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1444,6 +1610,7 @@
       "warianty": [
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "andega",
         "jadwig"
@@ -1451,7 +1618,9 @@
       "rok_w_arkuszu": [],
       "nazwa_w_arkuszu": [
         "C",
-        "D"
+        "D",
+        "I",
+        "J"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -1467,15 +1636,19 @@
       "warianty": [
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "krewie"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "I",
+        "J"
+      ],
       "nazwa_w_arkuszu": [
         "D"
       ],
       "tylko_w_kluczu": [],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -1488,6 +1661,7 @@
       "warianty": [
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "litw"
       ],
@@ -1495,7 +1669,11 @@
       "nazwa_w_arkuszu": [
         "A",
         "D",
-        "G"
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -1511,6 +1689,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "jagieł",
         "odnowi",
@@ -1522,7 +1701,11 @@
       "nazwa_w_arkuszu": [
         "A",
         "B",
-        "C"
+        "C",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1540,16 +1723,19 @@
         "D",
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "grunwa"
       ],
       "rok_w_arkuszu": [
-        "B"
+        "B",
+        "L"
       ],
       "nazwa_w_arkuszu": [
         "A",
         "D",
-        "E"
+        "E",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1565,6 +1751,7 @@
       "warianty": [
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "toruńs"
       ],
@@ -1588,6 +1775,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "związk"
       ],
@@ -1610,6 +1798,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "warneń",
         "warną",
@@ -1621,7 +1810,10 @@
       "nazwa_w_arkuszu": [
         "A",
         "B",
-        "C"
+        "C",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1637,6 +1829,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "jagiel",
         "kazimi"
@@ -1650,7 +1843,11 @@
         "E",
         "F",
         "G",
-        "H"
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -1666,6 +1863,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "drukar",
         "gutenb"
@@ -1691,6 +1889,7 @@
         "D",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "bizant",
         "konsta",
@@ -1698,7 +1897,8 @@
       ],
       "rok_w_arkuszu": [
         "D",
-        "F"
+        "F",
+        "K"
       ],
       "nazwa_w_arkuszu": [
         "A",
@@ -1706,7 +1906,10 @@
         "C",
         "E",
         "G",
-        "H"
+        "H",
+        "I",
+        "J",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1722,11 +1925,13 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "chojni"
       ],
       "rok_w_arkuszu": [
-        "H"
+        "H",
+        "I"
       ],
       "nazwa_w_arkuszu": [
         "F"
@@ -1745,6 +1950,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "zatoce",
         "świeże"
@@ -1768,6 +1974,7 @@
         "D",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "toruńs",
         "gdańsk"
@@ -1780,7 +1987,9 @@
         "C",
         "D",
         "F",
-        "G"
+        "G",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1796,6 +2005,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "aragoń",
         "ferdyn",
@@ -1805,7 +2015,10 @@
       "rok_w_arkuszu": [],
       "nazwa_w_arkuszu": [
         "A",
-        "F"
+        "F",
+        "I",
+        "J",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -1821,6 +2034,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "mariac",
         "stwosz"
@@ -1843,6 +2057,7 @@
       "warianty": [
         "A"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "bartol",
         "diasa",
@@ -1855,7 +2070,10 @@
         "A"
       ],
       "nazwa_w_arkuszu": [
-        "D"
+        "D",
+        "I",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1873,6 +2091,7 @@
         "C",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "ameryk",
         "granad",
@@ -1887,7 +2106,11 @@
       "nazwa_w_arkuszu": [
         "B",
         "E",
-        "G"
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -1903,6 +2126,7 @@
       "warianty": [
         "A"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "indii",
         "vasco"
@@ -1915,9 +2139,14 @@
         "C",
         "D",
         "E",
-        "F"
+        "F",
+        "I",
+        "K",
+        "L"
       ],
-      "tylko_w_kluczu": [],
+      "tylko_w_kluczu": [
+        "J"
+      ],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
@@ -1931,20 +2160,26 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "aleksa",
         "jagiel"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "I"
+      ],
       "nazwa_w_arkuszu": [
         "A",
         "C",
         "D",
         "F",
-        "H"
+        "H",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -1957,15 +2192,21 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "nihil"
       ],
       "rok_w_arkuszu": [
         "F",
-        "G"
+        "G",
+        "I"
       ],
-      "nazwa_w_arkuszu": [],
-      "tylko_w_kluczu": [],
+      "nazwa_w_arkuszu": [
+        "K"
+      ],
+      "tylko_w_kluczu": [
+        "L"
+      ],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
@@ -1982,6 +2223,7 @@
         "C",
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "lutra",
         "marcin",
@@ -1995,7 +2237,8 @@
       "nazwa_w_arkuszu": [
         "D",
         "F",
-        "G"
+        "G",
+        "K"
       ],
       "tylko_w_kluczu": [
         "C"
@@ -2014,6 +2257,7 @@
         "D",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "belgra",
         "rzeszy",
@@ -2021,7 +2265,9 @@
         "wormac"
       ],
       "rok_w_arkuszu": [
-        "F"
+        "F",
+        "J",
+        "L"
       ],
       "nazwa_w_arkuszu": [
         "B",
@@ -2029,7 +2275,8 @@
         "D",
         "E",
         "G",
-        "H"
+        "H",
+        "I"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2045,7 +2292,9 @@
       "warianty": [
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
+        "kwietn",
         "hołd"
       ],
       "rok_w_arkuszu": [
@@ -2053,7 +2302,10 @@
       ],
       "nazwa_w_arkuszu": [
         "A",
-        "D"
+        "D",
+        "E",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2069,16 +2321,19 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "mohacz",
         "turcy",
         "węgier"
       ],
       "rok_w_arkuszu": [
-        "F"
+        "F",
+        "L"
       ],
       "nazwa_w_arkuszu": [
-        "C"
+        "C",
+        "I"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2094,6 +2349,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "turków",
         "wiedni"
@@ -2103,7 +2359,9 @@
       ],
       "nazwa_w_arkuszu": [
         "E",
-        "G"
+        "G",
+        "I",
+        "L"
       ],
       "tylko_w_kluczu": [
         "D"
@@ -2121,6 +2379,7 @@
       "warianty": [
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "anglik",
         "henryk"
@@ -2131,7 +2390,11 @@
         "B",
         "C",
         "G",
-        "H"
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [
         "D"
@@ -2149,6 +2412,7 @@
       "warianty": [
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "kopern",
         "mikoła"
@@ -2176,11 +2440,13 @@
       "warianty": [
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "tryden"
       ],
       "rok_w_arkuszu": [
-        "G"
+        "G",
+        "I"
       ],
       "nazwa_w_arkuszu": [
         "A",
@@ -2201,6 +2467,7 @@
         "C",
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "augsbu"
       ],
@@ -2225,13 +2492,15 @@
         "A",
         "B"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "lubels",
         "narodó",
         "obojga"
       ],
       "rok_w_arkuszu": [
-        "A"
+        "A",
+        "J"
       ],
       "nazwa_w_arkuszu": [
         "B",
@@ -2239,9 +2508,12 @@
         "D",
         "E",
         "G",
-        "H"
+        "H",
+        "K"
       ],
-      "tylko_w_kluczu": [],
+      "tylko_w_kluczu": [
+        "L"
+      ],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
@@ -2257,6 +2529,7 @@
         "C",
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "henryk",
         "walezy",
@@ -2272,7 +2545,11 @@
         "B",
         "E",
         "F",
-        "G"
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2288,11 +2565,17 @@
       "warianty": [
         "D"
       ],
-      "hasla": [],
+      "poza_etap_szkolny": false,
+      "hasla": [
+        "brzesk",
+        "grecko"
+      ],
       "rok_w_arkuszu": [
         "D"
       ],
-      "nazwa_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "L"
+      ],
       "tylko_w_kluczu": [
         "E"
       ],
@@ -2309,6 +2592,7 @@
       "warianty": [
         "A"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "kircho"
       ],
@@ -2318,7 +2602,9 @@
       "nazwa_w_arkuszu": [
         "B"
       ],
-      "tylko_w_kluczu": [],
+      "tylko_w_kluczu": [
+        "K"
+      ],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
@@ -2332,6 +2618,7 @@
       "warianty": [
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "zebrzy"
       ],
@@ -2355,6 +2642,7 @@
       "warianty": [
         "A"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "kłuszy"
       ],
@@ -2364,7 +2652,9 @@
       "nazwa_w_arkuszu": [
         "B"
       ],
-      "tylko_w_kluczu": [],
+      "tylko_w_kluczu": [
+        "K"
+      ],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
@@ -2378,11 +2668,16 @@
       "warianty": [
         "D"
       ],
-      "hasla": [],
+      "poza_etap_szkolny": false,
+      "hasla": [
+        "trzydz"
+      ],
       "rok_w_arkuszu": [
         "D"
       ],
-      "nazwa_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "K"
+      ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
@@ -2397,6 +2692,7 @@
       "warianty": [
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "dywili"
       ],
@@ -2422,6 +2718,7 @@
         "E",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "chmiel",
         "korsuń",
@@ -2430,13 +2727,15 @@
       ],
       "rok_w_arkuszu": [
         "A",
-        "D"
+        "D",
+        "K"
       ],
       "nazwa_w_arkuszu": [
         "B",
         "C",
         "E",
-        "F"
+        "F",
+        "I"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2452,19 +2751,24 @@
       "warianty": [
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "karola",
         "ścięci"
       ],
       "rok_w_arkuszu": [
-        "D"
+        "D",
+        "I"
       ],
       "nazwa_w_arkuszu": [
         "A",
         "B",
         "C",
         "G",
-        "H"
+        "H",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2481,6 +2785,7 @@
         "C",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "pereja"
       ],
@@ -2505,12 +2810,16 @@
         "C",
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "jasnej",
         "oliwie",
         "ujście"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "I",
+        "L"
+      ],
       "nazwa_w_arkuszu": [
         "A",
         "C",
@@ -2519,7 +2828,7 @@
       "tylko_w_kluczu": [
         "F"
       ],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -2532,19 +2841,24 @@
       "warianty": [
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "kazimi",
         "śluby"
       ],
       "rok_w_arkuszu": [
-        "E"
+        "E",
+        "I",
+        "L"
       ],
       "nazwa_w_arkuszu": [
         "A",
         "B",
         "C",
         "F",
-        "G"
+        "G",
+        "J",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2560,6 +2874,7 @@
       "warianty": [
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "arianie",
         "arianizm",
@@ -2570,7 +2885,9 @@
       "nazwa_w_arkuszu": [
         "D"
       ],
-      "tylko_w_kluczu": [],
+      "tylko_w_kluczu": [
+        "I"
+      ],
       "ryzyko": "średnie",
       "status": "wykorzystane"
     },
@@ -2584,17 +2901,20 @@
       "warianty": [
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "lubomi"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "I"
+      ],
       "nazwa_w_arkuszu": [
         "G"
       ],
       "tylko_w_kluczu": [
         "E"
       ],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -2608,13 +2928,15 @@
         "C",
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "andrus"
       ],
       "rok_w_arkuszu": [],
       "nazwa_w_arkuszu": [
         "C",
-        "E"
+        "E",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -2630,15 +2952,18 @@
       "warianty": [
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "buczac"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "I"
+      ],
       "nazwa_w_arkuszu": [
         "C"
       ],
       "tylko_w_kluczu": [],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -2654,6 +2979,7 @@
         "E",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "sobies",
         "wiedeń"
@@ -2666,7 +2992,9 @@
       "nazwa_w_arkuszu": [
         "B",
         "E",
-        "H"
+        "H",
+        "I",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2680,11 +3008,19 @@
       "obszar": "powszechna",
       "typ": "ustrój i prawo",
       "warianty": [],
-      "hasla": [],
+      "poza_etap_szkolny": false,
+      "hasla": [
+        "rewolu"
+      ],
       "rok_w_arkuszu": [
         "H"
       ],
-      "nazwa_w_arkuszu": [],
+      "nazwa_w_arkuszu": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
@@ -2699,13 +3035,15 @@
       "warianty": [
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "karłow"
       ],
       "rok_w_arkuszu": [],
       "nazwa_w_arkuszu": [
         "A",
-        "C"
+        "C",
+        "I"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -2721,14 +3059,23 @@
       "warianty": [
         "F"
       ],
-      "hasla": [],
-      "rok_w_arkuszu": [],
-      "nazwa_w_arkuszu": [],
-      "tylko_w_kluczu": [
-        "F"
+      "poza_etap_szkolny": false,
+      "hasla": [
+        "północ"
       ],
-      "ryzyko": "niskie",
-      "status": "wolne"
+      "rok_w_arkuszu": [
+        "K"
+      ],
+      "nazwa_w_arkuszu": [
+        "B",
+        "E",
+        "F",
+        "I",
+        "J"
+      ],
+      "tylko_w_kluczu": [],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
     },
     {
       "sort": 1703,
@@ -2740,6 +3087,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "peters",
         "piotra"
@@ -2747,7 +3095,8 @@
       "rok_w_arkuszu": [],
       "nazwa_w_arkuszu": [
         "E",
-        "F"
+        "F",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -2763,6 +3112,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "połtaw"
       ],
@@ -2784,12 +3134,14 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "peters"
       ],
       "rok_w_arkuszu": [],
       "nazwa_w_arkuszu": [
-        "F"
+        "F",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -2805,6 +3157,7 @@
       "warianty": [
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [],
       "rok_w_arkuszu": [
         "D",
@@ -2825,6 +3178,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "piotr"
       ],
@@ -2833,7 +3187,8 @@
         "C",
         "D",
         "E",
-        "F"
+        "F",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -2849,6 +3204,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "montes"
       ],
@@ -2874,6 +3230,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "encykl"
       ],
@@ -2882,7 +3239,8 @@
       ],
       "nazwa_w_arkuszu": [
         "D",
-        "F"
+        "F",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2898,6 +3256,7 @@
       "warianty": [
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "jakuba",
         "rousse",
@@ -2925,6 +3284,7 @@
       "obszar": "Polska",
       "typ": "władcy i dynastie",
       "warianty": [],
+      "poza_etap_szkolny": false,
       "hasla": [
         "august",
         "poniat",
@@ -2937,7 +3297,10 @@
         "C",
         "D",
         "G",
-        "H"
+        "H",
+        "I",
+        "J",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "średnie",
@@ -2953,6 +3316,7 @@
       "warianty": [
         "B"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "narodo",
         "teatru",
@@ -2968,7 +3332,11 @@
         "D",
         "E",
         "F",
-        "H"
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -2984,12 +3352,17 @@
       "warianty": [
         "D"
       ],
-      "hasla": [],
+      "poza_etap_szkolny": false,
+      "hasla": [
+        "barska"
+      ],
       "rok_w_arkuszu": [
         "D"
       ],
       "nazwa_w_arkuszu": [],
-      "tylko_w_kluczu": [],
+      "tylko_w_kluczu": [
+        "J"
+      ],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
@@ -3007,19 +3380,26 @@
         "E",
         "F"
       ],
-      "hasla": [],
+      "poza_etap_szkolny": false,
+      "hasla": [
+        "rozbió"
+      ],
       "rok_w_arkuszu": [
         "C",
         "D",
         "F",
-        "G"
+        "G",
+        "K"
       ],
-      "nazwa_w_arkuszu": [],
-      "tylko_w_kluczu": [
+      "nazwa_w_arkuszu": [
+        "A",
         "B",
         "E",
-        "H"
+        "H",
+        "I",
+        "J"
       ],
+      "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
@@ -3035,6 +3415,7 @@
         "C",
         "D"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "edukac",
         "komisj",
@@ -3043,11 +3424,15 @@
       ],
       "rok_w_arkuszu": [
         "B",
-        "D"
+        "D",
+        "J"
       ],
       "nazwa_w_arkuszu": [
         "E",
-        "G"
+        "G",
+        "I",
+        "K",
+        "L"
       ],
       "tylko_w_kluczu": [
         "C"
@@ -3066,7 +3451,9 @@
         "A",
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
+        "niepod",
         "zjednoczonych"
       ],
       "rok_w_arkuszu": [
@@ -3075,7 +3462,9 @@
       ],
       "nazwa_w_arkuszu": [
         "B",
-        "C"
+        "C",
+        "J",
+        "K"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -3091,10 +3480,13 @@
       "warianty": [
         "E"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "zjednoczonych"
       ],
-      "rok_w_arkuszu": [],
+      "rok_w_arkuszu": [
+        "J"
+      ],
       "nazwa_w_arkuszu": [
         "B",
         "C"
@@ -3102,7 +3494,7 @@
       "tylko_w_kluczu": [
         "E"
       ],
-      "ryzyko": "średnie",
+      "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
     {
@@ -3117,17 +3509,21 @@
         "E",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "cztero",
         "obrady"
       ],
       "rok_w_arkuszu": [
         "C",
-        "E"
+        "E",
+        "J",
+        "K"
       ],
       "nazwa_w_arkuszu": [
         "D",
-        "G"
+        "G",
+        "L"
       ],
       "tylko_w_kluczu": [
         "F"
@@ -3146,16 +3542,20 @@
         "A",
         "C"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "bastyl"
       ],
       "rok_w_arkuszu": [
         "A",
         "C",
-        "H"
+        "H",
+        "K"
       ],
       "nazwa_w_arkuszu": [],
-      "tylko_w_kluczu": [],
+      "tylko_w_kluczu": [
+        "J"
+      ],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
     },
@@ -3172,17 +3572,20 @@
         "E",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [],
       "rok_w_arkuszu": [
         "E",
         "F",
         "G",
-        "H"
+        "H",
+        "K"
       ],
       "nazwa_w_arkuszu": [],
       "tylko_w_kluczu": [
         "A",
-        "B"
+        "B",
+        "J"
       ],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
@@ -3201,6 +3604,7 @@
         "E",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "targow"
       ],
@@ -3209,11 +3613,14 @@
         "C",
         "E",
         "F",
-        "G"
+        "G",
+        "K"
       ],
       "nazwa_w_arkuszu": [
         "B",
-        "H"
+        "H",
+        "I",
+        "J"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -3232,13 +3639,17 @@
         "E",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "grodzi"
       ],
       "rok_w_arkuszu": [
         "C",
         "F",
-        "G"
+        "G",
+        "I",
+        "J",
+        "K"
       ],
       "nazwa_w_arkuszu": [],
       "tylko_w_kluczu": [
@@ -3261,6 +3672,7 @@
         "E",
         "F"
       ],
+      "poza_etap_szkolny": false,
       "hasla": [
         "kościu",
         "maciej",
@@ -3270,12 +3682,15 @@
         "C",
         "E",
         "F",
-        "G"
+        "G",
+        "J",
+        "L"
       ],
       "nazwa_w_arkuszu": [
         "A",
         "B",
-        "H"
+        "H",
+        "I"
       ],
       "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
@@ -3296,20 +3711,53 @@
         "E",
         "F"
       ],
-      "hasla": [],
+      "poza_etap_szkolny": false,
+      "hasla": [
+        "rozbió"
+      ],
       "rok_w_arkuszu": [
         "A",
         "C",
         "F",
-        "G"
+        "G",
+        "J",
+        "L"
       ],
-      "nazwa_w_arkuszu": [],
-      "tylko_w_kluczu": [
+      "nazwa_w_arkuszu": [
         "B",
         "D",
         "E",
-        "H"
+        "H",
+        "I"
       ],
+      "tylko_w_kluczu": [
+        "K"
+      ],
+      "ryzyko": "wysokie",
+      "status": "wykorzystane"
+    },
+    {
+      "sort": 1797,
+      "data": "1797",
+      "wydarzenie": "Powstanie Legionów Polskich we Włoszech",
+      "epoka": "Wiek XIX",
+      "obszar": "Polska",
+      "typ": "wojny i bitwy",
+      "warianty": [],
+      "poza_etap_szkolny": true,
+      "hasla": [
+        "legion",
+        "włosze"
+      ],
+      "rok_w_arkuszu": [
+        "J"
+      ],
+      "nazwa_w_arkuszu": [
+        "G",
+        "K",
+        "L"
+      ],
+      "tylko_w_kluczu": [],
       "ryzyko": "wysokie",
       "status": "wykorzystane"
     }

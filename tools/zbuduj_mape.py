@@ -126,16 +126,16 @@ def buduj(kadr, punkty, wyjscie, podpis, legenda='miejsce oznaczone numerem',
 
 
 if __name__ == '__main__':
-    # Wariant H, zadanie — wojna trzynastoletnia (1454-1466): miasta Prus Krolewskich
-    # i panstwa zakonnego. Numery celowo nie ida w kolejnosci opisow A-F (§4 specyfikacji).
+    # Wariant J, zadanie — trzy unie polsko-litewskie (Krewo 1385, Horodlo 1413, Lublin 1569)
+    # plus stolice obu panstw dla orientacji. Numery celowo nie ida w kolejnosci opisow A-E.
     PUNKTY = [
-        (18.6042, 53.0138, '1', (0, -18)),    # Torun      -> opis C
-        (20.5030, 54.7104, '2', (0, -18)),    # Krolewiec  -> opis E
-        (19.0272, 54.0396, '3', (0, 28)),     # Malbork    -> opis A
-        (17.5578, 53.6971, '4', (0, -18)),    # Chojnice   -> opis D
-        (18.6466, 54.3520, '5', (-22, -4)),   # Gdansk     -> opis B
+        (22.5684, 51.2465, '1', (-24, -6)),   # Lublin   -> opis C
+        (25.2797, 54.6872, '2', (0, -18)),    # Wilno    -> opis D
+        (19.9450, 50.0647, '3', (-26, 6)),    # Krakow   -> opis E
+        (26.0500, 54.2667, '4', (24, 4)),     # Krewo    -> opis A
+        (24.0011, 50.8886, '5', (22, 10)),    # Horodlo  -> opis B
     ]
-    buduj(kadr=(877.75, 1212.2, 150, 115), punkty=PUNKTY,
-          wyjscie=str(BAZA.parent / 'wojna_trzynastoletnia_wariant_H.svg'),
-          podpis='Mapa konturowa Prus Krolewskich i panstwa zakonnego w czasie wojny trzynastoletniej',
+    buduj(kadr=(860, 1140, 300, 340), punkty=PUNKTY,
+          wyjscie=str(BAZA.parent / 'unie_polsko_litewskie_wariant_J.svg'),
+          podpis='Mapa konturowa ziem polskich i litewskich z pięcioma miejscami związanymi z uniami polsko-litewskimi',
           legenda='miejsce oznaczone numerem')
