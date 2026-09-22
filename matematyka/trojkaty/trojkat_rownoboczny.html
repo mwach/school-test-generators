@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Trójkąt równoboczny – zadania</title>
+<style>
+  @page { size: A4; margin: 16mm 15mm 18mm; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 11pt; line-height: 1.35;
+  }
+  h1, h2, p { margin-top: 0; }
+  h1 { font-size: 19pt; color: #163a63; margin-bottom: 2mm; }
+  .subtitle { color: #4c596b; font-size: 10.5pt; margin-bottom: 6mm; }
+  .meta {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 8mm;
+    padding: 4mm 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 6mm;
+    font-size: 10pt;
+  }
+  .meta strong { color: #163a63; }
+  .line { border-bottom: 1px solid #172033; min-width: 45mm; display: inline-block; }
+  .formulas {
+    padding: 4mm 5mm; background: #f6f3ed; border: 1px solid #d8cdb9; margin-bottom: 4mm;
+    font-size: 10.3pt;
+  }
+  .formulas h2 { font-size: 12pt; color: #163a63; margin-bottom: 2mm; }
+  .formulas table { border-collapse: collapse; width: 100%; }
+  .formulas td { padding: 1.2mm 3mm; vertical-align: middle; }
+  .formulas .sym { font-weight: 700; color: #163a63; white-space: nowrap; }
+  .hint {
+    padding: 3mm 5mm; background: #fdfaf4; border: 1px dashed #9a5a00; margin-bottom: 7mm;
+    font-size: 9.6pt; color: #4c3c1a;
+  }
+  .hint strong { color: #9a5a00; }
+  .diagram { text-align: center; margin: 2mm 0 5mm; }
+  .task {
+    border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+    border-radius: 2px; padding: 4mm 5mm; margin: 0 0 5mm;
+    break-inside: avoid;
+  }
+  .task-head { display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 2mm; }
+  .task-title { font-weight: 700; color: #163a63; }
+  .points { white-space: nowrap; font-weight: 700; color: #9a5a00; font-size: 9.5pt; }
+  .answer-space { border-bottom: 1px dotted #566273; min-height: 8mm; margin-top: 2mm; }
+  .answer-space.tall { min-height: 20mm; }
+  .page-break { break-before: page; }
+  .key-item { margin-bottom: 4.5mm; break-inside: avoid; }
+  .key-item .num { font-weight: 700; color: #163a63; }
+  .key-item .step { display: block; margin: 0.5mm 0; }
+  .footer-note { font-size: 9pt; color: #606b79; border-top: 1px solid #c7cfd8; padding-top: 2mm; margin-top: 4mm; break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<h1>Trójkąt równoboczny — obwód, pole, wysokość</h1>
+<div class="subtitle">Zestaw zadań powtórzeniowych (poziom rozszerzony) · klasa 7–8 szkoły podstawowej</div>
+
+<div class="meta">
+  <div>Imię i nazwisko: <span class="line">&nbsp;</span></div>
+  <div>Klasa: <span class="line" style="min-width:20mm;">&nbsp;</span></div>
+  <div>Data: <span class="line" style="min-width:20mm;">&nbsp;</span></div>
+  <div>Liczba punktów: <span class="line" style="min-width:20mm;">&nbsp;</span> / 18</div>
+</div>
+
+<div class="diagram">
+  <svg width="220" height="190" viewBox="0 0 220 190" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="110,15 20,170 200,170" fill="#eef5fb" stroke="#1f5a91" stroke-width="2"/>
+    <line x1="110" y1="15" x2="110" y2="170" stroke="#9a5a00" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="118" y="95" font-size="12" fill="#9a5a00" font-family="Arial">h</text>
+    <text x="55" y="100" font-size="12" fill="#163a63" font-family="Arial">a</text>
+    <text x="150" y="100" font-size="12" fill="#163a63" font-family="Arial">a</text>
+    <text x="105" y="185" font-size="12" fill="#163a63" font-family="Arial">a</text>
+    <circle cx="110" cy="170" r="2" fill="#1f5a91"/>
+    <circle cx="20" cy="170" r="2" fill="#1f5a91"/>
+    <circle cx="200" cy="170" r="2" fill="#1f5a91"/>
+  </svg>
+</div>
+
+<div class="task">
+  <div class="task-head">
+    <div class="task-title">Zadanie 1</div>
+    <div class="points">2 pkt</div>
+  </div>
+  <p>Bok trójkąta równobocznego ma długość a = √48 cm. Najpierw wyłącz czynnik przed pierwiastek, a następnie oblicz obwód tego trójkąta. Wynik podaj w najprostszej postaci.</p>
+  <div class="answer-space"></div>
+</div>
+
+<div class="task">
+  <div class="task-head">
+    <div class="task-title">Zadanie 2</div>
+    <div class="points">2 pkt</div>
+  </div>
+  <p>Obwód trójkąta równobocznego wynosi 15√2 cm. Oblicz długość boku tego trójkąta.</p>
+  <div class="answer-space"></div>
+</div>
+
+<div class="task">
+  <div class="task-head">
+    <div class="task-title">Zadanie 3</div>
+    <div class="points">3 pkt</div>
+  </div>
+  <p>Bok trójkąta równobocznego ma długość a = 2√6 cm. Oblicz wysokość tego trójkąta. Wynik doprowadź do najprostszej postaci (pomnóż pierwiastki i wyłącz czynnik, jeśli to możliwe).</p>
+  <div class="answer-space tall"></div>
+</div>
+
+<div class="task">
+  <div class="task-head">
+    <div class="task-title">Zadanie 4</div>
+    <div class="points">3 pkt</div>
+  </div>
+  <p>Bok trójkąta równobocznego ma długość a = 3/4 dm. Oblicz pole tego trójkąta. Wynik podaj w postaci ułamka z pierwiastkiem, w dm².</p>
+  <div class="answer-space tall"></div>
+</div>
+
+<div class="task">
+  <div class="task-head">
+    <div class="task-title">Zadanie 5</div>
+    <div class="points">4 pkt</div>
+  </div>
+  <p>Wysokość trójkąta równobocznego jest równa h = (3√3)/4 cm. Oblicz długość boku, a następnie obwód tego trójkąta.</p>
+  <div class="answer-space tall"></div>
+</div>
+
+<div class="task">
+  <div class="task-head">
+    <div class="task-title">Zadanie 6 (zadanie tekstowe)</div>
+    <div class="points">4 pkt</div>
+  </div>
+  <p>Proporczyk klasowy ma kształt trójkąta równobocznego o boku a = 5/6 m. Brzeg proporczyka trzeba obszyć taśmą, a całą powierzchnię wyciąć z materiału.</p>
+  <p><strong>a)</strong> Ile metrów taśmy potrzeba na obszycie brzegu?<br>
+     <strong>b)</strong> Jakiej powierzchni materiału potrzeba? Wynik podaj w postaci ułamka z pierwiastkiem oraz w przybliżeniu do 0,01 m² (przyjmij √3 ≈ 1,73).</p>
+  <div class="answer-space tall"></div>
+</div>
+
+<div class="footer-note">Powodzenia! Pamiętaj o jednostkach w odpowiedziach i o doprowadzaniu wyników do najprostszej postaci.</div>
+
+<div class="page-break"></div>
+
+<h1>Klucz odpowiedzi</h1>
+<div class="subtitle">Trójkąt równoboczny — obwód, pole, wysokość (poziom rozszerzony)</div>
+
+<div class="formulas">
+  <h2>Wzory, które warto znać</h2>
+  <table>
+    <tr>
+      <td class="sym">Obwód:</td>
+      <td>L = 3a</td>
+      <td class="sym">Wysokość:</td>
+      <td>h = (a·√3) / 2</td>
+      <td class="sym">Pole:</td>
+      <td>P = (a²·√3) / 4</td>
+    </tr>
+  </table>
+  <div style="margin-top:2mm; font-size:9.5pt; color:#4c596b;">
+    gdzie <em>a</em> oznacza długość boku trójkąta.
+  </div>
+</div>
+
+<div class="hint">
+  <strong>Przypomnienie przed rozwiązywaniem:</strong>
+  √a · √b = √(a·b) &nbsp;·&nbsp; wyłączanie czynnika przed pierwiastek, np. √48 = √(16·3) = 4√3 &nbsp;·&nbsp;
+  (p/q)² = p²/q² &nbsp;·&nbsp; ułamek mnożymy przez liczbę, mnożąc licznik (mianownik zostaje bez zmian), np. (3/4)·2 = 6/4 = 3/2.
+</div>
+
+<div class="key-item">
+  <span class="num">Zadanie 1.</span>
+  <span class="step">a = √48 = √(16·3) = 4√3 cm.</span>
+  <span class="step">L = 3a = 3 · 4√3 = <strong>12√3 cm</strong> (≈ 20,78 cm).</span>
+</div>
+
+<div class="key-item">
+  <span class="num">Zadanie 2.</span>
+  <span class="step">a = L / 3 = 15√2 / 3 = <strong>5√2 cm</strong> (≈ 7,07 cm).</span>
+</div>
+
+<div class="key-item">
+  <span class="num">Zadanie 3.</span>
+  <span class="step">h = (a·√3)/2 = (2√6 · √3)/2 = 2√18 / 2 = √18 = √(9·2) = <strong>3√2 cm</strong> (≈ 4,24 cm).</span>
+</div>
+
+<div class="key-item">
+  <span class="num">Zadanie 4.</span>
+  <span class="step">P = (a²·√3)/4 = ((3/4)²·√3)/4 = (9/16 · √3)/4 = <strong>9√3/64 dm²</strong> (≈ 0,24 dm²).</span>
+</div>
+
+<div class="key-item">
+  <span class="num">Zadanie 5.</span>
+  <span class="step">h = (a·√3)/2 ⟹ a = 2h/√3 = 2·(3√3/4) / √3 = (6√3/4)/√3 = 6/4 = <strong>3/2 cm</strong> (1,5 cm).</span>
+  <span class="step">L = 3a = 3 · 3/2 = <strong>9/2 cm</strong> (4,5 cm).</span>
+</div>
+
+<div class="key-item">
+  <span class="num">Zadanie 6.</span>
+  <span class="step">a) L = 3a = 3 · 5/6 = 15/6 = <strong>5/2 m</strong> (2,5 m) taśmy.</span>
+  <span class="step">b) P = (a²·√3)/4 = ((5/6)²·√3)/4 = (25/36 · √3)/4 = 25√3/144 m² ≈ 25 · 1,73 / 144 ≈ <strong>0,30 m²</strong>.</span>
+</div>
+
+<div class="footer-note">Klucz do samodzielnego sprawdzenia lub do wykorzystania przez nauczyciela.</div>
+
+</body>
+</html>
