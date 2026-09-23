@@ -17,6 +17,7 @@ to dokument nadrzędny dla konwencji wspólnych wszystkim tematom.
 ```
 historia/kuratorium/   arkusze treningowe do Wojewódzkiego Konkursu Przedmiotowego z Historii
 matematyka/trojkaty/   arkusze zadań z geometrii trójkątów
+matematyka/trojkaty2/  twierdzenie Pitagorasa: trójkąty, romb, kwadrat
 chemia/wodorotlenki/   sprawdziany z chemii (klasa 8): wodorotlenki
 AGENTS.md              konwencje wspólne całemu repozytorium (dla ludzi i agentów)
 ```
@@ -47,6 +48,14 @@ generowania PDF co w `historia/kuratorium/`.
 
 Zacznij od [`matematyka/trojkaty/WYMAGANIA.md`](matematyka/trojkaty/WYMAGANIA.md) — poziom
 trudności, struktura arkusza, konwencje.
+
+### `matematyka/trojkaty2/`
+
+Test z zastosowań twierdzenia Pitagorasa (trójkąty prostokątne, równoramienne, równoboczne,
+romb, kwadrat) dla klasy 8 — forma wzorowana na przysłanym arkuszu, wartości zmienione;
+osobny klucz z rozwiązaniami krok po kroku.
+
+Zacznij od [`matematyka/trojkaty2/WYMAGANIA.md`](matematyka/trojkaty2/WYMAGANIA.md).
 
 ### `chemia/wodorotlenki/`
 

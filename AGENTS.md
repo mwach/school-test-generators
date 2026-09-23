@@ -10,6 +10,7 @@ w całości — jest krótka i oszczędza powtarzania tych samych ustaleń w ka�
 ```
 historia/kuratorium/   Wojewódzki Konkurs Przedmiotowy z Historii
 matematyka/trojkaty/   geometria trójkątów (klasy 7–8)
+matematyka/trojkaty2/  twierdzenie Pitagorasa (klasa 8)
 chemia/wodorotlenki/   sprawdziany z chemii, klasa 8 — wodorotlenki
 ```
 

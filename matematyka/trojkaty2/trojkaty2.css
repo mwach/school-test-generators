@@ -1,0 +1,63 @@
+/* Wspólny styl arkusza i klucza z tematu matematyka/trojkaty2 */
+@page { size: A4; margin: 13mm 15mm 13mm; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 11pt; line-height: 1.38;
+}
+h1, h2, p { margin-top: 0; }
+h1 { font-size: 18pt; color: #163a63; margin-bottom: 1.5mm; }
+h2 { font-size: 13pt; color: #163a63; margin: 4mm 0 2mm; }
+.subtitle { color: #4c596b; font-size: 10.2pt; margin-bottom: 4mm; }
+.meta {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 8mm;
+  padding: 3.5mm 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 5mm;
+  font-size: 10pt;
+}
+.line { border-bottom: 1px solid #172033; min-width: 45mm; display: inline-block; }
+.task {
+  border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+  border-radius: 2px; padding: 3mm 5mm 3.5mm; margin: 0 0 4mm;
+  break-inside: avoid;
+}
+.task-head { display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 1.5mm; }
+.task-title { font-weight: 700; color: #163a63; }
+.points { white-space: nowrap; font-weight: 700; color: #9a5a00; font-size: 9.5pt; }
+.task p { margin-bottom: 1.5mm; }
+.task p.cmd { font-weight: 700; }
+.figs { display: flex; justify-content: space-around; align-items: flex-end; gap: 4mm; margin: 2mm 0; }
+.fig { text-align: center; }
+.fig svg { display: block; margin: 0 auto; }
+.grid-space {
+  height: 30mm; margin-top: 2mm; border: 1px solid #c3ccd6;
+  background-image:
+    linear-gradient(to right, #d5dce4 1px, transparent 1px),
+    linear-gradient(to bottom, #d5dce4 1px, transparent 1px);
+  background-size: 5mm 5mm;
+}
+.grid-space.s { height: 20mm; }
+.grid-space.l { height: 40mm; }
+.choices { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1mm 6mm; margin: 1.5mm 0 0 2mm; }
+.sq { white-space: nowrap; }
+.sq .rad { border-top: 1px solid currentColor; padding: 0 1px; margin-left: 1px; }
+table.t { border-collapse: collapse; width: 100%; margin-top: 1.5mm; font-size: 10.5pt; }
+table.t th, table.t td { border: 1px solid #7d8a99; padding: 2mm 2.5mm; text-align: center; vertical-align: middle; }
+table.t th { background: #eef5fb; color: #163a63; font-weight: 700; }
+table.t td.fill { height: 10mm; }
+table.ab td { text-align: left; }
+table.ab td.c { text-align: center; font-weight: 700; width: 11mm; }
+table.ab td.mid { text-align: center; width: 28mm; }
+.page-break { break-before: page; }
+
+/* klucz */
+.formulas { padding: 3.5mm 5mm; background: #f6f3ed; border: 1px solid #d8cdb9; margin-bottom: 4mm; font-size: 10.2pt; }
+.formulas h2 { margin-top: 0; font-size: 12pt; }
+.formulas ul { margin: 0; padding-left: 5mm; }
+.key-item { margin-bottom: 3.5mm; break-inside: avoid; }
+.key-item .num { font-weight: 700; color: #163a63; }
+.key-item .pk { color: #9a5a00; font-weight: 700; font-size: 9.5pt; }
+.key-item .step { display: block; margin: 0.6mm 0 0.6mm 4mm; }
+.key-item .ans { font-weight: 700; }
+.accept { color: #4c596b; font-size: 9.5pt; }
+.sources { font-size: 9pt; }
+.sources li { margin-bottom: 0.8mm; }
