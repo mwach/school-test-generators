@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Historia – etap szkolny – wariant M</title>
+  <style>
+    @page { size: A4; margin: 14mm 14mm 16mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+      font-size: 10.4pt; line-height: 1.28;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.08; margin-bottom: 5mm; color: #163a63; }
+    h2 { font-size: 15pt; color: #163a63; margin: 0 0 4mm; }
+    h3 { font-size: 11.4pt; margin: 0; color: #163a63; }
+    .cover {
+      min-height: 255mm; border: 2.2px solid #1f5a91; padding: 15mm 14mm;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { color: #9a5a00; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; }
+    .subtitle { font-size: 15pt; font-weight: 700; margin-bottom: 9mm; }
+    .meta {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm;
+      padding: 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 7mm;
+    }
+    .meta strong { color: #163a63; }
+    .code { border-bottom: 1px solid #172033; min-width: 55mm; display: inline-block; }
+    .notice { margin-top: auto; font-size: 9.2pt; color: #4c596b; }
+    .page-break { break-before: page; }
+    .instructions { padding: 5mm 6mm; background: #f6f3ed; border: 1px solid #d8cdb9; margin-bottom: 6mm; }
+    .instructions ol { margin: 2mm 0 0 6mm; padding-left: 4mm; }
+    .task {
+      border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+      border-radius: 2px; padding: 3mm 4mm; margin: 0 0 4mm;
+      break-inside: avoid;
+    }
+    .task-head {
+      display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 2mm;
+    }
+    .points { white-space: nowrap; font-weight: 700; color: #9a5a00; }
+    .lead { font-weight: 700; }
+    .source { font-size: 8.4pt; color: #5c6878; margin: 2mm 0; }
+    table { width: 100%; border-collapse: collapse; margin: 2mm 0; }
+    th, td { border: 1px solid #8090a2; padding: 2.2mm; vertical-align: top; }
+    th { background: #eaf1f7; color: #163a63; text-align: left; }
+    .compact th, .compact td { padding: 1.1mm 1.7mm; }
+    .choices { columns: 3; column-gap: 6mm; margin: 1.5mm 0; }
+    .choices.two { columns: 2; }
+    .choices div { break-inside: avoid; margin-bottom: 1mm; }
+    .shortline { display: inline-block; border-bottom: 1px dotted #566273; min-width: 30mm; height: 5mm; }
+    .answer-space { border-bottom: 1px dotted #566273; min-height: 7mm; margin-top: 1.2mm; }
+    .quote {
+      background: #f7f8fa; border-left: 4px solid #9a5a00; padding: 3mm 4mm;
+      font-family: Georgia, serif; font-size: 10.2pt; margin: 3mm 0;
+    }
+    .quote p { margin: 0 0 2mm; }
+    .quote p:last-child { margin-bottom: 0; }
+    .svg-wrap { border: 1px solid #c5ced8; background: #fbfcfd; padding: 1.5mm; margin: 2mm 0; text-align: center; }
+    .map-image { display: block; margin: 0 auto; width: 100%; max-width: 152mm; height: auto; }
+    .art-image { display: block; margin: 0 auto; width: 100%; max-width: 118mm; height: auto; }
+    .ramka {
+      border: 1px dashed #9a5a00; background: #fdfaf4; padding: 2mm 3mm; margin: 2mm 0;
+      font-weight: 700; text-align: center; letter-spacing: .4px;
+    }
+    .q { margin: 0 0 1.2mm; }
+    .opts { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6mm 6mm; margin: 0 0 2mm 5mm; }
+    .small { font-size: 9pt; }
+    .muted { color: #5c6878; }
+    .krzyzowka { width: auto; margin: 2mm auto; border-collapse: collapse; }
+    .krzyzowka td {
+      width: 6.5mm; height: 6.5mm; border: 1px solid #66748a; padding: 0;
+      text-align: center; font-weight: 700;
+    }
+    .krzyzowka td.numer {
+      width: 7mm; border: none; text-align: right; padding-right: 1.5mm; font-weight: 400;
+    }
+    .krzyzowka td.pusta { border: none; }
+    .krzyzowka td.haslo { background: #f5e3c8; }
+    .card td { height: 8mm; }
+    .card .wide { height: 14mm; }
+    .footer-note { font-size: 8.5pt; color: #606b79; border-top: 1px solid #c7cfd8; padding-top: 2mm; }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="eyebrow">Arkusz treningowy • wariant M</div>
+    <h1>Wojewódzki Konkurs Przedmiotowy z Historii</h1>
+    <div class="subtitle">Etap I – szkolny</div>
+    <div class="meta">
+      <div><strong>Zakres:</strong> działy I–XVII podstawy programowej</div>
+      <div><strong>Czas pracy:</strong> 60 minut</div>
+      <div><strong>Liczba zadań:</strong> 19</div>
+      <div><strong>Maksymalna liczba punktów:</strong> 100</div>
+      <div><strong>Wariant:</strong> M</div>
+      <div><strong>Ziarno wariantu:</strong> 2026-09-23-M</div>
+    </div>
+    <p><strong>KOD UCZNIA:</strong> <span class="code">&nbsp;</span></p>
+    <div class="instructions">
+      <h2>Instrukcja dla ucznia</h2>
+      <ol>
+        <li>Sprawdź, czy arkusz zawiera 19 zadań i kartę odpowiedzi.</li>
+        <li>Czytaj uważnie polecenia. Odpowiadaj wyłącznie w miejscach do tego przeznaczonych.</li>
+        <li>Jeśli polecenie nie stanowi inaczej, za każdy poprawnie uzupełniony element
+          otrzymujesz 1 punkt.</li>
+        <li>W zadaniach P/F wpisz <strong>P</strong> (prawda) albo <strong>F</strong> (fałsz).</li>
+        <li>Nie używaj korektora ani urządzeń elektronicznych.</li>
+        <li>Pracuj samodzielnie. Na rozwiązanie testu masz 60 minut.</li>
+      </ol>
+    </div>
+    <p class="notice">
+      Materiał autorski do ćwiczeń, opracowany na podstawie regulaminu szczegółowego oraz
+      archiwalnych arkuszy etapu szkolnego Kujawsko-Pomorskiego Kuratora Oświaty
+      z lat 2018/2019–2025/2026. Nie jest oficjalnym arkuszem konkursowym żadnego z kuratoriów.
+    </p>
+  </section>
+
+  <section class="page-break">
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie I. Pompeje</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań dotyczących Pompejów. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. Pompeje zostały zniszczone przez wybuch Wezuwiusza w I w. n.e.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Miasto zalała lawa, która doszczętnie przetopiła jego mury i budynki.</td><td></td></tr>
+        <tr><td>3. W czasie erupcji zginął rzymski uczony i dowódca floty Pliniusz Starszy, autor
+          „Historii naturalnej”.</td><td></td></tr>
+        <tr><td>4. Dzięki zasypaniu miasta zachowały się w nim malowidła ścienne, mozaiki i napisy
+          na murach domów.</td><td></td></tr>
+        <tr><td>5. Pierwsze wykopaliska archeologiczne w Pompejach rozpoczęto dopiero w XX w.</td><td></td></tr>
+        <tr><td>6. W chwili katastrofy Pompeje były miastem rzymskiej prowincji Galii.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie II. Rzym w relacji Tacyta</h3><span class="points">0–4 p.</span></div>
+      <div class="quote">
+        <p>„Ani jednak pomoc ludzka, ani szczodrość władcy, ani przebłagiwanie bogów nie mogły
+          usunąć hańbiącej pogłoski, że pożar wzniecono na rozkaz. Aby więc zdławić tę pogłoskę,
+          [...] podstawił winowajców i ukarał najbardziej wyszukanymi karami tych, których
+          — znienawidzonych za ich występki — lud nazywał [...]. Twórca tej nazwy, Chrystus, za
+          panowania Tyberiusza został skazany na śmierć przez prokuratora Poncjusza Piłata.”</p>
+      </div>
+      <p class="source">Tacyt, <i>Roczniki</i> (<i>Annales</i>) XV, 44 — fragment, przekład własny
+        z łaciny; pominięcia oznaczono [...].</p>
+      <p class="lead">Na podstawie tekstu i własnej wiedzy wykonaj polecenia.</p>
+      <p>1. Podaj imię cesarza, o którym mowa w tekście. <span class="shortline"></span></p>
+      <p>2. Podaj, jakie wydarzenie z 64 r. n.e. opisuje autor. <span class="shortline"></span></p>
+      <p>3. Podaj, jak lud nazywał ukaranych. <span class="shortline"></span></p>
+      <p>4. Wyjaśnij na podstawie tekstu, dlaczego cesarz obarczył winą tę grupę.</p>
+      <div class="answer-space"></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie III. Hunowie i Attyla</h3><span class="points">0–3 p.</span></div>
+      <p class="lead">Wybierz jedną poprawną odpowiedź. Wpisz jej literę.</p>
+      <p class="q">1. Hunowie przybyli do Europy z:</p>
+      <div class="opts"><div>A. Afryki Północnej</div><div>B. stepów Azji</div>
+        <div>C. Skandynawii</div><div>D. Półwyspu Arabskiego</div></div>
+      <p class="q">2. W 451 r. Rzymianie wraz z Wizygotami pod wodzą Aecjusza powstrzymali Attylę w bitwie:</p>
+      <div class="opts"><div>A. na Polach Katalaunijskich</div><div>B. pod Adrianopolem</div>
+        <div>C. pod Poitiers</div><div>D. w Lesie Teutoburskim</div></div>
+      <p class="q">3. W 452 r. Attyla, który najechał Italię, zawrócił po rozmowach z:</p>
+      <div class="opts"><div>A. cesarzem Justynianem</div><div>B. królem Teodorykiem</div>
+        <div>C. Karolem Młotem</div><div>D. papieżem Leonem I</div></div>
+    </div>
+
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IV. Otton I i odnowienie cesarstwa</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>W 955 r. król niemiecki Otton I pokonał koczowniczy lud <span class="shortline"></span>
+        <strong>(1)</strong>, który od kilkudziesięciu lat łupił ziemie Europy Zachodniej. Bitwę
+        stoczono nad rzeką Lech w pobliżu Augsburga i nazwano ją bitwą na
+        <span class="shortline"></span> <strong>(2)</strong>. Kilka lat później, w
+        <span class="shortline"></span> <strong>(3)</strong> r., Otton I został koronowany na
+        cesarza w <span class="shortline"></span> <strong>(4)</strong>, odnawiając godność cesarską
+        na Zachodzie. Państwo, na którego czele stanęli jego następcy, nazwano później
+        <span class="shortline"></span> <strong>(5)</strong> (podaj pełną nazwę).</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie V. Tkanina z Bayeux</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Obejrzyj fragment zabytku i wykonaj polecenia.</p>
+      <div class="svg-wrap">
+        <img class="art-image" src="../assets/bayeux_smierc_harolda.jpg"
+             alt="Fragment haftowanej tkaniny ze sceną bitwy: wojownicy z tarczami, jeździec i padający żołnierz; nad sceną łaciński napis HAROLD REX INTERFECTUS EST">
+      </div>
+      <p class="source">Tkanina z Bayeux, scena 57, XI w., Musée de la Tapisserie de Bayeux;
+        fot. Myrabella, domena publiczna (Wikimedia Commons).</p>
+      <p>1. Odczytaj z łacińskiego napisu imię i tytuł władcy, którego śmierć przedstawiono.
+        <span class="shortline"></span></p>
+      <p>2. Podaj nazwę bitwy przedstawionej w tej scenie. <span class="shortline"></span></p>
+      <p>3. Podaj rok tej bitwy. <span class="shortline"></span></p>
+      <p>4. Podaj imię i przydomek zwycięzcy bitwy. <span class="shortline"></span></p>
+      <p>5. Podaj, jaką techniką wykonano ten zabytek (czym różni się od obrazu malowanego).
+        <span class="shortline"></span></p>
+      <p>6. Tkanina powstała najpewniej kilka–kilkanaście lat po bitwie, prawdopodobnie na
+        zamówienie biskupa Odona z Bayeux, przyrodniego brata zwycięzcy. Wyjaśnij, dlaczego
+        z tego powodu trzeba ostrożnie korzystać z niej jako ze źródła do dziejów konfliktu.</p>
+      <div class="answer-space"></div>
+    </div>
+
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VI. Nauka i kultura świata islamu</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Do każdego opisu dopasuj właściwe hasło. Wpisz litery A–F. Jedno hasło jest
+        zbędne.</p>
+      <div class="choices">
+        <div><strong>A</strong> – Alhambra</div>
+        <div><strong>B</strong> – Awerroes (Ibn Ruszd)</div>
+        <div><strong>C</strong> – Damaszek</div>
+        <div><strong>D</strong> – al-Chwarizmi</div>
+        <div><strong>E</strong> – Bagdad</div>
+        <div><strong>F</strong> – Awicenna (Ibn Sina)</div>
+      </div>
+      <table class="compact">
+        <tr><td>1. Lekarz i filozof, autor „Kanonu medycyny” — podręcznika, z którego korzystano na
+          uniwersytetach europejskich przez kilka stuleci.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Matematyk, od którego przydomka pochodzi słowo „algorytm”, a od tytułu jego
+          dzieła — słowo „algebra”.</td><td></td></tr>
+        <tr><td>3. Pałac i twierdza władców muzułmańskich w Grenadzie, słynąca z bogatych
+          dekoracji ornamentalnych (arabesek).</td><td></td></tr>
+        <tr><td>4. Stolica kalifatu Abbasydów, w której działał „Dom Mądrości” — ośrodek
+          tłumaczenia dzieł greckich uczonych na język arabski.</td><td></td></tr>
+        <tr><td>5. Filozof z Kordoby, komentator dzieł Arystotelesa, którego prace wpłynęły na
+          średniowieczną filozofię chrześcijańską.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VII. Obrona grodu w 1109 roku</h3><span class="points">0–5 p.</span></div>
+      <div class="quote">
+        <p>W 1109 r. król niemiecki najechał Śląsk. Żądał od księcia polskiego, by przyjął z
+          powrotem wygnanego brata i oddał mu we władanie część kraju. Obrońcy grodu nad Odrą,
+          prosząc o rozejm, wydali najeźdźcy zakładników — także dzieci. Gdy mimo to nie zgodzili
+          się poddać, król kazał przywiązać zakładników do machin oblężniczych, sądząc, że obrońcy
+          nie odważą się do nich strzelać. Obrońcy jednak nie ustąpili i gród się obronił.</p>
+      </div>
+      <p class="source">Opis na podstawie średniowiecznej kroniki, tekst streszczony
+        i uwspółcześniony.</p>
+      <p class="lead">Na podstawie tekstu i własnej wiedzy wykonaj polecenia.</p>
+      <p>1. Podaj imię i numer króla niemieckiego, który najechał Polskę.
+        <span class="shortline"></span></p>
+      <p>2. Podaj imię i przydomek księcia polskiego, przeciw któremu skierowany był najazd.
+        <span class="shortline"></span></p>
+      <p>3. Podaj imię wygnanego brata tego księcia. <span class="shortline"></span></p>
+      <p>4. Podaj nazwę obleganego grodu nad Odrą. <span class="shortline"></span></p>
+      <p>5. Podaj, jak nazywamy autora kroniki opisującej te wydarzenia, oraz w jakim języku
+        ją napisał. <span class="shortline"></span></p>
+    </div>
+
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VIII. Średniowieczne uniwersytety</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Na mapie oznaczono numerami sześć miast, w których w średniowieczu powstały
+        uniwersytety. Do każdego opisu dopasuj numer miasta z mapy.</p>
+      <div class="svg-wrap">
+        <img class="map-image" src="../assets/uniwersytety_wariant_M.svg"
+             alt="Mapa Europy Zachodniej i Środkowej z sześcioma miastami oznaczonymi numerami od 1 do 6">
+      </div>
+      <p class="source">Mapa bazowa: Natural Earth 1:50 mln, domena publiczna (CC0),
+        <a href="https://commons.wikimedia.org/wiki/File:Blank_Map_of_europe.svg">Wikimedia Commons</a>;
+        oznaczenia i opracowanie zadania: własne.</p>
+      <table class="compact">
+        <tr><td>A. Uczelnia uważana za najstarszą w Europie (tradycyjnie 1088 r.), słynąca ze
+          studiów nad prawem rzymskim.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Uniwersytet w stolicy Francji, słynący z teologii; jedno z jego kolegiów,
+          założone w XIII w. przez Roberta de Sorbon, dało później nazwę całej uczelni.</td><td></td></tr>
+        <tr><td>C. Najstarszy uniwersytet w Anglii, działający od XII w.</td><td></td></tr>
+        <tr><td>D. Najstarszy uniwersytet w Europie Środkowej, założony w 1348 r. przez
+          Karola IV Luksemburskiego.</td><td></td></tr>
+        <tr><td>E. Uczelnia założona w 1364 r. przez Kazimierza Wielkiego i odnowiona w 1400 r.
+          przez Władysława Jagiełłę.</td><td></td></tr>
+        <tr><td>F. Uniwersytet założony w 1218 r. przez Alfonsa IX, króla Leónu, jeden z
+          najważniejszych ośrodków nauki na Półwyspie Iberyjskim.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IX. Władysław Łokietek</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Oceń prawdziwość zdań. Wpisz P (prawda) albo F (fałsz).</p>
+      <table class="compact">
+        <tr><td>1. W 1320 r. Władysław Łokietek koronował się na króla Polski w katedrze na
+          Wawelu — jako pierwszy władca koronowany w Krakowie.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Koronacji Łokietka dokonał osobiście papież w Rzymie.</td><td></td></tr>
+        <tr><td>3. Za panowania Łokietka Krzyżacy opanowali Gdańsk (1308 r.) i całe Pomorze
+          Gdańskie.</td><td></td></tr>
+        <tr><td>4. Wyrok sądu papieskiego z 1321 r. sprawił, że Krzyżacy zwrócili Łokietkowi Pomorze
+          Gdańskie.</td><td></td></tr>
+        <tr><td>5. W 1331 r. pod Płowcami wojska Łokietka stoczyły bitwę z Krzyżakami, którzy
+          najechali Kujawy i Wielkopolskę.</td><td></td></tr>
+        <tr><td>6. Synem i następcą Władysława Łokietka był Kazimierz Wielki.</td><td></td></tr>
+      </table>
+    </div>
+
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie X. Reformacja w Anglii</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Zerwanie Henryka VIII z papiestwem w 1534 r. Określ, czy podana informacja
+        jest przyczyną (wpisz P), czy skutkiem (wpisz S) tego wydarzenia.</p>
+      <table class="compact">
+        <tr><td>1. Papież odmówił unieważnienia małżeństwa Henryka VIII z Katarzyną Aragońską.</td><td style="width:16mm"></td></tr>
+        <tr><td>2. Parlament uchwalił akt supremacji, uznający króla za najwyższą głowę Kościoła
+          w Anglii.</td><td></td></tr>
+        <tr><td>3. Klasztory zostały skasowane, a ich majątki przejęła Korona.</td><td></td></tr>
+        <tr><td>4. Król pragnął mieć syna — następcę tronu, a jego żona nie urodziła mu męskiego
+          potomka.</td><td></td></tr>
+        <tr><td>5. Stracono kanclerza Tomasza More’a, który odmówił uznania króla za głowę
+          Kościoła.</td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XI. Bitwy Polski i Rzeczypospolitej</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uzupełnij tabelę. Dla każdej bitwy wpisz literę przeciwnika strony polskiej
+        (A–E; jedna litera może się powtórzyć, jedna jest zbędna) oraz wynik dla strony polskiej:
+        Z (zwycięstwo) albo K (klęska). Za każdy w pełni poprawny wiersz — 1 p.</p>
+      <div class="choices two">
+        <div><strong>A</strong> – Imperium Osmańskie</div>
+        <div><strong>B</strong> – Wielkie Księstwo Moskiewskie</div>
+        <div><strong>C</strong> – zakon krzyżacki</div>
+        <div><strong>D</strong> – Mołdawia</div>
+        <div><strong>E</strong> – Kozacy zaporoscy i Tatarzy krymscy</div>
+      </div>
+      <table class="compact">
+        <tr><th>Bitwa</th><th style="width:30mm">Przeciwnik (A–E)</th><th style="width:30mm">Wynik (Z/K)</th></tr>
+        <tr><td>1. Orsza (1514)</td><td></td><td></td></tr>
+        <tr><td>2. Cecora (1620)</td><td></td><td></td></tr>
+        <tr><td>3. Beresteczko (1651)</td><td></td><td></td></tr>
+        <tr><td>4. Warna (1444)</td><td></td><td></td></tr>
+        <tr><td>5. Obertyn (1531)</td><td></td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XII. Kolonie angielskie w Ameryce Północnej</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Pierwszą stałą osadą angielską w Ameryce Północnej było założone w 1607 r. w Wirginii
+        <span class="shortline"></span> <strong>(1)</strong>. W 1620 r. na statku
+        <span class="shortline"></span> <strong>(2)</strong> przypłynęła grupa purytanów, szukających
+        swobody wyznania; nazwano ich później <span class="shortline"></span> <strong>(3)</strong>.
+        Holendrzy założyli na wyspie Manhattan osadę <span class="shortline"></span>
+        <strong>(4)</strong>, którą w 1664 r. przejęli Anglicy i przemianowali na Nowy Jork.
+        Kolonię <span class="shortline"></span> <strong>(5)</strong> założył w 1681 r. kwakier
+        William Penn.</p>
+    </div>
+
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIII. Dymitriady</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Na przełomie XVI i XVII w. w państwie moskiewskim panował okres zamętu i walk o tron,
+        zwany Wielką <span class="shortline"></span> <strong>(1)</strong>. Wykorzystali to polscy
+        magnaci, popierając w 1604 r. samozwańca <span class="shortline"></span> <strong>(2)</strong>,
+        który podawał się za syna cara Iwana IV Groźnego. Jego żoną i carycą została córka
+        wojewody sandomierskiego, <span class="shortline"></span> <strong>(3)</strong> [imię
+        i nazwisko]. W 1610 r. hetman <span class="shortline"></span> <strong>(4)</strong> [imię
+        i nazwisko] pokonał wojska moskiewsko-szwedzkie pod Kłuszynem, po czym bojarzy obrali
+        carem królewicza <span class="shortline"></span> <strong>(5)</strong> [imię], syna Zygmunta
+        III Wazy. W 1611 r., po blisko dwuletnim oblężeniu, wojska polskie zdobyły twierdzę
+        <span class="shortline"></span> <strong>(6)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIV. Urzędy i instytucje dawnej Rzeczypospolitej</h3><span class="points">0–7 p.</span></div>
+      <p class="lead">Rozwiąż krzyżówkę. Litery w zaznaczonych polach, czytane z góry na dół,
+        utworzą hasło. Wpisz hasło i wyjaśnij jego znaczenie.</p>
+      <table class="krzyzowka">
+        <tr><td class="numer">1.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="haslo"></td><td></td><td></td><td></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td></tr>
+        <tr><td class="numer">2.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td class="numer">3.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="pusta"></td></tr>
+        <tr><td class="numer">4.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="pusta"></td></tr>
+        <tr><td class="numer">5.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="haslo"></td><td></td><td></td><td></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td></tr>
+        <tr><td class="numer">6.</td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td><td></td><td></td><td></td><td></td><td class="haslo"></td><td></td><td></td><td></td><td></td><td class="pusta"></td><td class="pusta"></td><td class="pusta"></td></tr>
+      </table>
+      <table class="compact">
+        <tr><td>1. Zgromadzenie trzech stanów sejmujących — króla, senatu i izby poselskiej;
+          najwyższy organ ustawodawczy Rzeczypospolitej.</td></tr>
+        <tr><td>2. Najwyższy sąd apelacyjny dla szlachty, ustanowiony dla Korony za panowania
+          Stefana Batorego.</td></tr>
+        <tr><td>3. Urzędnik kierujący kancelarią królewską i strzegący pieczęci państwowej; urząd ten
+          pełnił m.in. Jan Zamoyski.</td></tr>
+        <tr><td>4. Urzędnik królewski zarządzający dobrami królewskimi (królewszczyznami)
+          i sprawujący sądy w grodzie.</td></tr>
+        <tr><td>5. Uchwała sejmu w dawnej Rzeczypospolitej; tym słowem nazwano też ustawę
+          uchwaloną 3 maja 1791 r.</td></tr>
+        <tr><td>6. Urzędnik ziemski, pierwotnie zarządca grodu, od XVI w. zasiadający w senacie
+          (niżej od wojewody).</td></tr>
+      </table>
+      <p>Hasło: <span class="shortline" style="min-width:45mm"></span></p>
+      <p>Wyjaśnienie hasła: <span class="shortline" style="min-width:120mm"></span></p>
+    </div>
+
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XV. Władysław IV Waza</h3><span class="points">0–7 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Władysław IV, syn <span class="shortline"></span> <strong>(1)</strong> [imię i numer],
+        został obrany królem w 1632 r. Zaraz potem wybuchła wojna z państwem moskiewskim o ziemie
+        utracone w poprzedniej wojnie, nazwana od oblężonej twierdzy wojną
+        <span class="shortline"></span> <strong>(2)</strong>. Zakończył ją w 1634 r. pokój zawarty w
+        <span class="shortline"></span> <strong>(3)</strong>, w którym Władysław zrzekł się tytułu
+        <span class="shortline"></span> <strong>(4)</strong>. W 1635 r. rozejmem w
+        <span class="shortline"></span> <strong>(5)</strong> przedłużono rozejm ze Szwecją. Król był
+        zwolennikiem pokoju religijnego — w 1645 r. zwołał do <span class="shortline"></span>
+        <strong>(6)</strong> rozmowy katolików z protestantami, zwane colloquium charitativum.
+        W 1644 r. przed Zamkiem Królewskim w Warszawie wzniesiono z jego fundacji pomnik ojca
+        w formie <span class="shortline"></span> <strong>(7)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVI. Ugoda hadziacka</h3><span class="points">0–5 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>W 1658 r. hetman kozacki <span class="shortline"></span> <strong>(1)</strong> [imię
+        i nazwisko] zawarł z Rzecząpospolitą ugodę w <span class="shortline"></span>
+        <strong>(2)</strong>. Przewidywała ona utworzenie z województw kijowskiego, bracławskiego
+        i czernihowskiego <span class="shortline"></span> <strong>(3)</strong>, które miało stać się
+        trzecim, równorzędnym członem państwa obok Korony i Wielkiego Księstwa Litewskiego.
+        Rzeczpospolita Obojga Narodów miała się więc przekształcić w Rzeczpospolitą
+        <span class="shortline"></span> <strong>(4)</strong>. Ugoda nie weszła w życie, a na mocy
+        rozejmu zawartego w 1667 r. w <span class="shortline"></span> <strong>(5)</strong> ziemie na
+        lewym brzegu Dniepru przypadły Rosji.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVII. Stanisław Leszczyński</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Wybierz jedną poprawną odpowiedź. Wpisz jej literę.</p>
+      <p class="q">1. W 1704 r. Stanisław Leszczyński został obrany królem Polski dzięki poparciu:</p>
+      <div class="opts"><div>A. cara Piotra I</div><div>B. króla Szwecji Karola XII</div>
+        <div>C. cesarza Józefa I</div><div>D. króla Prus Fryderyka I</div></div>
+      <p class="q">2. Po klęsce Szwedów pod Połtawą (1709) na tron polski powrócił:</p>
+      <div class="opts"><div>A. August II Mocny</div><div>B. Jan III Sobieski</div>
+        <div>C. Karol XII</div><div>D. Michał Korybut Wiśniowiecki</div></div>
+      <p class="q">3. Ponowny wybór Leszczyńskiego w 1733 r. wywołał wojnę o sukcesję polską, w której
+        Rosja poparła kandydaturę:</p>
+      <div class="opts"><div>A. Stanisława Poniatowskiego</div><div>B. Michała Wiśniowieckiego</div>
+        <div>C. Jakuba Sobieskiego</div><div>D. Fryderyka Augusta, syna Augusta II</div></div>
+      <p class="q">4. Po zakończeniu wojny Leszczyński otrzymał dożywotnio księstwo:</p>
+      <div class="opts"><div>A. Kurlandii</div><div>B. Prus Książęcych</div>
+        <div>C. Lotaryngii</div><div>D. Sabaudii</div></div>
+    </div>
+
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVIII. Stanisław Konarski</h3><span class="points">0–6 p.</span></div>
+      <p class="lead">Uzupełnij tekst. W każdą lukę wpisz właściwe określenie.</p>
+      <p>Stanisław Konarski (1700–1773) był członkiem zakonu <span class="shortline"></span>
+        <strong>(1)</strong>. Zasłynął jako reformator szkolnictwa — w 1740 r. założył w Warszawie
+        szkołę dla synów szlacheckich i magnackich, zwaną <span class="shortline"></span>
+        <strong>(2)</strong>. Wcześniej opracował i wydał pierwsze tomy zbioru praw Rzeczypospolitej,
+        zwanego po łacinie <span class="shortline"></span> <strong>(3)</strong>, którego inicjatorem
+        był biskup Józef Andrzej <span class="shortline"></span> <strong>(4)</strong> — ten sam, który
+        wraz z bratem otworzył w 1747 r. w Warszawie jedną z pierwszych w Europie bibliotek
+        publicznych. W dziele „O skutecznym rad sposobie” Konarski dowodził szkodliwości zasady
+        <span class="shortline"></span> <strong>(5)</strong> (nazwa łacińska), pozwalającej jednemu
+        posłowi zerwać sejm. Kontynuacją jego dzieła była powołana w 1773 r.
+        <span class="shortline"></span> <strong>(6)</strong>.</p>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIX. Od Legnicy do Torunia — chronologia</h3><span class="points">0–4 p.</span></div>
+      <p class="lead">Uporządkuj wydarzenia chronologicznie. Wpisz cyfry od 1 (najwcześniejsze)
+        do 6 (najpóźniejsze).</p>
+      <table class="compact">
+        <tr><td>A. Tumult toruński i wyrok na władze protestanckiego Torunia.</td><td style="width:16mm"></td></tr>
+        <tr><td>B. Unia brzeska — powstanie Kościoła unickiego (greckokatolickiego).</td><td></td></tr>
+        <tr><td>C. Bitwa pod Legnicą z Mongołami i śmierć Henryka Pobożnego.</td><td></td></tr>
+        <tr><td>D. Traktaty welawsko-bydgoskie — zniesienie zależności lennej Prus Książęcych
+          od Polski.</td><td></td></tr>
+        <tr><td>E. Pokój kaliski z zakonem krzyżackim.</td><td></td></tr>
+        <tr><td>F. Wydanie drukiem statutu Jana Łaskiego — zbioru praw Królestwa Polskiego.</td><td></td></tr>
+      </table>
+      <p class="small muted">Punktacja: 4 p. – wszystkie wydarzenia na właściwych miejscach;
+        3 p. – cztery; 2 p. – trzy; 1 p. – dwa; 0 p. – mniej.</p>
+    </div>
+
+  </section>
+
+  <section class="page-break">
+    <h2>Karta odpowiedzi — wariant M</h2>
+    <p class="small muted">Kod ucznia: <span class="code">&nbsp;</span></p>
+    <table class="card compact">
+      <tr><th style="width:44mm">Zadanie</th><th>Odpowiedzi</th><th style="width:20mm">Punkty</th></tr>
+      <tr><td>I. Pompeje</td><td>1 …… 2 …… 3 …… 4 …… 5 …… 6 ……</td><td></td></tr>
+      <tr><td>II. Rzym w relacji Tacyta</td><td class="wide"></td><td></td></tr>
+      <tr><td>III. Hunowie i Attyla</td><td>1 …… 2 …… 3 ……</td><td></td></tr>
+      <tr><td>IV. Otton I</td><td class="wide"></td><td></td></tr>
+      <tr><td>V. Tkanina z Bayeux</td><td class="wide"></td><td></td></tr>
+      <tr><td>VI. Nauka świata islamu</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>VII. Obrona grodu 1109</td><td class="wide"></td><td></td></tr>
+      <tr><td>VIII. Uniwersytety</td><td>A …… B …… C …… D …… E …… F ……</td><td></td></tr>
+      <tr><td>IX. Władysław Łokietek</td><td>1 …… 2 …… 3 …… 4 …… 5 …… 6 ……</td><td></td></tr>
+      <tr><td>X. Reformacja w Anglii</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>XI. Bitwy</td><td>1 …… 2 …… 3 …… 4 …… 5 ……</td><td></td></tr>
+      <tr><td>XII. Kolonie angielskie</td><td class="wide"></td><td></td></tr>
+      <tr><td>XIII. Dymitriady</td><td class="wide"></td><td></td></tr>
+      <tr><td>XIV. Krzyżówka</td><td class="wide"></td><td></td></tr>
+      <tr><td>XV. Władysław IV</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVI. Ugoda hadziacka</td><td class="wide"></td><td></td></tr>
+      <tr><td>XVII. Stanisław Leszczyński</td><td>1 …… 2 …… 3 …… 4 ……</td><td></td></tr>
+      <tr><td>XVIII. Stanisław Konarski</td><td class="wide"></td><td></td></tr>
+      <tr><td>XIX. Chronologia</td><td>A …… B …… C …… D …… E …… F ……</td><td></td></tr>
+      <tr><td><strong>Razem</strong></td><td></td><td><strong>/ 100</strong></td></tr>
+    </table>
+    <p class="footer-note">Arkusz treningowy, wariant M, ziarno 2026-09-23-M. Materiał autorski,
+      nie jest oficjalnym arkuszem żadnego kuratorium.</p>
+  </section>
+</body>
+</html>

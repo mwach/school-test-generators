@@ -126,16 +126,17 @@ def buduj(kadr, punkty, wyjscie, podpis, legenda='miejsce oznaczone numerem',
 
 
 if __name__ == '__main__':
-    # Wariant J, zadanie — trzy unie polsko-litewskie (Krewo 1385, Horodlo 1413, Lublin 1569)
-    # plus stolice obu panstw dla orientacji. Numery celowo nie ida w kolejnosci opisow A-E.
+    # Wariant M, zadanie VIII — średniowieczne uniwersytety Europy (konfiguracje map
+    # wcześniejszych wariantów są w historii git). Numery celowo nie idą w kolejności opisów A-F.
     PUNKTY = [
-        (22.5684, 51.2465, '1', (-24, -6)),   # Lublin   -> opis C
-        (25.2797, 54.6872, '2', (0, -18)),    # Wilno    -> opis D
-        (19.9450, 50.0647, '3', (-26, 6)),    # Krakow   -> opis E
-        (26.0500, 54.2667, '4', (24, 4)),     # Krewo    -> opis A
-        (24.0011, 50.8886, '5', (22, 10)),    # Horodlo  -> opis B
+        (19.9383, 50.0614, '1', (0, -20)),    # Krakow    -> opis E
+        (-5.6635, 40.9701, '2', (0, -20)),    # Salamanka -> opis F
+        (2.3522, 48.8566, '3', (0, -20)),     # Paryz     -> opis B
+        (14.4208, 50.0880, '4', (0, -20)),    # Praga     -> opis D
+        (11.3426, 44.4949, '5', (-22, 8)),    # Bolonia   -> opis A
+        (-1.2577, 51.7520, '6', (-24, 6)),    # Oksford   -> opis C
     ]
-    buduj(kadr=(860, 1140, 300, 340), punkty=PUNKTY,
-          wyjscie=str(BAZA.parent / 'unie_polsko_litewskie_wariant_J.svg'),
-          podpis='Mapa konturowa ziem polskich i litewskich z pięcioma miejscami związanymi z uniami polsko-litewskimi',
-          legenda='miejsce oznaczone numerem')
+    buduj(kadr=(310, 1290, 720, 510), punkty=PUNKTY,
+          wyjscie=str(BAZA.parent / 'uniwersytety_wariant_M.svg'),
+          podpis='Mapa konturowa Europy Zachodniej i Środkowej z sześcioma miastami uniwersyteckimi oznaczonymi numerami',
+          legenda='miasto oznaczone numerem')

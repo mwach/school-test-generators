@@ -914,6 +914,36 @@ ikonograficznego, co samo w sobie wzbogaca zadanie o pytanie odróżniające cha
 Krzyżówka w zadaniu IX stosuje też skorygowaną konwencję z wariantu I: liczba komórek w wierszu
 równa się dokładnie długości hasła, bez komórek wypełniających ponad tę długość.
 
+- `output/test_szkolny_wariant_M.pdf` — 19 zadań, 100 p., ziarno `2026-09-23-M`, 12 stron;
+  `output/klucz_odpowiedzi_wariant_M.pdf` — 8 stron.
+
+Tematy wykorzystane w wariancie M (użyte ponownie liczą się do limitu 30% powtórzeń): Pompeje,
+Neron i pożar Rzymu w relacji Tacyta (przekład własny z łaciny), Hunowie i Attyla, Otton I
+i bitwa na Lechowym Polu, tkanina z Bayeux (Hastings 1066), nauka i kultura świata islamu
+(Awicenna, al-Chwarizmi, Awerroes), obrona Głogowa 1109, mapa średniowiecznych uniwersytetów,
+Władysław Łokietek, reformacja w Anglii (Henryk VIII), bitwy XV–XVII w. w tabeli
+przeciwnik/wynik (Orsza, Cecora, Beresteczko, Warna, Obertyn), kolonie angielskie w Ameryce,
+dymitriady, krzyżówka o urzędach z hasłem STATUT, Władysław IV Waza, ugoda hadziacka,
+Stanisław Leszczyński, Stanisław Konarski, chronologia 1241–1724. Powtórzeń są 4 na 19 zadań
+(21%): tkanina z Bayeux (Normanowie w E), reformacja w Anglii (G), bitwy (B, K), Leszczyński
+(czasy saskie w D, H). Bank zewnętrzny nie został użyty — decyzja zamawiającego dopuszcza
+30–50% zapożyczeń, ale ich nie wymaga.
+
+Trzy obserwacje z wariantu M:
+
+1. **Źródła weryfikacyjne w kluczu muszą mieć aktywne, konkretne adresy.** Wariant L
+   podawał w wykazie źródeł dla części zadań ogólniki („opracowania historii…”), co nie spełnia § 8. W M każde
+   zadanie ma co najmniej jedno źródło instytucjonalne (ZPE, Muzeum Historii Polski/dzieje.pl,
+   muzea, archiwa państwowe, uczelnie) oprócz Wikipedii. Wszystkie adresy sprawdzono `curl`
+   (kod 200); strony odrzucające zapytania automatyczne (Britannica, dziejesejmu.pl,
+   sztetl.org.pl — kod 403) pominięto, bo nie dało się ich potwierdzić.
+2. **Ręczne podziały stron (`<section class="page-break">` co 2–3 zadania) marnują miejsce.**
+   Pierwszy render M miał 13 stron z prawie pustymi stronami; po zostawieniu podziałów tylko po
+   okładce i przed kartą odpowiedzi (`break-inside: avoid` na `.task` wystarcza) arkusz ma 12.
+3. **Wykryto błąd w wariancie L (zadanie XV):** „Rozejm w Altmarku (Sztumskiej Wsi)” — to dwa
+   różne rozejmy: Altmark (Stary Targ) 1629 i Sztumska Wieś 1635. Wariant L wymaga korekty,
+   jeśli będzie używany.
+
 ### Liczenie stron PDF — tylko przez PDFKit
 
 Zliczanie wystąpień `/Type /Page` w surowych bajtach PDF **jest zawodne** i zaniża wynik, gdy Chrome
