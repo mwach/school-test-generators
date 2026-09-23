@@ -10,9 +10,10 @@ w całości — jest krótka i oszczędza powtarzania tych samych ustaleń w ka�
 ```
 historia/kuratorium/   Wojewódzki Konkurs Przedmiotowy z Historii
 matematyka/trojkaty/   geometria trójkątów (klasy 7–8)
+chemia/wodorotlenki/   sprawdziany z chemii, klasa 8 — wodorotlenki
 ```
 
-- Każdy temat = osobny podkatalog pod `historia/` albo `matematyka/` (albo pod kolejnym
+- Każdy temat = osobny podkatalog pod `historia/`, `matematyka/` albo `chemia/` (albo pod kolejnym
   przedmiotem, gdy się pojawi). Nowy temat nie miesza plików z istniejącym.
 - Każdy podkatalog tematu ma własną notatkę ustaleń (`README.md` albo `WYMAGANIA.md`) —
   **przeczytaj ją przed pierwszą zmianą w danym temacie**. Zawiera ustalenia wypracowane
@@ -22,7 +23,7 @@ matematyka/trojkaty/   geometria trójkątów (klasy 7–8)
   `SPECYFIKACJA_GENEROWANIA_TESTOW_HISTORYCZNYCH.md` — ze szczegółowymi wymaganiami
   merytorycznymi. Dla tego tematu to on rozstrzyga w razie wątpliwości, nie README.
 - Gotowe narzędzia (`tools/`) leżą dziś fizycznie w `historia/kuratorium/tools/`, ale
-  `pdf_to_png.swift` jest współdzielone (matematyka odwołuje się do niego względną ścieżką
+  `pdf_to_png.swift` jest współdzielone (matematyka i chemia odwołują się do niego względną ścieżką
   `../../historia/kuratorium/tools/pdf_to_png.swift`). Jeśli narzędzie przestaje być
   specyficzne dla jednego tematu, rozważ przeniesienie go do wspólnego katalogu na poziomie
   repo zamiast kopiowania.

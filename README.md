@@ -17,6 +17,7 @@ to dokument nadrzędny dla konwencji wspólnych wszystkim tematom.
 ```
 historia/kuratorium/   arkusze treningowe do Wojewódzkiego Konkursu Przedmiotowego z Historii
 matematyka/trojkaty/   arkusze zadań z geometrii trójkątów
+chemia/wodorotlenki/   sprawdziany z chemii (klasa 8): wodorotlenki
 AGENTS.md              konwencje wspólne całemu repozytorium (dla ludzi i agentów)
 ```
 
@@ -47,6 +48,15 @@ generowania PDF co w `historia/kuratorium/`.
 Zacznij od [`matematyka/trojkaty/WYMAGANIA.md`](matematyka/trojkaty/WYMAGANIA.md) — poziom
 trudności, struktura arkusza, konwencje.
 
+### `chemia/wodorotlenki/`
+
+Sprawdziany z chemii dla klasy 8 SP z działu „Wodorotlenki” (nazewnictwo, wzory sumaryczne,
+reakcje otrzymywania, właściwości NaOH i KOH, dysocjacja) — grupy A i B, osobny klucz ze źródłami,
+kontroler punktacji i losowości klucza (`tools/sprawdz_zestaw.py`).
+
+Zacznij od [`chemia/wodorotlenki/WYMAGANIA.md`](chemia/wodorotlenki/WYMAGANIA.md) — zakres,
+bank związków, rozstrzygnięte konwencje, historia zestawów.
+
 ## Wspólny pipeline generowania PDF
 
 Każdy temat trzyma się tego samego wzorca: HTML jest formatem roboczym, PDF jest jedynym
@@ -60,7 +70,7 @@ dopuszczalnym formatem dostawy (arkusz + osobny klucz). Render przez Chrome head
 ```
 
 Podgląd stron PDF do weryfikacji składu (Swift + PDFKit, tylko macOS) —
-narzędzie leży w `historia/kuratorium/tools/`, jest współdzielone przez oba tematy:
+narzędzie leży w `historia/kuratorium/tools/`, jest współdzielone przez wszystkie tematy:
 
 ```bash
 swift historia/kuratorium/tools/pdf_to_png.swift <sciezka>/plik.pdf <folder_podgladu> 0.9
