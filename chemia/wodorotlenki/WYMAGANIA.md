@@ -133,6 +133,17 @@ odstępy w `wodorotlenki.css` dobrane tak, żeby 7 zadań zmieściło się na dw
 | Zestaw | Data | Grupa A | Grupa B |
 |---|---|---|---|
 | 1 | 2026-09-23 | nazwy: Pb(OH)₂, CsOH, Fe(OH)₃, AgOH, Al(OH)₃, Sr(OH)₂; wzory: Mg, Li, Mn(II), Ca, Fe(II), BaOH→Ba(OH)₂; reakcje: Na, CaO, Li₂O, Ba, K₂O, Li; właściwości otwarte: KOH; dysocjacja: KOH, LiOH, CsOH, Ba(OH)₂ | nazwy: Fe(OH)₂, LiOH, Mn(OH)₂, Mg(OH)₂, Ba(OH)₂, Ca(OH)₂; wzory: Al, Cs, Pb(II), Sr, Ag(I), Fe(OH)₂→Fe(OH)₃; reakcje: K, BaO, Na₂O, Ca, Li₂O, Na; właściwości otwarte: NaOH; dysocjacja: NaOH, CsOH, Sr(OH)₂, Ca(OH)₂ |
+| 2 | 2026-09-26 | nazwy: Mn(OH)₂, Ba(OH)₂, KOH, Fe(OH)₂, Sr(OH)₂, Mg(OH)₂; wzory: Fe(III), Cs, Ag(I), Al, Pb(II), CaOH→Ca(OH)₂; reakcje: K, Ba, CaO, Na₂O, Li, Li₂O; właściwości otwarte: NaOH; dysocjacja: LiOH, Sr(OH)₂, NaOH, Ba(OH)₂ | nazwy: AgOH, Fe(OH)₃, NaOH, CsOH, Pb(OH)₂, Ca(OH)₂; wzory: Sr, Mn(II), Mg, Fe(II), Li, AlOH₃→Al(OH)₃; reakcje: Na, Ca, BaO, K₂O, K, Li₂O; właściwości otwarte: KOH; dysocjacja: Ba(OH)₂, KOH, Ca(OH)₂, CsOH |
 
 Klucze zamknięte zestawu 1: A — P/F `PFFPPF`, 5.1 B, 5.2 D; B — P/F `PPFPFF`, 5.1 C, 5.2 A.
+Klucze zamknięte zestawu 2: A — P/F `FPPFFP`, 5.1 C, 5.2 A; B — P/F `FFPPFP`, 5.1 D, 5.2 B.
 W kolejnym zestawie użyj innych układów.
+
+Zasady doboru związków przyjęte od zestawu 2 (stosuj dalej):
+- **Żadne zadanie nie może podpowiadać odpowiedzi do innego w tej samej grupie** — wzór,
+  o który pytamy w zad. 2 (a także poprawny wzór z 2f), nie może pojawić się nigdzie indziej
+  w arkuszu tej grupy (nazwy w zad. 1, gotowe produkty w zad. 3, dysocjacja w zad. 7).
+  W zad. 3 zostawiaj lukę na produkt, jeśli ten produkt jest odpowiedzią z zad. 2.
+- Bank dozwolonych reakcji jest mały (5 metali, 5 tlenków), więc powtórzenia reakcji między
+  zestawami są nieuniknione — zmieniaj wtedy pozycję w zadaniu i miejsce luki (metal /
+  woda / produkt / tlenek), zamiast powtarzać to samo równanie w tym samym miejscu.
