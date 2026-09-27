@@ -134,9 +134,11 @@ odstępy w `wodorotlenki.css` dobrane tak, żeby 7 zadań zmieściło się na dw
 |---|---|---|---|
 | 1 | 2026-09-23 | nazwy: Pb(OH)₂, CsOH, Fe(OH)₃, AgOH, Al(OH)₃, Sr(OH)₂; wzory: Mg, Li, Mn(II), Ca, Fe(II), BaOH→Ba(OH)₂; reakcje: Na, CaO, Li₂O, Ba, K₂O, Li; właściwości otwarte: KOH; dysocjacja: KOH, LiOH, CsOH, Ba(OH)₂ | nazwy: Fe(OH)₂, LiOH, Mn(OH)₂, Mg(OH)₂, Ba(OH)₂, Ca(OH)₂; wzory: Al, Cs, Pb(II), Sr, Ag(I), Fe(OH)₂→Fe(OH)₃; reakcje: K, BaO, Na₂O, Ca, Li₂O, Na; właściwości otwarte: NaOH; dysocjacja: NaOH, CsOH, Sr(OH)₂, Ca(OH)₂ |
 | 2 | 2026-09-26 | nazwy: Mn(OH)₂, Ba(OH)₂, KOH, Fe(OH)₂, Sr(OH)₂, Mg(OH)₂; wzory: Fe(III), Cs, Ag(I), Al, Pb(II), CaOH→Ca(OH)₂; reakcje: K, Ba, CaO, Na₂O, Li, Li₂O; właściwości otwarte: NaOH; dysocjacja: LiOH, Sr(OH)₂, NaOH, Ba(OH)₂ | nazwy: AgOH, Fe(OH)₃, NaOH, CsOH, Pb(OH)₂, Ca(OH)₂; wzory: Sr, Mn(II), Mg, Fe(II), Li, AlOH₃→Al(OH)₃; reakcje: Na, Ca, BaO, K₂O, K, Li₂O; właściwości otwarte: KOH; dysocjacja: Ba(OH)₂, KOH, Ca(OH)₂, CsOH |
+| 3 | 2026-09-27 | nazwy: Ca(OH)₂, Fe(OH)₃, LiOH, Mn(OH)₂, KOH, Al(OH)₃; wzory: Pb(II), Sr, Fe(II), Cs, Ag(I), MgOH→Mg(OH)₂; reakcje: Li, BaO, K₂O, Ca, Na, Na₂O; właściwości otwarte: KOH; dysocjacja: KOH, Ca(OH)₂, LiOH, Ba(OH)₂ | nazwy: Pb(OH)₂, Sr(OH)₂, Fe(OH)₂, CsOH, Mg(OH)₂, Ba(OH)₂; wzory: Fe(III), Ca, Al, Mn(II), Ag(I), Li(OH)₂→LiOH; reakcje: K, CaO, Li, Ba, Na₂O, K₂O; właściwości otwarte: NaOH; dysocjacja: NaOH, Ba(OH)₂, CsOH, Sr(OH)₂ |
 
 Klucze zamknięte zestawu 1: A — P/F `PFFPPF`, 5.1 B, 5.2 D; B — P/F `PPFPFF`, 5.1 C, 5.2 A.
 Klucze zamknięte zestawu 2: A — P/F `FPPFFP`, 5.1 C, 5.2 A; B — P/F `FFPPFP`, 5.1 D, 5.2 B.
+Klucze zamknięte zestawu 3: A — P/F `PFPPFF`, 5.1 D, 5.2 B; B — P/F `FPFFPP`, 5.1 A, 5.2 C.
 W kolejnym zestawie użyj innych układów.
 
 Zasady doboru związków przyjęte od zestawu 2 (stosuj dalej):
