@@ -8,3 +8,6 @@ __pycache__/
 
 # Podglądy stron renderowane przy weryfikacji PDF-ów — odtwarzalne z arkuszy HTML
 historia/kuratorium/output/**/*.png
+
+# Skany podręczników (prawa autorskie) — tylko lokalnie, nie do repo
+fizyka/**/IMG_*.jpeg

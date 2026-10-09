@@ -12,7 +12,8 @@ i [`../../matematyka/trojkaty2/WYMAGANIA.md`](../../matematyka/trojkaty2/WYMAGAN
   „I. Drgania”): `IMG_2395.jpeg` (s. 13, rozdz. 1), `IMG_2396.jpeg` (s. 14, rozdz. 1),
   `IMG_2397.jpeg` (s. 22, rozdz. 2), `IMG_2398.jpeg` (s. 28, rozdz. 3). Leżą lokalnie w tym
   katalogu; to materiał chroniony prawem autorskim — **wzorzec formy, nie bank pytań**, i
-  (jak w `matematyka/trojkaty2`) **nie są commitowane do repo** (commit tylko plików testów).
+  (jak w `matematyka/trojkaty2`) **nie są w repo** (decyzja zamawiającego 2026-10-09: skanów nie dodawać; wpis w `.gitignore`).
+  Baza pytań `baza_pytan.json` jest już samodzielna — skany nie są potrzebne do generowania.
 - Tytuły rozdziałów 2 i 3 wywnioskowane z treści (na skanach ich nie widać):
   1. Drgania wokół nas, 2. Okres i częstotliwość drgań, 3. Energia w ruchu drgającym.
 - **Baza pytań** `baza_pytan.json` jest tworzona przy pierwszym uruchomieniu
@@ -68,7 +69,7 @@ i [`../../matematyka/trojkaty2/WYMAGANIA.md`](../../matematyka/trojkaty2/WYMAGAN
 ## Pliki i nazewnictwo
 
 ```
-IMG_2395–2398.jpeg                 skany podręcznika (wzorzec formy; lokalnie, nie commitować)
+IMG_2395–2398.jpeg                 skany podręcznika (wzorzec formy; tylko lokalnie, w .gitignore)
 WYMAGANIA.md                       ta notatka
 drgania.css                        wspólny styl arkuszy i kart odpowiedzi
 baza_pytan.json                    baza zadań (tworzona przy 1. uruchomieniu)

@@ -97,6 +97,9 @@ dodawaniu nowych skryptów, żeby pipeline pozostał zero-dependency.
   zgodnie z dotychczasową historią (`git log --oneline`).
 - Nie twórz commitów bez wyraźnej prośby użytkownika; nie używaj `--force`, `--amend` na
   opublikowanych commitach ani innych operacji niszczących bez wyraźnej zgody.
+- **Skany/zdjęcia podręczników (`IMG_*.jpeg` itp.) nie trafiają do repo** — to materiał chroniony
+  prawem autorskim; leżą lokalnie obok tematu i są w `.gitignore` (dziś: `fizyka/**/IMG_*.jpeg`).
+  Nie dodawaj ich do commitów; w `WYMAGANIA.md` tematu opisz tylko, z czego korzystano.
 - Pliki robocze (podglądy PNG, cache Pythona) są wyłączone przez `.gitignore` — nie commituj
   ich ręcznie i nie zdejmuj wpisu z `.gitignore`, żeby je wymusić.
 - Zanim przeniesiesz/zmienisz strukturę katalogów, sprawdź wszystkie odwołania względne w
