@@ -2,15 +2,21 @@
  "rozdzialy": {
   "1": [
    "1-pf",
-   "1-quiz-miska"
+   "1-quiz-miska",
+   "1-quiz-bombka",
+   "1-obl-amplituda"
   ],
   "2": [
    "2-obl-T-na-f",
-   "2-quiz-okres"
+   "2-quiz-okres",
+   "2-pf",
+   "2-obl-metronom"
   ],
   "3": [
    "3-obl-h",
-   "3-quiz-wozek"
+   "3-quiz-wozek",
+   "3-pf",
+   "3-obl-v"
   ]
  },
  "testy": {
@@ -32,6 +38,25 @@
     "3-quiz-wozek": "B2"
    },
    "suma": 10
+  },
+  "2": {
+   "zadania": [
+    "1-quiz-bombka",
+    "1-obl-amplituda",
+    "2-pf",
+    "2-obl-metronom",
+    "3-pf",
+    "3-obl-v"
+   ],
+   "klucz": {
+    "1-quiz-bombka": "A",
+    "1-obl-amplituda": "2,0 cm",
+    "2-pf": "PFPP",
+    "2-obl-metronom": "0,5 Hz",
+    "3-pf": "FPPP",
+    "3-obl-v": "3,0 m/s"
+   },
+   "suma": 12
   }
  }
 }

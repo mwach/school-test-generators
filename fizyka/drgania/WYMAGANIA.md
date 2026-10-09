@@ -97,3 +97,4 @@ Po wygenerowaniu i weryfikacji — commit + push (pamięć użytkownika: bez pyt
 | Test | Data | Zadania (rozdział: id) | Klucz zamknięty |
 |---|---|---|---|
 | 1 | 2026-10-09 | 1: P/F (amplituda, ruch okresowy), quiz miska (najmniejsza prędkość); 2: obliczenia T→f (0,75 s), quiz okres (30 drgań/60 s); 3: obliczenia h z v (2,4 m/s), quiz wózek na sprężynie (B2) | P/F `PFFP`, 2 C, 4 C, 6 B2 |
+| 2 | 2026-10-09 | 1: quiz bombka, obliczenia amplituda z linijki (2,0 cm); 2: P/F (okres, częstotliwość), obliczenia metronom (20 drgań/40 s); 3: P/F (energia), obliczenia v z h (45 cm) | P/F `PFPP`, `FPPP`; 1 A |
