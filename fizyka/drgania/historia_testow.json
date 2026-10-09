@@ -1,0 +1,37 @@
+{
+ "rozdzialy": {
+  "1": [
+   "1-pf",
+   "1-quiz-miska"
+  ],
+  "2": [
+   "2-obl-T-na-f",
+   "2-quiz-okres"
+  ],
+  "3": [
+   "3-obl-h",
+   "3-quiz-wozek"
+  ]
+ },
+ "testy": {
+  "1": {
+   "zadania": [
+    "1-pf",
+    "1-quiz-miska",
+    "2-obl-T-na-f",
+    "2-quiz-okres",
+    "3-obl-h",
+    "3-quiz-wozek"
+   ],
+   "klucz": {
+    "1-pf": "PFFP",
+    "1-quiz-miska": "C",
+    "2-obl-T-na-f": "1,3 Hz",
+    "2-quiz-okres": "C",
+    "3-obl-h": "0,29 m",
+    "3-quiz-wozek": "B2"
+   },
+   "suma": 10
+  }
+ }
+}

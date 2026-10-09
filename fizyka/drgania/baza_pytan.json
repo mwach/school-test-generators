@@ -1,0 +1,940 @@
+{
+ "wersja": 1,
+ "opis": "Baza zadań z działu Drgania zbudowana na podstawie skanów podręcznika (fizyka/drgania/IMG_2395–2398.jpeg).",
+ "rozdzialy": {
+  "1": "Drgania wokół nas",
+  "2": "Okres i częstotliwość drgań",
+  "3": "Energia w ruchu drgającym"
+ },
+ "zadania": [
+  {
+   "id": "1-pf",
+   "rozdzial": 1,
+   "typ": "pf",
+   "pkt": 2,
+   "polecenie": "Oceń prawdziwość zdań. Zakreśl <b>P</b>, jeśli zdanie jest prawdziwe, albo <b>F</b> — jeśli jest fałszywe.",
+   "pula": [
+    {
+     "id": "1p01",
+     "tekst": "Ruch drgający to ruch, w którym ciało porusza się ze stałą prędkością tam i z powrotem po tym samym torze.",
+     "prawda": false,
+     "uzasadnienie": "Prędkość ciała drgającego się zmienia (w skrajnych położeniach jest równa zero).",
+     "zrodlo": "skan s. 13 zad.1.1",
+     "grupa": "predkosc"
+    },
+    {
+     "id": "1p02",
+     "tekst": "Podczas ruchu ciała drgającego jego prędkość w położeniu równowagi jest największa.",
+     "prawda": true,
+     "uzasadnienie": "W położeniu równowagi ciało ma największą energię kinetyczną, więc największą prędkość.",
+     "zrodlo": "skan s. 13 zad.1.2",
+     "grupa": "predkosc"
+    },
+    {
+     "id": "1p03",
+     "tekst": "Kolejka linowa poruszająca się tam i z powrotem między dwiema stacjami ruchem jednostajnym jest przykładem ciała w ruchu drgającym.",
+     "prawda": false,
+     "uzasadnienie": "Ruch drgający wymaga wychylenia z położenia równowagi i ruchu okresowego ze zmienną prędkością; kolejka porusza się ruchem jednostajnym.",
+     "zrodlo": "skan s. 13 zad.1.3"
+    },
+    {
+     "id": "1p04",
+     "tekst": "Amplituda drgań to odległość pomiędzy dwoma skrajnymi położeniami ciała drgającego.",
+     "prawda": false,
+     "uzasadnienie": "Amplituda to odległość od położenia równowagi do jednego ze skrajnych wychyleń; odległość między skrajami to 2A.",
+     "zrodlo": "skan s. 13 zad.1.4",
+     "grupa": "amplituda"
+    },
+    {
+     "id": "1p05",
+     "tekst": "Amplituda drgań to odległość od położenia równowagi do jednego ze skrajnych wychyleń ciała drgającego.",
+     "prawda": true,
+     "uzasadnienie": "Definicja amplitudy drgań.",
+     "zrodlo": "skan s. 13 (Podsumujmy!)",
+     "grupa": "amplituda"
+    },
+    {
+     "id": "1p06",
+     "tekst": "W skrajnych położeniach ciała drgającego jego prędkość chwilowo jest równa zero.",
+     "prawda": true,
+     "uzasadnienie": "W skrajnym położeniu ciało zmienia kierunek ruchu, więc na chwilę się zatrzymuje.",
+     "zrodlo": "skan s. 14 zad.5 (v = 0)"
+    },
+    {
+     "id": "1p07",
+     "tekst": "Położenie równowagi to położenie, w którym znajduje się nieruchome ciało przed rozpoczęciem ruchu drgającego.",
+     "prawda": true,
+     "uzasadnienie": "Definicja położenia równowagi.",
+     "zrodlo": "skan s. 13 (Podsumujmy!)"
+    },
+    {
+     "id": "1p08",
+     "tekst": "Ruch drgający jest ruchem okresowym — powtarza się w jednakowych odstępach czasu.",
+     "prawda": true,
+     "uzasadnienie": "Ruch drgający to ruch okresowy (cykliczny).",
+     "zrodlo": "skan s. 13 (Podsumujmy!)"
+    },
+    {
+     "id": "1p09",
+     "tekst": "Ciało drgające porusza się po tym samym torze tam i z powrotem.",
+     "prawda": true,
+     "uzasadnienie": "Tak opisuje ruch drgający podręcznik.",
+     "zrodlo": "skan s. 13 (Podsumujmy!)",
+     "grupa": "predkosc"
+    },
+    {
+     "id": "1p10",
+     "tekst": "Huśtawka, struna gitary i ciężarek na sprężynie to przykłady ciał wykonujących ruch drgający.",
+     "prawda": true,
+     "uzasadnienie": "Każde z tych ciał porusza się okresowo wokół położenia równowagi.",
+     "zrodlo": "autorskie, w stylu skanów"
+    },
+    {
+     "id": "1p11",
+     "tekst": "Ciało drgające porusza się zawsze po okręgu.",
+     "prawda": false,
+     "uzasadnienie": "Ruch drgający odbywa się tam i z powrotem po tym samym torze (np. odcinek), nie po okręgu.",
+     "zrodlo": "autorskie, w stylu skanów"
+    },
+    {
+     "id": "1p12",
+     "tekst": "Wahadło wychylono o {x} cm od położenia równowagi i puszczono. Amplituda jego drgań wynosi {x2} cm.",
+     "prawda": false,
+     "uzasadnienie": "Amplituda jest równa wychyleniu początkowemu ({x} cm), a nie jego wielokrotności.",
+     "zrodlo": "autorskie, w stylu skanów",
+     "grupa": "amplituda",
+     "param": {
+      "x": [
+       3,
+       4,
+       5,
+       6,
+       8,
+       10
+      ]
+     },
+     "pochodne": [
+      [
+       "x2",
+       "2*x"
+      ]
+     ],
+     "tekst_prawda": "Wahadło wychylono o {x} cm od położenia równowagi i puszczono. Amplituda jego drgań wynosi {x} cm."
+    }
+   ],
+   "zrodlo": "skan s. 13 zad.1"
+  },
+  {
+   "id": "2-pf",
+   "rozdzial": 2,
+   "typ": "pf",
+   "pkt": 2,
+   "polecenie": "Oceń prawdziwość zdań. Zakreśl <b>P</b>, jeśli zdanie jest prawdziwe, albo <b>F</b> — jeśli jest fałszywe.",
+   "pula": [
+    {
+     "id": "2p01",
+     "tekst": "Jednostka okresu jest taka sama jak jednostka czasu.",
+     "prawda": true,
+     "uzasadnienie": "Okres to czas jednego drgania, więc mierzymy go np. w sekundach.",
+     "zrodlo": "skan s. 22 zad.1.1",
+     "grupa": "jednostka_T"
+    },
+    {
+     "id": "2p02",
+     "tekst": "Jeżeli częstotliwość drgań huśtawki jest równa {f} Hz, to okres jej drgań jest równy {f} s.",
+     "prawda": false,
+     "uzasadnienie": "T = 1/f = 1/{f} Hz = {T} s, a nie {f} s.",
+     "zrodlo": "skan s. 22 zad.1.2",
+     "param": {
+      "f": [
+       0.2,
+       0.25,
+       0.5,
+       2,
+       4,
+       5
+      ]
+     },
+     "pochodne": [
+      [
+       "T",
+       "1/f"
+      ]
+     ],
+     "tekst_prawda": "Jeżeli częstotliwość drgań huśtawki jest równa {f} Hz, to okres jej drgań jest równy {T} s."
+    },
+    {
+     "id": "2p03",
+     "tekst": "Częstotliwość drgań możemy wyrażać w kHz.",
+     "prawda": true,
+     "uzasadnienie": "1 kHz = 1000 Hz; kiloherc jest wielokrotnością herca.",
+     "zrodlo": "skan s. 22 zad.1.3"
+    },
+    {
+     "id": "2p04",
+     "tekst": "Spośród dwóch ciał drgających większą częstotliwość ma to, które w tym samym czasie wykonuje więcej drgań.",
+     "prawda": true,
+     "uzasadnienie": "Częstotliwość to liczba drgań w jednostce czasu.",
+     "zrodlo": "skan s. 22 zad.1.4"
+    },
+    {
+     "id": "2p05",
+     "tekst": "Jednostką częstotliwości jest sekunda.",
+     "prawda": false,
+     "uzasadnienie": "Jednostką częstotliwości jest herc (1 Hz = 1/s); sekunda jest jednostką okresu.",
+     "zrodlo": "autorskie, w stylu skanów",
+     "grupa": "jednostka_T"
+    },
+    {
+     "id": "2p06",
+     "tekst": "Im większa częstotliwość drgań ciała, tym krótszy jest okres jego drgań.",
+     "prawda": true,
+     "uzasadnienie": "f = 1/T — wielkości odwrotnie proporcjonalne.",
+     "zrodlo": "autorskie, w stylu skanów",
+     "grupa": "zalezn"
+    },
+    {
+     "id": "2p07",
+     "tekst": "Im większa częstotliwość drgań ciała, tym dłuższy jest okres jego drgań.",
+     "prawda": false,
+     "uzasadnienie": "f = 1/T — im większa częstotliwość, tym krótszy okres.",
+     "zrodlo": "autorskie, w stylu skanów",
+     "grupa": "zalezn"
+    },
+    {
+     "id": "2p08",
+     "tekst": "Ciało, które wykonuje {N} drgań w ciągu {t} s, ma częstotliwość {f} Hz.",
+     "prawda": false,
+     "uzasadnienie": "f = N/t = {N}/{t} s = {fp} Hz.",
+     "zrodlo": "autorskie, w stylu skanów",
+     "param": {
+      "para": [
+       [
+        10,
+        5
+       ],
+       [
+        20,
+        4
+       ],
+       [
+        30,
+        6
+       ],
+       [
+        12,
+        3
+       ],
+       [
+        40,
+        8
+       ],
+       [
+        18,
+        6
+       ]
+      ]
+     },
+     "pochodne": [
+      [
+       "N",
+       "para[0]"
+      ],
+      [
+       "t",
+       "para[1]"
+      ],
+      [
+       "fp",
+       "N/t"
+      ],
+      [
+       "f",
+       "t/N"
+      ]
+     ],
+     "tekst_prawda": "Ciało, które wykonuje {N} drgań w ciągu {t} s, ma częstotliwość {fp} Hz."
+    },
+    {
+     "id": "2p09",
+     "tekst": "Częstotliwość 1 Hz oznacza jedno pełne drganie w ciągu sekundy.",
+     "prawda": true,
+     "uzasadnienie": "1 Hz = 1 drganie na sekundę.",
+     "zrodlo": "autorskie, w stylu skanów"
+    },
+    {
+     "id": "2p10",
+     "tekst": "Okres drgań wyraża się w hercach.",
+     "prawda": false,
+     "uzasadnienie": "Okres jest czasem — wyraża się w sekundach; w hercach wyraża się częstotliwość.",
+     "zrodlo": "autorskie, w stylu skanów",
+     "grupa": "jednostka_T"
+    },
+    {
+     "id": "2p11",
+     "tekst": "Okres drgań to czas potrzebny na wykonanie jednego pełnego drgania.",
+     "prawda": true,
+     "uzasadnienie": "Definicja okresu drgań.",
+     "zrodlo": "skan s. 22 (Podsumujmy!)"
+    },
+    {
+     "id": "2p12",
+     "tekst": "Częstotliwość drgań i okres drgań są związane zależnością f = 1/T.",
+     "prawda": true,
+     "uzasadnienie": "Podstawowa zależność między f i T.",
+     "zrodlo": "skan s. 22 (Podsumujmy!)"
+    }
+   ],
+   "zrodlo": "skan s. 22 zad.1"
+  },
+  {
+   "id": "3-pf",
+   "rozdzial": 3,
+   "typ": "pf",
+   "pkt": 2,
+   "polecenie": "Oceń prawdziwość zdań. Zakreśl <b>P</b>, jeśli zdanie jest prawdziwe, albo <b>F</b> — jeśli jest fałszywe.",
+   "pula": [
+    {
+     "id": "3p01",
+     "tekst": "Do opisu przemian energii w ruchu drgającym odbywającym się bez oporów ruchu można stosować zasadę zachowania energii mechanicznej.",
+     "prawda": true,
+     "uzasadnienie": "Bez oporów energia mechaniczna układu jest stała.",
+     "zrodlo": "skan s. 28 zad.1.1",
+     "grupa": "emech"
+    },
+    {
+     "id": "3p02",
+     "tekst": "Gdy kulka wahadła zbliża się do położenia równowagi, jej energia kinetyczna rośnie.",
+     "prawda": true,
+     "uzasadnienie": "Kulka przyspiesza — energia potencjalna zamienia się w kinetyczną.",
+     "zrodlo": "skan s. 28 zad.1.2",
+     "grupa": "kin"
+    },
+    {
+     "id": "3p03",
+     "tekst": "Gdy kulka wahadła oddala się od położenia równowagi, jej energia potencjalna rośnie.",
+     "prawda": true,
+     "uzasadnienie": "Kulka wznosi się i zwalnia — energia kinetyczna zamienia się w potencjalną.",
+     "zrodlo": "skan s. 28 zad.1.3",
+     "grupa": "pot"
+    },
+    {
+     "id": "3p04",
+     "tekst": "Podczas drgań ciężarka zawieszonego na sprężynie energia potencjalna sprężystości jest stała.",
+     "prawda": false,
+     "uzasadnienie": "Zmienia się wraz ze zmianą długości sprężyny.",
+     "zrodlo": "skan s. 28 zad.1.4"
+    },
+    {
+     "id": "3p05",
+     "tekst": "Gdy kulka wahadła oddala się od położenia równowagi, jej energia kinetyczna rośnie.",
+     "prawda": false,
+     "uzasadnienie": "Kulka zwalnia, więc jej energia kinetyczna maleje.",
+     "zrodlo": "autorskie, w stylu skanów",
+     "grupa": "kin"
+    },
+    {
+     "id": "3p06",
+     "tekst": "W skrajnym położeniu wahadła energia kinetyczna kulki jest największa.",
+     "prawda": false,
+     "uzasadnienie": "W skrajnym położeniu prędkość jest równa zero, więc Ek = 0; największa jest energia potencjalna.",
+     "zrodlo": "autorskie, w stylu skanów",
+     "grupa": "skraj"
+    },
+    {
+     "id": "3p07",
+     "tekst": "W położeniu równowagi energia kinetyczna kulki wahadła jest największa.",
+     "prawda": true,
+     "uzasadnienie": "Tam kulka ma największą prędkość.",
+     "zrodlo": "autorskie, w stylu skanów"
+    },
+    {
+     "id": "3p08",
+     "tekst": "Całkowita energia mechaniczna wahadła poruszającego się bez oporów jest w czasie ruchu stała.",
+     "prawda": true,
+     "uzasadnienie": "Zasada zachowania energii mechanicznej.",
+     "zrodlo": "autorskie, w stylu skanów",
+     "grupa": "emech"
+    },
+    {
+     "id": "3p09",
+     "tekst": "Gdy wózek przymocowany do poziomej sprężyny przechodzi przez położenie równowagi, energia sprężystości sprężyny jest największa.",
+     "prawda": false,
+     "uzasadnienie": "W położeniu równowagi sprężyna nie jest odkształcona — energia sprężystości jest najmniejsza (zero).",
+     "zrodlo": "autorskie, w stylu skanów"
+    },
+    {
+     "id": "3p10",
+     "tekst": "W ruchu drgającym z oporami energia mechaniczna układu maleje, a amplituda drgań się zmniejsza.",
+     "prawda": true,
+     "uzasadnienie": "Część energii zamienia się na energię wewnętrzną (ogrzewanie) — drgania gasną.",
+     "zrodlo": "autorskie, w stylu skanów"
+    },
+    {
+     "id": "3p11",
+     "tekst": "Gdy kulka wahadła zbliża się do skrajnego położenia, jej energia potencjalna maleje.",
+     "prawda": false,
+     "uzasadnienie": "Kulka wznosi się, więc jej energia potencjalna rośnie.",
+     "zrodlo": "autorskie, w stylu skanów",
+     "grupa": "pot"
+    },
+    {
+     "id": "3p12",
+     "tekst": "W skrajnym położeniu wahadła cała jego energia mechaniczna jest energią potencjalną.",
+     "prawda": true,
+     "uzasadnienie": "Prędkość jest równa zero, więc Ek = 0.",
+     "zrodlo": "autorskie, w stylu skanów",
+     "grupa": "skraj"
+    }
+   ],
+   "zrodlo": "skan s. 28 zad.1"
+  },
+  {
+   "id": "1-otw-przyklady",
+   "rozdzial": 1,
+   "typ": "otwarte",
+   "pkt": 2,
+   "polecenie": "Podaj dwa przykłady sytuacji (inne niż huśtawka, wahadło i ciężarek na sprężynie), w których obserwujemy ruch drgający.",
+   "klucz": [
+    "1 pkt — pierwszy poprawny przykład, 1 pkt — drugi poprawny przykład (różny od pierwszego)."
+   ],
+   "odpowiedz": [
+    "Uznajemy np.: struna gitary, membrana głośnika, igła maszyny do szycia, tłok w silniku, skoczek na trampolinie, linijka zamocowana jednym końcem i odchylona, drzewo kołysane wiatrem, dziecko na koniku na sprężynie, kulka w misce.",
+    "Nie uznajemy ruchów jednostajnych (jazda samochodu, kolejka linowa) ani ruchu po okręgu."
+   ],
+   "zrodlo": "skan s. 13 zad.2"
+  },
+  {
+   "id": "1-quiz-miska",
+   "rozdzial": 1,
+   "typ": "quiz_miska",
+   "pkt": 1,
+   "zrodlo": "skan s. 13 zad.3"
+  },
+  {
+   "id": "1-quiz-bombka",
+   "rozdzial": 1,
+   "typ": "quiz",
+   "pkt": 1,
+   "pytanie": "Dziecko wytrąciło z położenia równowagi bombkę choinkową wiszącą na nitce. Czy gdy bombka dotrze ponownie do położenia równowagi (bez uwzględniania oporów), to się zatrzyma?",
+   "opcje": [
+    {
+     "tekst": "Nie, ponieważ w położeniu równowagi ma największą prędkość i dalej porusza się z powodu bezwładności.",
+     "poprawna": true
+    },
+    {
+     "tekst": "Tak, ponieważ w położeniu równowagi jest najniżej i ma tam najmniejszą energię.",
+     "poprawna": false
+    },
+    {
+     "tekst": "Tak, ponieważ wróciła do miejsca, w którym była na początku.",
+     "poprawna": false
+    },
+    {
+     "tekst": "Nie, ponieważ w położeniu równowagi ma największą energię potencjalną.",
+     "poprawna": false
+    }
+   ],
+   "uzasadnienie": "W położeniu równowagi bombka ma największą prędkość (największą energię kinetyczną), więc nie zatrzymuje się, tylko mija je i wychyla się w drugą stronę.",
+   "zrodlo": "skan s. 14 zad.4"
+  },
+  {
+   "id": "1-obl-amplituda",
+   "rozdzial": 1,
+   "typ": "obliczenia",
+   "pkt": 3,
+   "rysunek": "linijka",
+   "param": {
+    "x0": {
+     "od": 12.0,
+     "do": 16.0,
+     "krok": 0.1
+    },
+    "A": {
+     "od": 1.5,
+     "do": 4.5,
+     "krok": 0.1
+    },
+    "kier": [
+     1,
+     -1
+    ]
+   },
+   "pochodne": [
+    [
+     "xk",
+     "round(x0 + kier*A, 1)"
+    ]
+   ],
+   "warunek": "11.0 <= xk <= 19.0",
+   "tekst": "Na ilustracji przedstawiono ciężarek zawieszony na sprężynie, uchwycony w dwóch momentach podczas drgań: w chwili, gdy jego prędkość była równa zero (po lewej), oraz w położeniu równowagi (po prawej). Odczytaj z linijek (w cm) położenia dolnej krawędzi ciężarka i wyznacz amplitudę drgań ciężarka.",
+   "wynik": "A",
+   "jednostka": "cm",
+   "dokladnosc": 1,
+   "rozwiazanie": [
+    "Odczyty: położenie skrajne x = {xk} cm, położenie równowagi x₀ = {x0} cm.",
+    "A = |x − x₀| = |{xk} cm − {x0} cm| = {A} cm."
+   ],
+   "punktacja": [
+    "1 pkt — poprawne odczyty obu położeń (tolerancja ±0,1 cm)",
+    "1 pkt — metoda: amplituda = odległość od położenia równowagi do skrajnego",
+    "1 pkt — poprawny wynik z jednostką"
+   ],
+   "zrodlo": "skan s. 14 zad.5"
+  },
+  {
+   "id": "2-obl-hustawka",
+   "rozdzial": 2,
+   "typ": "obliczenia",
+   "pkt": 2,
+   "param": {
+    "t": [
+     1,
+     1.5,
+     2,
+     2.5,
+     3,
+     4
+    ]
+   },
+   "pochodne": [
+    [
+     "T",
+     "2*t"
+    ]
+   ],
+   "tekst": "Uczniowie zauważyli, że huśtawka mija położenie równowagi dokładnie co {t} s. Ile wynosi okres jej drgań?",
+   "wynik": "T",
+   "jednostka": "s",
+   "rozwiazanie": [
+    "W czasie jednego pełnego drgania huśtawka mija położenie równowagi dwa razy (raz w każdą stronę).",
+    "T = 2 · {t} s = {T} s."
+   ],
+   "punktacja": [
+    "1 pkt — zauważenie, że w jednym okresie są dwa przejścia przez położenie równowagi",
+    "1 pkt — poprawny wynik z jednostką"
+   ],
+   "zrodlo": "skan s. 22 zad.2"
+  },
+  {
+   "id": "2-obl-metronom",
+   "rozdzial": 2,
+   "typ": "obliczenia",
+   "pkt": 2,
+   "param": {
+    "f": [
+     0.5,
+     0.75,
+     1,
+     1.2,
+     1.5,
+     2,
+     2.5
+    ],
+    "tm": [
+     20,
+     40,
+     60,
+     120
+    ]
+   },
+   "pochodne": [
+    [
+     "N",
+     "round(f*tm)"
+    ],
+    [
+     "N2",
+     "2*round(f*tm)"
+    ]
+   ],
+   "warunek": "abs(f*tm - round(f*tm)) < 1e-9",
+   "tekst": "Metronom mechaniczny wykonał w ciągu {tm} s {N} pełnych drgań, czemu towarzyszyło {N2} stuknięć. Oblicz częstotliwość drgań tego metronomu.",
+   "wynik": "f",
+   "jednostka": "Hz",
+   "rozwiazanie": [
+    "Jedno pełne drganie to dwa stuknięcia — do obliczeń bierzemy liczbę drgań.",
+    "f = N / t = {N} / {tm} s = {f} Hz."
+   ],
+   "punktacja": [
+    "1 pkt — poprawna metoda (f = liczba drgań / czas, liczba drgań, nie stuknięć)",
+    "1 pkt — poprawny wynik z jednostką"
+   ],
+   "zrodlo": "skan s. 22 zad.3"
+  },
+  {
+   "id": "2-obl-T-na-f",
+   "rozdzial": 2,
+   "typ": "obliczenia",
+   "pkt": 2,
+   "param": {
+    "obiekt": [
+     "Samochód zabawka drga na sprężynach podtrzymujących jego osie.",
+     "Igła maszyny do szycia porusza się ruchem drgającym.",
+     "Membrana małego głośnika wykonuje drgania.",
+     "Tłok w modelu silnika porusza się ruchem drgającym."
+    ],
+    "T": [
+     0.12,
+     0.16,
+     0.18,
+     0.24,
+     0.28,
+     0.35,
+     0.45,
+     0.6,
+     0.75
+    ]
+   },
+   "pochodne": [
+    [
+     "f",
+     "1/T"
+    ]
+   ],
+   "tekst": "{obiekt} Okres tego ruchu jest równy {T} s. Oblicz częstotliwość drgań. Wynik podaj z dokładnością do dwóch cyfr znaczących.",
+   "wynik": "f",
+   "jednostka": "Hz",
+   "cyfry": 2,
+   "rozwiazanie": [
+    "f = 1/T = 1 / {T} s ≈ {f} Hz."
+   ],
+   "punktacja": [
+    "1 pkt — wzór f = 1/T i podstawienie",
+    "1 pkt — wynik z dokładnością do 2 cyfr znaczących i jednostką"
+   ],
+   "zrodlo": "skan s. 22 zad.4"
+  },
+  {
+   "id": "2-obl-f-na-T",
+   "rozdzial": 2,
+   "typ": "obliczenia",
+   "pkt": 2,
+   "param": {
+    "obiekt": [
+     "ubijaka do gruntu",
+     "membrany głośnika",
+     "wibratora w telefonie",
+     "młota udarowego"
+    ],
+    "f": [
+     20,
+     25,
+     40,
+     45,
+     60,
+     75,
+     80,
+     90,
+     120,
+     150
+    ]
+   },
+   "pochodne": [
+    [
+     "T",
+     "1/f"
+    ]
+   ],
+   "tekst": "Częstotliwość drgań {obiekt} wynosi {f} Hz. Oblicz okres drgań. Wynik podaj z dokładnością do dwóch cyfr znaczących.",
+   "wynik": "T",
+   "jednostka": "s",
+   "cyfry": 2,
+   "rozwiazanie": [
+    "T = 1/f = 1 / {f} Hz ≈ {T} s."
+   ],
+   "punktacja": [
+    "1 pkt — wzór T = 1/f i podstawienie",
+    "1 pkt — wynik z dokładnością do 2 cyfr znaczących i jednostką"
+   ],
+   "zrodlo": "skan s. 22 zad.5"
+  },
+  {
+   "id": "2-quiz-kHz",
+   "rozdzial": 2,
+   "typ": "quiz",
+   "pkt": 1,
+   "param": {
+    "k": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     0.5,
+     1.5,
+     2.5
+    ]
+   },
+   "pochodne": [
+    [
+     "a",
+     "round(k*1000, 6)"
+    ],
+    [
+     "b",
+     "round(k*100, 6)"
+    ],
+    [
+     "c",
+     "round(k/1000, 9)"
+    ],
+    [
+     "d",
+     "round(k*10, 6)"
+    ]
+   ],
+   "pytanie": "Częstotliwość drgań struny wynosi {k} kHz. Ile to herców?",
+   "opcje": [
+    {
+     "tekst": "{a} Hz",
+     "poprawna": true
+    },
+    {
+     "tekst": "{b} Hz",
+     "poprawna": false
+    },
+    {
+     "tekst": "{c} Hz",
+     "poprawna": false
+    },
+    {
+     "tekst": "{d} Hz",
+     "poprawna": false
+    }
+   ],
+   "uzasadnienie": "1 kHz = 1000 Hz, więc {k} kHz = {a} Hz.",
+   "zrodlo": "autorskie, w stylu skanów (s. 22 zad.1.3)"
+  },
+  {
+   "id": "2-quiz-okres",
+   "rozdzial": 2,
+   "typ": "quiz",
+   "pkt": 1,
+   "param": {
+    "para": [
+     [
+      120,
+      60
+     ],
+     [
+      30,
+      60
+     ],
+     [
+      40,
+      10
+     ],
+     [
+      25,
+      50
+     ],
+     [
+      8,
+      2
+     ],
+     [
+      10,
+      20
+     ],
+     [
+      48,
+      12
+     ],
+     [
+      15,
+      60
+     ],
+     [
+      100,
+      25
+     ]
+    ]
+   },
+   "pochodne": [
+    [
+     "N",
+     "para[0]"
+    ],
+    [
+     "tm",
+     "para[1]"
+    ],
+    [
+     "T",
+     "tm/N"
+    ],
+    [
+     "inv",
+     "N/tm"
+    ]
+   ],
+   "pytanie": "Ciało drgające wykonało {N} pełnych drgań w czasie {tm} s. Okres drgań tego ciała jest równy:",
+   "opcje": [
+    {
+     "tekst": "{T} s",
+     "poprawna": true
+    },
+    {
+     "tekst": "{inv} s",
+     "poprawna": false
+    },
+    {
+     "tekst": "{N} s",
+     "poprawna": false
+    },
+    {
+     "tekst": "{tm} s",
+     "poprawna": false
+    }
+   ],
+   "uzasadnienie": "T = t / N = {tm} s / {N} = {T} s. Odpowiedź „{inv} s” to wartość N/t (czyli częstotliwość w hercach), pomylona z okresem.",
+   "zrodlo": "autorskie, w stylu skanów (s. 22)"
+  },
+  {
+   "id": "3-otw-przemiany",
+   "rozdzial": 3,
+   "typ": "otwarte",
+   "pkt": 2,
+   "rysunek": "miska",
+   "warianty": [
+    {
+     "polecenie": "Niewielka kulka porusza się ruchem drgającym na dnie kulistej miski. Opisz, jakie przemiany energii występują podczas ruchu kulki od punktu B do punktu A, a następnie od punktu C do punktu B.",
+     "strzalka1": "B→A",
+     "strzalka2": "C→B"
+    },
+    {
+     "polecenie": "Niewielka kulka porusza się ruchem drgającym na dnie kulistej miski. Opisz, jakie przemiany energii występują podczas ruchu kulki od punktu B do punktu C, a następnie od punktu A do punktu B.",
+     "strzalka1": "B→C",
+     "strzalka2": "A→B"
+    }
+   ],
+   "klucz": [
+    "1 pkt — od B w górę (do skrajnego punktu): energia kinetyczna zamienia się w energię potencjalną (grawitacji).",
+    "1 pkt — od skrajnego punktu do B: energia potencjalna zamienia się w energię kinetyczną."
+   ],
+   "odpowiedz": [
+    "B→A (lub B→C): energia kinetyczna → energia potencjalna.",
+    "C→B (lub A→B): energia potencjalna → energia kinetyczna.",
+    "Uznajemy też wzmiankę, że suma obu energii (energia mechaniczna) jest stała."
+   ],
+   "zrodlo": "skan s. 28 zad.2"
+  },
+  {
+   "id": "3-obl-h",
+   "rozdzial": 3,
+   "typ": "obliczenia",
+   "pkt": 2,
+   "param": {
+    "v": [
+     0.5,
+     0.6,
+     0.7,
+     0.8,
+     1.2,
+     1.5,
+     1.8,
+     2.0,
+     2.4,
+     2.5
+    ]
+   },
+   "pochodne": [
+    [
+     "h",
+     "v**2/(2*9.8)"
+    ]
+   ],
+   "tekst": "Gdy kulka wahadła przechodzi przez położenie równowagi, jej prędkość jest równa {v} m/s. Oblicz, na jaką maksymalną wysokość (ponad położenie równowagi) wzniesie się ta kulka. Przyjmij, że przyspieszenie ziemskie ma wartość 9,8 m/s². Pomiń opory ruchu. Wynik podaj z dokładnością do dwóch cyfr znaczących.",
+   "wynik": "h",
+   "jednostka": "m",
+   "cyfry": 2,
+   "rozwiazanie": [
+    "Z zasady zachowania energii mechanicznej: E_k = E_p, czyli mv²/2 = mgh, stąd h = v²/(2g).",
+    "h = ({v} m/s)² / (2 · 9,8 m/s²) ≈ {h} m."
+   ],
+   "punktacja": [
+    "1 pkt — zapis zasady zachowania energii i wzór na h",
+    "1 pkt — poprawny wynik (2 cyfry znaczące) z jednostką (uznajemy też w cm)"
+   ],
+   "zrodlo": "skan s. 28 zad.3"
+  },
+  {
+   "id": "3-obl-v",
+   "rozdzial": 3,
+   "typ": "obliczenia",
+   "pkt": 2,
+   "param": {
+    "hc": [
+     10,
+     15,
+     20,
+     30,
+     35,
+     40,
+     45,
+     50
+    ]
+   },
+   "pochodne": [
+    [
+     "v",
+     "(2*9.8*hc/100)**0.5"
+    ],
+    [
+     "hm",
+     "hc/100"
+    ]
+   ],
+   "tekst": "Oblicz, jaką prędkość początkową należy nadać siedzisku huśtawki, znajdującemu się w położeniu równowagi, aby wychyliło się tak, że jego maksymalna wysokość wyniesie {hc} cm. Przyjmij, że przyspieszenie ziemskie ma wartość 9,8 m/s². Pomiń opory ruchu. Wynik podaj z dokładnością do dwóch cyfr znaczących.",
+   "wynik": "v",
+   "jednostka": "m/s",
+   "cyfry": 2,
+   "rozwiazanie": [
+    "Z zasady zachowania energii: mv²/2 = mgh, stąd v = √(2gh); h = {hc} cm = {hm} m.",
+    "v = √(2 · 9,8 m/s² · {hm} m) ≈ {v} m/s."
+   ],
+   "punktacja": [
+    "1 pkt — wzór v = √(2gh) i zamiana cm na m",
+    "1 pkt — poprawny wynik (2 cyfry znaczące) z jednostką"
+   ],
+   "zrodlo": "skan s. 28 zad.4"
+  },
+  {
+   "id": "3-quiz-wozek",
+   "rozdzial": 3,
+   "typ": "quiz_dwa",
+   "pkt": 2,
+   "wstep": "Wózek przymocowany do sprężyny porusza się w poziomie ruchem drgającym. Wybierz właściwe dokończenie zdania spośród wariantów <b>A</b> i <b>B</b> oraz jego poprawne uzasadnienie spośród wariantów <b>1</b> i <b>2</b>.",
+   "warianty": [
+    {
+     "zdanie": "Gdy wózek przechodzi przez położenie, w którym jego odległość od położenia równowagi jest największa, energia sprężystości sprężyny jest",
+     "wybor": [
+      "największa,",
+      "najmniejsza,"
+     ],
+     "poprawny_wybor": 0,
+     "powody": [
+      "zmiana długości sprężyny jest największa.",
+      "prędkość wózka jest największa."
+     ],
+     "poprawny_powod": 0
+    },
+    {
+     "zdanie": "Gdy wózek przechodzi przez położenie, w którym jego prędkość jest największa, energia sprężystości sprężyny jest",
+     "wybor": [
+      "najmniejsza,",
+      "największa,"
+     ],
+     "poprawny_wybor": 0,
+     "powody": [
+      "sprężyna nie jest wtedy ani rozciągnięta, ani ściśnięta.",
+      "zmiana długości sprężyny jest największa."
+     ],
+     "poprawny_powod": 0
+    }
+   ],
+   "zrodlo": "skan s. 28 zad.5"
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+/* Wspólny styl testów i kart odpowiedzi z tematu fizyka/drgania */
+@page { size: A4; margin: 11mm 15mm 11mm; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 10.8pt; line-height: 1.38;
+}
+h1, h2, h3, p { margin-top: 0; }
+h1 { font-size: 18pt; color: #163a63; margin-bottom: 1.5mm; }
+h2 { font-size: 13pt; color: #163a63; margin: 5mm 0 2.5mm; }
+.subtitle { color: #4c596b; font-size: 10.2pt; margin-bottom: 4mm; }
+.group-badge {
+  float: right; font-size: 20pt; font-weight: 700; color: #fff; background: #1f5a91;
+  padding: 1mm 5mm; border-radius: 3px; margin-left: 4mm;
+}
+.meta {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 8mm;
+  padding: 3.5mm 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 5mm;
+  font-size: 10pt;
+}
+.line { border-bottom: 1px solid #172033; min-width: 45mm; display: inline-block; }
+.task {
+  border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+  border-radius: 2px; padding: 2.6mm 5mm 3mm; margin: 0 0 3.2mm;
+  break-inside: avoid;
+}
+.task-head { display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 1.5mm; }
+.task-title { font-weight: 700; color: #163a63; }
+.points { white-space: nowrap; font-weight: 700; color: #9a5a00; font-size: 9.5pt; }
+.task p { margin-bottom: 1.5mm; }
+.task p:last-child { margin-bottom: 0; }
+.blank { display: inline-block; min-width: 22mm; border-bottom: 1px solid #566273; height: 1.1em; vertical-align: baseline; }
+.blank.s { min-width: 9mm; }
+.blank.l { min-width: 50mm; }
+.answer-space { border-bottom: 1px dotted #566273; min-height: 7.5mm; }
+.rows { display: grid; grid-template-columns: 1fr 1fr; gap: 1mm 8mm; }
+.rows.one { grid-template-columns: 1fr; }
+.eq { font-size: 11.5pt; margin: 1.7mm 0; white-space: nowrap; }
+.arr {
+  display: inline-block; position: relative; font-size: 7.5pt; line-height: 1;
+  padding: 0 2.2mm 0.6mm 1.6mm; margin: 0 2mm 0 1mm; vertical-align: 0.5em;
+  border-bottom: 1.3px solid #172033;
+}
+.arr::after {
+  content: ""; position: absolute; right: -2px; bottom: -4.2px;
+  border-left: 7px solid #172033; border-top: 3.6px solid transparent; border-bottom: 3.6px solid transparent;
+}
+table.grid { border-collapse: collapse; width: 100%; margin-top: 1.5mm; font-size: 10.3pt; }
+table.grid th, table.grid td { border: 1px solid #9aa8b8; padding: 1.3mm 2.5mm; text-align: left; vertical-align: middle; }
+table.grid th { background: #eef5fb; color: #163a63; }
+table.grid td.pf { width: 11mm; text-align: center; font-weight: 700; }
+table.grid td.num { width: 8mm; text-align: center; }
+table.grid td.fill { height: 9mm; }
+.choices { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5mm 6mm; margin: 1mm 0 1.5mm 3mm; }
+.choices.three { grid-template-columns: 1fr 1fr 1fr; }
+.choices.four { grid-template-columns: 1fr 1fr 1fr 1fr; }
+.small { font-size: 9.3pt; color: #4c596b; }
+.page-break { break-before: page; }
+.footer-note { font-size: 8.8pt; color: #606b79; border-top: 1px solid #c7cfd8; padding-top: 2mm; margin-top: 3mm; }
+
+/* klucz */
+.key-group { border-left: 5px solid #9a5a00; padding-left: 4mm; margin-bottom: 3mm; }
+.key-item { margin-bottom: 3.2mm; break-inside: avoid; }
+.key-item .num { font-weight: 700; color: #163a63; }
+.key-item .pk { color: #9a5a00; font-weight: 700; font-size: 9.5pt; }
+.key-item ul { margin: 0.5mm 0 0 5mm; padding: 0; }
+.key-item li { margin: 0.3mm 0; }
+.accept { color: #4c596b; font-size: 9.5pt; }
+.sources { font-size: 9pt; }
+.sources li { margin-bottom: 0.8mm; word-break: break-all; }
+
+/* fizyka/drgania */
+.figwrap { text-align: center; margin: 1.5mm 0; }
+.fig { max-width: 100%; height: auto; }
+.fig.lin { max-width: 235px; }
+.calc-space { min-height: 20mm; border: 1px dashed #9aa8b8; padding: 1mm 2mm; margin: 1.5mm 0; font-size: 8.8pt; color: #606b79; }
+.ans { margin: 1.5mm 0 0; }
+table.grid td.pf { width: 10mm; }
+table.grid.two td.since { text-align: center; width: 24mm; }
+.answer-space { min-height: 8mm; }
+h2 { break-after: avoid; }

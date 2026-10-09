@@ -12,9 +12,10 @@ historia/kuratorium/   Wojewódzki Konkurs Przedmiotowy z Historii
 matematyka/trojkaty/   geometria trójkątów (klasy 7–8)
 matematyka/trojkaty2/  twierdzenie Pitagorasa (klasa 8)
 chemia/wodorotlenki/   sprawdziany z chemii, klasa 8 — wodorotlenki
+fizyka/drgania/        testy z fizyki — drgania (baza pytań + generator tools/generuj_test.py)
 ```
 
-- Każdy temat = osobny podkatalog pod `historia/`, `matematyka/` albo `chemia/` (albo pod kolejnym
+- Każdy temat = osobny podkatalog pod `historia/`, `matematyka/`, `chemia/` albo `fizyka/` (albo pod kolejnym
   przedmiotem, gdy się pojawi). Nowy temat nie miesza plików z istniejącym.
 - Każdy podkatalog tematu ma własną notatkę ustaleń (`README.md` albo `WYMAGANIA.md`) —
   **przeczytaj ją przed pierwszą zmianą w danym temacie**. Zawiera ustalenia wypracowane

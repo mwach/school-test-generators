@@ -19,6 +19,7 @@ historia/kuratorium/   arkusze treningowe do Wojewódzkiego Konkursu Przedmiotow
 matematyka/trojkaty/   arkusze zadań z geometrii trójkątów
 matematyka/trojkaty2/  twierdzenie Pitagorasa: trójkąty, romb, kwadrat
 chemia/wodorotlenki/   sprawdziany z chemii (klasa 8): wodorotlenki
+fizyka/drgania/        testy z fizyki: drgania (3 rozdziały, baza pytań + generator)
 AGENTS.md              konwencje wspólne całemu repozytorium (dla ludzi i agentów)
 ```
 
@@ -65,6 +66,14 @@ kontroler punktacji i losowości klucza (`tools/sprawdz_zestaw.py`).
 
 Zacznij od [`chemia/wodorotlenki/WYMAGANIA.md`](chemia/wodorotlenki/WYMAGANIA.md) — zakres,
 bank związków, rozstrzygnięte konwencje, historia zestawów.
+
+### `fizyka/drgania/`
+
+Testy z fizyki z działu „Drgania” (3 rozdziały × 2 zadania: obliczenia, P/F, quiz) z osobną kartą
+odpowiedzi. Baza pytań `baza_pytan.json` powstała na podstawie skanów podręcznika; generator
+`tools/generuj_test.py` losuje zadania, zmienia dane liczbowe i kontroluje losowość klucza.
+
+Zacznij od [`fizyka/drgania/WYMAGANIA.md`](fizyka/drgania/WYMAGANIA.md).
 
 ## Wspólny pipeline generowania PDF
 
