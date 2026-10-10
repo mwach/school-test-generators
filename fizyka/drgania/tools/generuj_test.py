@@ -394,6 +394,8 @@ def wybierz(baza, hist, rng):
             nowe = [z for z in wolne if z.get("seria") == SERIA]
             if len({z["typ"].split("_")[0] for z in nowe}) >= 2:
                 wolne = nowe
+            else:  # rozdział wyczerpany w serii — startuje od nowa (zmieniają się dane i kolejność odpowiedzi)
+                wolne, hist[r] = pula, []
         if len({z["typ"].split("_")[0] for z in wolne}) < 2:
             wolne, hist[r] = pula, []
         for _ in range(500):

@@ -5,7 +5,8 @@
    "1-quiz-miska",
    "1-quiz-bombka",
    "1-obl-amplituda",
-   "1-obl-piasek"
+   "1-obl-piasek",
+   "1-quiz-wykres"
   ],
   "2": [
    "2-obl-T-na-f",
@@ -13,14 +14,12 @@
    "2-pf",
    "2-obl-metronom",
    "2-obl-klatki",
-   "2-quiz-dwa-wykresy"
+   "2-quiz-dwa-wykresy",
+   "2-obl-dwa-wykresy"
   ],
   "3": [
-   "3-obl-h",
-   "3-quiz-wozek",
-   "3-pf",
-   "3-obl-v",
-   "3-quiz-sprezyna"
+   "3-otw-przemiany",
+   "3-obl-v"
   ]
  },
  "testy": {
@@ -78,6 +77,25 @@
     "2-quiz-dwa-wykresy": "C",
     "3-pf": "FPPP",
     "3-quiz-sprezyna": "B1"
+   },
+   "suma": 12
+  },
+  "4": {
+   "zadania": [
+    "1-pf",
+    "1-quiz-wykres",
+    "2-pf",
+    "2-obl-dwa-wykresy",
+    "3-otw-przemiany",
+    "3-obl-v"
+   ],
+   "klucz": {
+    "1-pf": "FPPF",
+    "1-quiz-wykres": "D",
+    "2-pf": "PFFF",
+    "2-obl-dwa-wykresy": "K: A = 1 cm, f = 2 Hz; L: A = 2,5 cm, f = 0,5 Hz",
+    "3-otw-przemiany": null,
+    "3-obl-v": "1,4 m/s"
    },
    "suma": 12
   }

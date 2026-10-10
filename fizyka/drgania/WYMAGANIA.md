@@ -105,6 +105,8 @@ testy/test_drgania_N_karta_odpowiedzi.html/.pdf
 
 ## Proces generowania
 
+W trybie `--seria N` rozdział, w którym skończyły się nowe zadania (mniej niż 2 typy), startuje od nowa z całą pulą (zmieniają się dane i kolejność odpowiedzi).
+
 ```bash
 # nowy test (numer = kolejny wolny), z PDF
 python3 fizyka/drgania/tools/generuj_test.py --pdf
@@ -125,3 +127,4 @@ Po wygenerowaniu i weryfikacji — commit + push (pamięć użytkownika: bez pyt
 | 1 | 2026-10-09 | 1: P/F (amplituda, ruch okresowy), quiz miska (najmniejsza prędkość); 2: obliczenia T→f (0,75 s), quiz okres (30 drgań/60 s); 3: obliczenia h z v (2,4 m/s), quiz wózek na sprężynie (B2) | P/F `PFFP`, 2 C, 4 C, 6 B2 |
 | 2 | 2026-10-09 | 1: quiz bombka, obliczenia amplituda z linijki (2,0 cm); 2: P/F (okres, częstotliwość), obliczenia metronom (20 drgań/40 s); 3: P/F (energia), obliczenia v z h (45 cm) | P/F `PFPP`, `FPPP`; 1 A |
 | 3 | 2026-10-10 | seria 2: 1: P/F (osie wykresu, amplituda z wykresu), obliczenia ślad piasku (3–8 cm); 2: obliczenia klatki filmu (T = 1,6 s, 16 kropek → 10 kl./s), quiz dwa wykresy K/L; 3: P/F (energia), quiz A/B+1/2 ciężarek w skrajnym położeniu | P/F `FPPF`, piasek 5,5 cm / 2,5 cm, 10 kl./s, quiz C, P/F `FPPP`, B1 |
+| 4 | 2026-10-10 | seria 2: 1: P/F, quiz odczyt A i T z wykresu (A = 1 cm, T = 0,8 s); 2: P/F, obliczenia dwa wykresy K/L (K: 1 cm, 0,5 s; L: 2,5 cm, 2 s); 3: otwarte (przemiany energii w misce), obliczenia v z h (10 cm) — rozdz. 3 wyczerpał nowe zadania serii, więc wrócił do całej puli | P/F `FPPF`, D, P/F `PFFF`, 1,4 m/s |
