@@ -4,19 +4,23 @@
    "1-pf",
    "1-quiz-miska",
    "1-quiz-bombka",
-   "1-obl-amplituda"
+   "1-obl-amplituda",
+   "1-obl-piasek"
   ],
   "2": [
    "2-obl-T-na-f",
    "2-quiz-okres",
    "2-pf",
-   "2-obl-metronom"
+   "2-obl-metronom",
+   "2-obl-klatki",
+   "2-quiz-dwa-wykresy"
   ],
   "3": [
    "3-obl-h",
    "3-quiz-wozek",
    "3-pf",
-   "3-obl-v"
+   "3-obl-v",
+   "3-quiz-sprezyna"
   ]
  },
  "testy": {
@@ -55,6 +59,25 @@
     "2-obl-metronom": "0,5 Hz",
     "3-pf": "FPPP",
     "3-obl-v": "3,0 m/s"
+   },
+   "suma": 12
+  },
+  "3": {
+   "zadania": [
+    "1-pf",
+    "1-obl-piasek",
+    "2-obl-klatki",
+    "2-quiz-dwa-wykresy",
+    "3-pf",
+    "3-quiz-sprezyna"
+   ],
+   "klucz": {
+    "1-pf": "FPPF",
+    "1-obl-piasek": "położenie równowagi: 5,5 cm; amplituda: 2,5 cm",
+    "2-obl-klatki": "T = 1,6 s; 10 klatek/s",
+    "2-quiz-dwa-wykresy": "C",
+    "3-pf": "FPPP",
+    "3-quiz-sprezyna": "B1"
    },
    "suma": 12
   }

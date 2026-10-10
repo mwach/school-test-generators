@@ -120,9 +120,80 @@
       ]
      ],
      "tekst_prawda": "Wahadło wychylono o {x} cm od położenia równowagi i puszczono. Amplituda jego drgań wynosi {x} cm."
+    },
+    {
+     "id": "1p13",
+     "tekst": "Na osi pionowej wykresu zależności położenia drgającego ciała od czasu zaznaczamy czas.",
+     "prawda": false,
+     "uzasadnienie": "Na osi pionowej zaznaczamy położenie ciała, a czas — na osi poziomej.",
+     "zrodlo": "skan s. 34 zad.1.1",
+     "seria": 2,
+     "grupa": "osie"
+    },
+    {
+     "id": "1p14",
+     "tekst": "Z wykresu zależności położenia ciała od czasu można odczytać amplitudę jego drgań.",
+     "prawda": true,
+     "uzasadnienie": "Amplituda to największe wychylenie od położenia równowagi — widać ją na osi pionowej.",
+     "zrodlo": "skan s. 34 zad.1.2",
+     "seria": 2
+    },
+    {
+     "id": "1p15",
+     "tekst": "Okres drgań ciała można odczytać z osi pionowej wykresu zależności jego położenia od czasu.",
+     "prawda": false,
+     "uzasadnienie": "Okres to czas — odczytujemy go z osi poziomej (czasu); oś pionowa pokazuje położenie.",
+     "zrodlo": "skan s. 34 zad.1.3",
+     "seria": 2,
+     "grupa": "osie"
+    },
+    {
+     "id": "1p16",
+     "tekst": "Im bliżej położenia równowagi znajduje się kulka wahadła, tym mniejsze jest jej wychylenie.",
+     "prawda": true,
+     "uzasadnienie": "Wychylenie to odległość od położenia równowagi.",
+     "zrodlo": "skan s. 34 zad.1.4",
+     "seria": 2,
+     "grupa": "wychylenie"
+    },
+    {
+     "id": "1p17",
+     "tekst": "Im dalej od położenia równowagi znajduje się kulka wahadła, tym mniejsze jest jej wychylenie.",
+     "prawda": false,
+     "uzasadnienie": "Wychylenie to odległość od położenia równowagi — im dalej od niego, tym większe.",
+     "zrodlo": "skan s. 44 zad.1.3",
+     "seria": 2,
+     "grupa": "wychylenie"
+    },
+    {
+     "id": "1p18",
+     "tekst": "Na wykresie położenia ciała drgającego od czasu największa wartość położenia wynosi {x} cm, a najmniejsza −{x} cm. Amplituda drgań jest równa {x2} cm.",
+     "prawda": false,
+     "uzasadnienie": "Amplituda to największe wychylenie od położenia równowagi, czyli {x} cm; {x2} cm to odległość między skrajami (2A).",
+     "zrodlo": "autorskie, w stylu skanów",
+     "seria": 2,
+     "grupa": "amplituda",
+     "param": {
+      "x": [
+       1,
+       1.5,
+       2,
+       2.5,
+       3,
+       4
+      ]
+     },
+     "pochodne": [
+      [
+       "x2",
+       "2*x"
+      ]
+     ],
+     "tekst_prawda": "Na wykresie położenia ciała drgającego od czasu największa wartość położenia wynosi {x} cm, a najmniejsza −{x} cm. Amplituda drgań jest równa {x} cm."
     }
    ],
-   "zrodlo": "skan s. 13 zad.1"
+   "zrodlo": "skan s. 13 zad.1",
+   "seria": 2
   },
   {
    "id": "2-pf",
@@ -283,9 +354,75 @@
      "prawda": true,
      "uzasadnienie": "Podstawowa zależność między f i T.",
      "zrodlo": "skan s. 22 (Podsumujmy!)"
+    },
+    {
+     "id": "2p13",
+     "tekst": "Ciało drgające po upływie okresu zaczyna poruszać się ponownie po tym samym torze w tę samą stronę.",
+     "prawda": true,
+     "uzasadnienie": "Okres to czas jednego pełnego drgania — po nim ruch się powtarza.",
+     "zrodlo": "skan s. 44 zad.1.1",
+     "seria": 2
+    },
+    {
+     "id": "2p14",
+     "tekst": "Im większa jest amplituda drgań wahadła, tym dłuższy jest okres jego drgań.",
+     "prawda": false,
+     "uzasadnienie": "Okres wahadła (przy niewielkich wychyleniach) nie zależy od amplitudy.",
+     "zrodlo": "skan s. 44 zad.1.5",
+     "seria": 2
+    },
+    {
+     "id": "2p15",
+     "tekst": "Kamera nagrywa film z częstotliwością {f} klatek na sekundę. Odstęp czasu między kolejnymi klatkami wynosi {f} s.",
+     "prawda": false,
+     "uzasadnienie": "Odstęp między klatkami to okres: T = 1/f = 1/{f} s⁻¹ = {T} s.",
+     "zrodlo": "autorskie, w stylu skanów",
+     "seria": 2,
+     "param": {
+      "f": [
+       5,
+       10,
+       20,
+       25,
+       50
+      ]
+     },
+     "pochodne": [
+      [
+       "T",
+       "1/f"
+      ]
+     ],
+     "tekst_prawda": "Kamera nagrywa film z częstotliwością {f} klatek na sekundę. Odstęp czasu między kolejnymi klatkami wynosi {T} s."
+    },
+    {
+     "id": "2p16",
+     "tekst": "Ciało wykonuje {n} drgań w ciągu minuty. Częstotliwość jego drgań jest równa {n} Hz.",
+     "prawda": false,
+     "uzasadnienie": "1 minuta to 60 s, więc f = {n}/60 s = {fh} Hz.",
+     "zrodlo": "autorskie, w stylu skanów",
+     "seria": 2,
+     "param": {
+      "n": [
+       6,
+       12,
+       18,
+       24,
+       30,
+       45
+      ]
+     },
+     "pochodne": [
+      [
+       "fh",
+       "n/60"
+      ]
+     ],
+     "tekst_prawda": "Ciało wykonuje {n} drgań w ciągu minuty. Częstotliwość jego drgań jest równa {fh} Hz."
     }
    ],
-   "zrodlo": "skan s. 22 zad.1"
+   "zrodlo": "skan s. 22 zad.1",
+   "seria": 2
   },
   {
    "id": "3-pf",
@@ -385,9 +522,36 @@
      "uzasadnienie": "Prędkość jest równa zero, więc Ek = 0.",
      "zrodlo": "autorskie, w stylu skanów",
      "grupa": "skraj"
+    },
+    {
+     "id": "3p13",
+     "tekst": "Gdy kulka wahadła zbliża się do położenia równowagi, jej energia potencjalna grawitacji rośnie.",
+     "prawda": false,
+     "uzasadnienie": "Kulka opada, więc jej energia potencjalna maleje (zamienia się w kinetyczną).",
+     "zrodlo": "skan s. 44 zad.1.4",
+     "seria": 2,
+     "grupa": "kin,pot"
+    },
+    {
+     "id": "3p14",
+     "tekst": "Gdy wózek na poziomej sprężynie znajduje się w skrajnym położeniu, jego energia kinetyczna jest równa zero.",
+     "prawda": true,
+     "uzasadnienie": "W skrajnym położeniu wózek na chwilę się zatrzymuje (v = 0).",
+     "zrodlo": "autorskie, w stylu skanów",
+     "seria": 2,
+     "grupa": "skraj"
+    },
+    {
+     "id": "3p15",
+     "tekst": "Im większa amplituda drgań wahadła (bez oporów), tym większa jest największa prędkość jego kulki.",
+     "prawda": true,
+     "uzasadnienie": "Z większego wychylenia kulka spada z większej wysokości, więc w położeniu równowagi ma większą energię kinetyczną.",
+     "zrodlo": "autorskie, w stylu skanów",
+     "seria": 2
     }
    ],
-   "zrodlo": "skan s. 28 zad.1"
+   "zrodlo": "skan s. 28 zad.1",
+   "seria": 2
   },
   {
    "id": "1-otw-przyklady",
@@ -935,6 +1099,525 @@
     }
    ],
    "zrodlo": "skan s. 28 zad.5"
+  },
+  {
+   "id": "1-obl-piasek",
+   "rozdzial": 1,
+   "typ": "obliczenia",
+   "pkt": 2,
+   "seria": 2,
+   "rysunek": "piasek",
+   "param": {
+    "xmin": {
+     "od": 3.0,
+     "do": 5.0,
+     "krok": 0.5
+    },
+    "A": {
+     "od": 1.5,
+     "do": 3.5,
+     "krok": 0.5
+    }
+   },
+   "pochodne": [
+    [
+     "xmax",
+     "round(xmin + 2*A, 1)"
+    ],
+    [
+     "x0",
+     "round(xmin + A, 1)"
+    ]
+   ],
+   "warunek": "xmax <= 11.0",
+   "tekst": "Uczniowie zawiesili na nitce wahadło z butelki, z której wysypywał się piasek, i wprawili je w ruch drgający nad linijką. Piasek utworzył ślad pokazany na rysunku (widok z góry). Na podstawie rysunku odpowiedz na pytania. <b>a)</b> W którym miejscu skali linijki znajduje się położenie równowagi? <b>b)</b> Jaka była amplituda drgań?",
+   "wynik": "A",
+   "jednostka": "cm",
+   "dokladnosc": 1,
+   "wynik_tekst": "położenie równowagi: {x0} cm; amplituda: {A} cm",
+   "rozwiazanie": [
+    "Ślad piasku sięga od {xmin} cm do {xmax} cm — to skrajne położenia wahadła.",
+    "Położenie równowagi leży w środku między skrajami: ({xmin} cm + {xmax} cm) / 2 = {x0} cm.",
+    "Amplituda to odległość od położenia równowagi do skraju: A = {xmax} cm − {x0} cm = {A} cm."
+   ],
+   "punktacja": [
+    "1 pkt — poprawne położenie równowagi (tolerancja ±0,1 cm)",
+    "1 pkt — poprawna amplituda z jednostką (tolerancja ±0,1 cm)"
+   ],
+   "zrodlo": "skan s. 34 zad.3"
+  },
+  {
+   "id": "1-quiz-wykres",
+   "rozdzial": 1,
+   "typ": "quiz",
+   "pkt": 1,
+   "seria": 2,
+   "rysunek": "wykres",
+   "param": {
+    "A": [
+     1,
+     1.5,
+     2,
+     2.5,
+     3
+    ],
+    "T": [
+     0.8,
+     1.2,
+     1.6,
+     2.0,
+     2.4
+    ],
+    "faza": [
+     0,
+     1
+    ]
+   },
+   "pochodne": [
+    [
+     "A2",
+     "2*A"
+    ],
+    [
+     "T2",
+     "T/2"
+    ],
+    [
+     "T4",
+     "2*T"
+    ]
+   ],
+   "pytanie": "Na wykresie przedstawiono zależność położenia od czasu dla kulki poruszającej się ruchem drgającym. Które odczyty amplitudy i okresu drgań są poprawne?",
+   "opcje": [
+    {
+     "tekst": "amplituda {A} cm, okres {T} s",
+     "poprawna": true
+    },
+    {
+     "tekst": "amplituda {A2} cm, okres {T} s",
+     "poprawna": false
+    },
+    {
+     "tekst": "amplituda {A} cm, okres {T2} s",
+     "poprawna": false
+    },
+    {
+     "tekst": "amplituda {A} cm, okres {T4} s",
+     "poprawna": false
+    }
+   ],
+   "uzasadnienie": "Amplituda to największe wychylenie od położenia równowagi (x = 0): {A} cm; okres to czas jednego pełnego drgania: {T} s. {A2} cm to odległość między skrajami (2A), {T2} s to pół okresu, a {T4} s to czas dwóch drgań (cały zakres wykresu).",
+   "zrodlo": "skan s. 34 zad.2"
+  },
+  {
+   "id": "2-obl-klatki",
+   "rozdzial": 2,
+   "typ": "obliczenia",
+   "pkt": 3,
+   "seria": 2,
+   "rysunek": "wykres_kropki",
+   "param": {
+    "para": [
+     [
+      0.8,
+      10
+     ],
+     [
+      0.8,
+      15
+     ],
+     [
+      0.8,
+      20
+     ],
+     [
+      1.2,
+      10
+     ],
+     [
+      1.6,
+      10
+     ],
+     [
+      2.0,
+      5
+     ],
+     [
+      2.0,
+      8
+     ]
+    ],
+    "A": [
+     2,
+     2.5,
+     3
+    ],
+    "faza": [
+     0,
+     1
+    ]
+   },
+   "pochodne": [
+    [
+     "T",
+     "para[0]"
+    ],
+    [
+     "fps",
+     "para[1]"
+    ],
+    [
+     "N",
+     "round(para[0]*para[1])"
+    ]
+   ],
+   "tekst": "Uczniowie zarejestrowali kamerą drgania kulki zawieszonej na nici. Na podstawie zapisu wideo sporządzili wykres zależności położenia kulki od czasu; punkty na wykresie odpowiadają kolejnym klatkom filmu. <b>a)</b> Odczytaj z wykresu okres drgań kulki. <b>b)</b> Ile klatek na sekundę rejestrowała użyta kamera?",
+   "wynik": "fps",
+   "jednostka": "klatek/s",
+   "wynik_tekst": "T = {T} s; {fps} klatek/s",
+   "rozwiazanie": [
+    "Okres odczytany z wykresu: T = {T} s.",
+    "W czasie jednego okresu na wykresie jest {N} punktów (klatek).",
+    "Liczba klatek na sekundę: {N} / {T} s = {fps} klatek/s (odstęp między klatkami = 1/{fps} s)."
+   ],
+   "punktacja": [
+    "1 pkt — poprawny odczyt okresu",
+    "1 pkt — poprawna liczba klatek w czasie jednego okresu (lub odstępu między punktami)",
+    "1 pkt — poprawna liczba klatek na sekundę z jednostką"
+   ],
+   "zrodlo": "skan s. 35 zad.4"
+  },
+  {
+   "id": "2-obl-dwa-wykresy",
+   "rozdzial": 2,
+   "typ": "obliczenia",
+   "pkt": 3,
+   "seria": 2,
+   "rysunek": "wykres2",
+   "kolizja": "wykresy2",
+   "param": {
+    "para": [
+     [
+      0.5,
+      1.0
+     ],
+     [
+      1.0,
+      2.0
+     ],
+     [
+      0.5,
+      2.0
+     ],
+     [
+      2.0,
+      4.0
+     ],
+     [
+      1.0,
+      0.5
+     ],
+     [
+      2.0,
+      1.0
+     ],
+     [
+      2.0,
+      0.5
+     ],
+     [
+      4.0,
+      2.0
+     ]
+    ],
+    "AK": [
+     1,
+     1.5,
+     2,
+     2.5
+    ],
+    "AL": [
+     1,
+     1.5,
+     2,
+     2.5
+    ],
+    "zk": [
+     1,
+     -1
+    ],
+    "zl": [
+     1,
+     -1
+    ]
+   },
+   "pochodne": [
+    [
+     "TK",
+     "para[0]"
+    ],
+    [
+     "TL",
+     "para[1]"
+    ],
+    [
+     "fK",
+     "1/para[0]"
+    ],
+    [
+     "fL",
+     "1/para[1]"
+    ]
+   ],
+   "warunek": "AK != AL",
+   "tekst": "Dwa ciężarki zawieszone na różnych sprężynach poruszają się ruchem drgającym. Na wykresie przedstawiono zależność położenia od czasu dla obu ciężarków (K i L). Na podstawie wykresu wyznacz amplitudy oraz częstotliwości drgań tych ciężarków.",
+   "wynik": "fK",
+   "jednostka": "Hz",
+   "wynik_tekst": "K: A = {AK} cm, f = {fK} Hz; L: A = {AL} cm, f = {fL} Hz",
+   "rozwiazanie": [
+    "Amplitudy odczytane z osi pionowej: A<sub>K</sub> = {AK} cm, A<sub>L</sub> = {AL} cm.",
+    "Okresy odczytane z osi poziomej: T<sub>K</sub> = {TK} s, T<sub>L</sub> = {TL} s.",
+    "Częstotliwości: f<sub>K</sub> = 1/T<sub>K</sub> = {fK} Hz, f<sub>L</sub> = 1/T<sub>L</sub> = {fL} Hz."
+   ],
+   "punktacja": [
+    "1 pkt — poprawne amplitudy obu ciężarków (tolerancja ±0,1 cm)",
+    "1 pkt — poprawne okresy obu ciężarków",
+    "1 pkt — poprawne częstotliwości (f = 1/T) z jednostką"
+   ],
+   "zrodlo": "skan s. 45 zad.9"
+  },
+  {
+   "id": "2-obl-mlot",
+   "rozdzial": 2,
+   "typ": "obliczenia",
+   "pkt": 2,
+   "seria": 2,
+   "param": {
+    "n": [
+     9,
+     12,
+     15,
+     18,
+     24,
+     36,
+     40,
+     45
+    ]
+   },
+   "pochodne": [
+    [
+     "T",
+     "60/n"
+    ]
+   ],
+   "tekst": "Młot pneumatyczny pracuje z częstotliwością {n} uderzeń na minutę. Oblicz okres drgań tego młota. Wynik podaj z dokładnością do dwóch cyfr znaczących.",
+   "wynik": "T",
+   "jednostka": "s",
+   "cyfry": 2,
+   "rozwiazanie": [
+    "{n} uderzeń na minutę to {n} drgań w ciągu 60 s.",
+    "T = 60 s / {n} ≈ {T} s."
+   ],
+   "punktacja": [
+    "1 pkt — poprawna metoda (T = 60 s / liczba uderzeń, zamiana minuty na sekundy)",
+    "1 pkt — wynik z dokładnością do 2 cyfr znaczących i jednostką"
+   ],
+   "zrodlo": "skan s. 44 zad.5"
+  },
+  {
+   "id": "2-obl-polokres",
+   "rozdzial": 2,
+   "typ": "obliczenia",
+   "pkt": 2,
+   "seria": 2,
+   "param": {
+    "t": [
+     0.3,
+     0.4,
+     0.5,
+     0.6,
+     0.8,
+     1.2,
+     1.5,
+     2.4
+    ]
+   },
+   "pochodne": [
+    [
+     "T",
+     "2*t"
+    ]
+   ],
+   "tekst": "Uczniowie zauważyli, że czas, w którym ciężarek zawieszony na sprężynie i poruszający się ruchem drgającym przemieszcza się od najniższego do najwyższego położenia, wynosi dokładnie {t} s. Ile wynosi okres drgań tego ciężarka?",
+   "wynik": "T",
+   "jednostka": "s",
+   "rozwiazanie": [
+    "Przejście od jednego skrajnego położenia do drugiego to połowa pełnego drgania.",
+    "T = 2 · {t} s = {T} s."
+   ],
+   "punktacja": [
+    "1 pkt — zauważenie, że czas przejścia między skrajami to pół okresu",
+    "1 pkt — poprawny wynik z jednostką"
+   ],
+   "zrodlo": "skan s. 44 zad.4"
+  },
+  {
+   "id": "2-quiz-dwa-wykresy",
+   "rozdzial": 2,
+   "typ": "quiz",
+   "pkt": 1,
+   "seria": 2,
+   "rysunek": "wykres2",
+   "kolizja": "wykresy2",
+   "param": {
+    "para": [
+     [
+      0.5,
+      1.0
+     ],
+     [
+      1.0,
+      2.0
+     ],
+     [
+      0.5,
+      2.0
+     ],
+     [
+      2.0,
+      4.0
+     ],
+     [
+      1.0,
+      0.5
+     ],
+     [
+      2.0,
+      1.0
+     ],
+     [
+      2.0,
+      0.5
+     ],
+     [
+      4.0,
+      2.0
+     ]
+    ],
+    "AK": [
+     1,
+     1.5,
+     2,
+     2.5
+    ],
+    "AL": [
+     1,
+     1.5,
+     2,
+     2.5
+    ],
+    "zk": [
+     1,
+     -1
+    ],
+    "zl": [
+     1,
+     -1
+    ]
+   },
+   "pochodne": [
+    [
+     "TK",
+     "para[0]"
+    ],
+    [
+     "TL",
+     "para[1]"
+    ],
+    [
+     "fK",
+     "1/para[0]"
+    ],
+    [
+     "fL",
+     "1/para[1]"
+    ],
+    [
+     "wa",
+     "'K' if AK > AL else 'L'"
+    ],
+    [
+     "wa2",
+     "'L' if AK > AL else 'K'"
+    ],
+    [
+     "wf",
+     "'K' if para[0] < para[1] else 'L'"
+    ],
+    [
+     "wf2",
+     "'L' if para[0] < para[1] else 'K'"
+    ]
+   ],
+   "warunek": "AK != AL",
+   "pytanie": "Dwa ciężarki (K i L) poruszają się ruchem drgającym. Na wykresie przedstawiono zależność położenia od czasu dla obu ciężarków. Wskaż poprawne zdanie.",
+   "opcje": [
+    {
+     "tekst": "Większą amplitudę ma ciężarek {wa}, a większą częstotliwość — ciężarek {wf}.",
+     "poprawna": true
+    },
+    {
+     "tekst": "Większą amplitudę ma ciężarek {wa2}, a większą częstotliwość — ciężarek {wf}.",
+     "poprawna": false
+    },
+    {
+     "tekst": "Większą amplitudę ma ciężarek {wa}, a większą częstotliwość — ciężarek {wf2}.",
+     "poprawna": false
+    },
+    {
+     "tekst": "Większą amplitudę ma ciężarek {wa2}, a większą częstotliwość — ciężarek {wf2}.",
+     "poprawna": false
+    }
+   ],
+   "uzasadnienie": "Amplitudy: A<sub>K</sub> = {AK} cm, A<sub>L</sub> = {AL} cm. Okresy: T<sub>K</sub> = {TK} s, T<sub>L</sub> = {TL} s — krótszy okres oznacza większą częstotliwość (f<sub>K</sub> = {fK} Hz, f<sub>L</sub> = {fL} Hz).",
+   "zrodlo": "skan s. 45 zad.9"
+  },
+  {
+   "id": "3-quiz-sprezyna",
+   "rozdzial": 3,
+   "typ": "quiz_dwa",
+   "pkt": 2,
+   "seria": 2,
+   "wstep": "Na sprężynie zawieszono ciężarek. Następnie wychylono go z położenia równowagi i puszczono swobodnie, tak że zaczął wykonywać drgania (pomiń opory ruchu). Wybierz właściwe dokończenie zdania spośród wariantów <b>A</b> i <b>B</b> oraz jego poprawne uzasadnienie spośród wariantów <b>1</b> i <b>2</b>.",
+   "warianty": [
+    {
+     "zdanie": "Gdy ciężarek mija położenie równowagi, jego energia kinetyczna jest",
+     "wybor": [
+      "największa,",
+      "najmniejsza,"
+     ],
+     "poprawny_wybor": 0,
+     "powody": [
+      "prędkość ciężarka jest wtedy największa.",
+      "zmiana długości sprężyny jest wtedy największa."
+     ],
+     "poprawny_powod": 0
+    },
+    {
+     "zdanie": "Gdy ciężarek znajduje się w skrajnym położeniu, jego energia kinetyczna jest",
+     "wybor": [
+      "najmniejsza,",
+      "największa,"
+     ],
+     "poprawny_wybor": 0,
+     "powody": [
+      "ciężarek na chwilę się zatrzymuje, więc jego prędkość jest równa zero.",
+      "zmiana długości sprężyny jest wtedy najmniejsza."
+     ],
+     "poprawny_powod": 0
+    }
+   ],
+   "zrodlo": "skan s. 44 zad.2"
   }
  ]
 }

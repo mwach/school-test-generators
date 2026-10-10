@@ -25,6 +25,8 @@ HIST = os.path.join(KAT, "historia_testow.json")
 WYJ = os.path.join(KAT, "testy")
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 LITERY = "ABCD"
+WYMUS = set()  # --wymus id,id: test musi zawierać te zadania
+SERIA = None  # --seria N: preferuj zadania/zdania z pola "seria" == N
 SRC = [
     "https://pl.wikipedia.org/wiki/Ruch_drgaj%C4%85cy",
     "https://pl.wikipedia.org/wiki/Amplituda",
@@ -151,6 +153,110 @@ def svg_linijka(x0, xk):
             + '<text x="165" y="12" font-size="9" fill="#666" text-anchor="middle">(cm)</text></svg>')
 
 
+def _znaczek(t):
+    return fmt(round(t, 3))
+
+
+def svg_wykres(krzywe, tmax, ymax, kropki=None, legenda=False):
+    """Wykres x(t). krzywe: [{A, T, faza (0: sin, 1: −cos), znak, kol, nazwa}]; kropki: liczba klatek/s (punkty zamiast linii)."""
+    PXC, L, RR = 26, 42, 348
+    PW = RR - L
+    top = 30 if legenda else 20
+    yc = top + ymax * PXC
+    bot = yc + ymax * PXC
+    H = bot + 28
+
+    def X(t):
+        return L + t / tmax * PW
+
+    def Y(x):
+        return yc - x * PXC
+
+    o = [f'<svg viewBox="0 0 380 {H}" width="380" height="{H}" xmlns="http://www.w3.org/2000/svg" class="fig wyk">',
+         f'<rect x="{L}" y="{top}" width="{PW}" height="{bot-top}" fill="#fff" stroke="#9aa8b8"/>']
+    for k in range(-2 * ymax, 2 * ymax + 1):
+        c = "#c3ced9" if k % 2 == 0 else "#e3e9ef"
+        o.append(f'<line x1="{L}" y1="{Y(k/2):.1f}" x2="{RR}" y2="{Y(k/2):.1f}" stroke="{c}" stroke-width="0.8"/>')
+    for i in range(1, 9):
+        x = X(i * tmax / 8)
+        o.append(f'<line x1="{x:.1f}" y1="{top}" x2="{x:.1f}" y2="{bot}" stroke="#c3ced9" stroke-width="0.8"/>')
+        o.append(f'<text x="{x:.1f}" y="{bot+14}" font-size="9.5" text-anchor="middle" fill="#172033">{_znaczek(i*tmax/8)}</text>')
+    for k in range(-ymax, ymax + 1):
+        o.append(f'<text x="{L-6}" y="{Y(k)+3.5:.1f}" font-size="10" text-anchor="end" fill="#172033">{"−" if k < 0 else ""}{abs(k)}</text>')
+    o.append(f'<line x1="{L}" y1="{yc}" x2="{RR+12}" y2="{yc}" stroke="#172033" stroke-width="1.6"/>'
+             f'<polygon points="{RR+16},{yc} {RR+9},{yc-3.5} {RR+9},{yc+3.5}" fill="#172033"/>'
+             f'<line x1="{L}" y1="{bot}" x2="{L}" y2="{top-8}" stroke="#172033" stroke-width="1.6"/>'
+             f'<polygon points="{L},{top-12} {L-3.5},{top-5} {L+3.5},{top-5}" fill="#172033"/>')
+    o.append(f'<text x="{L-34}" y="{top-8}" font-size="10.5" font-style="italic" fill="#172033">x (cm)</text>')
+    o.append(f'<text x="{RR+5}" y="{yc+16}" font-size="10.5" font-style="italic" fill="#172033">t (s)</text>')
+    for kr in krzywe:
+        def val(t, kr=kr):
+            ph = 2 * math.pi * t / kr["T"]
+            return kr["znak"] * kr["A"] * (math.sin(ph) if kr["faza"] == 0 else -math.cos(ph))
+        kol = kr.get("kol", "#8e2c6d")
+        if kropki:
+            for k in range(int(round(tmax * kropki))):
+                t = (k + 0.5) / kropki
+                o.append(f'<circle cx="{X(t):.1f}" cy="{Y(val(t)):.1f}" r="2.5" fill="{kol}"/>')
+        else:
+            pts = " ".join(f"{X(tmax*i/300):.1f},{Y(val(tmax*i/300)):.1f}" for i in range(301))
+            o.append(f'<polyline points="{pts}" fill="none" stroke="{kol}" stroke-width="2"/>')
+    if legenda:
+        for i, kr in enumerate(krzywe):
+            x0 = L + 90 + i * 110
+            o.append(f'<line x1="{x0}" y1="12" x2="{x0+22}" y2="12" stroke="{kr["kol"]}" stroke-width="2.5"/>'
+                     f'<text x="{x0+27}" y="16" font-size="11" fill="#172033">{kr["nazwa"]}</text>')
+    o.append("</svg>")
+    return "".join(o)
+
+
+def svg_piasek(xmin, xmax):
+    """Linijka 2–12 cm i ślad piasku (widok z góry) od xmin do xmax; gęstszy przy skrajach."""
+    PX, X0 = 32, 20
+
+    def X(c):
+        return X0 + (c - 2) * PX
+
+    A, x0 = (xmax - xmin) / 2, (xmax + xmin) / 2
+    n = 60
+    xs = [xmin + (xmax - xmin) * i / n for i in range(n + 1)]
+    hh = [2.5 + 8 * abs((x - x0) / A) ** 3 for x in xs]
+    cy = 34
+    gora = " ".join(f"{X(x):.1f},{cy-h:.1f}" for x, h in zip(xs, hh))
+    dol = " ".join(f"{X(x):.1f},{cy+h:.1f}" for x, h in reversed(list(zip(xs, hh))))
+    o = ['<svg viewBox="0 0 360 120" width="360" height="120" xmlns="http://www.w3.org/2000/svg" class="fig piasek">',
+         f'<polygon points="{gora} {dol}" fill="#d9a43b" stroke="#a97a1c" stroke-width="1"/>',
+         f'<rect x="{X0-10}" y="62" width="{10*PX+20}" height="46" fill="#cfe3f5" stroke="#8fb4d6"/>']
+    for mm in range(0, 101):
+        c = 2 + mm / 10
+        ln = 14 if mm % 10 == 0 else (10 if mm % 5 == 0 else 6)
+        o.append(f'<line x1="{X(c):.1f}" y1="62" x2="{X(c):.1f}" y2="{62+ln}" stroke="#222" stroke-width="{1.3 if mm % 10 == 0 else 0.9}"/>')
+        if mm % 10 == 0:
+            o.append(f'<text x="{X(c):.1f}" y="97" font-size="12" text-anchor="middle" fill="#172033">{int(c)}</text>')
+    o.append(f'<text x="{X0+10*PX+14}" y="76" font-size="9" fill="#666" text-anchor="end">(cm)</text></svg>')
+    return "".join(o)
+
+
+def rys_dla(z, v):
+    """Rysunek (HTML) do zadania z polem `rysunek` — poza linijką ze sprężyną i miską (obsługiwane osobno)."""
+    r = z.get("rysunek")
+    K, L = "#8e2c6d", "#1f6fb5"
+    if r == "wykres":
+        s = svg_wykres([dict(A=v["A"], T=v["T"], faza=v["faza"], znak=1, kol=K)], 2 * v["T"], int(v["A"]) + 1)
+    elif r == "wykres_kropki":
+        s = svg_wykres([dict(A=v["A"], T=v["T"], faza=v["faza"], znak=1, kol=L)], 2 * v["T"], int(v["A"]) + 1, kropki=v["fps"])
+    elif r == "wykres2":
+        tmax = 2 * (v["TK"] if v["TK"] > v["TL"] else v["TL"])
+        s = svg_wykres([dict(A=v["AK"], T=v["TK"], faza=0, znak=v["zk"], kol=K, nazwa="ciężarek K"),
+                        dict(A=v["AL"], T=v["TL"], faza=0, znak=v["zl"], kol=L, nazwa="ciężarek L")],
+                       tmax, int(max(v["AK"], v["AL"])) + 1, legenda=True)
+    elif r == "piasek":
+        s = svg_piasek(v["xmin"], v["xmax"])
+    else:
+        return ""
+    return f"<div class='figwrap'>{s}</div>"
+
+
 # ---------- budowa zadań ----------
 def zbuduj(z, rng):
     """Zwraca zadanie testowe: słownik z polami html_arkusz, html_klucz, klucz_zamkniety, pkt."""
@@ -160,8 +266,10 @@ def zbuduj(z, rng):
     if typ == "pf":
         for _ in range(500):
             wyb = rng.sample(z["pula"], 4)
-            grupy = [p["grupa"] for p in wyb if p.get("grupa")]
+            grupy = [g for p in wyb if p.get("grupa") for g in p["grupa"].split(",")]  # "a,b" = zdanie w kilku grupach
             if len(grupy) != len(set(grupy)):
+                continue
+            if SERIA and sum(p.get("seria") == SERIA for p in wyb) < 2:
                 continue
             poz = []
             for p in wyb:
@@ -191,9 +299,11 @@ def zbuduj(z, rng):
         if z.get("rysunek") == "linijka":
             rys = f"<div class='figwrap'>{svg_linijka(v['x0'], v['xk'])}</div>"
             tekst += " <span class='small'>(Odczyt wykonaj dla dolnej krawędzi ciężarka.)</span>"
+        else:
+            rys = rys_dla(z, v)
         out["html_arkusz"] = (f"<p>{tekst}</p>{rys}<div class='calc-space'><span>Dane / szukane / obliczenia:</span></div>"
                               "<p class='ans'>Odpowiedź: <span class='blank l'></span></p>")
-        wynik = f"{f[z['wynik']]} {z['jednostka']}"
+        wynik = z["wynik_tekst"].format(**f) if "wynik_tekst" in z else f"{f[z['wynik']]} {z['jednostka']}"
         out["wynik"] = wynik
         out["html_klucz"] = ("<ul>" + "".join(f"<li>{x.format(**f)}</li>" for x in z["rozwiazanie"]) + "</ul>"
                              f"<p><b>Odpowiedź:</b> {wynik}.</p>")
@@ -225,7 +335,7 @@ def zbuduj(z, rng):
                     break
             rng.shuffle(op)
             popr = LITERY[[o["poprawna"] for o in op].index(True)]
-            out["html_arkusz"] = (f"<p>{z['pytanie'].format(**f)}</p><div class='choices'>"
+            out["html_arkusz"] = (f"<p>{z['pytanie'].format(**f)}</p>{rys_dla(z, v)}<div class='choices{' one' if z.get('rysunek') == 'wykres2' else ''}'>"
                                   + "".join(f"<div>{LITERY[i]}. {o['tekst']}</div>" for i, o in enumerate(op)) + "</div>")
             out["html_klucz"] = (f"<p><b>Odpowiedź:</b> <span class='zamkniete' data-typ='wybor'>{popr}</span> — "
                                  f"{z['uzasadnienie'].format(**f)}</p>")
@@ -278,12 +388,18 @@ def wybierz(baza, hist, rng):
     for r in ("1", "2", "3"):
         pula = [z for z in baza["zadania"] if str(z["rozdzial"]) == r]
         uzyte = set(hist.get(r, []))
-        wolne = [z for z in pula if z["id"] not in uzyte]
+        # zadanie P/F ma pulę zdań, więc w trybie --seria wraca, mimo że poszło do wcześniejszego testu (wchodzą nowe zdania)
+        wolne = [z for z in pula if z["id"] not in uzyte or (SERIA and z["typ"] == "pf" and z.get("seria") == SERIA)]
+        if SERIA:
+            nowe = [z for z in wolne if z.get("seria") == SERIA]
+            if len({z["typ"].split("_")[0] for z in nowe}) >= 2:
+                wolne = nowe
         if len({z["typ"].split("_")[0] for z in wolne}) < 2:
             wolne, hist[r] = pula, []
         for _ in range(500):
             a, b = rng.sample(wolne, 2)
-            if a["typ"].split("_")[0] != b["typ"].split("_")[0] and ({a["typ"], b["typ"]} != {"quiz", "quiz_miska"}):
+            if a["typ"].split("_")[0] != b["typ"].split("_")[0] and ({a["typ"], b["typ"]} != {"quiz", "quiz_miska"}) \
+                    and not (a.get("kolizja") and a.get("kolizja") == b.get("kolizja")):
                 break
         wybrane.append(sorted([a, b], key=lambda z: pula.index(z)))
     return wybrane
@@ -299,7 +415,10 @@ def wybierz_pelny(baza, hist, rng):
         w = wybierz(baza, h2, rng)
         kategorie = {kat(z) for par in w for z in par}
         ile_obl = sum(kat(z) == "obliczenia" for par in w for z in par)
-        if {"pf", "obliczenia", "quiz"} <= kategorie and ile_obl >= 2:
+        ile_pf = sum(kat(z) == "pf" for par in w for z in par)
+        if not WYMUS <= {z["id"] for par in w for z in par}:
+            continue
+        if {"pf", "obliczenia", "quiz"} <= kategorie and ile_obl >= 2 and ile_pf <= 2:
             return w, h2
     raise RuntimeError("Nie udało się dobrać zestawu pokrywającego wszystkie typy")
 
@@ -358,7 +477,7 @@ def html_klucz(n, rozdz, zad, suma):
 <table class="grid"><tr><th>Zad.</th><th>Odpowiedź</th><th>Pkt</th></tr>{tab}</table>
 <h2>Szczegółowe rozwiązania i punktacja</h2>
 <div class="key-group">{''.join(cz)}</div>
-<h2>Źródła</h2><ul class="sources"><li>Podręcznik — skany stron 13, 14, 22, 28 (fizyka/drgania/IMG_2395–2398.jpeg), wzorzec formy zadań.</li>{zr}</ul>
+<h2>Źródła</h2><ul class="sources"><li>Podręcznik — skany stron 13, 14, 22, 28 (IMG_2395–2398.jpeg) oraz 34, 35, 44, 45 (IMG_2402–2405.jpeg), wzorzec formy zadań (tylko lokalnie).</li>{zr}</ul>
 </body></html>"""
 
 
@@ -374,13 +493,23 @@ def main():
     ap.add_argument("--numer", type=int)
     ap.add_argument("--pdf", action="store_true")
     ap.add_argument("--nowa-baza", action="store_true")
+    ap.add_argument("--seria", type=int, help="preferuj zadania i zdania P/F danej serii (np. 2 = skany IMG_2402–2405)")
+    ap.add_argument("--wymus", default="", help="id zadań (po przecinku), które mają wejść do testu")
     a = ap.parse_args()
+    global SERIA, WYMUS
+    SERIA = a.seria
+    WYMUS = {x for x in a.wymus.split(",") if x}
 
     if a.nowa_baza or not os.path.exists(BAZA):
         import baza_poczatkowa
         json.dump(baza_poczatkowa.baza(), open(BAZA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         print("Utworzono bazę pytań:", BAZA)
     baza = json.load(open(BAZA, encoding="utf-8"))
+    import baza_seria2
+    dod = baza_seria2.dopisz(baza)
+    if dod:
+        json.dump(baza, open(BAZA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        print(f"Dopisano do bazy (seria 2): {dod} elementów")
     hist = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else {"rozdzialy": {}, "testy": {}}
     n = a.numer or (max([int(k) for k in hist["testy"]] + [0]) + 1)
     for proba in range(100):

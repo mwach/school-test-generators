@@ -79,3 +79,6 @@ table.grid td.pf { width: 10mm; }
 table.grid.two td.since { text-align: center; width: 24mm; }
 .answer-space { min-height: 8mm; }
 h2 { break-after: avoid; }
+.choices.one { grid-template-columns: 1fr; }
+.fig.wyk { max-width: 400px; }
+.fig.piasek { max-width: 360px; }
