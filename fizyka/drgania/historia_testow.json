@@ -1,30 +1,28 @@
 {
  "rozdzialy": {
   "1": [
-   "1-obl-amplituda"
+   "1-obl-amplituda",
+   "1-pf",
+   "1-otw-przyklady"
   ],
   "2": [
-   "2-obl-T-na-f",
-   "2-quiz-okres",
-   "2-pf",
-   "2-obl-metronom",
-   "2-obl-hustawka",
    "2-quiz-kHz"
   ],
   "3": [
    "3-otw-przemiany",
-   "3-quiz-wozek"
+   "3-quiz-wozek",
+   "3-pf",
+   "3-obl-v"
   ],
   "4": [
-   "1-obl-piasek",
-   "2-obl-klatki",
-   "4-pf",
-   "1-quiz-wykres"
+   "1-quiz-wykres",
+   "2-obl-klatki"
   ],
   "P": [
    "2-quiz-dwa-wykresy",
    "3-quiz-sprezyna",
-   "P-pf"
+   "P-pf",
+   "2-obl-polokres"
   ]
  },
  "testy": {
@@ -105,6 +103,29 @@
     "3-quiz-wozek": "B2",
     "4-pf": "PPFP",
     "1-quiz-wykres": "A"
+   },
+   "suma": 15
+  },
+  "5": {
+   "zadania": [
+    "1-pf",
+    "1-otw-przyklady",
+    "2-obl-polokres",
+    "2-quiz-kHz",
+    "3-pf",
+    "3-obl-v",
+    "1-quiz-wykres",
+    "2-obl-klatki"
+   ],
+   "klucz": {
+    "1-pf": "PPFF",
+    "1-otw-przyklady": null,
+    "2-obl-polokres": "1 s",
+    "2-quiz-kHz": "A",
+    "3-pf": "PFPP",
+    "3-obl-v": "2,8 m/s",
+    "1-quiz-wykres": "D",
+    "2-obl-klatki": "T = 1,2 s; 10 klatek/s"
    },
    "suma": 15
   }
