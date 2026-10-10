@@ -1,25 +1,30 @@
 {
  "rozdzialy": {
   "1": [
-   "1-pf",
-   "1-quiz-miska",
-   "1-quiz-bombka",
-   "1-obl-amplituda",
-   "1-obl-piasek",
-   "1-quiz-wykres"
+   "1-obl-amplituda"
   ],
   "2": [
    "2-obl-T-na-f",
    "2-quiz-okres",
    "2-pf",
    "2-obl-metronom",
-   "2-obl-klatki",
-   "2-quiz-dwa-wykresy",
-   "2-obl-dwa-wykresy"
+   "2-obl-hustawka",
+   "2-quiz-kHz"
   ],
   "3": [
    "3-otw-przemiany",
-   "3-obl-v"
+   "3-quiz-wozek"
+  ],
+  "4": [
+   "1-obl-piasek",
+   "2-obl-klatki",
+   "4-pf",
+   "1-quiz-wykres"
+  ],
+  "P": [
+   "2-quiz-dwa-wykresy",
+   "3-quiz-sprezyna",
+   "P-pf"
   ]
  },
  "testy": {
@@ -82,22 +87,26 @@
   },
   "4": {
    "zadania": [
-    "1-pf",
-    "1-quiz-wykres",
-    "2-pf",
-    "2-obl-dwa-wykresy",
+    "P-pf",
+    "1-obl-amplituda",
+    "2-obl-hustawka",
+    "2-quiz-kHz",
     "3-otw-przemiany",
-    "3-obl-v"
+    "3-quiz-wozek",
+    "4-pf",
+    "1-quiz-wykres"
    ],
    "klucz": {
-    "1-pf": "FPPF",
-    "1-quiz-wykres": "D",
-    "2-pf": "PFFF",
-    "2-obl-dwa-wykresy": "K: A = 1 cm, f = 2 Hz; L: A = 2,5 cm, f = 0,5 Hz",
+    "P-pf": "PFFF",
+    "1-obl-amplituda": "2,7 cm",
+    "2-obl-hustawka": "6 s",
+    "2-quiz-kHz": "C",
     "3-otw-przemiany": null,
-    "3-obl-v": "1,4 m/s"
+    "3-quiz-wozek": "B2",
+    "4-pf": "PPFP",
+    "1-quiz-wykres": "A"
    },
-   "suma": 12
+   "suma": 15
   }
  }
 }

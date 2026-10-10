@@ -26,7 +26,7 @@ WYJ = os.path.join(KAT, "testy")
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 LITERY = "ABCD"
 WYMUS = set()  # --wymus id,id: test musi zawierać te zadania
-SERIA = None  # --seria N: preferuj zadania/zdania z pola "seria" == N
+RODZ = ("1", "2", "3", "4")
 SRC = [
     "https://pl.wikipedia.org/wiki/Ruch_drgaj%C4%85cy",
     "https://pl.wikipedia.org/wiki/Amplituda",
@@ -262,14 +262,12 @@ def zbuduj(z, rng):
     """Zwraca zadanie testowe: słownik z polami html_arkusz, html_klucz, klucz_zamkniety, pkt."""
     typ = z["typ"]
     out = {"id": z["id"], "typ": typ, "kategoria": {"pf": "pf", "obliczenia": "obliczenia", "otwarte": "otwarte"}.get(typ, "quiz"),
-           "pkt": z["pkt"], "rozdzial": z["rozdzial"], "zrodlo": z.get("zrodlo", "")}
+           "pkt": z["pkt"], "rozdzial": z["rozdzial"], "zrodlo": z.get("zrodlo", ""), "powtorzenie": bool(z.get("powtorzenie"))}
     if typ == "pf":
         for _ in range(500):
             wyb = rng.sample(z["pula"], 4)
             grupy = [g for p in wyb if p.get("grupa") for g in p["grupa"].split(",")]  # "a,b" = zdanie w kilku grupach
             if len(grupy) != len(set(grupy)):
-                continue
-            if SERIA and sum(p.get("seria") == SERIA for p in wyb) < 2:
                 continue
             poz = []
             for p in wyb:
@@ -383,28 +381,43 @@ def sprawdz_klucz(zadania):
 
 
 # ---------- wybór zadań ----------
+def pasuja(a, b):
+    """Czy dwa zadania mogą stać obok siebie w jednym rozdziale (różne typy, bez kolizji tematów)."""
+    return (a["typ"].split("_")[0] != b["typ"].split("_")[0] and {a["typ"], b["typ"]} != {"quiz", "quiz_miska"}
+            and not (a.get("kolizja") and a.get("kolizja") == b.get("kolizja")))
+
+
 def wybierz(baza, hist, rng):
     wybrane = []
-    for r in ("1", "2", "3"):
-        pula = [z for z in baza["zadania"] if str(z["rozdzial"]) == r]
-        uzyte = set(hist.get(r, []))
-        # zadanie P/F ma pulę zdań, więc w trybie --seria wraca, mimo że poszło do wcześniejszego testu (wchodzą nowe zdania)
-        wolne = [z for z in pula if z["id"] not in uzyte or (SERIA and z["typ"] == "pf" and z.get("seria") == SERIA)]
-        if SERIA:
-            nowe = [z for z in wolne if z.get("seria") == SERIA]
-            if len({z["typ"].split("_")[0] for z in nowe}) >= 2:
-                wolne = nowe
-            else:  # rozdział wyczerpany w serii — startuje od nowa (zmieniają się dane i kolejność odpowiedzi)
-                wolne, hist[r] = pula, []
+    for r in RODZ:
+        pula = [z for z in baza["zadania"] if str(z["rozdzial"]) == r and not z.get("powtorzenie")]
+        wolne = [z for z in pula if z["id"] not in set(hist.get(r, []))]
         if len({z["typ"].split("_")[0] for z in wolne}) < 2:
             wolne, hist[r] = pula, []
         for _ in range(500):
             a, b = rng.sample(wolne, 2)
-            if a["typ"].split("_")[0] != b["typ"].split("_")[0] and ({a["typ"], b["typ"]} != {"quiz", "quiz_miska"}) \
-                    and not (a.get("kolizja") and a.get("kolizja") == b.get("kolizja")):
+            if pasuja(a, b):
                 break
         wybrane.append(sorted([a, b], key=lambda z: pula.index(z)))
     return wybrane
+
+
+def wstaw_powtorzenie(baza, hist, wybrane, rng):
+    """Zadanie z powtórzenia (s. 44–45) zastępuje losowe zadanie w parze swojego rozdziału (P/F — dowolnego)."""
+    pula = [z for z in baza["zadania"] if z.get("powtorzenie")]
+    wolne = [z for z in pula if z["id"] not in set(hist.get("P", []))]
+    if not wolne:
+        wolne, hist["P"] = pula, []
+    rng.shuffle(wolne)
+    for z in wolne:
+        rozdz = [str(z["rozdzial"])] if z["rozdzial"] else list(RODZ)
+        rng.shuffle(rozdz)
+        for r in rozdz:
+            para = wybrane[int(r) - 1]
+            for i in rng.sample((0, 1), 2):
+                if pasuja(z, para[1 - i]):
+                    para[i] = z
+                    return
 
 
 def kat(z):
@@ -415,12 +428,13 @@ def wybierz_pelny(baza, hist, rng):
     for _ in range(300):
         h2 = json.loads(json.dumps(hist))
         w = wybierz(baza, h2, rng)
+        wstaw_powtorzenie(baza, h2, w, rng)
         kategorie = {kat(z) for par in w for z in par}
         ile_obl = sum(kat(z) == "obliczenia" for par in w for z in par)
         ile_pf = sum(kat(z) == "pf" for par in w for z in par)
         if not WYMUS <= {z["id"] for par in w for z in par}:
             continue
-        if {"pf", "obliczenia", "quiz"} <= kategorie and ile_obl >= 2 and ile_pf <= 2:
+        if {"pf", "obliczenia", "quiz"} <= kategorie and ile_obl >= 2 and ile_pf <= 2 and len({z["id"] for par in w for z in par}) == 8:
             return w, h2
     raise RuntimeError("Nie udało się dobrać zestawu pokrywającego wszystkie typy")
 
@@ -429,7 +443,7 @@ def wybierz_pelny(baza, hist, rng):
 def html_arkusz(n, rozdz, zad, suma):
     cz = []
     nr = 1
-    for r, pary in zip(("1", "2", "3"), zad):
+    for r, pary in zip(RODZ, zad):
         cz.append(f"<h2>Rozdział {r}. {rozdz[r]}</h2>")
         for t in pary:
             cz.append(f"<div class='task' data-zad='{nr}' data-pkt='{t['pkt']}'><div class='task-head'><div class='task-title'>Zadanie {nr}.</div>"
@@ -440,7 +454,7 @@ def html_arkusz(n, rozdz, zad, suma):
 <link rel="stylesheet" href="../drgania.css"></head><body>
 <div class="group-badge">{n}</div>
 <h1>Test z fizyki: Drgania</h1>
-<div class="subtitle">Fizyka · szkoła podstawowa · test {n} · czas pracy: 45 minut</div>
+<div class="subtitle">Fizyka · szkoła podstawowa · test {n} · czas pracy: 60 minut</div>
 <div class="meta">
   <div>Imię i nazwisko: <span class="line">&nbsp;</span></div>
   <div>Klasa: <span class="line" style="min-width:20mm;">&nbsp;</span></div>
@@ -462,7 +476,7 @@ def html_klucz(n, rozdz, zad, suma):
     tab = "".join(f"<tr><td class='num'>{a}</td><td>{b}</td><td class='num'>{c}</td></tr>" for a, b, c in karta)
     cz = []
     nr = 1
-    for r, pary in zip(("1", "2", "3"), zad):
+    for r, pary in zip(RODZ, zad):
         cz.append(f"<h2>Rozdział {r}. {rozdz[r]}</h2>")
         for t in pary:
             cz.append(f"<div class='key-item' data-zad='{nr}' data-pkt='{t['pkt']}'><span class='num'>Zadanie {nr}.</span> "
@@ -495,11 +509,9 @@ def main():
     ap.add_argument("--numer", type=int)
     ap.add_argument("--pdf", action="store_true")
     ap.add_argument("--nowa-baza", action="store_true")
-    ap.add_argument("--seria", type=int, help="preferuj zadania i zdania P/F danej serii (np. 2 = skany IMG_2402–2405)")
     ap.add_argument("--wymus", default="", help="id zadań (po przecinku), które mają wejść do testu")
     a = ap.parse_args()
-    global SERIA, WYMUS
-    SERIA = a.seria
+    global WYMUS
     WYMUS = {x for x in a.wymus.split(",") if x}
 
     if a.nowa_baza or not os.path.exists(BAZA):
@@ -508,10 +520,8 @@ def main():
         print("Utworzono bazę pytań:", BAZA)
     baza = json.load(open(BAZA, encoding="utf-8"))
     import baza_seria2
-    dod = baza_seria2.dopisz(baza)
-    if dod:
-        json.dump(baza, open(BAZA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-        print(f"Dopisano do bazy (seria 2): {dod} elementów")
+    baza_seria2.dopisz(baza)
+    json.dump(baza, open(BAZA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     hist = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else {"rozdzialy": {}, "testy": {}}
     n = a.numer or (max([int(k) for k in hist["testy"]] + [0]) + 1)
     for proba in range(100):
@@ -529,11 +539,11 @@ def main():
     pk = os.path.join(WYJ, f"test_drgania_{n}_karta_odpowiedzi.html")
     open(pa, "w", encoding="utf-8").write(html_arkusz(n, baza["rozdzialy"], zad, suma))
     open(pk, "w", encoding="utf-8").write(html_klucz(n, baza["rozdzialy"], zad, suma))
-    for r, par in zip(("1", "2", "3"), zad):
-        h2.setdefault(r, [])
+    for r, par in zip(RODZ, zad):
         for t in par:
-            if t["id"] not in h2[r]:
-                h2[r].append(t["id"])
+            k = "P" if t["powtorzenie"] else r
+            if t["id"] not in h2.setdefault(k, []):
+                h2[k].append(t["id"])
     hist["rozdzialy"] = h2
     hist["testy"][str(n)] = {"zadania": [t["id"] for t in plaskie], "klucz": {t["id"]: t.get("odp") or t.get("wynik") for t in plaskie},
                              "suma": suma}

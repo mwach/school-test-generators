@@ -14,15 +14,12 @@ i [`../../matematyka/trojkaty2/WYMAGANIA.md`](../../matematyka/trojkaty2/WYMAGAN
   katalogu; to materiał chroniony prawem autorskim — **wzorzec formy, nie bank pytań**, i
   (jak w `matematyka/trojkaty2`) **nie są w repo** (decyzja zamawiającego 2026-10-09: skanów nie dodawać; wpis w `.gitignore`).
   Baza pytań `baza_pytan.json` jest już samodzielna — skany nie są potrzebne do generowania.
-- **Seria 2** (2026-10-10): 4 kolejne zdjęcia „Sprawdź się!” — `IMG_2402.jpeg` (s. 34, rozdz. 4 „Ruch drgający
-  na wykresach”: P/F o wykresie, odczyt A i T z wykresu, ślad piasku na linijce), `IMG_2403.jpeg` (s. 35: wykres
-  z punktami = klatki filmu), `IMG_2404.jpeg` (s. 44, powtórzenie: P/F, quiz A/B+1/2 o energii kinetycznej ciężarka,
-  pół okresu, młot 18 uderzeń/min), `IMG_2405.jpeg` (s. 45: dwa wykresy K i L). Tak samo lokalnie, poza repo.
-  Zadania dopisane w `tools/baza_seria2.py` (pole `seria: 2`; dopisywane do `baza_pytan.json` idempotentnie przez
-  `generuj_test.py`). **Tematyka wykresów NIE dostała osobnego rozdziału** — struktura „3 rozdziały × 2 zadania”
-  została: zadania z odczytem amplitudy/śladu piasku → rozdz. 1, wykresy z okresem/częstotliwością/klatkami,
-  młot i pół okresu → rozdz. 2, energia kinetyczna ciężarka na sprężynie → rozdz. 3. Nowe zdania P/F dopisano do
-  trzech istniejących zadań `1-pf`, `2-pf`, `3-pf`.
+- **Seria 2** (2026-10-10): 4 kolejne zdjęcia „Sprawdź się!”. `IMG_2402.jpeg` (s. 34) i `IMG_2403.jpeg` (s. 35)
+  pochodzą z **rozdziału 4 „Ruch drgający na wykresach”** (P/F o wykresie, odczyt A i T, ślad piasku na linijce,
+  wykres z punktami = klatki filmu). `IMG_2404.jpeg` (s. 44) i `IMG_2405.jpeg` (s. 45) to **podsumowanie
+  (Powtórzenie)** całego działu (P/F, quiz A/B+1/2 o energii kinetycznej ciężarka, pół okresu, młot 18 uderzeń/min,
+  dwa wykresy K i L). Tak samo lokalnie, poza repo. Zadania dopisane w `tools/baza_seria2.py` (pole `seria: 2`;
+  generator przy każdym uruchomieniu odtwarza je idempotentnie w `baza_pytan.json`).
 - Tytuły rozdziałów 2 i 3 wywnioskowane z treści (na skanach ich nie widać):
   1. Drgania wokół nas, 2. Okres i częstotliwość drgań, 3. Energia w ruchu drgającym.
 - **Baza pytań** `baza_pytan.json` jest tworzona przy pierwszym uruchomieniu
@@ -44,16 +41,23 @@ i [`../../matematyka/trojkaty2/WYMAGANIA.md`](../../matematyka/trojkaty2/WYMAGAN
 - Ślad piasku: linijka 2–12 cm, ślad od x_min do x_max (kroki 0,5 cm), tolerancja odczytu ±0,1 cm.
 - Okres wahadła **nie zależy od amplitudy** (zdanie P/F `2p14`, przy niewielkich wychyleniach).
 
-## Struktura testu (ustalona z zamawiającym)
+## Struktura testu (od testu 4; testy 1–3 miały 3 rozdziały × 2 = 6 zadań)
 
-- **3 rozdziały × 2 zadania = 6 zadań** w teście, w kolejności rozdziałów.
-- Dwa zadania z jednego rozdziału mają **różne typy**; w całym teście występuje co najmniej
-  po jednym zadaniu typu: **obliczenia**, **P/F**, **quiz** (wybór jednokrotny lub
-  dwuczęściowy, także z rysunkiem). Zadania otwarte (krótka odpowiedź) są dopuszczalne.
+- **4 rozdziały × 2 zadania = 8 zadań**, w kolejności rozdziałów: 1. Drgania wokół nas, 2. Okres i częstotliwość drgań,
+  3. Energia w ruchu drgającym, 4. Ruch drgający na wykresach (tytuł rozdziału 4 wg skanu s. 34–35). Czas pracy: 60 minut.
+- **Zadania z podsumowania (s. 44–45; pole `powtorzenie: true`, poza pulami rozdziałów) wchodzą do testu losowo
+  zamiast jednego z zadań** — generator wstawia **jedno** takie zadanie na test, w miejsce losowego zadania w parze
+  swojego rozdziału (P/F z powtórzenia — dowolnego rozdziału; zadania o dwóch wykresach — rozdz. 4, młot i pół
+  okresu — rozdz. 2, ciężarek na sprężynie — rozdz. 3). Zadania z powtórzenia nie powtarzają się, dopóki są
+  niewykorzystane; w kluczu mają dopisek „(powtórzenie)” przy źródle.
+- Dwa zadania z jednego rozdziału mają **różne typy**; w całym teście występuje co najmniej po jednym zadaniu
+  typu: **obliczenia** (min. 2), **P/F** (max. 2), **quiz** (wybór jednokrotny lub dwuczęściowy, także z rysunkiem).
+  Zadania otwarte (krótka odpowiedź) są dopuszczalne.
 - Kolejne testy nie powtarzają zadań z banku, dopóki w rozdziale są nieużyte
   (`historia_testow.json`); po wyczerpaniu rozdział startuje od nowa — wtedy zmieniają się
   dane liczbowe i kolejność odpowiedzi.
 - Jedna wersja testu (bez grup A/B). Arkusz i **osobna karta odpowiedzi** to dwa pliki.
+- Zadania, które nie mogą być razem w teście (ten sam odczyt z wykresu), mają wspólne pole `kolizja`.
 
 | Typ | Zasada punktacji |
 |---|---|
@@ -105,13 +109,10 @@ testy/test_drgania_N_karta_odpowiedzi.html/.pdf
 
 ## Proces generowania
 
-W trybie `--seria N` rozdział, w którym skończyły się nowe zadania (mniej niż 2 typy), startuje od nowa z całą pulą (zmieniają się dane i kolejność odpowiedzi).
-
 ```bash
 # nowy test (numer = kolejny wolny), z PDF
 python3 fizyka/drgania/tools/generuj_test.py --pdf
-# test z zadaniami serii 2 (min. 2 nowe zdania w P/F; --wymus wymusza konkretne zadania)
-python3 fizyka/drgania/tools/generuj_test.py --seria 2 --wymus 2-obl-klatki,1-obl-piasek --pdf
+# opcjonalnie: --wymus id,id (zadania, które mają wejść do testu), --numer N
 # podgląd stron (poza repo) i obejrzenie każdej
 swift historia/kuratorium/tools/pdf_to_png.swift fizyka/drgania/testy/<plik>.pdf <tmp>/podglad 0.9
 ```
@@ -126,5 +127,5 @@ Po wygenerowaniu i weryfikacji — commit + push (pamięć użytkownika: bez pyt
 |---|---|---|---|
 | 1 | 2026-10-09 | 1: P/F (amplituda, ruch okresowy), quiz miska (najmniejsza prędkość); 2: obliczenia T→f (0,75 s), quiz okres (30 drgań/60 s); 3: obliczenia h z v (2,4 m/s), quiz wózek na sprężynie (B2) | P/F `PFFP`, 2 C, 4 C, 6 B2 |
 | 2 | 2026-10-09 | 1: quiz bombka, obliczenia amplituda z linijki (2,0 cm); 2: P/F (okres, częstotliwość), obliczenia metronom (20 drgań/40 s); 3: P/F (energia), obliczenia v z h (45 cm) | P/F `PFPP`, `FPPP`; 1 A |
-| 3 | 2026-10-10 | seria 2: 1: P/F (osie wykresu, amplituda z wykresu), obliczenia ślad piasku (3–8 cm); 2: obliczenia klatki filmu (T = 1,6 s, 16 kropek → 10 kl./s), quiz dwa wykresy K/L; 3: P/F (energia), quiz A/B+1/2 ciężarek w skrajnym położeniu | P/F `FPPF`, piasek 5,5 cm / 2,5 cm, 10 kl./s, quiz C, P/F `FPPP`, B1 |
-| 4 | 2026-10-10 | seria 2: 1: P/F, quiz odczyt A i T z wykresu (A = 1 cm, T = 0,8 s); 2: P/F, obliczenia dwa wykresy K/L (K: 1 cm, 0,5 s; L: 2,5 cm, 2 s); 3: otwarte (przemiany energii w misce), obliczenia v z h (10 cm) — rozdz. 3 wyczerpał nowe zadania serii, więc wrócił do całej puli | P/F `FPPF`, D, P/F `PFFF`, 1,4 m/s |
+| 3 | 2026-10-10 | (jeszcze w układzie 3 rozdziały × 2) seria 2: 1: P/F (osie wykresu, amplituda z wykresu), obliczenia ślad piasku (3–8 cm); 2: obliczenia klatki filmu (T = 1,6 s, 16 kropek → 10 kl./s), quiz dwa wykresy K/L; 3: P/F (energia), quiz A/B+1/2 ciężarek w skrajnym położeniu | P/F `FPPF`, piasek 5,5 cm / 2,5 cm, 10 kl./s, quiz C, P/F `FPPP`, B1 |
+| 4 | 2026-10-10 | **pierwszy test 4×2 = 8 zadań**, 15 pkt. 1: P/F z powtórzenia (zamiast zadania rozdz. 1), obliczenia amplituda z linijek (2,7 cm); 2: obliczenia huśtawka (3 s → 6 s), quiz kHz; 3: otwarte (miska), quiz wózek; 4: P/F (wykresy, klatki), quiz odczyt A i T z wykresu | P/F `PFFF`, 6 s, C, B2, P/F `PPFP`, A |
