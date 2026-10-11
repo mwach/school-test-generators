@@ -1,25 +1,33 @@
 {
  "rozdzialy": {
   "1": [
-   "1-quiz-bombka",
-   "1-obl-amplituda",
    "1-quiz-miska",
-   "1-obl-droga"
+   "1-obl-amplituda"
   ],
   "2": [
    "2-quiz-wykres-f",
-   "2-obl-sprezyna-nT"
+   "2-obl-sprezyna-nT",
+   "2-quiz-okres",
+   "2-obl-wykres-minuta",
+   "2-quiz-kHz",
+   "2-obl-sprezyna-fn"
   ],
   "3": [
    "3-pf",
-   "3-quiz-wykres-Ek"
+   "3-quiz-wykres-Ek",
+   "3-obl-sprezyna-v",
+   "3-quiz-sprezyna3"
   ],
   "4": [
    "4-pf",
-   "4-quiz-wykresy-KL"
+   "4-quiz-wykresy-KL",
+   "4-obl-wykres-dwa",
+   "4-quiz-wykres-zdania",
+   "4-obl-wykres-droga"
   ],
   "P": [
-   "P-pf"
+   "P-pf",
+   "3-quiz-sprezyna"
   ]
  },
  "testy": {
@@ -217,6 +225,52 @@
     "4-quiz-wykresy-KL": "C"
    },
    "suma": 13
+  },
+  "10": {
+   "zadania": [
+    "1-pf",
+    "1-obl-rozmach",
+    "2-quiz-okres",
+    "2-obl-wykres-minuta",
+    "3-obl-sprezyna-v",
+    "3-quiz-sprezyna3",
+    "4-obl-wykres-dwa",
+    "4-quiz-wykres-zdania"
+   ],
+   "klucz": {
+    "1-pf": "FPPP",
+    "1-obl-rozmach": "A = 1,5 cm; odległość między skrajnymi położeniami: 3,0 cm",
+    "2-quiz-okres": "D",
+    "2-obl-wykres-minuta": "T = 1 s; f = 1 Hz; 60 drgań w ciągu minuty",
+    "3-obl-sprezyna-v": "3 m/s",
+    "3-quiz-sprezyna3": "A2",
+    "4-obl-wykres-dwa": "K: A = 1,5 cm, T = 0,5 s, f = 2 Hz; L: A = 1 cm, T = 2 s, f = 0,5 Hz",
+    "4-quiz-wykres-zdania": "D"
+   },
+   "suma": 18
+  },
+  "11": {
+   "zadania": [
+    "1-quiz-miska",
+    "1-obl-amplituda",
+    "2-quiz-kHz",
+    "2-obl-sprezyna-fn",
+    "3-pf",
+    "3-quiz-sprezyna",
+    "4-pf",
+    "4-obl-wykres-droga"
+   ],
+   "klucz": {
+    "1-quiz-miska": "A",
+    "1-obl-amplituda": "3,2 cm",
+    "2-quiz-kHz": "C",
+    "2-obl-sprezyna-fn": "T = 2 s; 30 drgań",
+    "3-pf": "PPPF",
+    "3-quiz-sprezyna": "B1",
+    "4-pf": "FPPP",
+    "4-obl-wykres-droga": "A = 2 cm; droga w czasie jednego drgania: 8 cm"
+   },
+   "suma": 15
   }
  }
 }

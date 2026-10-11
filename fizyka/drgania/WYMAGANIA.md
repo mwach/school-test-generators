@@ -40,6 +40,11 @@ i [`../../matematyka/trojkaty2/WYMAGANIA.md`](../../matematyka/trojkaty2/WYMAGAN
   (`3-obl-sprezyna-Ek`), quiz A/B+1/2 (`3-quiz-sprezyna2`), zdania P/F o wózku. Tylko sprężyna **pozioma** w zadaniach
   o energii. Okresy na nowych wykresach: 0,5/1/2/4 s (zadania z f) albo 0,8–2,4 s (zadania z chwilami; faza sin,
   chwile = wielokrotności T/4 widoczne na osi).
+- **Seria 4** (`tools/baza_seria4.py`, `seria: 4`): kolejna partia tego samego typu, gdy zadania serii 3 zostały zużyte — dwa wykresy K/L
+  z obliczeniem f (`4-obl-wykres-dwa`), droga 4A z wykresu (`4-obl-wykres-droga`), T→f→drgań w minucie (`2-obl-wykres-minuta`),
+  quiz o A i f z wykresu (`4-quiz-wykres-zdania`), odległość między skrajami 2A z linijek (`1-obl-rozmach`), f,t→T,n
+  (`2-obl-sprezyna-fn`), v z energii sprężystości (`3-obl-sprezyna-v`), quiz A/B+1/2 (`3-quiz-sprezyna3`) i nowe zdania P/F.
+  Gdy bank znów się wyczerpie, dopisz `baza_seria5.py` (nowe warianty, nie kopie) i podłącz w `generuj_test.py`.
 - Generator: `--wymus` wymusza zadania w parach rozdziałów (gdy z niewykorzystanych nie da się dobrać pary, sięga po
   całą pulę rozdziału); kontrola klucza: żadna litera nie może być odpowiedzią w większości quizów (od 3 quizów).
 - Sumy punktów testów bywają inne niż 15 (test 8 = 17, test 9 = 13) — wynika z doboru wymuszonych zadań.
@@ -118,6 +123,7 @@ historia_testow.json               które zadania i z jakimi danymi poszły do t
 tools/baza_poczatkowa.py           definicja bazy zbudowana ze skanów
 tools/baza_seria2.py               zadania i zdania P/F dopisane ze skanów IMG_2402–2405 (seria 2)
 tools/baza_seria3.py               zadania autorskie: wykresy (A, T, f) i sprężyna (seria 3)
+tools/baza_seria4.py               kolejne zadania autorskie: wykresy i sprężyna (seria 4)
 tools/generuj_test.py              generator: wybór zadań, dane, HTML, kontrola klucza, PDF
 testy/test_drgania_N_arkusz.html/.pdf
 testy/test_drgania_N_karta_odpowiedzi.html/.pdf
@@ -149,3 +155,5 @@ Po wygenerowaniu i weryfikacji — commit + push (pamięć użytkownika: bez pyt
 | 7 | 2026-10-11 | 1: otwarte (przykłady drgań), quiz miska (C); 2: P/F (częstotliwość), obliczenia f→T (20 Hz → 0,050 s); 3: P/F (energia), obliczenia h z v (2,5 m/s → 0,32 m); 4: quiz odczyt A i T z wykresu (powtórzenie), dwa wykresy K/L (powtórzenie) | 2 C, P/F `FPPP`, `PFFP`, 7 B |
 | 8 | 2026-10-11 | 17 pkt. 1: P/F z powtórzenia, obliczenia droga w 1 drganiu z linijek (A = 3 cm → 12 cm); 2: P/F, obliczenia liczba drgań z wykresu (T = 2 s, 20 s → 10); 3: obliczenia E_k wózka (2 kg, 2 m/s → 4 J), quiz A/B+1/2 (amplituda → prędkość); 4: obliczenia A, T, f z wykresu (3 cm, 2 s, 0,5 Hz), quiz chwila największej energii sprężystości (0,6 s) | P/F `PPFF`, `PPFP`, A1, B |
 | 9 | 2026-10-11 | 13 pkt. 1: quiz miska, obliczenia droga (A = 2,5 cm → 10 cm); 2: quiz f z wykresu (T = 0,5 s → 2 Hz), obliczenia 8 drgań/2 s (T = 0,25 s, f = 4 Hz); 3: P/F (wózek), quiz chwila największej E_k; 4: P/F (wykresy), quiz stosunek f K i L | A, B (quiz miska/wykres), P/F `PFPP`, `FPPP`, C |
+| 10 | 2026-10-11 | 18 pkt. 1: P/F, obliczenia 2A z linijek (A = 1,5 cm → 3 cm); 2: quiz okres (30/60 s), obliczenia T, f, drgań/min z wykresu (T = 1 s); 3: obliczenia v z energii sprężystości (1 kg, 4,5 J → 3 m/s), quiz A/B+1/2 (mocniej ściśnięta sprężyna); 4: obliczenia dwa wykresy K/L (f = 2 i 0,5 Hz), quiz A i f z wykresu | P/F `FPPP`, D, A2, D |
+| 11 | 2026-10-11 | 15 pkt. 1: quiz miska, obliczenia amplituda z linijek (3,2 cm); 2: quiz kHz, obliczenia f = 0,5 Hz → T = 2 s, 30 drgań/60 s; 3: P/F (wózek), quiz A/B+1/2; 4: P/F (wykresy), obliczenia A i droga 4A z wykresu (2 cm → 8 cm) | A, C, P/F `PPPF`, B1, `FPPP` |
