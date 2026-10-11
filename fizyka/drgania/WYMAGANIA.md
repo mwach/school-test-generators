@@ -29,6 +29,21 @@ i [`../../matematyka/trojkaty2/WYMAGANIA.md`](../../matematyka/trojkaty2/WYMAGAN
 - Prośba: **podobne zadania ze zmienionymi danymi liczbowymi** — typ i forma jak na skanach,
   liczby i treść przeformułowane. Nie kopiuj danych liczbowych ze skanów 1:1.
 
+## Seria 3 (2026-10-11): wykresy (A, T, f) i sprężyna
+
+- Na prośbę zamawiającego („więcej zadań na wykres z częstotliwością/amplitudą oraz sprężynę”) dopisane zadania
+  autorskie w `tools/baza_seria3.py` (pole `seria: 3`, idempotentnie jak seria 2). Wykresy: odczyt A, T i obliczenie f
+  (`4-obl-wykres-f`), liczba drgań w czasie t (`2-obl-wykres-liczba`), quizy o f z wykresu (`2-quiz-wykres-f`), o chwili
+  największej energii sprężystości/kinetycznej (`4-quiz-wykres-Esp`, `3-quiz-wykres-Ek`), o stosunku częstotliwości K i L
+  (`4-quiz-wykresy-KL`), nowe zdania P/F (2, 3, 4). Sprężyna: droga w jednym drganiu = 4A z linijek (`1-obl-droga`),
+  n drgań w czasie t → T i f (`2-obl-sprezyna-nT`), E_k = mv²/2 wózka → energia sprężystości w skrajnym położeniu
+  (`3-obl-sprezyna-Ek`), quiz A/B+1/2 (`3-quiz-sprezyna2`), zdania P/F o wózku. Tylko sprężyna **pozioma** w zadaniach
+  o energii. Okresy na nowych wykresach: 0,5/1/2/4 s (zadania z f) albo 0,8–2,4 s (zadania z chwilami; faza sin,
+  chwile = wielokrotności T/4 widoczne na osi).
+- Generator: `--wymus` wymusza zadania w parach rozdziałów (gdy z niewykorzystanych nie da się dobrać pary, sięga po
+  całą pulę rozdziału); kontrola klucza: żadna litera nie może być odpowiedzią w większości quizów (od 3 quizów).
+- Sumy punktów testów bywają inne niż 15 (test 8 = 17, test 9 = 13) — wynika z doboru wymuszonych zadań.
+
 ## Wykresy x(t) i rysunki w serii 2
 
 - Wykresy rysuje generator (SVG, `svg_wykres`): oś pionowa x (cm) co 0,5 cm (podpisy całkowite), oś pozioma t (s)
@@ -102,6 +117,7 @@ baza_pytan.json                    baza zadań (tworzona przy 1. uruchomieniu)
 historia_testow.json               które zadania i z jakimi danymi poszły do testów
 tools/baza_poczatkowa.py           definicja bazy zbudowana ze skanów
 tools/baza_seria2.py               zadania i zdania P/F dopisane ze skanów IMG_2402–2405 (seria 2)
+tools/baza_seria3.py               zadania autorskie: wykresy (A, T, f) i sprężyna (seria 3)
 tools/generuj_test.py              generator: wybór zadań, dane, HTML, kontrola klucza, PDF
 testy/test_drgania_N_arkusz.html/.pdf
 testy/test_drgania_N_karta_odpowiedzi.html/.pdf
@@ -131,3 +147,5 @@ Po wygenerowaniu i weryfikacji — commit + push (pamięć użytkownika: bez pyt
 | 4 | 2026-10-10 | **pierwszy test 4×2 = 8 zadań**, 15 pkt. 1: P/F z powtórzenia (zamiast zadania rozdz. 1), obliczenia amplituda z linijek (2,7 cm); 2: obliczenia huśtawka (3 s → 6 s), quiz kHz; 3: otwarte (miska), quiz wózek; 4: P/F (wykresy, klatki), quiz odczyt A i T z wykresu | P/F `PFFF`, 6 s, C, B2, P/F `PPFP`, A |
 | 6 | 2026-10-11 | 1: quiz bombka, obliczenia amplituda z linijek (3,0 cm); 2: obliczenia młot 24 ud./min (powtórzenie, 2,5 s), quiz okres (8 drgań/2 s); 3: otwarte (miska), quiz wózek; 4: P/F (klatki, wykresy), obliczenia ślad piasku (7,5 cm; A = 3,5 cm) | 1 C, 4 A, 6 B2, P/F `FPPF` |
 | 7 | 2026-10-11 | 1: otwarte (przykłady drgań), quiz miska (C); 2: P/F (częstotliwość), obliczenia f→T (20 Hz → 0,050 s); 3: P/F (energia), obliczenia h z v (2,5 m/s → 0,32 m); 4: quiz odczyt A i T z wykresu (powtórzenie), dwa wykresy K/L (powtórzenie) | 2 C, P/F `FPPP`, `PFFP`, 7 B |
+| 8 | 2026-10-11 | 17 pkt. 1: P/F z powtórzenia, obliczenia droga w 1 drganiu z linijek (A = 3 cm → 12 cm); 2: P/F, obliczenia liczba drgań z wykresu (T = 2 s, 20 s → 10); 3: obliczenia E_k wózka (2 kg, 2 m/s → 4 J), quiz A/B+1/2 (amplituda → prędkość); 4: obliczenia A, T, f z wykresu (3 cm, 2 s, 0,5 Hz), quiz chwila największej energii sprężystości (0,6 s) | P/F `PPFF`, `PPFP`, A1, B |
+| 9 | 2026-10-11 | 13 pkt. 1: quiz miska, obliczenia droga (A = 2,5 cm → 10 cm); 2: quiz f z wykresu (T = 0,5 s → 2 Hz), obliczenia 8 drgań/2 s (T = 0,25 s, f = 4 Hz); 3: P/F (wózek), quiz chwila największej E_k; 4: P/F (wykresy), quiz stosunek f K i L | A, B (quiz miska/wykres), P/F `PFPP`, `FPPP`, C |

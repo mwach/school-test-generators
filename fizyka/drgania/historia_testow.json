@@ -3,31 +3,23 @@
   "1": [
    "1-quiz-bombka",
    "1-obl-amplituda",
-   "1-otw-przyklady",
-   "1-quiz-miska"
+   "1-quiz-miska",
+   "1-obl-droga"
   ],
   "2": [
-   "2-quiz-kHz",
-   "2-quiz-okres",
-   "2-pf",
-   "2-obl-f-na-T"
+   "2-quiz-wykres-f",
+   "2-obl-sprezyna-nT"
   ],
   "3": [
-   "3-otw-przemiany",
-   "3-quiz-wozek",
    "3-pf",
-   "3-obl-h"
+   "3-quiz-wykres-Ek"
   ],
   "4": [
-   "1-quiz-wykres"
+   "4-pf",
+   "4-quiz-wykresy-KL"
   ],
   "P": [
-   "2-quiz-dwa-wykresy",
-   "3-quiz-sprezyna",
-   "P-pf",
-   "2-obl-polokres",
-   "2-obl-mlot",
-   "2-obl-dwa-wykresy"
+   "P-pf"
   ]
  },
  "testy": {
@@ -179,6 +171,52 @@
     "2-obl-dwa-wykresy": "K: A = 1,5 cm, f = 2 Hz; L: A = 2,5 cm, f = 0,5 Hz"
    },
    "suma": 15
+  },
+  "8": {
+   "zadania": [
+    "P-pf",
+    "1-obl-droga",
+    "2-pf",
+    "2-obl-wykres-liczba",
+    "3-obl-sprezyna-Ek",
+    "3-quiz-sprezyna2",
+    "4-obl-wykres-f",
+    "4-quiz-wykres-Esp"
+   ],
+   "klucz": {
+    "P-pf": "PPFF",
+    "1-obl-droga": "A = 3 cm; droga w czasie jednego drgania: 12,0 cm",
+    "2-pf": "PPFP",
+    "2-obl-wykres-liczba": "T = 2 s; 10 drgań",
+    "3-obl-sprezyna-Ek": "E<sub>k</sub> = 4 J; energia sprężystości w skrajnym położeniu = 4 J",
+    "3-quiz-sprezyna2": "A1",
+    "4-obl-wykres-f": "A = 3 cm; T = 2 s; f = 0,5 Hz",
+    "4-quiz-wykres-Esp": "B"
+   },
+   "suma": 17
+  },
+  "9": {
+   "zadania": [
+    "1-quiz-miska",
+    "1-obl-droga",
+    "2-quiz-wykres-f",
+    "2-obl-sprezyna-nT",
+    "3-pf",
+    "3-quiz-wykres-Ek",
+    "4-pf",
+    "4-quiz-wykresy-KL"
+   ],
+   "klucz": {
+    "1-quiz-miska": "A",
+    "1-obl-droga": "A = 2,5 cm; droga w czasie jednego drgania: 10,0 cm",
+    "2-quiz-wykres-f": "A",
+    "2-obl-sprezyna-nT": "T = 0,25 s; f = 4 Hz",
+    "3-pf": "PFPP",
+    "3-quiz-wykres-Ek": "B",
+    "4-pf": "FPPP",
+    "4-quiz-wykresy-KL": "C"
+   },
+   "suma": 13
   }
  }
 }

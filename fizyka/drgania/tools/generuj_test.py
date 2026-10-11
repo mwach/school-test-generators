@@ -377,6 +377,9 @@ def sprawdz_klucz(zadania):
     lit = [z["odp"] for z in zadania if z["kategoria"] == "quiz"]
     if len(lit) >= 2 and len({x[0] for x in lit}) == 1:
         bl.append(f"quizy: wszystkie odpowiedzi zaczynają się od {lit[0][0]}")
+    for l in set(x[0] for x in lit):
+        if len(lit) >= 3 and sum(x[0] == l for x in lit) > (len(lit) + 1) // 2:
+            bl.append(f"quizy: litera {l} w większości odpowiedzi {lit}")
     return bl
 
 
@@ -394,10 +397,22 @@ def wybierz(baza, hist, rng):
         wolne = [z for z in pula if z["id"] not in set(hist.get(r, []))]
         if len({z["typ"].split("_")[0] for z in wolne}) < 2:
             wolne, hist[r] = pula, []
-        for _ in range(500):
-            a, b = rng.sample(wolne, 2)
-            if pasuja(a, b):
-                break
+        wym = [z for z in pula if z["id"] in WYMUS]
+        for zrodlo in (wolne, pula):  # gdy z niewykorzystanych nie da się dobrać pary — sięgamy po całą pulę rozdziału
+            for _ in range(500):
+                if len(wym) >= 2:
+                    a, b = rng.sample(wym, 2)
+                elif wym:
+                    a, b = wym[0], rng.choice([z for z in zrodlo if z is not wym[0]])
+                else:
+                    a, b = rng.sample(zrodlo, 2)
+                if pasuja(a, b):
+                    break
+            else:
+                continue
+            break
+        else:
+            raise RuntimeError(f"Rozdział {r}: nie dobrano pary zadań")
         wybrane.append(sorted([a, b], key=lambda z: pula.index(z)))
     return wybrane
 
@@ -415,7 +430,7 @@ def wstaw_powtorzenie(baza, hist, wybrane, rng):
         for r in rozdz:
             para = wybrane[int(r) - 1]
             for i in rng.sample((0, 1), 2):
-                if pasuja(z, para[1 - i]):
+                if para[i]["id"] not in WYMUS and pasuja(z, para[1 - i]):
                     para[i] = z
                     return
 
@@ -521,6 +536,8 @@ def main():
     baza = json.load(open(BAZA, encoding="utf-8"))
     import baza_seria2
     baza_seria2.dopisz(baza)
+    import baza_seria3
+    baza_seria3.dopisz(baza)
     json.dump(baza, open(BAZA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     hist = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else {"rozdzialy": {}, "testy": {}}
     n = a.numer or (max([int(k) for k in hist["testy"]] + [0]) + 1)
