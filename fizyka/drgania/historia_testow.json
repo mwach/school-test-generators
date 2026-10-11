@@ -1,28 +1,33 @@
 {
  "rozdzialy": {
   "1": [
+   "1-quiz-bombka",
    "1-obl-amplituda",
-   "1-pf",
-   "1-otw-przyklady"
+   "1-otw-przyklady",
+   "1-quiz-miska"
   ],
   "2": [
-   "2-quiz-kHz"
+   "2-quiz-kHz",
+   "2-quiz-okres",
+   "2-pf",
+   "2-obl-f-na-T"
   ],
   "3": [
    "3-otw-przemiany",
    "3-quiz-wozek",
    "3-pf",
-   "3-obl-v"
+   "3-obl-h"
   ],
   "4": [
-   "1-quiz-wykres",
-   "2-obl-klatki"
+   "1-quiz-wykres"
   ],
   "P": [
    "2-quiz-dwa-wykresy",
    "3-quiz-sprezyna",
    "P-pf",
-   "2-obl-polokres"
+   "2-obl-polokres",
+   "2-obl-mlot",
+   "2-obl-dwa-wykresy"
   ]
  },
  "testy": {
@@ -126,6 +131,52 @@
     "3-obl-v": "2,8 m/s",
     "1-quiz-wykres": "D",
     "2-obl-klatki": "T = 1,2 s; 10 klatek/s"
+   },
+   "suma": 15
+  },
+  "6": {
+   "zadania": [
+    "1-quiz-bombka",
+    "1-obl-amplituda",
+    "2-obl-mlot",
+    "2-quiz-okres",
+    "3-otw-przemiany",
+    "3-quiz-wozek",
+    "4-pf",
+    "1-obl-piasek"
+   ],
+   "klucz": {
+    "1-quiz-bombka": "C",
+    "1-obl-amplituda": "3,0 cm",
+    "2-obl-mlot": "2,5 s",
+    "2-quiz-okres": "A",
+    "3-otw-przemiany": null,
+    "3-quiz-wozek": "B2",
+    "4-pf": "FPPF",
+    "1-obl-piasek": "położenie równowagi: 7,5 cm; amplituda: 3,5 cm"
+   },
+   "suma": 15
+  },
+  "7": {
+   "zadania": [
+    "1-otw-przyklady",
+    "1-quiz-miska",
+    "2-pf",
+    "2-obl-f-na-T",
+    "3-pf",
+    "3-obl-h",
+    "1-quiz-wykres",
+    "2-obl-dwa-wykresy"
+   ],
+   "klucz": {
+    "1-otw-przyklady": null,
+    "1-quiz-miska": "C",
+    "2-pf": "FPPP",
+    "2-obl-f-na-T": "0,050 s",
+    "3-pf": "PFFP",
+    "3-obl-h": "0,32 m",
+    "1-quiz-wykres": "B",
+    "2-obl-dwa-wykresy": "K: A = 1,5 cm, f = 2 Hz; L: A = 2,5 cm, f = 0,5 Hz"
    },
    "suma": 15
   }
