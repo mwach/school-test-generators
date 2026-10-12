@@ -540,6 +540,8 @@ def main():
     baza_seria3.dopisz(baza)
     import baza_seria4
     baza_seria4.dopisz(baza)
+    import baza_seria5
+    baza_seria5.dopisz(baza)
     json.dump(baza, open(BAZA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     hist = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else {"rozdzialy": {}, "testy": {}}
     n = a.numer or (max([int(k) for k in hist["testy"]] + [0]) + 1)

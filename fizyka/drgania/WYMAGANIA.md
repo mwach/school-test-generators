@@ -44,7 +44,13 @@ i [`../../matematyka/trojkaty2/WYMAGANIA.md`](../../matematyka/trojkaty2/WYMAGAN
   z obliczeniem f (`4-obl-wykres-dwa`), droga 4A z wykresu (`4-obl-wykres-droga`), T→f→drgań w minucie (`2-obl-wykres-minuta`),
   quiz o A i f z wykresu (`4-quiz-wykres-zdania`), odległość między skrajami 2A z linijek (`1-obl-rozmach`), f,t→T,n
   (`2-obl-sprezyna-fn`), v z energii sprężystości (`3-obl-sprezyna-v`), quiz A/B+1/2 (`3-quiz-sprezyna3`) i nowe zdania P/F.
-  Gdy bank znów się wyczerpie, dopisz `baza_seria5.py` (nowe warianty, nie kopie) i podłącz w `generuj_test.py`.
+  Gdy bank znów się wyczerpie, dopisz kolejny `baza_serieN.py` (nowe warianty, nie kopie) i podłącz w `generuj_test.py`.
+- **Seria 5** (2026-10-12, `tools/baza_seria5.py`, `seria: 5`): T, f i czas n drgań z wykresu (`4-obl-wykres-czas-n`), quiz „okres z wykresu”
+  z dystraktorami T/2, 2T i f (`2-quiz-wykres-T`), quiz porównania A i f dwóch wykresów K/L (`4-quiz-wykres-dwa-A`), liczba drgań K i L w czasie t
+  i różnica (`4-obl-wykres-dwa-n`), quiz „chwila, gdy v = 0” z wykresu (`3-quiz-wykres-v0`), droga s → liczba drgań z linijek (`1-obl-sprezyna-n`),
+  T → f i czas n drgań (`2-obl-sprezyna-tn`), masa wózka z energii sprężystości i v (`3-obl-sprezyna-m`), quiz A/B+1/2 (`3-quiz-sprezyna4`),
+  nowe zdania P/F (grupa `rownowaga`: przejście przez położenie równowagi = pół okresu). Liczebniki: „2–4 pełne drgania”, „5+ pełnych drgań”
+  — przy wynikach z liczbą drgań nie dopisuj na sztywno „drgań” po liczbie.
 - Generator: `--wymus` wymusza zadania w parach rozdziałów (gdy z niewykorzystanych nie da się dobrać pary, sięga po
   całą pulę rozdziału); kontrola klucza: żadna litera nie może być odpowiedzią w większości quizów (od 3 quizów).
 - Sumy punktów testów bywają inne niż 15 (test 8 = 17, test 9 = 13) — wynika z doboru wymuszonych zadań.
@@ -124,6 +130,7 @@ tools/baza_poczatkowa.py           definicja bazy zbudowana ze skanów
 tools/baza_seria2.py               zadania i zdania P/F dopisane ze skanów IMG_2402–2405 (seria 2)
 tools/baza_seria3.py               zadania autorskie: wykresy (A, T, f) i sprężyna (seria 3)
 tools/baza_seria4.py               kolejne zadania autorskie: wykresy i sprężyna (seria 4)
+tools/baza_seria5.py               kolejne zadania autorskie: wykresy i sprężyna (seria 5)
 tools/generuj_test.py              generator: wybór zadań, dane, HTML, kontrola klucza, PDF
 testy/test_drgania_N_arkusz.html/.pdf
 testy/test_drgania_N_karta_odpowiedzi.html/.pdf
@@ -157,3 +164,5 @@ Po wygenerowaniu i weryfikacji — commit + push (pamięć użytkownika: bez pyt
 | 9 | 2026-10-11 | 13 pkt. 1: quiz miska, obliczenia droga (A = 2,5 cm → 10 cm); 2: quiz f z wykresu (T = 0,5 s → 2 Hz), obliczenia 8 drgań/2 s (T = 0,25 s, f = 4 Hz); 3: P/F (wózek), quiz chwila największej E_k; 4: P/F (wykresy), quiz stosunek f K i L | A, B (quiz miska/wykres), P/F `PFPP`, `FPPP`, C |
 | 10 | 2026-10-11 | 18 pkt. 1: P/F, obliczenia 2A z linijek (A = 1,5 cm → 3 cm); 2: quiz okres (30/60 s), obliczenia T, f, drgań/min z wykresu (T = 1 s); 3: obliczenia v z energii sprężystości (1 kg, 4,5 J → 3 m/s), quiz A/B+1/2 (mocniej ściśnięta sprężyna); 4: obliczenia dwa wykresy K/L (f = 2 i 0,5 Hz), quiz A i f z wykresu | P/F `FPPP`, D, A2, D |
 | 11 | 2026-10-11 | 15 pkt. 1: quiz miska, obliczenia amplituda z linijek (3,2 cm); 2: quiz kHz, obliczenia f = 0,5 Hz → T = 2 s, 30 drgań/60 s; 3: P/F (wózek), quiz A/B+1/2; 4: P/F (wykresy), obliczenia A i droga 4A z wykresu (2 cm → 8 cm) | A, C, P/F `PPPF`, B1, `FPPP` |
+| 12 | 2026-10-12 | 16 pkt. 1: P/F, obliczenia droga 40 cm → 5 drgań (A = 2 cm); 2: pół okresu (powtórzenie, 2,4 s → 4,8 s), quiz okres z wykresu (2 s); 3: quiz chwila v = 0 (0,5 s), obliczenia masa wózka (32 J, 4 m/s → 4 kg); 4: obliczenia T, f, czas 30 drgań (1 s → 30 s), quiz A i f K/L | P/F `PFFP`, B, C, D |
+| 13 | 2026-10-12 | 17 pkt. 1: otwarte (przykłady), obliczenia 2A z linijek (A = 4 cm → 8 cm); 2: quiz f z wykresu (T = 2 s → 0,5 Hz), obliczenia T = 0,25 s → 4 Hz, 25 drgań w 6,25 s; 3: obliczenia h z v (0,8 m/s → 0,033 m), quiz A/B+1/2; 4: P/F (wykresy), obliczenia dwa wykresy K/L — liczba drgań w 16 s (4 i 8) | C, B1, P/F `PPFF` |
