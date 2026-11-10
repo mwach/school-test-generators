@@ -1012,6 +1012,32 @@ miastem (tak Trydent zastąpiono Wormacją).
 Pliki HTML użyte do generowania PDF pozostawiono w katalogu projektu, dzięki czemu można
 zmieniać treść, styl oraz tworzyć kolejne warianty.
 
+### Warianty etapu rejonowego złożone z zadań archiwalnych (decyzja zamawiającego, 2026-11-10)
+
+Na wyraźne polecenie zamawiającego („użyj pytań, które występują w prawdziwych arkuszach”)
+arkusz etapu **rejonowego** może być złożony w całości z zadań przeniesionych wprost z oficjalnych
+arkuszy rejonowych kuratorium bydgoskiego (`referencje/arkusze/*-rejonowy-historia-*.pdf`).
+To wyjątek od zasady z § 7 pkt 2 i dotyczy **wyłącznie** wariantów rejonowych `R<n>` — warianty
+etapu szkolnego nadal powstają według dotychczasowych reguł. Zasady dla wariantów `R<n>`:
+
+- parametry jak w arkuszach rejonowych od 2022/2023: 60 minut, 100 punktów, 15–20 zadań,
+  zakres działów I–XXI (do powstania styczniowego), co najmniej 50% punktów z historii Polski;
+- korzystaj z arkuszy 2022/2023 i nowszych (ten sam format 60-minutowy); arkusze 2018/2019
+  i 2019/2020 trwały 90 minut, a pliki `gim` dotyczą gimnazjum;
+- przy każdym zadaniu podaj rok i numer zadania w arkuszu źródłowym; punktację zostaw oryginalną;
+- treści i kolejności odpowiedzi nie zmieniaj (poza oczywistymi literówkami, odnotowanymi w kluczu) —
+  dlatego kontrola `tools/sprawdz_losowosc_klucza.py` może zgłaszać uwagi; odnotuj je w kluczu;
+- odpowiedzi bierz z oficjalnego klucza, ale odczytuj go **z PDF-u** (zaznaczenia są kolorem,
+  warstwa tekstowa ich nie zawiera) i sprawdź merytorycznie;
+- ilustracje i mapy wycinaj z PDF-u arkusza źródłowego do `assets/rejonowy_R<n>_*.jpg`;
+- pliki nazywaj `output/test_rejonowy_wariant_R<n>.*` i `output/klucz_odpowiedzi_rejonowy_wariant_R<n>.*`;
+- w kolejnych wariantach nie powtarzaj zadań już użytych. Wariant R1 zużył: 2022/2023 — VI, VII, X,
+  XI, XIV, XVII, XX; 2023/2024 — IV, V, VI, VIII, XIII, XVI, XVII; 2024/2025 — I, XIII, XV.
+
+- `output/test_rejonowy_wariant_R1.pdf` — 17 zadań, 100 p. (46 powszechna / 54 Polska), ziarno
+  `2026-11-10-R1`, 15 stron;
+- `output/klucz_odpowiedzi_rejonowy_wariant_R1.pdf`.
+
 ## 13. Narzędzia pomocnicze
 
 - `tools/extract_pdf_text.swift` — wyciąga warstwę tekstową z PDF-ów do katalogu z tekstem:

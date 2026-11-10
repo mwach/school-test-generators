@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Historia – etap rejonowy – wariant R1</title>
+  <style>
+    @page { size: A4; margin: 14mm 14mm 16mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: #172033; font-family: "Arial", "Helvetica", sans-serif;
+      font-size: 10.4pt; line-height: 1.28;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 22pt; line-height: 1.08; margin-bottom: 5mm; color: #163a63; }
+    h2 { font-size: 15pt; color: #163a63; margin: 0 0 4mm; }
+    h3 { font-size: 11.4pt; margin: 0; color: #163a63; }
+    .cover {
+      min-height: 255mm; border: 2.2px solid #1f5a91; padding: 15mm 14mm;
+      display: flex; flex-direction: column;
+    }
+    .eyebrow { color: #9a5a00; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; }
+    .subtitle { font-size: 15pt; font-weight: 700; margin-bottom: 9mm; }
+    .meta {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm;
+      padding: 5mm; background: #eef5fb; border-left: 5px solid #1f5a91; margin-bottom: 7mm;
+    }
+    .meta strong { color: #163a63; }
+    .code { border-bottom: 1px solid #172033; min-width: 55mm; display: inline-block; }
+    .notice { margin-top: auto; font-size: 9.2pt; color: #4c596b; }
+    .page-break { break-before: page; }
+    .instructions { padding: 5mm 6mm; background: #f6f3ed; border: 1px solid #d8cdb9; margin-bottom: 6mm; }
+    .instructions ol { margin: 2mm 0 0 6mm; padding-left: 4mm; }
+    .section-title {
+      font-size: 12.5pt; font-weight: 700; color: #fff; background: #1f5a91;
+      padding: 1.6mm 4mm; margin: 0 0 4mm; letter-spacing: .6px; break-after: avoid;
+    }
+    .task {
+      border: 1px solid #b8c4d1; border-top: 3px solid #1f5a91;
+      border-radius: 2px; padding: 3mm 4mm; margin: 0 0 4mm;
+    }
+    .task.keep { break-inside: avoid; }
+    .task-head {
+      display: flex; justify-content: space-between; gap: 5mm; align-items: baseline; margin-bottom: 2mm;
+      break-after: avoid;
+    }
+    .points { white-space: nowrap; font-weight: 700; color: #9a5a00; }
+    .lead { font-weight: 700; break-after: avoid; break-inside: avoid; }
+    .origin { font-size: 8.2pt; color: #6a7686; font-weight: 400; }
+    .source { font-size: 8.4pt; color: #5c6878; margin: 1.5mm 0 2mm; text-align: center; }
+    table { width: 100%; border-collapse: collapse; margin: 2mm 0; }
+    th, td { border: 1px solid #8090a2; padding: 1.5mm 2mm; vertical-align: top; }
+    th { background: #eaf1f7; color: #163a63; text-align: left; }
+    td.pf { width: 11mm; text-align: center; font-weight: 700; vertical-align: middle; }
+    tr { break-inside: avoid; }
+    .gap { line-height: 1.75; break-inside: avoid; }
+    .quote {
+      break-inside: avoid;
+      background: #f7f8fa; border-left: 4px solid #9a5a00; padding: 3mm 4mm;
+      font-family: Georgia, serif; font-size: 10pt; margin: 3mm 0;
+    }
+    .quote p { margin: 0 0 2mm; }
+    .quote p:last-child { margin-bottom: 0; }
+    .quote .qt { text-align: center; font-weight: 700; }
+    .fig { border: 1px solid #c5ced8; background: #fbfcfd; padding: 1.5mm; margin: 2mm 0 0; text-align: center; break-inside: avoid; }
+    .map-image { display: block; margin: 0 auto; width: 100%; max-width: 160mm; height: auto; }
+    .q { margin: 2mm 0 .8mm; break-after: avoid; }
+    .item { break-inside: avoid; }
+    .opts { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5mm 6mm; margin: 0 0 1mm 5mm; }
+    .opts.one { grid-template-columns: 1fr; }
+    .opts.three { grid-template-columns: 1fr 1fr 1fr; }
+    .opts.four { grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .cols2 { columns: 2; column-gap: 8mm; }
+    .side { display: grid; grid-template-columns: 62mm 1fr; gap: 5mm; align-items: start; }
+    .side img { width: 100%; height: auto; display: block; }
+    .small { font-size: 9pt; }
+    .card td { height: 8.5mm; }
+    .card td:first-child { width: 22mm; font-weight: 700; }
+    .card td:nth-child(2) { width: 14mm; text-align: center; }
+    .xgrid td, .xgrid th { text-align: center; padding: 1.3mm; }
+    .xgrid td:first-child, .xgrid th:first-child { text-align: left; width: 52mm; }
+    .footer-note { font-size: 8.5pt; color: #606b79; border-top: 1px solid #c7cfd8; padding-top: 2mm; }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="eyebrow">Arkusz treningowy • wariant R1 • zadania z arkuszy archiwalnych</div>
+    <h1>Wojewódzki Konkurs Przedmiotowy z Historii</h1>
+    <div class="subtitle">Etap II – rejonowy</div>
+    <div class="meta">
+      <div><strong>Zakres:</strong> działy I–XXI podstawy programowej (do powstania styczniowego)</div>
+      <div><strong>Czas pracy:</strong> 60 minut</div>
+      <div><strong>Liczba zadań:</strong> 17</div>
+      <div><strong>Maksymalna liczba punktów:</strong> 100</div>
+      <div><strong>Wariant:</strong> R1</div>
+      <div><strong>Ziarno wariantu:</strong> 2026-11-10-R1</div>
+    </div>
+    <p><strong>KOD UCZNIA:</strong> <span class="code">&nbsp;</span></p>
+    <div class="instructions">
+      <h2>Instrukcja dla ucznia</h2>
+      <ol>
+        <li>Sprawdź, czy arkusz zawiera 17 zadań i kartę odpowiedzi.</li>
+        <li>Przeczytaj uważnie i ze zrozumieniem polecenia i wskazówki do każdego zadania.</li>
+        <li>Przy każdym zadaniu zaznacz właściwe odpowiedzi – otocz kółkiem literę albo podkreśl
+          wybrane sformułowanie w nawiasie. Następnie przenieś odpowiedzi na kartę odpowiedzi.</li>
+        <li>W zadaniach typu prawda/fałsz zaznacz <strong>P</strong> (prawda) albo
+          <strong>F</strong> (fałsz).</li>
+        <li>Przy każdym zadaniu podano maksymalną liczbę punktów. Jeśli polecenie nie stanowi
+          inaczej, za każdy poprawnie rozwiązany element otrzymujesz 1 punkt.</li>
+        <li>Pracuj samodzielnie. Nie używaj telefonu ani innych urządzeń elektronicznych.</li>
+        <li>Całkowity czas na wykonanie testu wynosi 60 minut.</li>
+      </ol>
+    </div>
+    <p class="notice">
+      Arkusz treningowy złożony w całości z zadań, które wystąpiły w oficjalnych arkuszach etapu
+      rejonowego Wojewódzkiego Konkursu Przedmiotowego z Historii Kuratorium Oświaty w Bydgoszczy
+      w latach 2022/2023, 2023/2024 i 2024/2025. Przy każdym zadaniu podano rok i numer zadania
+      w arkuszu źródłowym. Dobór i kolejność zadań oraz skład graficzny są własne – to
+      <strong>nie jest oficjalny arkusz konkursowy</strong>.
+    </p>
+  </section>
+
+  <section class="page-break">
+    <div class="section-title">HISTORIA POWSZECHNA</div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie I <span class="origin">(2024/2025, zad. I)</span></h3><span class="points">0 – 10 p.</span></div>
+      <p class="lead">Uzupełnij tekst, wybierając właściwe pojęcia wymienione w nawiasach (podkreśl je).</p>
+      <p class="gap">Ludzie zaczęli prowadzić osiadły tryb życia w <b>(paleolicie czy neolicie)</b>. Dzięki
+        temu mogli rozpocząć uprawę ziemi lub hodowlę zwierząt. Wybierając miejsce do osiedlenia,
+        decydowali się na bliską obecność rzek. W związku z tym Sumerowie założyli osady nad m.in.
+        <b>(Nilem czy Eufratem)</b>. Egipcjan i Sumerów, prócz zamieszkania nad rzekami, łączyła wiara
+        w wielu bogów, czyli <b>(monoteizm czy politeizm)</b>. Ponadto <b>(Egipcjanie czy Sumerowie)</b>
+        wprowadzili mumifikację. Wierzono, że po śmierci zmarły trafi przed sąd boga
+        <b>(Ozyrysa czy Anubisa)</b>, który stwierdzi po wadze serca, na co zasługuje zmarły. Oba ludy
+        zadbały też o rozwój pisma. W przypadku Sumerów mieliśmy do czynienia z
+        <b>(pismem klinowym czy hieroglifami)</b>. Natomiast Egipcjanie opracowali sposób produkcji
+        materiału piśmienniczego zwanego <b>(pergaminem czy papirusem)</b>. Starożytnym ludem, który
+        różnił się od Sumerów i Egipcjan w kwestii wiary, byli <b>(Izraelici czy Grecy)</b>. Istotnym
+        elementem ich wiary była skrzynia, gdzie trzymano tablice z Dziesięciorgiem Przykazań – była to
+        <b>(Tora czy Arka Przymierza)</b>. Znajdowała się ona w świątyni <b>(Dawida czy Salomona)</b>
+        w Jerozolimie.</p>
+    </div>
+
+    <div class="task keep">
+      <div class="task-head"><h3>Zadanie II <span class="origin">(2023/2024, zad. IV)</span></h3><span class="points">0 – 4 p.</span></div>
+      <p class="lead">Przeanalizuj mapkę znajdującą się poniżej, a następnie dokończ zdania, wybierając
+        poprawne zakończenie.</p>
+      <div class="fig"><img class="map-image" style="max-width: 132mm" src="../assets/rejonowy_R1_imperium_frankow.jpg" alt="Mapa: Imperium Franków 481–814"></div>
+      <p class="source">Źródło: pl.wikipedia.org/wiki/Państwo_frankijskie – plik Frankish_Empire_481_to_814-pl.svg</p>
+      <div class="cols2">
+        <div class="item"><p class="q">1. W momencie objęcia władzy przez Chlodwiga państwo Franków obejmowało obszar:</p>
+          <div class="opts"><div>A. Burgundii,</div><div>B. Austrazji.</div></div></div>
+        <div class="item"><p class="q">2. Za panowania Karola Wielkiego najpóźniej do jego państwa przyłączono:</p>
+          <div class="opts"><div>A. Saksonię,</div><div>B. Bawarię.</div></div></div>
+        <div class="item"><p class="q">3. Tereny zależne od Imperium Franków zamieszkane przez plemiona słowiańskie
+          graniczyły z państwem Franków od:</p>
+          <div class="opts"><div>A. wschodu,</div><div>B. zachodu.</div></div></div>
+        <div class="item"><p class="q">4. Jednym z ludów podległych Karolowi Wielkiemu zamieszkujących tereny na
+          wschód od Imperium Franków byli:</p>
+          <div class="opts"><div>A. Bretończycy,</div><div>B. Morawianie.</div></div></div>
+      </div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie III <span class="origin">(2023/2024, zad. V)</span></h3><span class="points">0 – 5 p.</span></div>
+      <p class="lead">Przeczytaj uważnie poniższy tekst źródłowy, a następnie, korzystając z informacji
+        w nim zawartych i własnej wiedzy, zaznacz właściwe zakończenie zdań umieszczonych pod tekstem.</p>
+      <div class="quote">
+        <p class="qt">Fragment reguły św. Benedykta</p>
+        <p>1. […] gdy tylko przełożony wyda jakieś polecenie, nie zwlekają [mnisi] ani chwili z jego
+          wykonaniem tak, jak gdyby sam Bóg rozkazywał. […] Tacy właśnie porzucają natychmiast swoje
+          sprawy i wyrzekają się własnej woli. Od razu wszystko wypuszczają z ręki i pozostawiają nie
+          ukończoną pracę, którą wykonywali, aby jak najrychlej w duchu posłuszeństwa odpowiedzieć
+          czynem na otrzymane polecenie.</p>
+        <p>2. Bezczynność jest wrogiem duszy. Dlatego też bracia muszą się zajmować w określonych
+          godzinach pracą fizyczną i również w określonych godzinach czytaniem duchownym.</p>
+        <p>3. Klasztor zaś, jeśli to możliwe, tak powinien być zorganizowany, żeby można było znaleźć
+          w obrębie jego murów wszystko, co niezbędne, a więc wodę, młyn, ogród, jak również różne
+          warsztaty rzemieślnicze, tak aby mnisi nie musieli włóczyć się na zewnątrz, co nie przynosi
+          zgoła pożytku ich duszom.</p>
+      </div>
+      <p class="source">Źródło: opoka.org.pl</p>
+      <div class="item"><p class="q">1. Która z reguł nakładała na mnichów zasadę bezwzględnego posłuszeństwa wobec przełożonego:</p>
+        <div class="opts three"><div>A. 1,</div><div>B. 2,</div><div>C. 3.</div></div></div>
+      <div class="item"><p class="q">2. Drugą regułę można określić słowami:</p>
+        <div class="opts three"><div>A. „Pamiętaj o śmierci”,</div><div>B. „Chwytaj dzień”,</div><div>C. „Módl się i pracuj”.</div></div></div>
+      <div class="item"><p class="q">3. Mnisi nie musieli opuszczać klasztoru, ponieważ:</p>
+        <div class="opts one"><div>A. przywożono im zaopatrzenie z miasta,</div>
+          <div>B. sami wytwarzali wszystkie produkty w klasztorze,</div>
+          <div>C. nie potrzebowali pożywienia, żyli w ubóstwie.</div></div></div>
+      <div class="item"><p class="q">4. „Benedyktyńska praca” oznaczała pracę:</p>
+        <div class="opts one"><div>A. żmudną, czasochłonną, wymagającą cierpliwości,</div>
+          <div>B. wykonywaną bardzo szybko, bez zachowania staranności,</div>
+          <div>C. wykonywaną przez wielu ludzi jednocześnie.</div></div></div>
+      <div class="item"><p class="q">5. Benedykt z Nursji założył swój zakon na początku:</p>
+        <div class="opts three"><div>A. IV wieku,</div><div>B. V wieku,</div><div>C. VI wieku.</div></div></div>
+    </div>
+
+    <div class="task keep">
+      <div class="task-head"><h3>Zadanie IV <span class="origin">(2023/2024, zad. VI)</span></h3><span class="points">0 – 3 p.</span></div>
+      <p class="lead">Przeczytaj uważnie biogramy wybitnych przedstawicieli włoskiego renesansu,
+        następnie zaznacz nazwisko artysty, którego informacja dotyczy.</p>
+      <div class="item"><p class="q">1. Jeden z najwybitniejszych artystów epoki renesansu; rzeźbiarz, malarz, architekt i poeta.
+        Autor rzeźb „Pieta”, „Dawid”, „Mojżesz” i fresków w Kaplicy Sykstyńskiej.</p>
+        <div class="opts three"><div>A. Michał Anioł,</div><div>B. Rafael Santi,</div><div>C. Leonardo da Vinci.</div></div></div>
+      <div class="item"><p class="q">2. Włoski malarz, rzeźbiarz, architekt, konstruktor, teoretyk sztuki, filozof, wszechstronny
+        i najdoskonalszy przedstawiciel renesansu. Autor obrazów „Dama z gronostajem”, „Madonny wśród
+        skał” i malowidła ściennego „Ostatnia wieczerza”.</p>
+        <div class="opts three"><div>A. Michał Anioł,</div><div>B. Rafael Santi,</div><div>C. Leonardo da Vinci.</div></div></div>
+      <div class="item"><p class="q">3. Włoski malarz i architekt renesansu. Autor obrazów „Madonna Sykstyńska”, „Piękna
+        ogrodniczka” i malowidła ściennego „Szkoła ateńska”. Kierował budową bazyliki Św. Piotra w Rzymie.</p>
+        <div class="opts three"><div>A. Michał Anioł,</div><div>B. Rafael Santi,</div><div>C. Leonardo da Vinci.</div></div></div>
+    </div>
+
+    <div class="task keep">
+      <div class="task-head"><h3>Zadanie V <span class="origin">(2022/2023, zad. VI)</span></h3><span class="points">0 – 5 p.</span></div>
+      <p class="lead">Poniżej umieszczono ilustrację przedstawiającą jednego z królów Francji nazywanego
+        „królem Słońce”. Rozpoznaj władcę i dokończ zdania znajdujące się poniżej. Zaznacz literę przy
+        prawidłowej odpowiedzi.</p>
+      <div class="side">
+        <div>
+          <img src="../assets/rejonowy_R1_ludwik_xiv.jpg" alt="Portret króla Francji">
+          <p class="source">Źródło: mm.pwn.pl/ency/jpg/583/1c/d89i5619.jpg</p>
+        </div>
+        <div>
+          <p class="q">1. Obraz przedstawia króla:</p>
+          <div class="opts three"><div>A. Ludwika XIII,</div><div>B. Ludwika XIV,</div><div>C. Ludwika XV.</div></div>
+          <p class="q">2. Władca żył w czasach:</p>
+          <div class="opts three"><div>A. renesansu,</div><div>B. oświecenia,</div><div>C. baroku.</div></div>
+          <p class="q">3. Za jego panowania ukształtował się ustrój polityczny, nazywany:</p>
+          <div class="opts"><div>A. absolutyzmem,</div><div>B. absolutyzmem oświeconym.</div></div>
+          <p class="q">4. Ustrój ten został zlikwidowany we Francji w wyniku:</p>
+          <div class="opts one"><div>A. wielkiej rewolucji francuskiej,</div><div>B. podbojów napoleońskich,</div><div>C. Wiosny Ludów.</div></div>
+          <p class="q">5. W XVII wieku w Anglii ukształtowała się monarchia:</p>
+          <div class="opts three"><div>A. patrymonialna,</div><div>B. absolutna,</div><div>C. parlamentarna.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VI <span class="origin">(2022/2023, zad. VII)</span></h3><span class="points">0 – 5 p.</span></div>
+      <p class="lead">Przeczytaj uważnie poniższy tekst i dokończ zdania znajdujące się poniżej. Zaznacz
+        literę przy prawidłowej odpowiedzi.</p>
+      <div class="quote">
+        <p class="qt">„Artykuł I</p>
+        <p>§1. Wszelka niniejszym przyznana władza ustawodawcza przysługuje Kongresowi Stanów
+          Zjednoczonych, który składa się z Senatu i z Izby Reprezentantów.</p>
+        <p>§2. W skład Izby Reprezentantów wchodzą członkowie wybierani co dwa lata przez ludność
+          poszczególnych stanów (…)</p>
+        <p>§3. Senat Stanów Zjednoczonych składa się z senatorów wybieranych po dwu z każdego stanu
+          przez jego ciało ustawodawcze na lat sześć; każdy senator rozporządza jednym głosem.</p>
+        <p class="qt">Artykuł II</p>
+        <p>§1. Władzę wykonawczą sprawuje prezydent Stanów Zjednoczonych Ameryki. Urząd swój pełni
+          przez okres lat czterech, a wybierany jest wraz z obieranym na ten sam okres
+          wiceprezydentem (…)</p>
+        <p class="qt">Artykuł III</p>
+        <p>§1. Władzę sądową Stanów Zjednoczonych sprawuje jeden Sąd Najwyższy oraz takie sądy niższe,
+          jakie z biegiem czasu Kongres ustanowi i utworzy. Sędziowie zarówno Sądu Najwyższego, jak
+          i niższych sądów pozostają na swym urzędzie, dopóki sprawują go nienagannie”</p>
+      </div>
+      <p class="source">Źródło: http://www.kolousa.wssm.edu.pl/res/konstytucja.pdf</p>
+      <div class="item"><p class="q">1. Powyższy fragment pochodzi z:</p>
+        <div class="opts"><div>A. Deklaracji Niepodległości,</div><div>B. Konstytucji Francji,</div>
+          <div>C. Deklaracji Praw Człowieka i Obywatela,</div><div>D. Konstytucji USA.</div></div></div>
+      <div class="item"><p class="q">2. Wprowadzał zasadę podziału władzy w państwie pomiędzy:</p>
+        <div class="opts three"><div>A. dwie władze,</div><div>B. trzy władze,</div><div>C. cztery władze.</div></div></div>
+      <div class="item"><p class="q">3. Autorem dzieła „O duchu praw”, w którym zakładano podział władzy w państwie, był:</p>
+        <div class="opts three"><div>A. Karol Monteskiusz,</div><div>B. Erazm z Rotterdamu,</div><div>C. Jakub Rousseau.</div></div></div>
+      <div class="item"><p class="q">4. Według zapisów dokumentu na czteroletnią kadencję wybierano:</p>
+        <div class="opts three"><div>A. senatorów,</div><div>B. prezydenta,</div><div>C. sędziów.</div></div></div>
+      <div class="item"><p class="q">5. Stanowieniem prawa zajmowała się władza:</p>
+        <div class="opts three"><div>A. ustawodawcza,</div><div>B. wykonawcza,</div><div>C. sądowa.</div></div></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie VII <span class="origin">(2023/2024, zad. VIII)</span></h3><span class="points">0 – 10 p.</span></div>
+      <p class="lead">Poniżej znajduje się 10 pytań, do których przygotowano po cztery odpowiedzi. Tylko
+        jedna jest prawdziwa. Zaznacz literę oznaczającą prawidłową odpowiedź.</p>
+      <div class="item"><p class="q">1. „Królem królów” nazywano w starożytności władców Persji. Jednym z nich był:</p>
+        <div class="opts four"><div>A. Oktawian,</div><div>B. Justynian,</div><div>C. Kserkses,</div><div>D. Karol.</div></div></div>
+      <div class="item"><p class="q">2. „Czarną śmiercią” nazwano w Europie epidemię dżumy wywołaną brakiem higieny. Miała ona
+        miejsce w XIV wieku w okresie:</p>
+        <div class="opts four"><div>A. starożytności,</div><div>B. średniowiecza,</div><div>C. renesansu,</div><div>D. oświecenia.</div></div></div>
+      <div class="item"><p class="q">3. „Noc świętego Bartłomieja” miała miejsce w/we:</p>
+        <div class="opts four"><div>A. Włoszech,</div><div>B. Anglii,</div><div>C. Francji,</div><div>D. Niemczech.</div></div></div>
+      <div class="item"><p class="q">4. „Wielka smuta” po śmierci ostatniego władcy z dynastii Rurykowiczów miała miejsce w:</p>
+        <div class="opts four"><div>A. Anglii,</div><div>B. Rosji,</div><div>C. Szwecji,</div><div>D. Niemczech.</div></div></div>
+      <div class="item"><p class="q">5. „Wielką Armadą” nazywano flotę:</p>
+        <div class="opts four"><div>A. Hiszpanii,</div><div>B. Anglii,</div><div>C. Francji,</div><div>D. Włoch.</div></div></div>
+      <div class="item"><p class="q">6. „Królem Słońce” nazywano we Francji:</p>
+        <div class="opts four"><div>A. Ludwika XVI,</div><div>B. Ludwika XV,</div><div>C. Ludwika XIV,</div><div>D. Ludwika XIII.</div></div></div>
+      <div class="item"><p class="q">7. „Chwalebna rewolucja” miała miejsce w/we:</p>
+        <div class="opts four"><div>A. Francji,</div><div>B. Rosji,</div><div>C. Anglii,</div><div>D. Niemczech.</div></div></div>
+      <div class="item"><p class="q">8. „Bitwa narodów” miała miejsce w:</p>
+        <div class="opts"><div>A. 1813 roku pod Lipskiem,</div><div>B. 1815 roku pod Waterloo,</div>
+          <div>C. 1809 pod Wagram,</div><div>D. 1812 roku pod Borodino.</div></div></div>
+      <div class="item"><p class="q">9. „Bitwą trzech cesarzy” nazywa się bitwę pod:</p>
+        <div class="opts four"><div>A. Auerstadt,</div><div>B. Austerlitz,</div><div>C. Jeną,</div><div>D. Ulm.</div></div></div>
+      <div class="item"><p class="q">10. „Wiosna Ludów” to określenie wydarzeń rewolucyjnych w Europie w latach:</p>
+        <div class="opts four"><div>A. 1847 – 1848,</div><div>B. 1849 – 1850,</div><div>C. 1847 – 1849,</div><div>D. 1848 – 1849.</div></div></div>
+    </div>
+
+    <div class="task keep">
+      <div class="task-head"><h3>Zadanie VIII <span class="origin">(2022/2023, zad. X)</span></h3><span class="points">0 – 4 p.</span></div>
+      <p class="lead">Poniżej znajdują się 4 pytania, do każdego przygotowano po 4 odpowiedzi, z których
+        tylko jedna jest prawdziwa. Zaznacz literę przy prawidłowej odpowiedzi.</p>
+      <div class="item"><p class="q">1. Rewolucja przemysłowa została zapoczątkowana w XVIII wieku na terenie:</p>
+        <div class="opts four"><div>A. Francji,</div><div>B. Anglii,</div><div>C. Rosji,</div><div>D. Prus.</div></div></div>
+      <div class="item"><p class="q">2. Mechanizacja produkcji w fabrykach włókienniczych została zapoczątkowana dzięki
+        wykorzystaniu maszyn:</p>
+        <div class="opts four"><div>A. parowych,</div><div>B. elektrycznych,</div><div>C. spalinowych,</div><div>D. gazowych.</div></div></div>
+      <div class="item"><p class="q">3. Konstruktorem pierwszego parowca (1807 rok) był:</p>
+        <div class="opts four"><div>A. James Watt,</div><div>B. George Stephenson,</div><div>C. Samuel Morse,</div><div>D. Robert Fulton.</div></div></div>
+      <div class="item"><p class="q">4. Jednym ze skutków rewolucji przemysłowej w Europie był:</p>
+        <div class="opts"><div>A. dynamiczny rozwój miast,</div><div>B. gwałtowny spadek liczby ludności,</div>
+          <div>C. rozwój organizacji cechowych,</div><div>D. zwiększenie wymiaru pańszczyzny.</div></div></div>
+    </div>
+  </section>
+
+  <section class="page-break">
+    <div class="section-title">HISTORIA POLSKI</div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie IX <span class="origin">(2022/2023, zad. XI)</span></h3><span class="points">0 – 5 p.</span></div>
+      <p class="lead">Przeczytaj uważnie poniższy tekst i dokończ zdania znajdujące się poniżej. Zaznacz
+        literę przy prawidłowej odpowiedzi.</p>
+      <div class="quote">
+        <p class="qt">KRONIKA GALLA ANONIMA (fragment)</p>
+        <p>[…] cesarz rzymski z podziwem powiedział: „Na koronę mego cesarstwa, to, co widzę, jest
+          czymś więcej, niż dochodziły mnie wieści!” […] „Nie godzi się kogoś takiego i tak
+          znakomitego męża, jak jednego z dostojników nazywać księciem albo hrabią, lecz przystoi
+          wynieść w chwale ozdobionego koroną na tron królewski. I zdejmując ze swej głowy diadem
+          cesarski, włożył go na głowę […] dla związku przyjaźni, a zamiast chorągwi triumfalnej dał mu
+          w darze gwóźdź z Krzyża Pańskiego wraz z włócznią św. Maurycego […].</p>
+      </div>
+      <p class="source">Źródło: https://zjazdgnieznienski.weebly.com/gall-anonim.html</p>
+      <div class="item"><p class="q">1. Wydarzenie opisane w źródle miało miejsce w:</p>
+        <div class="opts three"><div>A. II połowie IX wieku,</div><div>B. II połowie X wieku,</div><div>C. I połowie XI wieku.</div></div></div>
+      <div class="item"><p class="q">2. Cesarz rzymski przedstawiony w źródle to cesarz:</p>
+        <div class="opts three"><div>A. Otton I,</div><div>B. Otton II,</div><div>C. Otton III.</div></div></div>
+      <div class="item"><p class="q">3. Władcą, który przyjął cesarza w Gnieźnie, był:</p>
+        <div class="opts three"><div>A. Bolesław Chrobry,</div><div>B. Mieszko I,</div><div>C. Bolesław Śmiały.</div></div></div>
+      <div class="item"><p class="q">4. Polski książę został koronowany na króla Polski:</p>
+        <div class="opts three"><div>A. 10 lat później,</div><div>B. 15 lat później,</div><div>C. 25 lat później.</div></div></div>
+      <div class="item"><p class="q">5. Jednym ze skutków tego spotkania było:</p>
+        <div class="opts one"><div>A. utworzenie arcybiskupstwa w Gnieźnie,</div><div>B. chrzest Polski,</div>
+          <div>C. uznanie biskupa Wojciecha za świętego.</div></div></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie X <span class="origin">(2023/2024, zad. XIII)</span></h3><span class="points">0 – 7 p.</span></div>
+      <p class="lead">Uzupełnij tekst dotyczący stosunków polsko-krzyżackich. Wybierz właściwe informacje
+        z nawiasu (podkreśl je).</p>
+      <p class="gap">Zakon Krzyżacki sprowadził do Polski w 1226 roku książę
+        <b>(Bolesław Kędzierzawy, Konrad Mazowiecki)</b>, by bronić Mazowsza przed atakami pogańskich
+        Prusów. Do końca XIII wieku Krzyżacy opanowali tereny zajmowane przez Prusów i stworzyli tam
+        państwo. W latach 1308 – 1309 zajęli obszar <b>(Pomorza Gdańskiego, Mazowsza)</b>, następnie
+        ziemię dobrzyńską. Władysław Łokietek podjął walkę przeciwko Krzyżakom i pokonał ich w bitwie
+        pod Płowcami w 1331 roku. W czasie swego panowania Kazimierz Wielki próbował rozwiązać konflikt
+        z Krzyżakami na drodze pokojowej, co zakończyło się podpisaniem pokoju w
+        <b>(Warszawie, Kaliszu)</b> w 1343 roku. Do Polski wróciły Kujawy i ziemia dobrzyńska. Do
+        kolejnych konfliktów z Krzyżakami doszło za panowania Jagiellonów. W latach
+        <b>(1454 – 1466, 1409 – 1411)</b> toczyła się Wielka Wojna z Zakonem, zakończona podpisaniem
+        I pokoju toruńskiego. Za panowania Kazimierza Jagiellończyka doszło do wojny
+        <b>(trzydziestoletniej, trzynastoletniej)</b>, w wyniku której Polska odzyskała Pomorze
+        Gdańskie, ziemię chełmińską, ziemię michałowską i Warmię. W latach 1519 – 1521 miała miejsce
+        ostatnia wojna z Krzyżakami. W 1525 roku w <b>(Krakowie, Warszawie)</b> został zawarty traktat
+        (tzw. hołd pruski) między Zygmuntem I Starym a Albrechtem – Wielkim Mistrzem Zakonu. W jego
+        wyniku Zakon Krzyżacki przestał istnieć, a na terenie jego państwa powstało państwo świeckie
+        pod nazwą <b>(Prusy Książęce, Prusy Królewskie)</b>.</p>
+    </div>
+
+    <div class="task keep">
+      <div class="task-head"><h3>Zadanie XI <span class="origin">(2022/2023, zad. XIV)</span></h3><span class="points">0 – 4 p.</span></div>
+      <p class="lead">Poniżej znajduje się treść przywilejów dla szlachty nadawanych przez królów
+        z dynastii Jagiellonów. Wskaż przy każdym z nich literę, przy której zapisano prawidłowy rok
+        i miejsce jego nadania.</p>
+      <div class="item"><p class="q">1. Uzależnienie nakładania nowych podatków, wydawania nowych praw i zwoływania pospolitego
+        ruszenia od zgody sejmików.</p>
+        <div class="opts three"><div>A. 1496, Piotrków,</div><div>B. 1454, Cerkwica, Nieszawa,</div><div>C. 1374, Koszyce.</div></div></div>
+      <div class="item"><p class="q">2. Zakazanie mieszczanom nabywania dóbr ziemskich, ograniczenie prawa chłopów do
+        opuszczenia wsi do jednego w ciągu roku.</p>
+        <div class="opts three"><div>A. 1505, Radom,</div><div>B. 1423, Warta,</div><div>C. 1496, Piotrków.</div></div></div>
+      <div class="item"><p class="q">3. Zakazanie królowi wydawania ustaw bez uzyskania zgody szlachty, reprezentowanej przez
+        Senat i izbę poselską.</p>
+        <div class="opts three"><div>A. 1422, Czerwińsk,</div><div>B. 1505, Radom,</div><div>C. 1355, Buda.</div></div></div>
+      <div class="item"><p class="q">4. Zagwarantowanie nietykalności majątkowej szlachcie bez prawomocnego wyroku sądu.</p>
+        <div class="opts three"><div>A. 1422, Czerwińsk,</div><div>B. 1430, Jedlnia,</div><div>C. 1496, Piotrków.</div></div></div>
+    </div>
+
+    <div class="task keep">
+      <div class="task-head"><h3>Zadanie XII <span class="origin">(2023/2024, zad. XVI)</span></h3><span class="points">0 – 5 p.</span></div>
+      <p class="lead">Przeanalizuj poniższą mapkę, a następnie rozstrzygnij, czy zdania znajdujące się
+        poniżej są prawdziwe czy fałszywe. Zaznacz P albo F.</p>
+      <div class="fig"><img class="map-image" src="../assets/rejonowy_R1_potop_szwedzki.jpg" alt="Mapa Rzeczypospolitej w połowie XVII wieku"></div>
+      <p class="source">Źródło: http://wlaczpolske.pl/index.php?etap=10&amp;i=1242&amp;nomenu=1</p>
+      <table>
+        <tr><td>1. Mapa przedstawia Rzeczpospolitą w czasie potopu szwedzkiego.</td><td class="pf">P</td><td class="pf">F</td></tr>
+        <tr><td>2. Wrogie wojska zaatakowały Polskę jedynie z terenu Inflant.</td><td class="pf">P</td><td class="pf">F</td></tr>
+        <tr><td>3. Wrogie wojska na południu dotarły aż w okolice Krakowa.</td><td class="pf">P</td><td class="pf">F</td></tr>
+        <tr><td>4. Pokój kończący wojnę podpisano w Kiejdanach i pod Ujściem.</td><td class="pf">P</td><td class="pf">F</td></tr>
+        <tr><td>5. W tym samym czasie Rzeczpospolita prowadziła wojnę z Turcją.</td><td class="pf">P</td><td class="pf">F</td></tr>
+      </table>
+    </div>
+
+    <div class="task keep">
+      <div class="task-head"><h3>Zadanie XIII <span class="origin">(2022/2023, zad. XVII)</span></h3><span class="points">0 – 6 p.</span></div>
+      <p class="lead">Spośród wymienionych poniżej przyczyn wojen Polski w XVII wieku wybierz te, które
+        zapoczątkowały konflikty ze Szwecją, Rosją i Turcją. Przy każdym z państw zaznacz znakiem X po
+        dwie litery. (UWAGA! Przyczyn jest więcej – dwie nie pasują do żadnego z państw!)</p>
+      <div class="opts">
+        <div>A. chęć odzyskania tronu przez Zygmunta III Wazę,</div>
+        <div>E. podpisanie ugody w Perejasławiu,</div>
+        <div>B. współpraca królów Polski z Habsburgami,</div>
+        <div>F. chęć podziału ziem polskich,</div>
+        <div>C. pomoc w zdobyciu tronu dla Dymitra (rzekomego syna Iwana IV),</div>
+        <div>G. zamiar oderwania od Polski Inflant,</div>
+        <div>D. rywalizacja o Śląsk,</div>
+        <div>H. zatargi graniczne pomiędzy Kozakami i Tatarami.</div>
+      </div>
+      <table class="xgrid">
+        <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th></tr>
+        <tr><td>Przyczyny wojen ze Szwecją:</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Przyczyny wojen z Rosją:</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Przyczyny wojen z Turcją:</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XIV <span class="origin">(2023/2024, zad. XVII)</span></h3><span class="points">0 – 10 p.</span></div>
+      <p class="lead">Poniżej znajduje się 10 pytań, do których przygotowano po cztery odpowiedzi. Tylko
+        jedna jest prawdziwa. Zaznacz literę oznaczającą prawidłową odpowiedź.</p>
+      <div class="item"><p class="q">1. Kolumnę Zygmunta III Wazy przed Zamkiem Królewskim w Warszawie ustawiono w 1644 roku za panowania:</p>
+        <div class="opts"><div>A. Zygmunta III Wazy,</div><div>B. Władysława IV,</div><div>C. Augusta II Mocnego,</div><div>D. Jana Kazimierza.</div></div></div>
+      <div class="item"><p class="q">2. W 1765 roku z inicjatywy Stanisława Augusta Poniatowskiego utworzono:</p>
+        <div class="opts"><div>A. Komisję Edukacji Narodowej,</div><div>B. Collegium Nobilium,</div><div>C. Szkołę Rycerską,</div><div>D. Towarzystwo do Ksiąg Elementarnych.</div></div></div>
+      <div class="item"><p class="q">3. Autorem dzieła „O skutecznym rad sposobie” jest:</p>
+        <div class="opts"><div>A. Stanisław Staszic,</div><div>B. Hugo Kołłątaj,</div><div>C. Adam Naruszewicz,</div><div>D. Stanisław Konarski.</div></div></div>
+      <div class="item"><p class="q">4. Dyrektorem Teatru Narodowego w Warszawie w czasach stanisławowskich był:</p>
+        <div class="opts"><div>A. Wojciech Bogusławski,</div><div>B. Julian Ursyn Niemcewicz,</div><div>C. Franciszek Zabłocki,</div><div>D. Ignacy Krasicki.</div></div></div>
+      <div class="item"><p class="q">5. Autorem komedii politycznej „Powrót posła” był:</p>
+        <div class="opts"><div>A. Ignacy Krasicki,</div><div>B. Franciszek Bohomolec,</div><div>C. Julian Ursyn Niemcewicz,</div><div>D. Stanisław Trembecki.</div></div></div>
+      <div class="item"><p class="q">6. Pierwszą publiczną bibliotekę ufundowali i „oddali narodowi” w Warszawie bracia z rodziny:</p>
+        <div class="opts four"><div>A. Załuskich,</div><div>B. Czartoryskich,</div><div>C. Potockich,</div><div>D. Branickich.</div></div></div>
+      <div class="item"><p class="q">7. Jednym z przywódców konfederacji targowickiej był:</p>
+        <div class="opts"><div>A. Adam Czartoryski,</div><div>B. Stanisław Małachowski,</div><div>C. Ignacy Potocki,</div><div>D. Ksawery Branicki.</div></div></div>
+      <div class="item"><p class="q">8. Jednym z dowódców wojsk polskich w bitwie pod Dubienką (1792) był:</p>
+        <div class="opts"><div>A. Tadeusz Kościuszko,</div><div>B. Józef Zajączek,</div><div>C. Karol Kniaziewicz,</div><div>D. Jan Henryk Dąbrowski.</div></div></div>
+      <div class="item"><p class="q">9. Na czele insurekcji w Warszawie (17 IV 1794) stanął:</p>
+        <div class="opts"><div>A. Tadeusz Kościuszko,</div><div>B. Antoni Madaliński,</div><div>C. Jan Kiliński,</div><div>D. Jakub Jasiński.</div></div></div>
+      <div class="item"><p class="q">10. Kościuszko nobilitował chłopa Wojciecha Bartosza, nadając mu nazwisko Głowacki, w czasie bitwy pod:</p>
+        <div class="opts four"><div>A. Dubienką,</div><div>B. Szczekocinami,</div><div>C. Maciejowicami,</div><div>D. Racławicami.</div></div></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XV <span class="origin">(2024/2025, zad. XIII)</span></h3><span class="points">0 – 7 p.</span></div>
+      <p class="lead">Zapoznaj się z opisami dotyczącymi ziem polskich pod zaborami. Wybierz, do jakiego
+        zaboru odnoszą się podane opisy.</p>
+      <div class="item"><p class="q">1. W 1815 r. została wprowadzona konstytucja ustanawiająca monarchię konstytucyjną w:</p>
+        <div class="opts one"><div>a. Wielkim Księstwie Poznańskim,</div><div>b. Królestwie Polskim,</div>
+          <div>c. Rzeczpospolitej Krakowskiej (Wolnym Mieście Krakowie).</div></div></div>
+      <div class="item"><p class="q">2. Na terenie tego zaboru na początku XIX w. zlikwidowano poddaństwo chłopów, nadając tej
+        grupie wolność osobistą. – Sytuacja ta odnosi się do zaboru:</p>
+        <div class="opts three"><div>a. austriackiego,</div><div>b. pruskiego,</div><div>c. rosyjskiego.</div></div></div>
+      <div class="item"><p class="q">3. Ziemie polskie pod tym zaborem nie były uprzemysłowione. Jednak znajdowały się na tym
+        terenie kopalnie soli w Bochni i Wieliczce. – Sytuacja ta odnosi się do zaboru:</p>
+        <div class="opts three"><div>a. austriackiego,</div><div>b. pruskiego,</div><div>c. rosyjskiego.</div></div></div>
+      <div class="item"><p class="q">4. Na terenie tego zaboru zniesienie pańszczyzny nastąpiło w 1848 r. – Sytuacja ta odnosi
+        się do zaboru:</p>
+        <div class="opts three"><div>a. austriackiego,</div><div>b. pruskiego,</div><div>c. rosyjskiego.</div></div></div>
+      <div class="item"><p class="q">5. Na terenie tego zaboru istniał dobrze rozwinięty przemysł włókienniczy, przede wszystkim
+        w Łodzi. – Sytuacja ta odnosi się do zaboru:</p>
+        <div class="opts three"><div>a. austriackiego,</div><div>b. pruskiego,</div><div>c. rosyjskiego.</div></div></div>
+      <div class="item"><p class="q">6. Franciszek Ksawery Drucki-Lubecki był ministrem skarbu w:</p>
+        <div class="opts one"><div>a. Wielkim Księstwie Poznańskim,</div><div>b. Królestwie Polskim,</div>
+          <div>c. Rzeczpospolitej Krakowskiej (Wolnym Mieście Krakowie).</div></div></div>
+      <div class="item"><p class="q">7. Na terenie Wielkiego Księstwa Poznańskiego była ograniczona autonomia. – Sytuacja ta
+        odnosi się do zaboru:</p>
+        <div class="opts three"><div>a. austriackiego,</div><div>b. pruskiego,</div><div>c. rosyjskiego.</div></div></div>
+    </div>
+
+    <div class="task keep">
+      <div class="task-head"><h3>Zadanie XVI <span class="origin">(2022/2023, zad. XX)</span></h3><span class="points">0 – 4 p.</span></div>
+      <p class="lead">Wybierz dwie przyczyny i dwa skutki wymienionych poniżej powstań narodowych.</p>
+      <div class="item"><p class="q">1. Wśród <u>przyczyn powstania listopadowego</u> można wskazać (zaznacz dwie odpowiedzi):</p>
+        <div class="opts one"><div>A. plan użycia polskiej armii do tłumienia rewolucji w Belgii,</div>
+          <div>B. krwawe tłumienie manifestacji patriotycznych Polaków,</div>
+          <div>C. wykrycie Sprzysiężenia Piotra Wysockiego,</div>
+          <div>D. przeprowadzenie poboru do wojska rosyjskiego młodych Polaków.</div></div></div>
+      <div class="item"><p class="q">2. Wśród <u>skutków powstania styczniowego</u> można wskazać (zaznacz dwie odpowiedzi):</p>
+        <div class="opts one"><div>A. utworzenie Kraju Przywiślańskiego,</div>
+          <div>B. ogłoszenie Statutu Organicznego,</div>
+          <div>C. rozpoczęcie wzmożonej rusyfikacji,</div>
+          <div>D. zlikwidowanie polskiego wojska i sejmu.</div></div></div>
+    </div>
+
+    <div class="task">
+      <div class="task-head"><h3>Zadanie XVII <span class="origin">(2024/2025, zad. XV)</span></h3><span class="points">0 – 6 p.</span></div>
+      <p class="lead">Zapoznaj się z tekstem źródłowym oraz godłem z pieczęci Rządu Narodowego z okresu
+        powstania styczniowego. Następnie oceń prawdziwość informacji podanych w poniższych zdaniach.
+        Zaznacz P, jeśli zdanie jest prawdziwe, albo F, jeśli jest fałszywe.</p>
+      <div class="quote">
+        <p class="qt">Manifest Tymczasowego Rządu Narodowego, 22 stycznia 1863 r.<br>Komitet Centralny jako Tymczasowy Rząd Narodowy</p>
+        <p>Nikczemny rząd najezdniczy, rozwścieklony oporem męczonej przezeń ofiary, postanowił zadać
+          jej cios stanowczy: porwać kilkadziesiąt tysięcy najdzielniejszych, najgorliwszych jej
+          obrońców, oblec w nienawistny mundur moskiewski i pognać tysiące mil na wieczną nędzę
+          i zatracenie.</p>
+        <p>Polska nie chce, nie może poddać się bezopornie temu sromotnemu gwałtowi [...], powinna
+          stawić energiczny opór. Zastępy młodzieży walecznej [...] poprzysięgły zrzucić przeklęte
+          jarzmo lub zginąć [...].</p>
+        <p>Rząd Twój Narodowy wzywa Cię na pole walki, już ostatniej, na pole chwały i zwycięstwa [...].
+          Komitet Centralny Narodowy ogłasza wszystkich synów Polski, bez różnicy wiary i rodu,
+          pochodzenia i stanu, wolnymi i równymi obywatelami kraju. Ziemia, którą lud rolniczy
+          posiadał dotąd na prawach czynszu lub pańszczyzny, staje się od tej chwili bezwarunkową jego
+          własnością, dziedzictwem wieczystym. Właściciele poszkodowani wynagrodzeni będą z ogólnych
+          funduszów państwa. Wszyscy zaś komornicy i wyrobnicy, wstępujący w szeregi obrońców kraju,
+          lub w razie zaszczytnej śmierci na polu chwały, rodziny ich otrzymują z dóbr narodowych
+          dział obronionej od wrogów ziemi.</p>
+        <p>Do broni więc, Narodzie Polski, Litwy, Rusi, do broni!, bo godzina wspólnego wyzwolenia
+          już wybiła, stary miecz nasz wydobyty, święty sztandar Orła, Pogoni i Archanioła
+          rozwinięty.</p>
+        <p>A teraz odzywamy się do Ciebie, Narodzie Moskiewski: tradycyjnym hasłem naszym jest wolność
+          i braterstwo ludów, dlatego też przebaczamy Ci nawet mord naszej Ojczyzny [...].
+          Przebaczamy Ci, bo i Ty jesteś nędzny i mordowany [...].</p>
+      </div>
+      <p class="source">Źródło: Teksty źródłowe do nauki historii w szkole nr 35, Państwowe Zakłady Wydawnictw
+        Szkolnych, Warszawa 1959, s. 18.</p>
+      <div class="side" style="grid-template-columns: 48mm 1fr; break-inside: avoid;">
+        <div>
+          <img src="../assets/rejonowy_R1_godlo_1863.jpg" alt="Godło z pieczęci Rządu Narodowego">
+          <p class="source">Godło z pieczęci Rządu Narodowego z okresu powstania styczniowego.
+            Źródło: pl.wikipedia.org</p>
+        </div>
+        <table>
+          <tr><td>1. Komitet Centralny przypomina o kilkudziesięciu tysiącach Polaków skazanych przez Rosjan na zesłanie.</td><td class="pf">P</td><td class="pf">F</td></tr>
+          <tr><td>2. Komitet Centralny wprowadził wolność i równość wszystkich stanów.</td><td class="pf">P</td><td class="pf">F</td></tr>
+          <tr><td>3. Komitet Centralny ustanowił prawo chłopów do posiadania ziemi, ale bez odszkodowania dla właścicieli ziemskich.</td><td class="pf">P</td><td class="pf">F</td></tr>
+          <tr><td>4. Komitet Centralny wzywa do walki naród Polski, Litwy i Rusi.</td><td class="pf">P</td><td class="pf">F</td></tr>
+          <tr><td>5. Na Godle pod literą C oznaczono symbol odpowiadający narodowi litewskiemu.</td><td class="pf">P</td><td class="pf">F</td></tr>
+          <tr><td>6. W Manifeście Komitet Centralny przebacza carowi za krzywdy wyrządzone Polsce.</td><td class="pf">P</td><td class="pf">F</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-break">
+    <h2>Karta odpowiedzi — wariant R1 (etap rejonowy)</h2>
+    <p><strong>KOD UCZNIA:</strong> <span class="code">&nbsp;</span></p>
+    <table class="card">
+      <tr><th>Zadanie</th><th>Pkt</th><th>Odpowiedzi</th></tr>
+      <tr><td>I</td><td>10</td><td class="small">Wpisz wybrane pojęcia w kolejności występowania w tekście: 1. ............ 2. ............ 3. ............ 4. ............ 5. ............<br><br>6. ............ 7. ............ 8. ............ 9. ............ 10. ............</td></tr>
+      <tr><td>II</td><td>4</td><td>1. ..... &nbsp; 2. ..... &nbsp; 3. ..... &nbsp; 4. .....</td></tr>
+      <tr><td>III</td><td>5</td><td>1. ..... &nbsp; 2. ..... &nbsp; 3. ..... &nbsp; 4. ..... &nbsp; 5. .....</td></tr>
+      <tr><td>IV</td><td>3</td><td>1. ..... &nbsp; 2. ..... &nbsp; 3. .....</td></tr>
+      <tr><td>V</td><td>5</td><td>1. ..... &nbsp; 2. ..... &nbsp; 3. ..... &nbsp; 4. ..... &nbsp; 5. .....</td></tr>
+      <tr><td>VI</td><td>5</td><td>1. ..... &nbsp; 2. ..... &nbsp; 3. ..... &nbsp; 4. ..... &nbsp; 5. .....</td></tr>
+      <tr><td>VII</td><td>10</td><td>1. ..... &nbsp; 2. ..... &nbsp; 3. ..... &nbsp; 4. ..... &nbsp; 5. ..... &nbsp; 6. ..... &nbsp; 7. ..... &nbsp; 8. ..... &nbsp; 9. ..... &nbsp; 10. .....</td></tr>
+      <tr><td>VIII</td><td>4</td><td>1. ..... &nbsp; 2. ..... &nbsp; 3. ..... &nbsp; 4. .....</td></tr>
+      <tr><td>IX</td><td>5</td><td>1. ..... &nbsp; 2. ..... &nbsp; 3. ..... &nbsp; 4. ..... &nbsp; 5. .....</td></tr>
+      <tr><td>X</td><td>7</td><td class="small">Wpisz wybrane informacje w kolejności występowania w tekście: 1. ............ 2. ............ 3. ............ 4. ............<br><br>5. ............ 6. ............ 7. ............</td></tr>
+      <tr><td>XI</td><td>4</td><td>1. ..... &nbsp; 2. ..... &nbsp; 3. ..... &nbsp; 4. .....</td></tr>
+      <tr><td>XII</td><td>5</td><td>1. ..... &nbsp; 2. ..... &nbsp; 3. ..... &nbsp; 4. ..... &nbsp; 5. .....</td></tr>
+      <tr><td>XIII</td><td>6</td><td>Szwecja: ..... , ..... &nbsp;&nbsp; Rosja: ..... , ..... &nbsp;&nbsp; Turcja: ..... , .....</td></tr>
+      <tr><td>XIV</td><td>10</td><td>1. ..... &nbsp; 2. ..... &nbsp; 3. ..... &nbsp; 4. ..... &nbsp; 5. ..... &nbsp; 6. ..... &nbsp; 7. ..... &nbsp; 8. ..... &nbsp; 9. ..... &nbsp; 10. .....</td></tr>
+      <tr><td>XV</td><td>7</td><td>1. ..... &nbsp; 2. ..... &nbsp; 3. ..... &nbsp; 4. ..... &nbsp; 5. ..... &nbsp; 6. ..... &nbsp; 7. .....</td></tr>
+      <tr><td>XVI</td><td>4</td><td>1. ..... , ..... &nbsp;&nbsp;&nbsp; 2. ..... , .....</td></tr>
+      <tr><td>XVII</td><td>6</td><td>1. ..... &nbsp; 2. ..... &nbsp; 3. ..... &nbsp; 4. ..... &nbsp; 5. ..... &nbsp; 6. .....</td></tr>
+      <tr><td>Razem</td><td>100</td><td></td></tr>
+    </table>
+    <p class="footer-note">Arkusz treningowy R1 – zadania pochodzą z oficjalnych arkuszy etapu rejonowego
+      Kuratorium Oświaty w Bydgoszczy (2022/2023–2024/2025). Nie jest oficjalnym arkuszem konkursowym.</p>
+  </section>
+</body>
+</html>

@@ -20,6 +20,8 @@ plik                                  etap        typ      zadań   pkt   deklar
 2023-2024-rejonowy-historia-k         rejonowy    klucz       19   100             -   60 min
 2023-2024-szkolny-historia-a          szkolny     arkusz      19   100  19 zad./9 s.   60 min
 2023-2024-szkolny-historia-k          szkolny     klucz       19   100             -        -
+2024-2025-rejonowy-historia-a         rejonowy    arkusz      15   100             -   60 min
+2024-2025-rejonowy-historia-k         rejonowy    klucz       15   100             -        -
 2024-2025-szkolny-historia-a          szkolny     arkusz      19   100 19 zad./14 s.   60 min
 2024-2025-szkolny-historia-k          szkolny     klucz       12    64             -        -
 2025-2026-szkolny-historia-a          szkolny     arkusz      18   100 18 zad./13 s.   60 min

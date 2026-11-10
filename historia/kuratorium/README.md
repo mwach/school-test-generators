@@ -32,6 +32,15 @@ i `output/test_szkolny_wariant_G.pdf`, a do nich `output/klucz_odpowiedzi_warian
 | L | `test_szkolny_wariant_L.pdf` | pierwszy wariant korzystający jednocześnie ze wszystkich trzech zewnętrznych źródeł — 8 z 19 zadań (42%) zaczerpnięto z arkuszy mazowieckich (3), pomorskich (2) i zachodniopomorskich (3) łącznie, resztę napisano od nowa; mapa trzech bitew wojen grecko-perskich (Maraton, Termopile, Salamina), obraz „Hołd pruski” Matejki jako źródło ikonograficzne (ponowne użycie, pod kątem krytyki źródła jak w K) |
 | M | `test_szkolny_wariant_M.pdf` | wszystkie 19 zadań napisane od nowa (bank zewnętrzny nieużyty); 4 powtórzenia tematu (21%); mapa sześciu średniowiecznych uniwersytetów (Bolonia, Paryż, Oksford, Praga, Kraków, Salamanka); pierwsze źródło ikonograficzne spoza malarstwa — tkanina z Bayeux (śmierć Harolda, `assets/bayeux_smierc_harolda.jpg`); źródła w kluczu instytucjonalne (ZPE, MHP, muzea, archiwa), nie tylko Wikipedia |
 
+### Etap rejonowy
+
+| Wariant | Pliki w `output/` | Uwagi |
+| --- | --- | --- |
+| R1 | `test_rejonowy_wariant_R1.pdf`, `klucz_odpowiedzi_rejonowy_wariant_R1.pdf` | pierwszy arkusz etapu rejonowego (działy I–XXI, do powstania styczniowego); 17 zadań, 100 p., 60 minut; **wszystkie zadania przeniesione wprost z oficjalnych arkuszy rejonowych kuratorium bydgoskiego** 2022/2023 (7), 2023/2024 (7) i 2024/2025 (3) — decyzja zamawiającego z 2026-11-10; klucz zgodny z oficjalnymi kluczami; ilustracje i mapy wycięte z PDF-ów źródłowych (`assets/rejonowy_R1_*.jpg`); kolejności odpowiedzi nie tasowano, więc `tools/sprawdz_losowosc_klucza.py` zgłasza uwagi do zadań VII, XIV i XVII — świadomie pozostawione |
+
+Warianty rejonowe mają nazwy `test_rejonowy_wariant_R<n>` / `klucz_odpowiedzi_rejonowy_wariant_R<n>`,
+żeby `tools/baza_pytan.py` (czyta tylko `test_szkolny_wariant_*`) nie mieszał ich z bazą etapu szkolnego.
+
 Materiały dodatkowe do nauki: `output/Daty_i_wydarzenia_do_nauki.pdf` (chronologia dla ucznia),
 `output/Daty_i_wydarzenia_zestawienie.pdf` (pełne zestawienie)
 oraz `output/Baza_potencjalnych_pytan.pdf`.

@@ -12,7 +12,7 @@ Pozostałe trzy zestawy mają **inny status** — zob. niżej.
 
 | Ścieżka | Opis |
 | --- | --- |
-| `arkusze/` | Oryginalne PDF-y kujawsko-pomorskie (24 pliki, 12 kompletnych par arkusz + klucz) |
+| `arkusze/` | Oryginalne PDF-y kujawsko-pomorskie (26 plików, 13 kompletnych par arkusz + klucz) |
 | `arkusze/mazowieckie/` | Oryginalne PDF-y mazowieckie, etap szkolny 2019/2020–2025/2026 (14 plików, 7 par) |
 | `arkusze/pomorskie/` | Oryginalne PDF-y pomorskie (Gdańsk), etap szkolny 2018/2019–2025/2026 (16 plików, 8 par) |
 | `arkusze/zachodniopomorskie/` | Oryginalne PDF-y zachodniopomorskie (Szczecin), etap szkolny 2018/2019–2025/2026 (16 plików, 8 par; brak historii dla SP w paczce 2017/2018) |
@@ -112,6 +112,7 @@ ikonograficznych, kartograficznych i statystycznych.
 | 2023/2024 | szkolny | 19 | 100 | 60 min |
 | 2023/2024 | rejonowy | 19 | 100 | 60 min |
 | 2024/2025 | szkolny | 19 | 100 | 60 min |
+| 2024/2025 | rejonowy | 15 | 100 | 60 min |
 | 2025/2026 | szkolny | 18 | 100 | 60 min |
 
 Wnioski kalibracyjne dla etapu szkolnego:
@@ -155,3 +156,5 @@ Wniosek: archiwalnego klucza nie wolno przepisywać bez weryfikacji.
 
 4. Zachowaj rozkład punktów typowy dla etapu i sumę 100 punktów.
 5. Pytania formułuj od nowa. Archiwum jest wzorcem formy i trudności, nie bankiem pytań.
+   Wyjątek (decyzja zamawiającego, 2026-11-10): warianty etapu rejonowego `R<n>` wolno składać
+   wprost z zadań arkuszy rejonowych — zob. specyfikacja, § 12.
