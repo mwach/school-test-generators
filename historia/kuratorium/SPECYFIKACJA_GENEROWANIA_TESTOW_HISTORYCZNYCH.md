@@ -1022,8 +1022,10 @@ etapu szkolnego nadal powstają według dotychczasowych reguł. Zasady dla waria
 
 - parametry jak w arkuszach rejonowych od 2022/2023: 60 minut, 100 punktów, 15–20 zadań,
   zakres działów I–XXI (do powstania styczniowego), co najmniej 50% punktów z historii Polski;
-- korzystaj z arkuszy 2022/2023 i nowszych (ten sam format 60-minutowy); arkusze 2018/2019
-  i 2019/2020 trwały 90 minut, a pliki `gim` dotyczą gimnazjum;
+- korzystaj ze **wszystkich** arkuszy rejonowych szkoły podstawowej, czyli także 2018/2019
+  i 2019/2020 (decyzja zamawiającego, 2026-11-10: „nie pomijaj, korzystaj ze wszystkich arkuszy”).
+  Tamte dwa trwały 90 minut, więc przy doborze zadań pilnuj, żeby cały arkusz mieścił się
+  w 60 minutach; pliki `gim` dotyczą gimnazjum;
 - przy każdym zadaniu podaj rok i numer zadania w arkuszu źródłowym; punktację zostaw oryginalną;
 - treści i kolejności odpowiedzi nie zmieniaj (poza oczywistymi literówkami, odnotowanymi w kluczu) —
   dlatego kontrola `tools/sprawdz_losowosc_klucza.py` może zgłaszać uwagi; odnotuj je w kluczu;
@@ -1037,6 +1039,13 @@ etapu szkolnego nadal powstają według dotychczasowych reguł. Zasady dla waria
 - `output/test_rejonowy_wariant_R1.pdf` — 17 zadań, 100 p. (46 powszechna / 54 Polska), ziarno
   `2026-11-10-R1`, 15 stron;
 - `output/klucz_odpowiedzi_rejonowy_wariant_R1.pdf`.
+- `output/test_rejonowy_wariant_R2_interaktywny.html` — test interaktywny (decyzja zamawiającego,
+  2026-11-10): pojedyncza strona HTML z osadzonym CSS/JS i ilustracjami (data URI), z automatycznym
+  liczeniem punktów po wypełnieniu wszystkich pól; 18 zadań, 100 p. (47 / 53). Dane zadań są w tablicy
+  `TASKS` w skrypcie strony (typy: `radio`, `tf`, `select`, `multi`, `gaptext`) — kolejny wariant
+  interaktywny powstaje przez podmianę tej tablicy. Wariant R2 zużył: 2018/2019 — IV, VII, IX, XIV;
+  2019/2020 — II, V, VII, XVII; 2022/2023 — V, VIII, XII, XV, XVIII, XIX; 2023/2024 — III, XII, XIX;
+  2024/2025 — XIV. Zadania otwarte (2018/2019, 2019/2020) zamieniono na wybór z listy.
 
 ## 13. Narzędzia pomocnicze
 
